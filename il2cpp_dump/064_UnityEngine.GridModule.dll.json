@@ -1,0 +1,1 @@
+{"name":"UnityEngine.GridModule.dll","classes":[{"name":"<Module>","namespace":"","fullName":"<Module>","addr":"0x7603040230","methods":[],"fields":[],"properties":[],"flags":"0x0"},{"name":"GridLayout","namespace":"UnityEngine","fullName":"UnityEngine.GridLayout","addr":"0x7651929a50","methods":[],"fields":[],"properties":[],"flags":"0x100001","parent":"Behaviour"}]}
