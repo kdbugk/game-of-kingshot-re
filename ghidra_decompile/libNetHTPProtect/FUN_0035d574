@@ -1,0 +1,97 @@
+
+void FUN_0035d574(long param_1,byte *param_2)
+
+{
+  size_t sVar1;
+  size_t __n;
+  ulong *puVar2;
+  byte *pbVar3;
+  byte *__s2;
+  byte bVar4;
+  long lVar5;
+  int iVar6;
+  ulong uVar7;
+  byte *__s1;
+  byte *pbVar8;
+  byte *pbVar9;
+  ulong local_78;
+  ulong uStack_70;
+  ulong local_68;
+  undefined4 local_60;
+  long local_58;
+  
+  lVar5 = tpidr_el0;
+  local_58 = *(long *)(lVar5 + 0x28);
+  pthread_rwlock_wrlock((pthread_rwlock_t *)&DAT_005a6814);
+  pbVar8 = *(byte **)(param_1 + 0x168);
+  pbVar3 = *(byte **)(param_1 + 0x170);
+  if (pbVar8 != pbVar3) {
+    __n = *(size_t *)(param_2 + 8);
+    __s2 = *(byte **)(param_2 + 0x10);
+    pbVar9 = (byte *)0x0;
+    if ((*param_2 & 1) == 0) {
+      __s2 = param_2 + 1;
+      __n = (ulong)(*param_2 >> 1);
+    }
+    do {
+      bVar4 = *pbVar8;
+      sVar1 = (ulong)(bVar4 >> 1);
+      if ((bVar4 & 1) != 0) {
+        sVar1 = *(size_t *)(pbVar8 + 8);
+      }
+      if (sVar1 == __n) {
+        __s1 = *(byte **)(pbVar8 + 0x10);
+        if ((bVar4 & 1) == 0) {
+          __s1 = pbVar8 + 1;
+        }
+        if ((bVar4 & 1) == 0) {
+          if (__n != 0) {
+            uVar7 = 0;
+            do {
+              if (pbVar8[uVar7 + 1] != __s2[uVar7]) goto LAB_0035d648;
+              uVar7 = uVar7 + 1;
+            } while (bVar4 >> 1 != uVar7);
+          }
+        }
+        else if ((__n != 0) && (iVar6 = memcmp(__s1,__s2,__n), iVar6 != 0)) goto LAB_0035d648;
+        pbVar9 = pbVar8;
+      }
+LAB_0035d648:
+      pbVar8 = pbVar8 + 0x20;
+    } while (pbVar8 != pbVar3);
+    if (pbVar9 != (byte *)0x0) {
+      *(int *)(pbVar9 + 0x18) = *(int *)(pbVar9 + 0x18) + 1;
+      goto LAB_0035d6d4;
+    }
+  }
+                    /* try { // try from 0035d668 to 0035d673 has its CatchHandler @ 0035d728 */
+  FUN_0011faf0(&local_78,param_2);
+  local_60 = 1;
+  puVar2 = *(ulong **)(param_1 + 0x170);
+  if (puVar2 < *(ulong **)(param_1 + 0x178)) {
+    puVar2[2] = local_68;
+    puVar2[1] = uStack_70;
+    *puVar2 = local_78;
+    uStack_70 = 0;
+    local_68 = 0;
+    local_78 = 0;
+    *(undefined4 *)(puVar2 + 3) = 1;
+    *(long *)(param_1 + 0x170) = *(long *)(param_1 + 0x170) + 0x20;
+  }
+  else {
+                    /* try { // try from 0035d6bc to 0035d6c3 has its CatchHandler @ 0035d710 */
+    FUN_00363b34(param_1 + 0x168,&local_78);
+    if ((local_78 & 1) != 0) {
+      FUN_00453e44(local_68);
+    }
+  }
+LAB_0035d6d4:
+                    /* try { // try from 0035d6d4 to 0035d6df has its CatchHandler @ 0035d744 */
+  iVar6 = pthread_rwlock_unlock((pthread_rwlock_t *)&DAT_005a6814);
+  if (*(long *)(lVar5 + 0x28) == local_58) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(iVar6);
+}
+

@@ -1,0 +1,117 @@
+long FUN_01944070(undefined4 *param_1,long *param_2,ulong param_3,uint param_4,ulong *param_5,
+                 undefined4 *param_6)
+
+{
+  long lVar1;
+  undefined4 uVar2;
+  ulong uVar3;
+  long lVar4;
+  undefined8 local_d0;
+  undefined8 uStack_c8;
+  ulong uStack_c0;
+  undefined8 uStack_b8;
+  undefined8 local_b0;
+  undefined8 uStack_a8;
+  long local_a0;
+  undefined8 uStack_98;
+  undefined8 local_90;
+  undefined8 uStack_88;
+  undefined8 uStack_80;
+  undefined8 uStack_78;
+  undefined8 local_70;
+  undefined8 uStack_68;
+  undefined8 uStack_60;
+  undefined8 uStack_58;
+
+  lVar4 = *param_2;
+  uStack_68 = 0;
+  local_70 = 0;
+  uStack_58 = 0;
+  uStack_60 = 0;
+  uStack_88 = 0;
+  local_90 = 0;
+  uStack_78 = 0;
+  uStack_80 = 0;
+  uStack_a8 = 0;
+  local_b0 = 0;
+  uStack_98 = 0;
+  local_a0 = 0;
+  uStack_c8 = 0;
+  local_d0 = 0;
+  uStack_b8 = 0;
+  uStack_c0 = 0;
+  thunk_EXT_FUN_7a78da8400(*param_1,&local_d0);
+  lVar1 = local_a0;
+  if ((local_a0 < (long)param_3) ||
+     ((local_a0 < (long)(lVar4 + param_3) && ((local_a0 != 0 || ((uStack_c0 & 0xf000) == 0)))))) {
+    if (param_6 == (undefined4 *)0x0) {
+      return 0;
+    }
+    uVar2 = 10;
+  }
+  else {
+    if (lVar4 == 0) {
+      lVar4 = FUN_01944204();
+      lVar4 = ((lVar1 + lVar4) - 1U & -lVar4) - param_3;
+    }
+    lVar1 = FUN_01944204();
+    lVar4 = (param_3 - (-lVar1 & param_3)) + lVar4;
+    *param_2 = lVar4;
+    *param_5 = -lVar1 & param_3;
+    if (param_4 < 6) {
+      uVar3 = (ulong)*(uint *)(&DAT_00e1c110 + (long)(int)param_4 * 4);
+    }
+    else {
+      uVar3 = 0;
+    }
+    lVar4 = thunk_EXT_FUN_770ced3028
+                      (0,lVar4,(uint)uVar3 & 7,(uint)(uVar3 >> 3) & 2 | (uint)uVar3 >> 5,*param_1);
+    if (lVar4 != -1) {
+      return lVar4;
+    }
+    if (param_6 == (undefined4 *)0x0) {
+      return 0;
+    }
+    uVar2 = 9;
+  }
+  *param_6 = uVar2;
+  return 0;
+}
+
+/* PAPEL: Mapeia o arquivo (fd) em memória via mmap(). Retorna o endereço mapeado.
+
+   IDENTIFICAÇÕES:
+     thunk_EXT_FUN_7a78da8400(*param_1, &local_d0) = fstat(fd, &stat)
+       local_a0  = stat.st_size (tamanho do arquivo)
+       uStack_c0 = stat.st_mode (tipo/permissões)
+
+     FUN_01944204() = getpagesize() = 4096
+       Usado para alinhamento de offset e tamanho de mapeamento.
+
+     DAT_00e1c110[param_4 * 4] = tabela de prot/flags por tipo
+       uVar3 = flags combinados:
+         bits [0..2]  → prot  (PROT_READ=1, PROT_WRITE=2, PROT_EXEC=4)
+         bits [3..]   → flags (MAP_SHARED=2, MAP_PRIVATE=1 → deslocado)
+
+     thunk_EXT_FUN_770ced3028(0, size, prot, flags, fd) = mmap(NULL, size, prot, flags, fd, 0)
+       ← O FILE DESCRIPTOR DO global-metadata.dat É MAPEADO AQUI
+       ← Nosso hook em mmap64 nunca disparou porque é mmap() puro!
+       Retorno: endereço do mapeamento, ou -1 em caso de erro (errno 9 = EBADF)
+
+   CÁLCULO DO TAMANHO:
+     Se lVar4 (offset inicial) == 0:
+       lVar4 = ((st_size + pagesize - 1) & -pagesize) - param_3  ← arredonda para cima
+     lVar1 = pagesize
+     lVar4 = (param_3 - (-pagesize & param_3)) + lVar4  ← alinha offset de início
+
+   ERRO 10 = arquivo menor que o offset/tamanho requisitado
+   ERRO  9 = mmap retornou -1 (EBADF ou ENOMEM)
+
+   PARAM CALL de FUN_0192cc00:
+     param_1 = ptr para fd (do struct de file handle)
+     param_2 = &local_58 (offset solicitado = 0)
+     param_3 = 0 (offset = início do arquivo)
+     param_4 = 1 (tipo de mapeamento → busca em DAT_00e1c110[4])
+     param_5 = &local_78 (recebe o alinhamento real usado)
+     param_6 = &local_6c (recebe código de erro)
+*/

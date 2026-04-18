@@ -1,0 +1,33 @@
+bool FUN_019432e4(long *param_1,int param_2,int param_3)
+
+{
+  int iVar1;
+  bool bVar2;
+  long lVar3;
+  undefined1 auStack_28 [8];
+
+  FUN_018d5124(auStack_28,&DAT_04277da0);
+  lVar3 = DAT_04277df0;
+  if (DAT_04277df0 != 0) {
+    do {
+      if ((*(long *)(lVar3 + 0x30) == *param_1) && (*(long *)(lVar3 + 0x38) == param_1[1])) break;
+      lVar3 = *(long *)(lVar3 + 0x48);
+    } while (lVar3 != 0);
+  }
+  FUN_018d55c8(auStack_28);
+  if (lVar3 == 0) {
+    bVar2 = true;
+  }
+  else {
+    bVar2 = false;
+    if ((param_2 != 0) && (iVar1 = *(int *)(lVar3 + 0x24), iVar1 != 0)) {
+      if ((param_3 == 1) || (iVar1 != 1)) {
+        bVar2 = param_3 == 2 || iVar1 != 2;
+      }
+      else {
+        bVar2 = false;
+      }
+    }
+  }
+  return bVar2;
+}

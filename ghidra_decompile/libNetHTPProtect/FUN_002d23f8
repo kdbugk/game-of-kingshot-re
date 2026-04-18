@@ -1,0 +1,49 @@
+
+uint FUN_002d23f8(ulong param_1,ulong *param_2,ulong *param_3)
+
+{
+  long lVar1;
+  int iVar2;
+  FILE *__stream;
+  char *pcVar3;
+  uint uVar4;
+  ulong local_270;
+  ulong local_268;
+  char local_260;
+  char local_25f;
+  char local_25e;
+  char acStack_258 [512];
+  long local_58;
+  
+  lVar1 = tpidr_el0;
+  local_58 = *(long *)(lVar1 + 0x28);
+  __stream = fopen("/proc/self/maps","r");
+  if (__stream == (FILE *)0x0) {
+    uVar4 = 0xffffffff;
+    iVar2 = 0;
+  }
+  else {
+    memset(acStack_258,0,0x200);
+    pcVar3 = fgets(acStack_258,0x200,__stream);
+    while (pcVar3 != (char *)0x0) {
+      iVar2 = sscanf(acStack_258,"%lx-%lx %4s %*s %*s %*s %*s",&local_268,&local_270,&local_260);
+      if (((iVar2 == 3) && (local_268 <= param_1)) && (param_1 <= local_270)) {
+        *param_2 = local_268;
+        *param_3 = local_270;
+        uVar4 = (uint)(local_260 == 'r') | (uint)(local_25f == 'w') << 1 |
+                (uint)(local_25e == 'x') << 2;
+        goto LAB_002d2504;
+      }
+      pcVar3 = fgets(acStack_258,0x200,__stream);
+    }
+    uVar4 = 0xffffffff;
+LAB_002d2504:
+    iVar2 = fclose(__stream);
+  }
+  if (*(long *)(lVar1 + 0x28) == local_58) {
+    return uVar4;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(iVar2);
+}
+

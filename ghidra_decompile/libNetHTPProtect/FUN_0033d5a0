@@ -1,0 +1,107 @@
+
+undefined4
+FUN_0033d5a0(uint param_1,undefined4 param_2,undefined4 param_3,long param_4,long param_5,
+            long param_6,long param_7,uint param_8,uint param_9)
+
+{
+  bool bVar1;
+  long lVar2;
+  undefined4 uVar3;
+  long lVar4;
+  size_t __n;
+  undefined8 uVar5;
+  ulong uVar6;
+  void *__dest;
+  byte local_a8 [16];
+  undefined8 local_98;
+  ulong local_90;
+  size_t local_88;
+  void *local_80;
+  char local_78 [8];
+  undefined4 local_70;
+  undefined1 local_6c;
+  undefined1 local_6b;
+  long local_68;
+  
+  lVar2 = tpidr_el0;
+  local_68 = *(long *)(lVar2 + 0x28);
+  if (DAT_005a6718 != '\x01') {
+    uVar3 = 0xffffff37;
+    goto LAB_0033d844;
+  }
+  lVar4 = FUN_003595b0();
+  if (*(char *)(lVar4 + 0x239) == '\0') {
+    uVar3 = 0xffffff36;
+    goto LAB_0033d844;
+  }
+  uVar3 = 0xfffffffc;
+  if ((((param_4 == 0) || (param_5 == 0)) || (param_6 == 0)) ||
+     (((param_7 == 0 || (uVar3 = 0xfffffffc, 0x20 < param_9)) ||
+      ((1L << ((ulong)param_9 & 0x3f) & 0x1c0000004U) == 0)))) goto LAB_0033d844;
+  bVar1 = (param_8 & 1) == 0;
+  if (bVar1) {
+    local_70 = 0x6e;
+    local_6c = 0x65;
+  }
+  else {
+    local_70 = 0x74;
+    local_6c = 100;
+  }
+  local_6b = 0;
+  *(undefined1 *)((ulong)&local_70 | 5) = 0;
+  local_90 = 0;
+  local_88 = 0;
+  local_80 = (void *)0x0;
+  __n = strlen((char *)((ulong)&local_70 | 4));
+  if (0xffffffffffffffef < __n) {
+                    /* WARNING: Subroutine does not return */
+    FUN_0011fb9c(&local_90);
+  }
+  if (__n < 0x17) {
+    __dest = (void *)((ulong)&local_90 | 1);
+    local_90 = CONCAT71(local_90._1_7_,(char)(__n << 1));
+    if (__n != 0) goto LAB_0033d75c;
+  }
+  else {
+    uVar6 = __n + 0x10 & 0xfffffffffffffff0;
+    __dest = (void *)FUN_00453ddc(uVar6);
+    local_90 = uVar6 | 1;
+    local_88 = __n;
+    local_80 = __dest;
+LAB_0033d75c:
+    memcpy(__dest,(char *)((ulong)&local_70 | 4),__n);
+  }
+  *(undefined1 *)((long)__dest + __n) = 0;
+                    /* try { // try from 0033d778 to 0033d77f has its CatchHandler @ 0033d8a0 */
+  uVar5 = FUN_0035cb1c(!bVar1);
+  lVar4 = 0;
+  builtin_strncpy(local_78,"td`",4);
+  do {
+    local_78[lVar4] = local_78[lVar4] + -1;
+    lVar4 = lVar4 + 1;
+  } while (lVar4 != 3);
+                    /* try { // try from 0033d7bc to 0033d7cb has its CatchHandler @ 0033d89c */
+  FUN_0016ac54(local_a8,local_78,&local_90);
+                    /* try { // try from 0033d7cc to 0033d7d7 has its CatchHandler @ 0033d884 */
+  FUN_0035d574(uVar5,local_a8);
+  if ((local_a8[0] & 1) != 0) {
+    FUN_00453e44(local_98);
+  }
+  if ((param_8 & 1) == 0) {
+    uVar3 = FUN_0019ed9c(param_1 & 1,param_2,param_9,param_4,param_5,param_6,param_7);
+  }
+  else {
+                    /* try { // try from 0033d7ec to 0033d833 has its CatchHandler @ 0033d8a0 */
+    uVar3 = FUN_001ca50c(param_2,param_3,param_4,param_5,param_6,param_7);
+  }
+  if ((local_90 & 1) != 0) {
+    FUN_00453e44(local_80);
+  }
+LAB_0033d844:
+  if (*(long *)(lVar2 + 0x28) != local_68) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return uVar3;
+}
+

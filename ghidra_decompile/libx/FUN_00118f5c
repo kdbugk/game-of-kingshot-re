@@ -1,0 +1,65 @@
+
+void FUN_00118f5c(char *param_1,char *param_2,long param_3,undefined8 param_4)
+
+{
+  long lVar1;
+  int iVar2;
+  undefined8 uVar3;
+  undefined8 *__ptr;
+  char *pcVar4;
+  uchar *local_68;
+  ulong uStack_60;
+  ulong local_58;
+  reg_syntax_t rStack_50;
+  char *local_48;
+  
+  lVar1 = tpidr_el0;
+  local_48 = *(char **)(lVar1 + 0x28);
+  uVar3 = 0x3ea;
+  if (((param_1 != (char *)0x0) && (param_2 != (char *)0x0)) && (param_3 != 0)) {
+    if (DAT_00142ef0 == 0) {
+      iVar2 = regcomp((regex_t *)&local_68,param_1,4);
+      if (iVar2 == 0) {
+        __ptr = malloc(0x48);
+        if (__ptr == (undefined8 *)0x0) {
+          uVar3 = 0x3eb;
+        }
+        else {
+          pcVar4 = strdup(param_2);
+          __ptr[4] = pcVar4;
+          if (pcVar4 == (char *)0x0) {
+            free(__ptr);
+            uVar3 = 0x3eb;
+          }
+          else {
+            __ptr[5] = param_3;
+            __ptr[6] = param_4;
+            __ptr[1] = uStack_60;
+            *__ptr = local_68;
+            __ptr[3] = rStack_50;
+            __ptr[2] = local_58;
+            pthread_mutex_lock((pthread_mutex_t *)&DAT_00142f40);
+            __ptr[7] = 0;
+            __ptr[8] = PTR_DAT_00142df0;
+            *(undefined8 **)PTR_DAT_00142df0 = __ptr;
+            PTR_DAT_00142df0 = (undefined *)(__ptr + 7);
+            pthread_mutex_unlock((pthread_mutex_t *)&DAT_00142f40);
+            uVar3 = 0;
+          }
+        }
+        goto LAB_00118ff8;
+      }
+    }
+    else if (DAT_00142e08 < 7) {
+      __android_log_print(6,"xhook","do not register hook after refresh(): %s, %s",param_1,param_2);
+    }
+    uVar3 = 0x3ea;
+  }
+LAB_00118ff8:
+  if (*(char **)(lVar1 + 0x28) == local_48) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(uVar3);
+}
+

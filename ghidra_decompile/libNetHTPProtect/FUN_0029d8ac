@@ -1,0 +1,34 @@
+
+void FUN_0029d8ac(long *param_1,long *param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  long *plVar3;
+  
+  plVar3 = param_1 + 1;
+  if (*plVar3 == 0) {
+    if (param_2 == (long *)0x0) {
+      uVar2 = FUN_004512c4(0x10);
+                    /* try { // try from 0029d938 to 0029d943 has its CatchHandler @ 0029d97c */
+      FUN_0029d990(uVar2,&UNK_00477584);
+LAB_0029d960:
+                    /* WARNING: Subroutine does not return */
+      FUN_0045132c(uVar2,&UNK_005428f0,FUN_00453f0c);
+    }
+    iVar1 = (**(code **)(*param_2 + 0x30))(param_2,plVar3,0x10006);
+    if (iVar1 != 0) {
+      iVar1 = (**(code **)(*param_2 + 0x20))(param_2,plVar3,0);
+      if (iVar1 != 0) {
+        uVar2 = FUN_004512c4(0x10);
+                    /* try { // try from 0029d954 to 0029d95f has its CatchHandler @ 0029d978 */
+        FUN_0029d990(uVar2,&UNK_00477598);
+        goto LAB_0029d960;
+      }
+      *(undefined1 *)(param_1 + 2) = 1;
+    }
+    *param_1 = (long)param_2;
+  }
+  return;
+}
+

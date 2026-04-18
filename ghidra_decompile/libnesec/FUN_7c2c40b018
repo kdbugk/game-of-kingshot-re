@@ -1,0 +1,31 @@
+
+undefined8
+FUN_7c2c40b018(undefined8 param_1,undefined8 param_2,undefined8 param_3,ulong *param_4,char *par am_5
+              ,int *param_6,undefined8 param_7,undefined8 param_8)
+
+{
+  ulong uVar1;
+  undefined8 uVar2;
+  code *UNRECOVERED_JUMPTABLE;
+  undefined1 auVar3 [16];
+  
+  auVar3 = FUN_7c2c4281f0();
+  uVar1 = FUN_7c2c40a834(auVar3._0_8_,auVar3._8_8_,param_3,param_4,param_5,param_6,param_7,param _8);
+  if ((uVar1 & 1) != 0) {
+    auVar3 = FUN_7c2c424aa0();
+    auVar3 = FUN_7c2c40a834(auVar3._0_8_,auVar3._8_8_,param_3,param_4,param_5,param_6,param_7,
+                            param_8);
+    if (((auVar3._0_8_ & 1) != 0) &&
+       (uVar1 = FUN_7c2c40ab2c(param_1,auVar3._8_8_,param_3,param_4,param_5,param_6,param_7,para m_8)
+       , (uVar1 & 1) != 0)) {
+      UNRECOVERED_JUMPTABLE = DAT_7c2c43beb0;
+      FUN_7c2c423888();
+                    /* WARNING: Could not recover jumptable at 0x007c2c40b078. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      uVar2 = (*UNRECOVERED_JUMPTABLE)();
+      return uVar2;
+    }
+  }
+  return 0;
+}
+

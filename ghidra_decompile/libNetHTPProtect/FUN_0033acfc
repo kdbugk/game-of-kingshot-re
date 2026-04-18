@@ -1,0 +1,73 @@
+
+undefined8
+FUN_0033acfc(long *param_1,undefined8 param_2,long param_3,ulong param_4,uint param_5,char param_6,
+            ulong param_7,ulong param_8)
+
+{
+  long lVar1;
+  int iVar2;
+  undefined8 ***pppuVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  ulong uVar6;
+  int *piVar7;
+  ulong uVar8;
+  code *pcVar9;
+  int *local_80;
+  ulong local_78;
+  int local_70;
+  undefined1 local_6c;
+  long local_68;
+  
+  lVar1 = tpidr_el0;
+  local_68 = *(long *)(lVar1 + 0x28);
+  local_80 = (int *)0x0;
+  local_78 = 0;
+  local_6c = 0;
+  local_70 = 0;
+  if (param_3 == 0) {
+    local_70 = -4;
+  }
+  else {
+    uVar6 = param_7;
+    uVar8 = param_8;
+    iVar2 = (**(code **)(*param_1 + 0x558))(param_1,param_3);
+    pppuVar3 = (undefined8 ***)(**(code **)(*param_1 + 0x5c0))(param_1,param_3,0);
+    if (param_5 == 0xffffd8f1) {
+      iVar2 = FUN_0033d8bc(param_4 & 0xffffffff,(ulong *)pppuVar3,(long)iVar2,
+                           (undefined1 **)&local_80,&local_78,param_7 & 0xffffffff,uVar6,uVar8);
+    }
+    else {
+      iVar2 = FUN_0033d5a0((ulong)((param_8 & 0xff) != 0),param_4 & 0xffffffff,(ulong)param_5,
+                           pppuVar3,(undefined **)(long)iVar2,(undefined **)&local_80,&local_78,
+                           (ulong)(param_6 != '\0'),(uint)param_7);
+    }
+    (**(code **)(*param_1 + 0x600))(param_1,param_3,pppuVar3,0);
+    local_70 = iVar2;
+    if (-1 < iVar2) {
+      uVar4 = (**(code **)(*param_1 + 0x580))(param_1,(int)local_78 + 4);
+      (**(code **)(*param_1 + 0x680))(param_1,uVar4,0,4,&local_70);
+      uVar6 = local_78 & 0xffffffff;
+      uVar5 = 4;
+      pcVar9 = *(code **)(*param_1 + 0x680);
+      piVar7 = local_80;
+      goto LAB_0033aea8;
+    }
+  }
+  uVar4 = (**(code **)(*param_1 + 0x580))(param_1,4);
+  uVar6 = 4;
+  piVar7 = &local_70;
+  pcVar9 = *(code **)(*param_1 + 0x680);
+  uVar5 = 0;
+LAB_0033aea8:
+  (*pcVar9)(param_1,uVar4,uVar5,uVar6,piVar7);
+  if (local_80 != (int *)0x0) {
+    (**(code **)(DAT_005a62e8 + 0x168))();
+  }
+  if (*(long *)(lVar1 + 0x28) == local_68) {
+    return uVar4;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail();
+}
+

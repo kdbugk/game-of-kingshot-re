@@ -1,0 +1,17 @@
+
+undefined8 * FUN_003811bc(void)
+
+{
+  int iVar1;
+  
+  if (((DAT_005a6ef0 & 1) == 0) && (iVar1 = FUN_00451a44(&DAT_005a6ef0), iVar1 != 0)) {
+                    /* try { // try from 003811fc to 00381203 has its CatchHandler @ 00381238 */
+    DAT_005a6ee8 = (undefined8 *)FUN_00453ddc(0x20);
+    DAT_005a6ee8[1] = 0;
+    *(undefined8 *)((long)DAT_005a6ee8 + 0x14) = 0;
+    *DAT_005a6ee8 = &PTR_FUN_00545550;
+    FUN_00451b00(&DAT_005a6ef0);
+  }
+  return DAT_005a6ee8;
+}
+

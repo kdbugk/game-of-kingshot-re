@@ -1,0 +1,58 @@
+
+int oOOoo0Oo0000o0OO(uint param_1,ulong param_2,ulong param_3,undefined8 ***param_4,
+                    undefined **param_5,long *param_6,ulong *param_7)
+
+{
+  long lVar1;
+  int iVar2;
+  ulong uVar3;
+  long lVar4;
+  size_t local_58;
+  undefined *local_50;
+  long local_48;
+  
+  lVar1 = tpidr_el0;
+  local_48 = *(long *)(lVar1 + 0x28);
+  iVar2 = -4;
+  if ((((param_4 != (undefined8 ***)0x0) && (param_5 != (undefined **)0x0)) &&
+      (param_6 != (long *)0x0)) && (param_7 != (ulong *)0x0)) {
+    local_58 = 0;
+    local_50 = (undefined *)0x0;
+    iVar2 = FUN_0033d5a0((ulong)(param_1 & 1),param_3 & 0xffffffff,0,param_4,param_5,&local_50,
+                         &local_58,0,0x1e);
+    if (iVar2 == 0) {
+      uVar3 = local_58;
+      if ((param_2 & 1) != 0) {
+        uVar3 = (local_58 + 2) / 3 << 2 | 1;
+      }
+      *param_7 = uVar3;
+      lVar4 = (**(code **)(DAT_005a62e8 + 0x160))();
+      *param_6 = lVar4;
+      if (lVar4 == 0) {
+        iVar2 = -0x62;
+      }
+      else {
+        (**(code **)(DAT_005a62e8 + 0x150))(lVar4,0,*param_7);
+        if ((param_2 & 1) == 0) {
+          (**(code **)(DAT_005a62e8 + 0x180))(*param_6,local_50,local_58);
+          iVar2 = 0;
+        }
+        else {
+          FUN_00337a74((long)local_50,local_58,*param_6);
+          iVar2 = 0;
+          *param_7 = ((local_58 + 2) / 3 & 0x3fffffff) << 2 | 1;
+        }
+      }
+    }
+    if (local_50 != (undefined *)0x0) {
+      (**(code **)(DAT_005a62e8 + 0x168))();
+      local_50 = (undefined *)0x0;
+    }
+  }
+  if (*(long *)(lVar1 + 0x28) == local_48) {
+    return iVar2;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail();
+}
+

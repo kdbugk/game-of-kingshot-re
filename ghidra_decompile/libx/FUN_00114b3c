@@ -1,0 +1,81 @@
+
+void FUN_00114b3c(undefined8 param_1,long param_2)
+
+{
+  long lVar1;
+  uint uVar2;
+  uint uVar3;
+  undefined4 uVar4;
+  uint uVar5;
+  ulong uVar6;
+  long lVar7;
+  timeval local_a8;
+  undefined8 local_98;
+  undefined8 local_90;
+  undefined4 local_88;
+  undefined4 local_84;
+  uint local_80;
+  undefined4 local_7c;
+  ulong local_78;
+  long local_70;
+  undefined4 local_68;
+  undefined4 local_64;
+  undefined4 local_60;
+  undefined4 local_5c;
+  long local_58;
+  
+  lVar1 = tpidr_el0;
+  local_58 = *(long *)(lVar1 + 0x28);
+  uVar6 = (*DAT_00142e68)();
+  if (((DAT_00142dd0 & 1) != 0) && (param_2 != 0)) {
+    uVar2 = AMotionEvent_getAction(param_2);
+    uVar3 = AInputEvent_getDeviceId(param_2);
+    uVar4 = AInputEvent_getSource(param_2);
+    local_a8.tv_sec = 0;
+    local_a8.tv_usec = 0;
+    uVar5 = gettimeofday(&local_a8,(__timezone_ptr_t)0x0);
+    uVar6 = (ulong)uVar5;
+    lVar7 = local_a8.tv_usec / 1000 + local_a8.tv_sec * 1000;
+    if (((uVar2 & 0xff) != 2) || ((long)DAT_00142dd4 < lVar7 - DAT_00142e70)) {
+      uVar5 = uVar2 >> 8 & 0xff;
+      local_78 = (ulong)uVar3;
+      local_80 = uVar2 & 0xff;
+      local_7c = uVar4;
+      uVar4 = AMotionEvent_getX(param_2,uVar5);
+      local_a8.tv_sec = CONCAT44(local_a8.tv_sec._4_4_,uVar4);
+      uVar4 = AMotionEvent_getY(param_2,uVar5);
+      local_a8.tv_sec = CONCAT44(uVar4,(undefined4)local_a8.tv_sec);
+      local_84 = AMotionEvent_getToolType(param_2,uVar5);
+      local_88 = AMotionEvent_getPointerId(param_2,uVar5);
+      uVar4 = AMotionEvent_getPressure(param_2,uVar5);
+      local_a8.tv_usec = CONCAT44(local_a8.tv_usec._4_4_,uVar4);
+      uVar4 = AMotionEvent_getSize(param_2,uVar5);
+      local_a8.tv_usec = CONCAT44(uVar4,(undefined4)local_a8.tv_usec);
+      local_60 = AMotionEvent_getFlags(param_2);
+      local_5c = AMotionEvent_getPointerCount(param_2);
+      local_68 = AMotionEvent_getXPrecision(param_2);
+      local_64 = AMotionEvent_getYPrecision(param_2);
+      local_98 = AMotionEvent_getDownTime(param_2);
+      local_90 = AMotionEvent_getEventTime(param_2);
+      local_70 = lVar7;
+      FUN_0011b908(&DAT_00142eb0);
+      if ((DAT_00142ee0 - DAT_00142ed8 >> 4) * -0x3333333333333333 - DAT_00142e78 == 0) {
+        uVar6 = FUN_0011b934(&DAT_00142eb0);
+        DAT_00142e70 = lVar7;
+      }
+      else {
+                    /* try { // try from 00114d18 to 00114d27 has its CatchHandler @ 00114d74 */
+        FUN_00118d54(&DAT_00142ed8,&local_a8);
+        FUN_0011b934(&DAT_00142eb0);
+        uVar6 = FUN_0011b85c(&DAT_00142e80);
+        DAT_00142e70 = lVar7;
+      }
+    }
+  }
+  if (*(long *)(lVar1 + 0x28) != local_58) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(uVar6);
+  }
+  return;
+}
+

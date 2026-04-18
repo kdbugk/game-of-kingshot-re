@@ -1,0 +1,84 @@
+
+void FUN_001190a8(int param_1)
+
+{
+  long lVar1;
+  int iVar2;
+  undefined8 uVar3;
+  pthread_mutex_t *__mutex;
+  code *local_60;
+  ulong local_48;
+  
+  lVar1 = tpidr_el0;
+  local_48 = *(ulong *)(lVar1 + 0x28);
+  if (DAT_00142ef0 == 0) {
+    iVar2 = pthread_mutex_lock((pthread_mutex_t *)&DAT_00142f40);
+    if (DAT_00142ef0 == 0) {
+      DAT_00142ef0 = 1;
+      if (DAT_00142e08 < 5) {
+        uVar3 = FUN_0011b850(iVar2);
+        __android_log_print(4,"xhook",&DAT_0010b358,uVar3);
+      }
+      if (DAT_00142de0 == 0) {
+LAB_00119180:
+        DAT_00142ef4 = 1;
+      }
+      else {
+        iVar2 = sigemptyset((sigset_t *)&stack0xffffffffffffffa8);
+        if (iVar2 == 0) {
+          local_60 = FUN_00119958;
+          iVar2 = sigaction(0xb,(sigaction *)&stack0xffffffffffffff98,(sigaction *)&DAT_00142f20);
+          if (iVar2 == 0) goto LAB_00119180;
+        }
+      }
+    }
+    pthread_mutex_unlock((pthread_mutex_t *)&DAT_00142f40);
+  }
+  if (DAT_00142ef4 == 0) {
+LAB_00119240:
+    uVar3 = 0x3e9;
+    if (*(ulong *)(lVar1 + 0x28) != local_48) {
+LAB_00119210:
+                    /* WARNING: Subroutine does not return */
+      __stack_chk_fail(uVar3);
+    }
+  }
+  else {
+    if (param_1 == 0) {
+      __mutex = (pthread_mutex_t *)&DAT_00142f68;
+      iVar2 = pthread_mutex_lock((pthread_mutex_t *)&DAT_00142f68);
+      FUN_00119a5c(iVar2);
+    }
+    else {
+      if (DAT_00142f04 == 0) {
+        pthread_mutex_lock((pthread_mutex_t *)&DAT_00142f40);
+        if (DAT_00142f04 == 0) {
+          DAT_00142f04 = 1;
+          DAT_00142f00 = 1;
+          iVar2 = pthread_create(&DAT_00142f10,(pthread_attr_t *)0x0,FUN_00119994,(void *)0x0);
+          if (iVar2 == 0) {
+            DAT_00142ef8 = 1;
+            pthread_mutex_unlock((pthread_mutex_t *)&DAT_00142f40);
+          }
+          else {
+            DAT_00142f00 = 0;
+            pthread_mutex_unlock((pthread_mutex_t *)&DAT_00142f40);
+          }
+        }
+        else {
+          pthread_mutex_unlock((pthread_mutex_t *)&DAT_00142f40);
+        }
+      }
+      if (DAT_00142ef8 == 0) goto LAB_00119240;
+      __mutex = (pthread_mutex_t *)&DAT_00142f40;
+      pthread_mutex_lock((pthread_mutex_t *)&DAT_00142f40);
+      DAT_00142efc = 1;
+      pthread_cond_signal((pthread_cond_t *)&DAT_00142f90);
+    }
+    pthread_mutex_unlock(__mutex);
+    uVar3 = 0;
+    if (*(ulong *)(lVar1 + 0x28) != local_48) goto LAB_00119210;
+  }
+  return;
+}
+

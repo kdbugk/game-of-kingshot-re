@@ -1,0 +1,18 @@
+
+undefined8 FUN_0035cb1c(void)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  
+  if (((DAT_005a6788 & 1) == 0) && (iVar1 = FUN_00451a44(&DAT_005a6788), iVar1 != 0)) {
+                    /* try { // try from 0035cb5c to 0035cb67 has its CatchHandler @ 0035cb98 */
+    uVar2 = FUN_00453ddc(0x228);
+                    /* try { // try from 0035cb68 to 0035cb6f has its CatchHandler @ 0035cb88 */
+    FUN_0035c948(uVar2);
+    DAT_005a6780 = uVar2;
+    FUN_00451b00(&DAT_005a6788);
+  }
+  return DAT_005a6780;
+}
+

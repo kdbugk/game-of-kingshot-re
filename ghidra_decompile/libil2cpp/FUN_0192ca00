@@ -1,0 +1,11 @@
+void FUN_0192ca00(undefined8 param_1)
+
+{
+  FUN_0192cc00(param_1,0,0,1);
+  return;
+}
+
+/* PAPEL: Wrapper fino — delega direto para FUN_0192cc00(param_1, 0, 0, 1).
+   Chamada sem argumentos explícitos em FUN_0194b9d8; param_1 pode ser artefato
+   do Ghidra (x0 residual). Toda a lógica está em FUN_0192cc00.
+*/

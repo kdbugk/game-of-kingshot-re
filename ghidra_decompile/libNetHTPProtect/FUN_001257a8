@@ -1,0 +1,1457 @@
+
+void FUN_001257a8(void)
+
+{
+  ulong uVar1;
+  byte bVar2;
+  long lVar3;
+  bool bVar4;
+  undefined1 *puVar5;
+  byte *pbVar6;
+  byte bVar7;
+  byte bVar8;
+  int iVar9;
+  undefined4 uVar10;
+  long *plVar11;
+  undefined8 uVar12;
+  size_t sVar13;
+  undefined8 uVar14;
+  long lVar15;
+  code *pcVar16;
+  char *__s;
+  void *pvVar17;
+  ulong uVar18;
+  undefined1 auStack_2e8 [23];
+  byte local_2d1;
+  undefined1 auStack_2d0 [23];
+  byte local_2b9;
+  undefined1 auStack_2b8 [23];
+  byte local_2a1;
+  ulong local_2a0;
+  ulong uStack_298;
+  undefined1 *local_290;
+  byte local_288 [8];
+  ulong local_280;
+  undefined8 local_278;
+  int local_270 [2];
+  undefined1 auStack_268 [23];
+  byte local_251;
+  undefined1 auStack_250 [23];
+  byte local_239;
+  undefined1 auStack_238 [23];
+  byte local_221;
+  undefined1 auStack_220 [23];
+  byte local_209;
+  undefined1 auStack_208 [23];
+  byte local_1f1;
+  byte local_1ec;
+  undefined4 local_1d0;
+  undefined1 local_1cc;
+  undefined1 local_1cb;
+  undefined1 local_1ca;
+  undefined1 local_1c9;
+  ulong local_1c8 [4];
+  ulong local_1a8;
+  ulong local_1a0;
+  ulong local_198;
+  byte local_188 [8];
+  ulong local_180;
+  ulong local_178;
+  ulong local_168;
+  size_t local_160;
+  void *local_158;
+  byte local_148 [8];
+  undefined8 local_140;
+  undefined8 local_138;
+  undefined4 local_128;
+  undefined1 local_124;
+  undefined1 local_123;
+  undefined1 local_122;
+  undefined1 local_121;
+  undefined1 local_120;
+  undefined1 local_11f;
+  undefined1 local_11e;
+  undefined1 local_11d;
+  undefined1 local_11c;
+  undefined1 local_11b;
+  undefined1 local_11a;
+  undefined1 local_119;
+  undefined1 local_118;
+  undefined1 local_117;
+  byte local_108 [144];
+  ulong local_78;
+  undefined8 local_70;
+  undefined8 local_68;
+  long local_58;
+  
+  lVar3 = tpidr_el0;
+  local_58 = *(long *)(lVar3 + 0x28);
+  local_2a0 = 0;
+  uStack_298 = 0;
+  local_290 = (undefined1 *)0x0;
+                    /* try { // try from 001257d8 to 001257eb has its CatchHandler @ 00127ea4 */
+  plVar11 = (long *)FUN_003673c8();
+  (**(code **)(*plVar11 + 0x30))(local_288);
+  uVar18 = (ulong)(local_288[0] >> 1);
+  if ((local_288[0] & 1) != 0) {
+    uVar18 = local_280;
+  }
+  if (uVar18 == 0) {
+    iVar9 = 0x16;
+  }
+  else {
+    local_108[0x20] = 0x43;
+    local_108[0x21] = 0;
+    local_108[0x22] = 0;
+    local_108[0x23] = 0;
+    local_108[0x24] = 0x29;
+    lVar15 = 0;
+    local_108[0x25] = 0x25;
+    local_108[0x26] = 0x33;
+    local_108[0x27] = 0x27;
+    local_108[0x28] = 0x68;
+    local_108[0x29] = 0x21;
+    local_108[0x2a] = 0x26;
+    local_108[0x2b] = 0x65;
+    local_108[0x2c] = 0xd;
+    local_108[0x2d] = 0x25;
+    local_108[0x2e] = 0x21;
+    local_108[0x2f] = 0x2b;
+    do {
+      *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) =
+           *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) ^ (char)lVar15 + 0x43U;
+      lVar15 = lVar15 + 1;
+    } while (lVar15 != 0xc);
+    local_108[0x30] = 0;
+                    /* try { // try from 00125920 to 00125927 has its CatchHandler @ 00127d08 */
+    FUN_0029ea6c(local_148);
+    local_108[0x20] = 0x42;
+    local_108[0x21] = 0;
+    local_108[0x22] = 0;
+    local_108[0x23] = 0;
+    local_108[0x24] = 0x28;
+    lVar15 = 0;
+    local_108[0x25] = 0x22;
+    local_108[0x26] = 0x32;
+    local_108[0x27] = 0x24;
+    local_108[0x28] = 0x69;
+    local_108[0x29] = 0x2b;
+    local_108[0x2a] = 0x29;
+    local_108[0x2b] = 0x27;
+    local_108[0x2c] = 0x2d;
+    local_108[0x2d] = 100;
+    local_108[0x2e] = 0x1f;
+    local_108[0x2f] = 0x39;
+    local_108[0x30] = 0x3c;
+    local_108[0x31] = 0x26;
+    local_108[0x32] = 0x3e;
+    local_108[0x33] = 0x36;
+    do {
+      *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) =
+           *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) ^ (char)lVar15 + 0x42U;
+      lVar15 = lVar15 + 1;
+    } while (lVar15 != 0x10);
+    local_108[0x34] = 0;
+                    /* try { // try from 00125a8c to 00125a93 has its CatchHandler @ 00127cfc */
+    FUN_0029ea6c(&local_168);
+    local_108[0x20] = 0x2a;
+    local_108[0x21] = 0;
+    local_108[0x22] = 0;
+    local_108[0x23] = 0;
+    local_108[0x24] = 2;
+    lVar15 = 0;
+    local_108[0x25] = 0x67;
+    local_108[0x26] = 0x46;
+    local_108[0x27] = 0x4c;
+    local_108[0x28] = 0x58;
+    local_108[0x29] = 0x4e;
+    local_108[0x2a] = 0x1f;
+    local_108[0x2b] = 0x5d;
+    local_108[0x2c] = 0x53;
+    local_108[0x2d] = 0x5d;
+    local_108[0x2e] = 0x53;
+    local_108[0x2f] = 0x1a;
+    local_108[0x30] = 0x65;
+    local_108[0x31] = 0x43;
+    local_108[0x32] = 0x4a;
+    local_108[0x33] = 0x50;
+    local_108[0x34] = 0x54;
+    local_108[0x35] = 0x5c;
+    local_108[0x36] = 7;
+    local_108[0x37] = 0x14;
+    local_108[0x38] = 0x68;
+    do {
+      *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) =
+           *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) ^ (char)lVar15 + 0x2aU;
+      lVar15 = lVar15 + 1;
+    } while (lVar15 != 0x15);
+    local_108[0x39] = 0;
+                    /* try { // try from 00125c5c to 00125c6f has its CatchHandler @ 00127cec */
+    uVar12 = FUN_0029e740(local_148,"<init>");
+                    /* try { // try from 00125c70 to 00125c7f has its CatchHandler @ 00127ce0 */
+    FUN_00128168(local_188,local_148,uVar12,local_288);
+    local_108[0x20] = 0x43;
+    local_108[0x21] = 0;
+    local_108[0x22] = 0;
+    local_108[0x23] = 0;
+    local_108[0x24] = 0x22;
+    lVar15 = 0;
+    local_108[0x25] = 0x2a;
+    local_108[0x26] = 0x21;
+    local_108[0x27] = 0x34;
+    local_108[0x28] = 0x28;
+    local_108[0x29] = 0x21;
+    local_108[0x2a] = 0x2d;
+    local_108[0x2b] = 0x65;
+    local_108[0x2c] = 0x28;
+    local_108[0x2d] = 0x23;
+    local_108[0x2e] = 0x23;
+    local_108[0x2f] = 0x3a;
+    local_108[0x30] = 0x2a;
+    local_108[0x31] = 0x3e;
+    local_108[0x32] = 0x25;
+    local_108[0x33] = 0x7d;
+    local_108[0x34] = 0x23;
+    local_108[0x35] = 0x39;
+    local_108[0x36] = 0x7a;
+    local_108[0x37] = 6;
+    local_108[0x38] = 0x36;
+    local_108[0x39] = 0x3b;
+    local_108[0x3a] = 0x32;
+    local_108[0x3b] = 0x3b;
+    local_108[0x3c] = 0x3c;
+    local_108[0x3d] = 0x39;
+    local_108[0x3e] = 0xd;
+    local_108[0x3f] = 0x3f;
+    local_108[0x40] = 0x2d;
+    local_108[0x41] = 0x13;
+    local_108[0x42] = 4;
+    local_108[0x43] = 0x10;
+    do {
+      *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) =
+           *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) ^ (char)lVar15 + 0x43U;
+      lVar15 = lVar15 + 1;
+    } while (lVar15 != 0x20);
+    local_108[0x44] = 0;
+                    /* try { // try from 00125ef4 to 00125efb has its CatchHandler @ 00127ccc */
+    FUN_0029ea6c(&local_1a8);
+    FUN_0029da9c(&local_78);
+    FUN_0029da9c(local_1c8);
+                    /* try { // try from 00125f0c to 00125f0f has its CatchHandler @ 00127cc0 */
+    iVar9 = FUN_002d0e9c();
+    if (iVar9 < 0x15) {
+      local_108[0x20] = 0x5f;
+      local_108[0x21] = 0;
+      local_108[0x22] = 0;
+      local_108[0x23] = 0;
+      local_108[0x24] = 0x77;
+      local_108[0x25] = 0x13;
+      local_108[0x26] = 0x35;
+      local_108[0x27] = 0x3e;
+      local_108[0x28] = 0x29;
+      local_108[0x29] = 0x3e;
+      local_108[0x2a] = 0x70;
+      local_108[0x2b] = 0x33;
+      local_108[0x2c] = 0x3e;
+      local_108[0x2d] = 0x31;
+      local_108[0x2e] = 0x38;
+      local_108[0x2f] = 0x70;
+      local_108[0x30] = 0xc;
+      pbVar6 = local_108 + 0x20;
+      local_108[0x31] = 0x2b;
+      local_108[0x32] = 0x2d;
+      local_108[0x33] = 0x36;
+      local_108[0x34] = 0x31;
+      local_108[0x35] = 0x38;
+      local_108[0x36] = 100;
+      lVar15 = 4;
+      local_108[0x37] = 0x76;
+      local_108[0x38] = 9;
+      local_108[0x39] = 0;
+      do {
+        pbVar6[lVar15] = pbVar6[lVar15] ^ 0x5f;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x19);
+      local_108[0x39] = 0;
+                    /* try { // try from 001262cc to 001262df has its CatchHandler @ 00127cb0 */
+      uVar12 = FUN_0029e740(&local_1a8,"<init>",(ulong)pbVar6 | 4);
+                    /* try { // try from 001262e0 to 001262ef has its CatchHandler @ 00127ca8 */
+      FUN_00128168(local_108 + 0x20,&local_1a8,uVar12,local_288);
+                    /* try { // try from 001262f0 to 001262fb has its CatchHandler @ 00127c90 */
+      FUN_0029dd50(&local_78,local_108 + 0x20);
+      FUN_0029fb64(local_108 + 0x20);
+      local_108[0] = 0x79;
+      local_108[1] = 0x6a;
+      local_108[2] = 0x7b;
+      local_108[3] = 0x7c;
+      local_108[4] = 0x6e;
+      local_108[5] = 0x59;
+      local_108[6] = 0x6a;
+      local_108[7] = 0x6c;
+      local_108[8] = 0x74;
+      lVar15 = 0;
+      local_108[9] = 0x6a;
+      local_108[10] = 0x70;
+      local_108[0xb] = 0x6e;
+      local_108[0xc] = 0;
+      do {
+        local_108[lVar15] = local_108[lVar15] - 9;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0xc);
+      local_108[0x20] = 0x2f;
+      local_108[0x21] = 0x53;
+      local_108[0x22] = 0x71;
+      local_108[0x23] = 0x68;
+      local_108[0x24] = 0x7d;
+      local_108[0x25] = 0x68;
+      local_108[0x26] = 0x36;
+      local_108[0x27] = 0x70;
+      local_108[0x28] = 0x76;
+      local_108[0x29] = 0x36;
+      local_108[0x2a] = 0x4d;
+      local_108[0x2b] = 0x70;
+      local_108[0x2c] = 0x73;
+      local_108[0x2d] = 0x6c;
+      local_108[0x2e] = 0x42;
+      local_108[0x2f] = 0x53;
+      local_108[0x30] = 0x71;
+      local_108[0x31] = 0x68;
+      local_108[0x32] = 0x7d;
+      local_108[0x33] = 0x68;
+      local_108[0x34] = 0x36;
+      local_108[0x35] = 0x73;
+      local_108[0x36] = 0x68;
+      local_108[0x37] = 0x75;
+      local_108[0x38] = 0x6e;
+      local_108[0x39] = 0x36;
+      local_108[0x3a] = 0x5a;
+      local_108[0x3b] = 0x7b;
+      local_108[0x3c] = 0x79;
+      local_108[0x3d] = 0x70;
+      local_108[0x3e] = 0x75;
+      local_108[0x3f] = 0x6e;
+      local_108[0x40] = 0x42;
+      local_108[0x41] = 0x53;
+      local_108[0x42] = 0x68;
+      local_108[0x43] = 0x75;
+      local_108[0x44] = 0x6b;
+      local_108[0x45] = 0x79;
+      local_108[0x46] = 0x76;
+      local_108[0x47] = 0x70;
+      local_108[0x48] = 0x6b;
+      local_108[0x49] = 0x36;
+      local_108[0x4a] = 0x7c;
+      local_108[0x4b] = 0x7b;
+      local_108[0x4c] = 0x70;
+      local_108[0x4d] = 0x73;
+      local_108[0x4e] = 0x36;
+      local_108[0x4f] = 0x4b;
+      local_108[0x50] = 0x70;
+      local_108[0x51] = 0x7a;
+      local_108[0x52] = 0x77;
+      local_108[0x53] = 0x73;
+      local_108[0x54] = 0x68;
+      local_108[0x55] = 0x80;
+      local_108[0x56] = 0x54;
+      local_108[0x57] = 0x6c;
+      local_108[0x58] = 0x7b;
+      local_108[0x59] = 0x79;
+      local_108[0x5a] = 0x70;
+      local_108[0x5b] = 0x6a;
+      local_108[0x5c] = 0x7a;
+      local_108[0x5d] = 0x42;
+      local_108[0x5e] = 0x50;
+      local_108[0x5f] = 0x30;
+      local_108[0x60] = 0x53;
+      local_108[0x61] = 0x68;
+      local_108[0x62] = 0x75;
+      local_108[99] = 0x6b;
+      local_108[100] = 0x79;
+      local_108[0x65] = 0x76;
+      local_108[0x66] = 0x70;
+      local_108[0x67] = 0x6b;
+      local_108[0x68] = 0x36;
+      local_108[0x69] = 0x6a;
+      local_108[0x6a] = 0x76;
+      lVar15 = 0;
+      local_108[0x6b] = 0x75;
+      local_108[0x6c] = 0x7b;
+      local_108[0x6d] = 0x6c;
+      local_108[0x6e] = 0x75;
+      local_108[0x6f] = 0x7b;
+      local_108[0x70] = 0x36;
+      local_108[0x71] = 0x77;
+      local_108[0x72] = 0x74;
+      local_108[0x73] = 0x36;
+      local_108[0x74] = 0x57;
+      local_108[0x75] = 0x68;
+      local_108[0x76] = 0x6a;
+      local_108[0x77] = 0x72;
+      local_108[0x78] = 0x68;
+      local_108[0x79] = 0x6e;
+      local_108[0x7a] = 0x6c;
+      local_108[0x7b] = 0x57;
+      local_108[0x7c] = 0x68;
+      local_108[0x7d] = 0x79;
+      local_108[0x7e] = 0x7a;
+      local_108[0x7f] = 0x6c;
+      local_108[0x80] = 0x79;
+      local_108[0x81] = 0x2b;
+      local_108[0x82] = 0x57;
+      local_108[0x83] = 0x68;
+      local_108[0x84] = 0x6a;
+      local_108[0x85] = 0x72;
+      local_108[0x86] = 0x68;
+      local_108[0x87] = 0x6e;
+      local_108[0x88] = 0x6c;
+      local_108[0x89] = 0x42;
+      local_108[0x8a] = 0;
+      do {
+        local_108[lVar15 + 0x20] = local_108[lVar15 + 0x20] - 7;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x6a);
+                    /* try { // try from 001265c4 to 001265db has its CatchHandler @ 00127c88 */
+      uVar12 = FUN_0029e740(&local_1a8,local_108,local_108 + 0x20);
+      local_108[0] = 0x5a;
+      local_108[1] = 0;
+      local_108[2] = 0;
+      local_108[3] = 0;
+      local_108[4] = 0x3b;
+      local_108[5] = 0x34;
+      local_108[6] = 0x3e;
+      local_108[7] = 0x28;
+      local_108[8] = 0x35;
+      local_108[9] = 0x33;
+      local_108[10] = 0x3e;
+      local_108[0xb] = 0x75;
+      local_108[0xc] = 0x2f;
+      local_108[0xd] = 0x2e;
+      local_108[0xe] = 0x33;
+      local_108[0xf] = 0x36;
+      local_108[0x10] = 0x75;
+      local_108[0x11] = 0x1e;
+      local_108[0x12] = 0x33;
+      local_108[0x13] = 0x29;
+      local_108[0x14] = 0x2a;
+      local_108[0x15] = 0x36;
+      local_108[0x16] = 0x3b;
+      local_108[0x17] = 0x23;
+      local_108[0x18] = 0x17;
+      local_108[0x19] = 0x3f;
+      local_108[0x1a] = 0x2e;
+      local_108[0x1b] = 0x28;
+      local_108[0x1c] = 0x33;
+      local_108[0x1d] = 0x39;
+      local_108[0x1e] = 0x29;
+      lVar15 = 4;
+      do {
+        local_108[lVar15] = local_108[lVar15] ^ 0x5a;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x1f);
+      local_108[0x1f] = 0;
+                    /* try { // try from 001266c0 to 001266c7 has its CatchHandler @ 00127c80 */
+      FUN_0029ea6c(local_108 + 0x20,(ulong)local_108 | 4);
+                    /* try { // try from 001266c8 to 001266d3 has its CatchHandler @ 00127c68 */
+      FUN_0029eb40(local_108,local_108 + 0x20);
+      local_128 = 0x3a;
+      local_124 = 0x49;
+      local_123 = 0x5f;
+      local_122 = 0x4e;
+      local_121 = 0x6e;
+      local_120 = 0x55;
+      local_11f = 0x7e;
+      local_11e = 0x5f;
+      local_11d = 0x5c;
+      local_11c = 0x5b;
+      lVar15 = 0;
+      local_11b = 0x4f;
+      local_11a = 0x56;
+      local_119 = 0x4e;
+      local_118 = 0x49;
+      do {
+        *(byte *)(((ulong)&local_128 | 4) + lVar15) =
+             *(byte *)(((ulong)&local_128 | 4) + lVar15) ^ 0x3a;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0xd);
+      lVar15 = 0;
+      local_117 = 0;
+      local_1d0 = 6;
+      local_1cc = 0x2e;
+      local_1cb = 0x2f;
+      local_1ca = 0x50;
+      do {
+        *(byte *)(((ulong)&local_1d0 | 4) + lVar15) =
+             *(byte *)(((ulong)&local_1d0 | 4) + lVar15) ^ 6;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 3);
+      local_1c9 = 0;
+                    /* try { // try from 001267b8 to 001267c3 has its CatchHandler @ 00127c54 */
+      uVar14 = FUN_0029e740(local_108 + 0x20);
+                    /* try { // try from 001267c4 to 001267cf has its CatchHandler @ 00127c50 */
+      FUN_0029dde4(local_108,uVar14,0);
+      local_1d0 = 0x40;
+                    /* try { // try from 001267d8 to 001267f7 has its CatchHandler @ 00127c4c */
+      FUN_001282a0(&local_128,&local_78,uVar12,local_188,local_288,local_108,&local_1d0);
+                    /* try { // try from 001267f8 to 00126803 has its CatchHandler @ 00127c38 */
+      FUN_0029dd50(local_1c8,&local_128);
+      FUN_0029fb64(&local_128);
+      FUN_0029fb64(local_108);
+      FUN_0029fb64(local_108 + 0x20);
+    }
+    else {
+      lVar15 = 0;
+      local_108[0x20] = 8;
+      local_108[0x21] = 0;
+      local_108[0x22] = 0;
+      local_108[0x23] = 0;
+      local_108[0x24] = 0x20;
+      local_108[0x25] = 0x21;
+      local_108[0x26] = 0x5e;
+      do {
+        *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) =
+             *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) ^ 8;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 3);
+      local_108[0x27] = 0;
+                    /* try { // try from 00125f68 to 00125f7b has its CatchHandler @ 00127cb4 */
+      uVar12 = FUN_0029e740(&local_1a8,"<init>");
+                    /* try { // try from 00125f7c to 00125f8b has its CatchHandler @ 00127cac */
+      FUN_0029f35c(local_108 + 0x20,&local_1a8,uVar12,local_108);
+                    /* try { // try from 00125f8c to 00125f97 has its CatchHandler @ 00127c94 */
+      FUN_0029dd50(&local_78,local_108 + 0x20);
+      FUN_0029fb64(local_108 + 0x20);
+      local_108[0] = 0x4f;
+      local_108[1] = 0;
+      local_108[2] = 0;
+      local_108[3] = 0;
+      local_108[4] = 0x3f;
+      local_108[5] = 0x2e;
+      local_108[6] = 0x3d;
+      local_108[7] = 0x3c;
+      local_108[8] = 0x2a;
+      local_108[9] = 0x1f;
+      local_108[10] = 0x2e;
+      local_108[0xb] = 0x2c;
+      local_108[0xc] = 0x24;
+      local_108[0xd] = 0x2e;
+      local_108[0xe] = 0x28;
+      lVar15 = 4;
+      local_108[0xf] = 0x2a;
+      local_108[0x10] = 0;
+      do {
+        local_108[lVar15] = local_108[lVar15] ^ 0x4f;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x10);
+      local_108[0x10] = 0;
+      local_108[0x20] = 0x17;
+      local_108[0x21] = 0;
+      local_108[0x22] = 0;
+      local_108[0x23] = 0;
+      local_108[0x24] = 0x3f;
+      local_108[0x25] = 0x5b;
+      local_108[0x26] = 0x7d;
+      local_108[0x27] = 0x76;
+      local_108[0x28] = 0x61;
+      local_108[0x29] = 0x76;
+      local_108[0x2a] = 0x38;
+      local_108[0x2b] = 0x7e;
+      local_108[0x2c] = 0x78;
+      local_108[0x2d] = 0x38;
+      local_108[0x2e] = 0x51;
+      local_108[0x2f] = 0x7e;
+      local_108[0x30] = 0x7b;
+      local_108[0x31] = 0x72;
+      local_108[0x32] = 0x2c;
+      local_108[0x33] = 0x5e;
+      local_108[0x34] = 0x3e;
+      local_108[0x35] = 0x5b;
+      local_108[0x36] = 0x76;
+      local_108[0x37] = 0x79;
+      local_108[0x38] = 0x73;
+      local_108[0x39] = 0x65;
+      local_108[0x3a] = 0x78;
+      local_108[0x3b] = 0x7e;
+      local_108[0x3c] = 0x73;
+      local_108[0x3d] = 0x38;
+      local_108[0x3e] = 0x74;
+      local_108[0x3f] = 0x78;
+      pbVar6 = local_108 + 0x20;
+      local_108[0x40] = 0x79;
+      local_108[0x41] = 99;
+      local_108[0x42] = 0x72;
+      local_108[0x43] = 0x79;
+      local_108[0x44] = 99;
+      local_108[0x45] = 0x38;
+      local_108[0x46] = 0x67;
+      local_108[0x47] = 0x7a;
+      local_108[0x48] = 0x38;
+      local_108[0x49] = 0x47;
+      local_108[0x4a] = 0x76;
+      local_108[0x4b] = 0x74;
+      local_108[0x4c] = 0x7c;
+      local_108[0x4d] = 0x76;
+      local_108[0x4e] = 0x70;
+      local_108[0x4f] = 0x72;
+      local_108[0x50] = 0x47;
+      local_108[0x51] = 0x76;
+      local_108[0x52] = 0x65;
+      local_108[0x53] = 100;
+      local_108[0x54] = 0x72;
+      local_108[0x55] = 0x65;
+      local_108[0x56] = 0x33;
+      local_108[0x57] = 0x47;
+      local_108[0x58] = 0x76;
+      local_108[0x59] = 0x74;
+      local_108[0x5a] = 0x7c;
+      local_108[0x5b] = 0x76;
+      lVar15 = 4;
+      local_108[0x5c] = 0x70;
+      local_108[0x5d] = 0x72;
+      local_108[0x5e] = 0x2c;
+      local_108[0x5f] = 0;
+      do {
+        pbVar6[lVar15] = pbVar6[lVar15] ^ 0x17;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x3f);
+      local_108[0x5f] = 0;
+                    /* try { // try from 001261b8 to 001261c3 has its CatchHandler @ 00127c8c */
+      uVar12 = FUN_0029e740(&local_1a8,(ulong)local_108 | 4,(ulong)pbVar6 | 4);
+      local_108[0] = 0x40;
+      local_108[1] = 0;
+      local_108[2] = 0;
+      local_108[3] = 0;
+                    /* try { // try from 001261cc to 001261df has its CatchHandler @ 00127c84 */
+      FUN_00128204(local_108 + 0x20,&local_78,uVar12,local_188,local_108);
+                    /* try { // try from 001261e0 to 001261eb has its CatchHandler @ 00127c7c */
+      FUN_0029dd50(local_1c8,local_108 + 0x20);
+      FUN_0029fb64(local_108 + 0x20);
+    }
+                    /* try { // try from 0012681c to 0012681f has its CatchHandler @ 00127d64 */
+    iVar9 = FUN_002d0e9c();
+    if (iVar9 < 0x1c) {
+                    /* try { // try from 00126a34 to 00126a37 has its CatchHandler @ 00127d64 */
+      iVar9 = FUN_002d0e9c();
+      if (iVar9 < 0x18) {
+                    /* try { // try from 00126c50 to 00126c53 has its CatchHandler @ 00127d64 */
+        iVar9 = FUN_002d0e9c();
+        if (0x14 < iVar9) {
+          local_108[0] = 0x48;
+          local_108[1] = 0;
+          local_108[2] = 0;
+          local_108[3] = 0;
+          local_108[4] = 0x2b;
+          local_108[5] = 0x27;
+          local_108[6] = 0x24;
+          local_108[7] = 0x24;
+          local_108[8] = 0x2d;
+          local_108[9] = 0x2b;
+          local_108[10] = 0x3c;
+          local_108[0xb] = 0xb;
+          local_108[0xc] = 0x2d;
+          local_108[0xd] = 0x3a;
+          local_108[0xe] = 0x3c;
+          local_108[0xf] = 0x21;
+          local_108[0x10] = 0x2e;
+          local_108[0x11] = 0x21;
+          local_108[0x12] = 0x2b;
+          local_108[0x13] = 0x29;
+          local_108[0x14] = 0x3c;
+          local_108[0x15] = 0x2d;
+          local_108[0x16] = 0x3b;
+          lVar15 = 4;
+          local_108[0x17] = 0;
+          do {
+            local_108[lVar15] = local_108[lVar15] ^ 0x48;
+            lVar15 = lVar15 + 1;
+          } while (lVar15 != 0x17);
+          local_108[0x17] = 0;
+          local_108[0x20] = 0x2e;
+          local_108[0x21] = 0x52;
+          local_108[0x22] = 0x67;
+          local_108[0x23] = 0x74;
+          local_108[0x24] = 0x6a;
+          local_108[0x25] = 0x78;
+          local_108[0x26] = 0x75;
+          local_108[0x27] = 0x6f;
+          local_108[0x28] = 0x6a;
+          local_108[0x29] = 0x35;
+          local_108[0x2a] = 0x69;
+          local_108[0x2b] = 0x75;
+          local_108[0x2c] = 0x74;
+          local_108[0x2d] = 0x7a;
+          local_108[0x2e] = 0x6b;
+          local_108[0x2f] = 0x74;
+          local_108[0x30] = 0x7a;
+          local_108[0x31] = 0x35;
+          local_108[0x32] = 0x76;
+          local_108[0x33] = 0x73;
+          local_108[0x34] = 0x35;
+          local_108[0x35] = 0x56;
+          local_108[0x36] = 0x67;
+          local_108[0x37] = 0x69;
+          local_108[0x38] = 0x71;
+          local_108[0x39] = 0x67;
+          local_108[0x3a] = 0x6d;
+          local_108[0x3b] = 0x6b;
+          local_108[0x3c] = 0x56;
+          local_108[0x3d] = 0x67;
+          local_108[0x3e] = 0x78;
+          local_108[0x3f] = 0x79;
+          local_108[0x40] = 0x6b;
+          local_108[0x41] = 0x78;
+          local_108[0x42] = 0x2a;
+          local_108[0x43] = 0x56;
+          lVar15 = 0;
+          local_108[0x44] = 0x67;
+          local_108[0x45] = 0x69;
+          local_108[0x46] = 0x71;
+          local_108[0x47] = 0x67;
+          local_108[0x48] = 0x6d;
+          local_108[0x49] = 0x6b;
+          local_108[0x4a] = 0x41;
+          local_108[0x4b] = 0x52;
+          local_108[0x4c] = 0x70;
+          local_108[0x4d] = 0x67;
+          local_108[0x4e] = 0x7c;
+          local_108[0x4f] = 0x67;
+          local_108[0x50] = 0x35;
+          local_108[0x51] = 0x6f;
+          local_108[0x52] = 0x75;
+          local_108[0x53] = 0x35;
+          local_108[0x54] = 0x4c;
+          local_108[0x55] = 0x6f;
+          local_108[0x56] = 0x72;
+          local_108[0x57] = 0x6b;
+          local_108[0x58] = 0x41;
+          local_108[0x59] = 0x4f;
+          local_108[0x5a] = 0x2f;
+          local_108[0x5b] = 0x5c;
+          local_108[0x5c] = 0;
+          do {
+            local_108[lVar15 + 0x20] = local_108[lVar15 + 0x20] - 6;
+            lVar15 = lVar15 + 1;
+          } while (lVar15 != 0x3c);
+                    /* try { // try from 00126e8c to 00126e9b has its CatchHandler @ 00127b74 */
+          uVar12 = FUN_0029ecd8(&local_1a8,(ulong)local_108 | 4,local_108 + 0x20);
+          local_108[0x20] = 0;
+          local_108[0x21] = 0;
+          local_108[0x22] = 0;
+          local_108[0x23] = 0;
+                    /* try { // try from 00126ea0 to 00126eb3 has its CatchHandler @ 00127b70 */
+          FUN_001284a4(&local_1a8,uVar12,local_1c8,local_188,local_108 + 0x20);
+        }
+      }
+      else {
+        local_108[0] = 0x2a;
+        local_108[1] = 0;
+        local_108[2] = 0;
+        local_108[3] = 0;
+        local_108[4] = 0x49;
+        local_108[5] = 0x45;
+        local_108[6] = 0x46;
+        local_108[7] = 0x46;
+        local_108[8] = 0x4f;
+        local_108[9] = 0x49;
+        local_108[10] = 0x5e;
+        local_108[0xb] = 0x69;
+        local_108[0xc] = 0x4f;
+        local_108[0xd] = 0x58;
+        local_108[0xe] = 0x5e;
+        local_108[0xf] = 0x43;
+        local_108[0x10] = 0x4c;
+        local_108[0x11] = 0x43;
+        local_108[0x12] = 0x49;
+        local_108[0x13] = 0x4b;
+        local_108[0x14] = 0x5e;
+        local_108[0x15] = 0x4f;
+        local_108[0x16] = 0x59;
+        lVar15 = 4;
+        local_108[0x17] = 0;
+        do {
+          local_108[lVar15] = local_108[lVar15] ^ 0x2a;
+          lVar15 = lVar15 + 1;
+        } while (lVar15 != 0x17);
+        local_108[0x17] = 0;
+        local_108[0x20] = 0x2b;
+        local_108[0x21] = 0x4f;
+        local_108[0x22] = 100;
+        local_108[0x23] = 0x71;
+        local_108[0x24] = 0x67;
+        local_108[0x25] = 0x75;
+        local_108[0x26] = 0x72;
+        local_108[0x27] = 0x6c;
+        local_108[0x28] = 0x67;
+        local_108[0x29] = 0x32;
+        local_108[0x2a] = 0x66;
+        local_108[0x2b] = 0x72;
+        local_108[0x2c] = 0x71;
+        local_108[0x2d] = 0x77;
+        local_108[0x2e] = 0x68;
+        local_108[0x2f] = 0x71;
+        local_108[0x30] = 0x77;
+        local_108[0x31] = 0x32;
+        local_108[0x32] = 0x73;
+        local_108[0x33] = 0x70;
+        local_108[0x34] = 0x32;
+        local_108[0x35] = 0x53;
+        local_108[0x36] = 100;
+        local_108[0x37] = 0x66;
+        local_108[0x38] = 0x6e;
+        local_108[0x39] = 100;
+        local_108[0x3a] = 0x6a;
+        local_108[0x3b] = 0x68;
+        local_108[0x3c] = 0x53;
+        local_108[0x3d] = 100;
+        local_108[0x3e] = 0x75;
+        local_108[0x3f] = 0x76;
+        local_108[0x40] = 0x68;
+        local_108[0x41] = 0x75;
+        local_108[0x42] = 0x27;
+        lVar15 = 0;
+        local_108[0x43] = 0x53;
+        local_108[0x44] = 100;
+        local_108[0x45] = 0x66;
+        local_108[0x46] = 0x6e;
+        local_108[0x47] = 100;
+        local_108[0x48] = 0x6a;
+        local_108[0x49] = 0x68;
+        local_108[0x4a] = 0x3e;
+        local_108[0x4b] = 0x4c;
+        local_108[0x4c] = 0x2c;
+        local_108[0x4d] = 0x59;
+        local_108[0x4e] = 0;
+        do {
+          local_108[lVar15 + 0x20] = local_108[lVar15 + 0x20] - 3;
+          lVar15 = lVar15 + 1;
+        } while (lVar15 != 0x2e);
+                    /* try { // try from 00126c28 to 00126c37 has its CatchHandler @ 00127b88 */
+        uVar12 = FUN_0029ecd8(&local_1a8,(ulong)local_108 | 4,local_108 + 0x20);
+        local_108[0x20] = 0;
+        local_108[0x21] = 0;
+        local_108[0x22] = 0;
+        local_108[0x23] = 0;
+                    /* try { // try from 00126c3c to 00126c4b has its CatchHandler @ 00127b84 */
+        FUN_00128410(&local_1a8,uVar12,local_1c8,local_108 + 0x20);
+      }
+    }
+    else {
+      local_108[0] = 0x6f;
+      local_108[1] = 0;
+      local_108[2] = 0;
+      local_108[3] = 0;
+      local_108[4] = 0xc;
+      local_108[5] = 0;
+      local_108[6] = 3;
+      local_108[7] = 3;
+      local_108[8] = 10;
+      local_108[9] = 0xc;
+      local_108[10] = 0x1b;
+      local_108[0xb] = 0x2c;
+      local_108[0xc] = 10;
+      local_108[0xd] = 0x1d;
+      local_108[0xe] = 0x1b;
+      local_108[0xf] = 6;
+      local_108[0x10] = 9;
+      local_108[0x11] = 6;
+      local_108[0x12] = 0xc;
+      local_108[0x13] = 0xe;
+      lVar15 = 4;
+      local_108[0x14] = 0x1b;
+      local_108[0x15] = 10;
+      local_108[0x16] = 0x1c;
+      local_108[0x17] = 0;
+      do {
+        local_108[lVar15] = local_108[lVar15] ^ 0x6f;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x17);
+      local_108[0x17] = 0;
+      local_108[0x20] = 0x32;
+      local_108[0x21] = 0x56;
+      local_108[0x22] = 0x6b;
+      local_108[0x23] = 0x78;
+      local_108[0x24] = 0x6e;
+      local_108[0x25] = 0x7c;
+      local_108[0x26] = 0x79;
+      local_108[0x27] = 0x73;
+      local_108[0x28] = 0x6e;
+      local_108[0x29] = 0x39;
+      local_108[0x2a] = 0x6d;
+      local_108[0x2b] = 0x79;
+      local_108[0x2c] = 0x78;
+      local_108[0x2d] = 0x7e;
+      local_108[0x2e] = 0x6f;
+      local_108[0x2f] = 0x78;
+      local_108[0x30] = 0x7e;
+      local_108[0x31] = 0x39;
+      local_108[0x32] = 0x7a;
+      local_108[0x33] = 0x77;
+      local_108[0x34] = 0x39;
+      local_108[0x35] = 0x5a;
+      local_108[0x36] = 0x6b;
+      local_108[0x37] = 0x6d;
+      local_108[0x38] = 0x75;
+      local_108[0x39] = 0x6b;
+      local_108[0x3a] = 0x71;
+      local_108[0x3b] = 0x6f;
+      local_108[0x3c] = 0x5a;
+      local_108[0x3d] = 0x6b;
+      local_108[0x3e] = 0x7c;
+      local_108[0x3f] = 0x7d;
+      local_108[0x40] = 0x6f;
+      local_108[0x41] = 0x7c;
+      local_108[0x42] = 0x2e;
+      lVar15 = 0;
+      local_108[0x43] = 0x5a;
+      local_108[0x44] = 0x6b;
+      local_108[0x45] = 0x6d;
+      local_108[0x46] = 0x75;
+      local_108[0x47] = 0x6b;
+      local_108[0x48] = 0x71;
+      local_108[0x49] = 0x6f;
+      local_108[0x4a] = 0x45;
+      local_108[0x4b] = 100;
+      local_108[0x4c] = 0x33;
+      local_108[0x4d] = 0x60;
+      local_108[0x4e] = 0;
+      do {
+        local_108[lVar15 + 0x20] = local_108[lVar15 + 0x20] - 10;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x2e);
+                    /* try { // try from 00126a0c to 00126a1b has its CatchHandler @ 00127c34 */
+      uVar12 = FUN_0029ecd8(&local_1a8,(ulong)local_108 | 4,local_108 + 0x20);
+      local_108[0x20] = 0;
+                    /* try { // try from 00126a20 to 00126a2f has its CatchHandler @ 00127c30 */
+      FUN_0012837c(&local_1a8,uVar12,local_1c8,local_108 + 0x20);
+    }
+    FUN_0029fb64(local_1c8);
+    FUN_0029fb64(&local_78);
+    FUN_0029fb64(&local_1a8);
+    FUN_0029fb64(local_188);
+    FUN_0029fb64(&local_168);
+    FUN_0029fb64(local_148);
+    local_1a8 = 0;
+    local_1a0 = 0;
+    local_198 = 0;
+    local_78 = 0;
+    local_70 = 0;
+    local_68 = 0;
+    local_1c8[0] = 0;
+    local_1c8[1] = 0;
+    local_1c8[2] = 0;
+                    /* try { // try from 00126efc to 00126f17 has its CatchHandler @ 00127e40 */
+    plVar11 = (long *)FUN_003673c8();
+    iVar9 = (**(code **)(*plVar11 + 0xa0))(plVar11,&local_1a8,&local_78,local_1c8);
+    if (iVar9 < 2) {
+                    /* try { // try from 00126f28 to 00126f2f has its CatchHandler @ 00127be0 */
+      uVar12 = FUN_0039df50();
+      pbVar6 = local_108 + 0x20;
+      lVar15 = 4;
+      local_108[0x20] = 0x77;
+      local_108[0x21] = 0;
+      local_108[0x22] = 0;
+      local_108[0x23] = 0;
+      local_108[0x24] = 0x14;
+      local_108[0x25] = 0x18;
+      local_108[0x26] = 0x1a;
+      local_108[0x27] = 0x59;
+      local_108[0x28] = 0x19;
+      local_108[0x29] = 0x12;
+      local_108[0x2a] = 3;
+      local_108[0x2b] = 0x12;
+      local_108[0x2c] = 0x16;
+      local_108[0x2d] = 4;
+      local_108[0x2e] = 0x12;
+      local_108[0x2f] = 0x59;
+      local_108[0x30] = 0x1f;
+      local_108[0x31] = 3;
+      local_108[0x32] = 7;
+      local_108[0x33] = 5;
+      local_108[0x34] = 0x18;
+      local_108[0x35] = 3;
+      local_108[0x36] = 0x12;
+      local_108[0x37] = 0x14;
+      local_108[0x38] = 3;
+      local_108[0x39] = 0x59;
+      local_108[0x3a] = 7;
+      local_108[0x3b] = 0x18;
+      local_108[0x3c] = 0x1b;
+      local_108[0x3d] = 0xe;
+      local_108[0x3e] = 0x59;
+      local_108[0x3f] = 0x16;
+      local_108[0x40] = 0;
+      do {
+        pbVar6[lVar15] = pbVar6[lVar15] ^ 0x77;
+        lVar15 = lVar15 + 1;
+      } while (lVar15 != 0x20);
+      local_108[0x40] = 0;
+      local_160 = 0;
+      local_158 = (void *)0x0;
+      local_168 = 0;
+      sVar13 = strlen((char *)((ulong)pbVar6 | 4));
+      if (0xffffffffffffffef < sVar13) {
+                    /* try { // try from 00127b1c to 00127b23 has its CatchHandler @ 00127b80 */
+                    /* WARNING: Subroutine does not return */
+        FUN_0011fb9c(&local_168);
+      }
+      if (sVar13 < 0x17) {
+        pvVar17 = (void *)((ulong)&local_168 | 1);
+        local_168 = CONCAT71(local_168._1_7_,(char)(sVar13 << 1));
+        if (sVar13 != 0) goto LAB_00127068;
+      }
+      else {
+        uVar18 = sVar13 + 0x10 & 0xfffffffffffffff0;
+                    /* try { // try from 00127050 to 0012705b has its CatchHandler @ 00127b80 */
+        pvVar17 = (void *)FUN_00453ddc(uVar18);
+        local_168 = uVar18 | 1;
+        local_160 = sVar13;
+        local_158 = pvVar17;
+LAB_00127068:
+        memcpy(pvVar17,(char *)((ulong)pbVar6 | 4),sVar13);
+      }
+      *(undefined1 *)((long)pvVar17 + sVar13) = 0;
+                    /* try { // try from 0012707c to 0012708b has its CatchHandler @ 00127bc4 */
+      FUN_003a2624(local_148,uVar12,&local_168);
+      if ((local_168 & 1) != 0) {
+        FUN_00453e44(local_158);
+      }
+                    /* try { // try from 0012709c to 001270ab has its CatchHandler @ 00127bac */
+      FUN_0029dbb0(local_108 + 0x20,0,0);
+                    /* try { // try from 001270ac to 001270b7 has its CatchHandler @ 00127b98 */
+      uVar18 = FUN_0029dd10(local_148,local_108 + 0x20);
+      if ((uVar18 & 1) == 0) {
+        uVar18 = FUN_0029db34(local_148);
+        FUN_0029fb64(local_108 + 0x20);
+        if ((uVar18 & 1) != 0) goto LAB_001270e0;
+                    /* try { // try from 001270f0 to 001270fb has its CatchHandler @ 00127b6c */
+        FUN_0029eb10(&local_168,local_140,1);
+        uVar18 = FUN_0029db34(&local_168);
+        if ((uVar18 & 1) == 0) {
+          local_108[0x20] = 0x79;
+          local_108[0x21] = 0x76;
+          local_108[0x22] = 0x2b;
+          local_108[0x23] = 0x4f;
+          local_108[0x24] = 0x6d;
+          local_108[0x25] = 100;
+          local_108[0x26] = 0x79;
+          local_108[0x27] = 100;
+          local_108[0x28] = 0x32;
+          local_108[0x29] = 0x6f;
+          local_108[0x2a] = 100;
+          local_108[0x2b] = 0x71;
+          local_108[0x2c] = 0x6a;
+          local_108[0x2d] = 0x32;
+          local_108[0x2e] = 0x56;
+          local_108[0x2f] = 0x77;
+          local_108[0x30] = 0x75;
+          local_108[0x31] = 0x6c;
+          local_108[0x32] = 0x71;
+          local_108[0x33] = 0x6a;
+          local_108[0x34] = 0x3e;
+          local_108[0x35] = 0x4c;
+          local_108[0x36] = 0x4c;
+          local_108[0x37] = 0x2c;
+          local_108[0x38] = 0x4f;
+          local_108[0x39] = 0x66;
+          local_108[0x3a] = 0x72;
+          local_108[0x3b] = 0x70;
+          local_108[0x3c] = 0x32;
+          local_108[0x3d] = 0x71;
+          local_108[0x3e] = 0x68;
+          local_108[0x3f] = 0x77;
+          local_108[0x40] = 0x68;
+          local_108[0x41] = 100;
+          local_108[0x42] = 0x76;
+          local_108[0x43] = 0x68;
+          local_108[0x44] = 0x32;
+          local_108[0x45] = 0x6b;
+          local_108[0x46] = 0x77;
+          local_108[0x47] = 0x73;
+          local_108[0x48] = 0x75;
+          local_108[0x49] = 0x72;
+          local_108[0x4a] = 0x77;
+          local_108[0x4b] = 0x68;
+          local_108[0x4c] = 0x66;
+          lVar15 = 0;
+          local_108[0x4d] = 0x77;
+          local_108[0x4e] = 0x32;
+          local_108[0x4f] = 0x75;
+          local_108[0x50] = 0x68;
+          local_108[0x51] = 0x76;
+          local_108[0x52] = 0x78;
+          local_108[0x53] = 0x6f;
+          local_108[0x54] = 0x77;
+          local_108[0x55] = 0x32;
+          local_108[0x56] = 0x59;
+          local_108[0x57] = 0x55;
+          local_108[0x58] = 0x68;
+          local_108[0x59] = 0x76;
+          local_108[0x5a] = 0x78;
+          local_108[0x5b] = 0x6f;
+          local_108[0x5c] = 0x77;
+          local_108[0x5d] = 0x3e;
+          local_108[0x5e] = 0;
+          do {
+            local_108[lVar15 + 0x20] = local_108[lVar15 + 0x20] - 3;
+            lVar15 = lVar15 + 1;
+          } while (lVar15 != 0x3e);
+          local_108[0] = 0x13;
+          local_108[1] = 0;
+          local_108[2] = 0;
+          local_108[3] = 0;
+          local_128 = 0x22;
+                    /* try { // try from 001272a8 to 001272c3 has its CatchHandler @ 00127b54 */
+          FUN_00128524(local_188,&local_168,local_108 + 0x20,local_288,local_108,&local_128);
+          uVar18 = FUN_0029db34(local_188);
+          if ((uVar18 & 1) == 0) {
+            local_108[0x20] = 0x79;
+            local_108[0x21] = 0;
+            local_108[0x22] = 0;
+            local_108[0x23] = 0;
+            lVar15 = 0;
+            local_108[0x24] = 0xb;
+            local_108[0x25] = 0x1f;
+            local_108[0x26] = 0xf;
+            do {
+              *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) =
+                   *(byte *)(((ulong)(local_108 + 0x20) | 4) + lVar15) ^ (char)lVar15 + 0x79U;
+              lVar15 = lVar15 + 1;
+            } while (lVar15 != 3);
+            local_108[0x27] = 0;
+                    /* try { // try from 00127350 to 0012735b has its CatchHandler @ 00127b3c */
+            iVar9 = FUN_00128794(local_188);
+            if (iVar9 == 0) {
+              bVar4 = false;
+            }
+            else {
+              local_108[0] = 100;
+              local_108[1] = 0;
+              local_108[2] = 0;
+              local_108[3] = 0;
+              lVar15 = 0;
+              local_108[4] = 0x16;
+              local_108[5] = 0;
+              local_108[6] = 0x15;
+              do {
+                *(byte *)(((ulong)local_108 | 4) + lVar15) =
+                     *(byte *)(((ulong)local_108 | 4) + lVar15) ^ (char)lVar15 + 100U;
+                lVar15 = lVar15 + 1;
+              } while (lVar15 != 3);
+              local_108[7] = 0;
+                    /* try { // try from 001273d4 to 001273df has its CatchHandler @ 00127b2c */
+              FUN_0012883c(local_108 + 0x20,local_188);
+              if ((local_2a0 & 1) != 0) {
+                *local_290 = 0;
+                uStack_298 = 0;
+                if ((local_2a0 & 1) != 0) {
+                  FUN_00453e44(local_290);
+                }
+              }
+              local_290 = (undefined1 *)
+                          CONCAT17(local_108[0x37],
+                                   CONCAT16(local_108[0x36],
+                                            CONCAT15(local_108[0x35],
+                                                     CONCAT14(local_108[0x34],
+                                                              CONCAT13(local_108[0x33],
+                                                                       CONCAT12(local_108[0x32],
+                                                                                CONCAT11(local_108[
+                                                  0x31],local_108[0x30])))))));
+              uStack_298 = CONCAT17(local_108[0x2f],
+                                    CONCAT16(local_108[0x2e],
+                                             CONCAT15(local_108[0x2d],
+                                                      CONCAT14(local_108[0x2c],
+                                                               CONCAT13(local_108[0x2b],
+                                                                        CONCAT12(local_108[0x2a],
+                                                                                 CONCAT11(local_108[
+                                                  0x29],local_108[0x28])))))));
+              local_2a0 = CONCAT17(local_108[0x27],
+                                   CONCAT16(local_108[0x26],
+                                            CONCAT15(local_108[0x25],
+                                                     CONCAT14(local_108[0x24],
+                                                              CONCAT13(local_108[0x23],
+                                                                       CONCAT12(local_108[0x22],
+                                                                                CONCAT11(local_108[
+                                                  0x21],local_108[0x20])))))));
+              bVar4 = false;
+            }
+          }
+          else {
+            iVar9 = 0;
+            bVar4 = true;
+          }
+          FUN_0029fb64(local_188);
+        }
+        else {
+          iVar9 = 0;
+          bVar4 = true;
+        }
+        FUN_0029fb64(&local_168);
+      }
+      else {
+        FUN_0029fb64(local_108 + 0x20);
+LAB_001270e0:
+        iVar9 = 0;
+        bVar4 = true;
+      }
+      FUN_0029fb64(local_148);
+      if (bVar4) goto LAB_00127448;
+      bVar4 = false;
+    }
+    else {
+      iVar9 = 0;
+LAB_00127448:
+      bVar4 = true;
+    }
+    if ((local_1c8[0] & 1) != 0) {
+      FUN_00453e44(local_1c8[2]);
+    }
+    if ((local_78 & 1) != 0) {
+      FUN_00453e44(local_68);
+    }
+    if ((local_1a8 & 1) != 0) {
+      FUN_00453e44(local_198);
+    }
+    if (bVar4) {
+      iVar9 = 0;
+    }
+  }
+  if ((local_288[0] & 1) != 0) {
+    FUN_00453e44(local_278);
+  }
+  if (iVar9 < 1) goto LAB_00127adc;
+  local_78 = 0x7a807a66726a686f;
+  lVar15 = 0;
+  local_70 = CONCAT26(local_70._6_2_,0x756e707a66);
+  do {
+    *(char *)((long)&local_78 + lVar15) = *(char *)((long)&local_78 + lVar15) + -7;
+    lVar15 = lVar15 + 1;
+  } while (lVar15 != 0xd);
+                    /* try { // try from 0012751c to 0012752b has its CatchHandler @ 00127cf8 */
+  FUN_0011f46c(auStack_2b8,&local_78,local_1c8);
+                    /* try { // try from 0012752c to 0012753b has its CatchHandler @ 00127ce4 */
+  FUN_0044fa10(&local_1a8,iVar9);
+  uVar18 = local_1a8 >> 1 & 0x7f;
+  uVar1 = (ulong)&local_1a8 | 1;
+  if ((local_1a8 & 1) != 0) {
+    uVar18 = local_1a0;
+    uVar1 = local_198;
+  }
+                    /* try { // try from 00127558 to 00127563 has its CatchHandler @ 00127cd8 */
+  FUN_001206cc(auStack_2d0,uVar1,uVar18,0);
+  uVar18 = local_2a0 >> 1 & 0x7f;
+  puVar5 = (undefined1 *)((ulong)&local_2a0 | 1);
+  if ((local_2a0 & 1) != 0) {
+    uVar18 = uStack_298;
+    puVar5 = local_290;
+  }
+                    /* try { // try from 00127584 to 0012758f has its CatchHandler @ 00127cc4 */
+  FUN_001206cc(auStack_2e8,puVar5,uVar18,0);
+                    /* try { // try from 00127590 to 001275af has its CatchHandler @ 00127cb8 */
+  FUN_00127f84(local_270,0x1e,auStack_2b8,auStack_2d0,auStack_2e8,0,1);
+                    /* try { // try from 001275b0 to 001275cb has its CatchHandler @ 00127eac */
+  lVar15 = FUN_003595b0();
+  bVar7 = local_1ec;
+  bVar2 = *(byte *)(lVar15 + 0xa7);
+  local_1ec = local_1ec & bVar2;
+  FUN_003e5ec4(local_270);
+  bVar8 = 0;
+  local_1ec = bVar7;
+  if (bVar7 != 0) {
+    local_108[0x3f] = 0x17;
+    local_108[0x28] = 0;
+    local_108[0x20] = (byte)local_270[0];
+    local_108[0x21] = (byte)((uint)local_270[0] >> 8);
+    local_108[0x22] = (byte)((uint)local_270[0] >> 0x10);
+    local_108[0x23] = (byte)((uint)local_270[0] >> 0x18);
+                    /* try { // try from 001275f8 to 0012762b has its CatchHandler @ 00127e88 */
+    FUN_0011fcdc(local_108 + 0x28,auStack_268);
+    uVar10 = (**(code **)(DAT_005a62e8 + 400))(0);
+    local_108[0x24] = (byte)uVar10;
+    local_108[0x25] = (byte)((uint)uVar10 >> 8);
+    local_108[0x26] = (byte)((uint)uVar10 >> 0x10);
+    local_108[0x27] = (byte)((uint)uVar10 >> 0x18);
+    FUN_0035cb1c();
+    bVar8 = FUN_0035ed44(local_108 + 0x20);
+    if (0x3f < local_108[0x3f]) {
+      FUN_001208b4(local_108 + 0x28);
+    }
+  }
+  if (bVar2 == 0) {
+    if ((bVar8 & 1) != 0) {
+                    /* try { // try from 001278b4 to 001278bb has its CatchHandler @ 00127eac */
+      FUN_003284e8(7);
+    }
+  }
+  else if (local_1ec != 0) {
+                    /* try { // try from 0012764c to 001276a3 has its CatchHandler @ 00127eac */
+    FUN_003284e8(1);
+    uVar12 = FUN_0035cb1c();
+    FUN_0035d190(uVar12,1);
+    if (local_270[0] != 0x19) {
+      pcVar16 = *(code **)(DAT_005a62e8 + 8);
+      lVar15 = FUN_003595b0();
+      (*pcVar16)(*(undefined4 *)(lVar15 + 0x6c));
+    }
+    uVar12 = FUN_0018cbc0();
+    FUN_0018d07c(uVar12,0x124d672b);
+    FUN_00226e60();
+    FUN_00450120(local_188);
+                    /* try { // try from 001276a4 to 001276b7 has its CatchHandler @ 00127d4c */
+    plVar11 = (long *)FUN_003673c8();
+    (**(code **)(*plVar11 + 8))(local_148);
+    local_108[0x20] = 0x71;
+    local_108[0x21] = 0;
+    local_108[0x22] = 0;
+    local_108[0x23] = 0;
+    local_108[0x24] = 0x5e;
+    lVar15 = 0;
+    local_108[0x25] = 0x5c;
+    local_108[0x26] = 0x1b;
+    local_108[0x27] = 6;
+    local_108[0x28] = 0x10;
+    local_108[0x29] = 0x15;
+    local_108[0x2a] = 0x18;
+    local_108[0x2b] = 10;
+    local_108[0x2c] = 0x1d;
+    local_108[0x2d] = 0x43;
+    local_108[0x2e] = 0x4e;
+    local_108[0x2f] = 0x4a;
+    local_108[0x30] = 0x19;
+    local_108[0x31] = 0x4d;
+    local_108[0x32] = 8;
+    local_108[0x33] = 0xe5;
+    local_108[0x34] = 0xe9;
+    local_108[0x35] = 0xe4;
+    local_108[0x36] = 0xb2;
+    local_108[0x37] = 0xe3;
+    __s = (char *)((ulong)(local_108 + 0x20) | 4);
+    local_108[0x38] = 0xe3;
+    do {
+      __s[lVar15] = __s[lVar15] ^ (char)lVar15 + 0x71U;
+      lVar15 = lVar15 + 1;
+    } while (lVar15 != 0x15);
+    local_108[0x39] = 0;
+    local_160 = 0;
+    local_158 = (void *)0x0;
+    local_168 = 0;
+    sVar13 = strlen(__s);
+    if (0xffffffffffffffef < sVar13) {
+                    /* try { // try from 00127b24 to 00127b2b has its CatchHandler @ 00127b78 */
+                    /* WARNING: Subroutine does not return */
+      FUN_0011fb9c(&local_168);
+    }
+    if (sVar13 < 0x17) {
+      pvVar17 = (void *)((ulong)&local_168 | 1);
+      local_168 = CONCAT71(local_168._1_7_,(char)(sVar13 << 1));
+      if (sVar13 != 0) goto LAB_001278e0;
+    }
+    else {
+      uVar18 = sVar13 + 0x10 & 0xfffffffffffffff0;
+                    /* try { // try from 001278c8 to 001278d3 has its CatchHandler @ 00127b78 */
+      pvVar17 = (void *)FUN_00453ddc(uVar18);
+      local_168 = uVar18 | 1;
+      local_160 = sVar13;
+      local_158 = pvVar17;
+LAB_001278e0:
+      memcpy(pvVar17,__s,sVar13);
+    }
+    *(undefined1 *)((long)pvVar17 + sVar13) = 0;
+                    /* try { // try from 001278f4 to 00127903 has its CatchHandler @ 00127b90 */
+    FUN_00124cd0(local_108 + 0x20,local_148,&local_168);
+    uVar18 = (ulong)(local_188[0] >> 1);
+    if ((local_188[0] & 1) != 0) {
+      uVar18 = local_180;
+    }
+                    /* try { // try from 0012792c to 001279ab has its CatchHandler @ 00127d14 */
+    lVar15 = (**(code **)(DAT_005a62e8 + 0x160))(uVar18 + 1);
+    if (lVar15 != 0) {
+      uVar18 = (ulong)(local_188[0] >> 1);
+      uVar1 = (ulong)local_188 | 1;
+      if ((local_188[0] & 1) != 0) {
+        uVar18 = local_180;
+        uVar1 = local_178;
+      }
+      (**(code **)(DAT_005a62e8 + 0x188))(lVar15,uVar1,uVar18);
+      uVar18 = (ulong)(local_108 + 0x20) | 1;
+      if ((local_108[0x20] & 1) != 0) {
+        uVar18 = CONCAT17(local_108[0x37],
+                          CONCAT16(local_108[0x36],
+                                   CONCAT15(local_108[0x35],
+                                            CONCAT14(local_108[0x34],
+                                                     CONCAT13(local_108[0x33],
+                                                              CONCAT12(local_108[0x32],
+                                                                       CONCAT11(local_108[0x31],
+                                                                                local_108[0x30])))))
+                                  ));
+      }
+      uVar1 = (ulong)(local_188[0] >> 1);
+      if ((local_188[0] & 1) != 0) {
+        uVar1 = local_180;
+      }
+      FUN_003d9f5c(uVar18,lVar15,uVar1);
+      (**(code **)(DAT_005a62e8 + 0x168))(lVar15);
+    }
+    if ((local_108[0x20] & 1) != 0) {
+      FUN_00453e44(CONCAT17(local_108[0x37],
+                            CONCAT16(local_108[0x36],
+                                     CONCAT15(local_108[0x35],
+                                              CONCAT14(local_108[0x34],
+                                                       CONCAT13(local_108[0x33],
+                                                                CONCAT12(local_108[0x32],
+                                                                         CONCAT11(local_108[0x31],
+                                                                                  local_108[0x30])))
+                                                      )))));
+    }
+    if ((local_168 & 1) != 0) {
+      FUN_00453e44(local_158);
+    }
+    if ((local_148[0] & 1) != 0) {
+      FUN_00453e44(local_138);
+    }
+    uVar12 = DAT_005a6748;
+    uVar14 = FUN_0042f9fc();
+                    /* try { // try from 001279f0 to 001279ff has its CatchHandler @ 00127b8c */
+    FUN_00125024(uVar12,uVar14,FUN_00124dd8);
+                    /* try { // try from 00127a08 to 00127a0f has its CatchHandler @ 00127d4c */
+    (**(code **)(DAT_005a62e8 + 600))(0);
+    if ((local_188[0] & 1) != 0) {
+      FUN_00453e44(local_178);
+    }
+  }
+  if (0x3f < local_1f1) {
+    FUN_001208b4(auStack_208);
+  }
+  if (0x3f < local_209) {
+    FUN_001208b4(auStack_220);
+  }
+  if (0x3f < local_221) {
+    FUN_001208b4(auStack_238);
+  }
+  if (0x3f < local_239) {
+    FUN_001208b4(auStack_250);
+  }
+  if (0x3f < local_251) {
+    FUN_001208b4(auStack_268);
+  }
+  if (0x3f < local_2d1) {
+    FUN_001208b4(auStack_2e8);
+  }
+  if (0x3f < local_2b9) {
+    FUN_001208b4(auStack_2d0);
+  }
+  if ((local_1a8 & 1) != 0) {
+    FUN_00453e44(local_198);
+  }
+  if (0x3f < local_2a1) {
+    FUN_001208b4(auStack_2b8);
+  }
+LAB_00127adc:
+  if ((local_2a0 & 1) != 0) {
+    FUN_00453e44(local_290);
+  }
+  if (*(long *)(lVar3 + 0x28) == local_58) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail();
+}
+
