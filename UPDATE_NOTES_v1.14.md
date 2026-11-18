@@ -1,0 +1,59 @@
+# UPDATE NOTES — v1.14.27 vs v1.9.5
+
+**Status:** em andamento (2026-11-18). Meta: mapear o que mudou entre a versão estudada (1.9.5, abril/2026) e a atual (1.14.27, nov/2026).
+
+---
+
+## Aquisição
+
+| Item | Detalhe |
+|---|---|
+| APK 1.14.27 | XAPK via APKPure (`apkeep -d apk-pure`), 898 MB — base.apk (20 MB) + config.arm64_v8a.apk (38 MB) + game_asset.apk (840 MB) |
+| APK 1.9.5 | mesmo método, 850 MB |
+| versionCode | 204 |
+
+## Bibliotecas nativas (config.arm64_v8a.apk)
+
+`libil2cpp.so` (79,4 MB), `libNetHTProtect.so` (4,5 MB), `libnesec.so` (1,0 MB) + `libnesec-x86.so`, `libsigner.so` (1,0 MB), `libhtpcrash.so` + `libhtpcrash_dumper.so`, `libtolua.so` (1,9 MB), `libxt3.1.2_a64.so` em `assets/motion/` (antes "libxt_a64.so"), `libunity.so` 21 MB, Firebase/CriWare etc.
+
+## Pilha de proteção (constatada em arquivo)
+
+1. **global-metadata.dat = HTPX**: header `HTPX` + uint32_LE(tamanho restante) + corpo cifrado. Entropia ~7,6 (compressão + cifra). Magic IL2CPP (`AF 1B B1 FA`) não aparece sob XOR simples/aditivo/rolagem até 32 bytes de chave.
+2. **libil2cpp.so packed**: seção falsa `.note.gnu.proc` (66 MB, entropia 8,00) contém o payload cifrado; `.text` real vazio; unpacker nas seções `il2cpp` (38,9 MB, ent. 5,14) e `.note.gnu.text` (721 KB). Zero exports `il2cpp_*` no dynsym. Estrutura idêntica na 1.9.5 (63 MB / 36,7 MB).
+3. **Bundles Unity cifrados**: todos os `.unity3d` do game_asset.apk têm header UnityFS válido (Unity 2022.3.62f1) mas blocos LZ4 corrompidos por cifra própria — padrão repetitivo (`0a0024…`) sugere XOR/stream fraca. Afeta também `luapackage_64` (40 MB de lógica Lua) e `toluaout_*`.
+4. **libNetHTProtect.so é ELF limpo** (não empacotado) → alvo primário de análise estática.
+
+## Diff il2cpp (pendente)
+
+Dump da 1.9.5 disponível no repo (`dump/dump.cs`, 245k linhas; `il2cpp_dump/*.json`, 79 assemblies) foi gerado EM RUNTIME por `il2cpp_api_dump.js` — existe justamente por causa da criptografia em arquivo. Para a 1.14.27 são necessárias as rotas abaixo.
+
+## Rotas para o dump 1.14.27
+
+| Rota | Passos | Dependência |
+|---|---|---|
+| **A. Offline RE** ✅ PARCIAL | ~~Ghidra em libNetHTProtect + unpacker~~ → **EMULADOR UNICORN QUEBROU O PACKER** (ver § Emulação) | concluída até a imagem RX |
+| **B. Runtime dump** | restaurar root (Magisk recovery-mode: `/debug_ramdisk/su` existe, aguardando grant do Shell) → jogo já instalado (sideload ✓) → frida-server (binário pronto no distro) → scripts RVA-independent | **1 tap: permitir Shell no Magisk** |
+
+## Emulação do unpacker (2026-11-18) — O PACKER FOI QUEBRADO OFFLINE
+
+Fluxo estático (Ghidra no `.note.gnu.text`) + emulação Unicorn (`scripts/analysis/emu_unpack.py`):
+
+1. init_array (7 ctors, endereços extraídos das RELA — slots zerados no arquivo)
+2. ctor_4 → `FUN_0494fb64` = driver: `FUN_0494d470` mapeia, **`FUN_04949e48` decripta** (cifra custom ARX+permutação 64B/bloco, ~61KB decompilado), zlib inflate
+3. **Saída**: payload `.note.gnu.proc` (65MB) → zlib → **73.3MB de imagem RX real do libil2cpp** (strings il2cpp/global-metadata/JNI_OnLoad confirmadas). Header ELF reconstruído em runtime pelo próprio unpacker (regra do projeto 1.9.5: `repair_elf_header.py`)
+4. Artefatos em `~/work/apk/`: `libil2cpp_114_decrypted.so` (75.6MB montado), `crypt_out_*` (blobs decriptados), `partA_inflated.bin`
+5. Segundo blob (RW `.data`, 10MB) decripta com header próprio (`01 00 00 00 04...`) — formato ainda não invertido
+6. **Metadata HTPX NÃO decripta com a cifra do unpacker** (replay testado) — camada própria (provável: código do payload pós-unpack ou libNetHTProtect com outra chave)
+7. Constantes do emulador: GOT stubs p/ 182 imports (incl. fake /proc/self/maps, __system_property_get, dlopen/dladdr), 1342 RELATIVE relocs aplicadas, TLS fake p/ stack canary
+
+### Próximos passos (A)
+- Ghidra no `libil2cpp_114_decrypted.so` (rodando em bg) → achar cadeia do metadata (equivalentes de FUN_0194b9d8/0194339c/019435dc de 1.9.5) por padrão
+- Emular 1.9.5 no mesmo emulador → extrair FUN_019435dc real → binary-pattern match no 1.14.27
+- Inverter o formato do part B (RW) p/ .so completo
+
+## Ferramentas novas neste ciclo
+
+- `scripts/analysis/htpx_probe.py` — oráculo AF1BB1FA contra transformações simples
+- `scripts/analysis/elf_sanity.py` — entropia por seção ELF
+- `scripts/analysis/lua_diff.py` — extrator/diff de luapackage (aguardando decrypt dos bundles)
+- `scripts/analysis/diff_dumps.py` — comparador dump antigo (JSON custom) ↔ dump.cs Il2CppDumper
