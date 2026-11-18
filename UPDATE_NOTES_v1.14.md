@@ -34,7 +34,25 @@ Dump da 1.9.5 disponível no repo (`dump/dump.cs`, 245k linhas; `il2cpp_dump/*.j
 | **A. Offline RE** ✅ PARCIAL | ~~Ghidra em libNetHTProtect + unpacker~~ → **EMULADOR UNICORN QUEBROU O PACKER** (ver § Emulação) | concluída até a imagem RX |
 | **B. Runtime dump** | restaurar root (Magisk recovery-mode: `/debug_ramdisk/su` existe, aguardando grant do Shell) → jogo já instalado (sideload ✓) → frida-server (binário pronto no distro) → scripts RVA-independent | **1 tap: permitir Shell no Magisk** |
 
+## Bundles Unity — RESOLVIDO PARCIALMENTE (2026-11-18, sessão 2)
+
+**Os bundles NÃO estão encriptados** — a falha do UnityPy era bug de semântica de flags:
+
+- O jogo usa header ver=**8** custom + flags `0x243` onde `0x200` = `BlockInfoNeedPaddingAtStart` (semântica NOVA — no enum antigo era `UsesAssetBundleEncryption`!)
+- **Blocos 1..N decompilam LZ4 plain** após alinhar o início dos dados em 16 bytes
+- `scripts/analysis/kingshot_bundle.py` = extrator completo funcional
+- **Bloco 0 (o do header SerializedFile/CAB) tem prólogo custom**: `16 00 01 00 [15|16] 16 [0a|0b] 00 ...` constante entre bundles — não é XOR simples, não é a cifra do unpacker (testado em 4 modos), não é Unity-CN (flag real `0x1400` ausente)
+- Decoder tolerante (`lz4_lenient.py`) mostra o header SerializedFile SE FORMANDO nos primeiros ~70B — a estrutura está quase acessível
+- **Próximo alvo**: implementação no `libunity.so` (21MB, ELF limpo) — acher o leitor custom de bloco 0
+
+## Rota runtime (pendência única)
+
+Magisk: `/debug_ramdisk/su` existe mas Shell = "Permission denied" — falta **Acesso de superusuário = Apps e ADB** nas configurações do app (ou allow no item Shell da aba Superusuário). Destrava: frida → dump de memória → metadata decriptado garantido.
+
 ## Emulação do unpacker (2026-11-18) — O PACKER FOI QUEBRADO OFFLINE
+
+Fluxo estático (Ghidra no `.note.gnu.text`) + emulação Unicorn (`scripts/analysis/emu_unpack.py`):
+
 
 Fluxo estático (Ghidra no `.note.gnu.text`) + emulação Unicorn (`scripts/analysis/emu_unpack.py`):
 
