@@ -4,6 +4,43 @@ Everything you need to reproduce this analysis environment from scratch.
 
 ---
 
+## 0. Environment v2 (Nov 2026) — Dedicated WSL distro `kingshot-re`
+
+The full toolchain now lives in an isolated WSL2 distro (Ubuntu 24.04), separate from the host:
+
+| Item | Value |
+|---|---|
+| Distro | `kingshot-re` (WSL2, Ubuntu 24.04, VHDX at `C:\WSL\kingshot-re`) |
+| Enter | `wsl -d kingshot-re` (user `re`, password `re`, sudo) |
+| Repo inside | `/home/re/projects/game-of-kingshot-re` |
+| frida-tools | 17.27.0 (`frida`, `frida-ps`, `frida-trace`) |
+| mitmproxy | 12.3.1 — runs in WSL because Windows **Smart App Control** blocks the native mitmproxy_rs DLL on the host |
+| objection | 1.12.5 |
+| adb | `android-tools-adb` (Ubuntu package) |
+| tshark | 4.2.2 (pcap analysis) + python `scapy` |
+| JDK | OpenJDK 21 (for Ghidra when needed) |
+| Staged | `~/tools/frida-server-17.27.0-android-arm64` ready to push to device |
+| Host tools | Il2CppDumper v6.7.46 (self-contained) at `C:\Users\prs\tools\Il2CppDumper`, adb at `C:\Users\prs\platform-tools` |
+| USB to device | **usbipd-win 5.3.0** on host — attach the phone to the distro (see below) |
+
+### Connecting the phone (per session)
+
+```powershell
+# on Windows host (phone plugged in via USB, USB debugging on)
+usbipd list                     # find the phone's BUSID
+usbipd attach --wsl --busid <BUSID>   # first time: usbipd bind --busid <BUSID> (admin)
+```
+```bash
+# inside kingshot-re
+adb devices                     # accept the RSA prompt on the phone
+adb shell "su -c '/data/local/tmp/fs17 -l 0.0.0.0:37555 &'"   # or push new frida-server
+adb forward tcp:37555 tcp:37555
+```
+
+> All RVAs/offsets in CLAUDE.md refer to **v1.9.5 (April 2026)**. Current game version is 1.14.x — re-derive before use.
+
+---
+
 ## Hardware
 
 | Component | Used in This Project |

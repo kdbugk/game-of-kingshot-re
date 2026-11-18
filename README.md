@@ -1,4 +1,4 @@
-# got-re — Reverse Engineering: Game of Thrones: Conquest (Android)
+# game-of-kingshot-re — Reverse Engineering: Kingshot (Android)
 
 > **Educational project.** The goal is to understand how a modern Unity/IL2CPP Android game communicates, how its native protection SDKs work, and how to apply static + dynamic analysis techniques to a real-world APK.
 
@@ -6,7 +6,7 @@
 
 ## What This Is
 
-This repository documents an ongoing reverse engineering study of **com.run.tower.defense** (Game of Thrones: Conquest), a Unity game with IL2CPP runtime, multiple native protection SDKs, and a custom binary gateway protocol.
+This repository documents an ongoing reverse engineering study of **com.run.tower.defense** (Kingshot, by Century Games), a Unity game with IL2CPP runtime, multiple native protection SDKs, and a custom binary gateway protocol.
 
 No cheating, no exploitation, no modification of live game data. The focus is purely on understanding internal architecture.
 
@@ -31,7 +31,7 @@ No cheating, no exploitation, no modification of live game data. The focus is pu
 ## Repository Structure
 
 ```
-got-re/
+game-of-kingshot-re/
 ├── README.md                   ← this file
 ├── FLOW.md                     ← complete discovered data flow
 ├── SETUP.md                    ← environment setup guide

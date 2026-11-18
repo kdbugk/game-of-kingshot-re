@@ -6,7 +6,7 @@ This file gives Claude (or any AI assistant) the full context needed to contribu
 
 ## Project Goal
 
-Educational reverse engineering of `com.run.tower.defense` (Game of Thrones: Conquest).  
+Educational reverse engineering of `com.run.tower.defense` (Kingshot, by Century Games).  
 No live exploitation. Focus: understand architecture, protocol, and SDK behavior.
 
 ---
