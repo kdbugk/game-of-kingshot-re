@@ -2,6 +2,29 @@
 
 **Status:** em andamento (2026-11-18). Meta: mapear o que mudou entre a versão estudada (1.9.5, abril/2026) e a atual (1.14.27, nov/2026).
 
+## ⭐ Diff de conteúdo (bundles) — PRONTO
+
+Análise completa dos 7279 bundles (0 erros, sem precisar do bloco 0): **+2044 bundles novos / −1397 removidos / +130 MB**. Destaques:
+
+- **Modo Tower Defense** = maior eixo novo (824 bundles `towerdefense_*`, 103,7 MB): árvore de skills (`tree_skill_*`), personagens/soldiers/monstros TD, configs versionadas 26.10/26.11, mapas A* gerados
+- **6 heróis novos** (50034–50040: diego, liz, luna, lotter, bayard, daya) + captain_hendrik_octopus + hero_exhibit_king
+- **Eventos novos**: peachfestival, duckmarket, midautumn, children2026, linkagemonopoly (crossover Monopoly), brawlarena, slg3arena, treasureroomnew, **VVIP castle**
+- **luapackage (Lua) +40%** (72→101 MB) — alvo prioritário para diff de lógica quando o bloco 0 cair
+- **Removidos**: climb tower antigo, sistema de roupas (`ui_panel_dress`), `scene_world_building`, redpacket
+- Infra: gamepad cursor, CDN retry, VFX texture library, spine runtime update
+
+Relatório completo: `reports/bundle_diff.md` (produzido por subagente; dados brutos em `bundle_diff_data.json`).
+
+## 🔓 libunity.so TAMBÉM é packed — desempacotado offline (subagente)
+
+A Lane Ghidra descobriu que o `libunity.so` usa **o mesmo packer HTProtect** do libil2cpp (entropia 8.0 em 0x238–0x800000, stub 98,8% idêntico). O emulador Unicorn foi adaptado (`work/emu_unpack_unity.py`) e **desempacotou o libunity offline**: payload `[usize][csize][zlib]` → imagem de 19,8 MB (`unity_image.bin`), importada no Ghidra.
+
+O leitor do bloco 0 NÃO foi localizado na imagem desempacotada: strings UnityFS/Archive sem xrefs de código, constantes do prólogo sem refs reais, heurísticas LZ4 = falsos positivos. Relatório com próximos passos: `reports/bloco0_analise.md`.
+
+## ❌ Correção importante: a região de 24 MB NÃO é o metadata
+
+A hipótese da sessão anterior foi derrubada com evidência (subagente): o dump `metadata_live_dump.bin` é um **heap arena do il2cpp/Unity**, não o buffer do global-metadata — sem string heap sequencial, sem `.ctor`/`mscorlib`/`<Module>`, sem sanity 0xFAB11BAF. As âncoras "Assembly-CSharp" estavam dentro de structs runtime. Próximos passos corretos documentados em `reports/meta_recon.md`: scan por runs `<Module>\0.ctor\0`, ponteiro global do metadata na lib, ou decriptar o HTPX via emulador.
+
 ---
 
 ## Aquisição
