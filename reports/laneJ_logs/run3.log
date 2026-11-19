@@ -1,0 +1,108 @@
+[SETUP] 182 import GOT slots patched: AAsset_read, AAsset_seek, ZSTD_trace_decompress_begin, ZSTD_trace_decompress_end, __assert2, __cxa_atexit, __cxa_finalize, __errno, __memcpy_chk, __open_2, __sF, __stack_chk_fail, __strcpy_chk, __strlen_chk, __system_property_get, _exit, abort, android_set_abort_message, atoi, basename, bind, calloc, chmod, clock_gettime, close, closedir, closelog, dl_iterate_phdr, dladdr, dlclose, dlopen, dlsym, dup2, execl, execve, fclose, fcntl, fdopen, ferror, fflush, fgetpos, fgets, fileno, fopen, fork, fprintf, fputc, fread, free, fseek, fsetpos, fstat, ftell, fwrite, getauxval, getenv, gethostbyname, getpid, getppid, getsockname, getsockopt, gettid, gettimeofday, inet_addr, inet_ntoa, ioctl, kill, lseek64, lstat, malloc, memchr, memcmp, memcpy, memmove, memset, mmap, mprotect, munmap, open, opendir, openlog, pipe, poll, posix_memalign, pow, prctl, pthread_cond_broadcast, pthread_cond_wait, pthread_create, pthread_detach, pthread_getspecific, pthread_key_create, pthread_key_delete, pthread_mutex_lock, pthread_mutex_unlock, pthread_once, pthread_rwlock_rdlock, pthread_rwlock_unlock, pthread_rwlock_wrlock, pthread_self, pthread_setspecific, raise, rand, read, readdir, realloc, realpath, remove, select, sendto, setsockopt, sigaction, signal, sigprocmask, sigsetjmp, sleep, snprintf, sprintf, sqrt, srand, sscanf, stat, strcasecmp, strcat, strcmp, strcpy, strlen, strncmp, strncpy, strrchr, strstr, strtok, strtoul, syscall, sysconf, syslog, time, vasprintf, vfprintf, vsnprintf, waitpid, write
+[SETUP] 1342 RELATIVE relocs applied
+[SETUP] 182 import GOT slots patched
+[CTOR 0] 0x48d6eb4
+[IMP] getauxval x0=10 x1=0 x2=0 lr=48d6ec8
+[RUN-END] start=0x48d6eb4 pc=0x600000000000 reached_STOP=True elapsed=0.0s
+[CTOR 1] 0x48d7384
+[IMP] __system_property_get x0=48342f6 x1=7f00007eff94 x2=0 lr=48d73bc
+[IMP] strncmp x0=7f00007eff94 x1=4835b40 x2=a lr=48d73d8
+[IMP] getauxval x0=10 x1=4835b40 x2=a lr=48d73e4
+[IMP] getauxval x0=1a x1=4835b40 x2=a lr=48d73f0
+[RUN-END] start=0x48d7384 pc=0x600000000000 reached_STOP=True elapsed=0.0s
+[CTOR 2] 0x48bb3f0
+[IMP] malloc x0=340 x1=400000000000 x2=0 lr=48d5ab4
+[IMP] fopen x0=7f00007effa8 x1=7f00007efb7e x2=0 lr=48522dc
+[IMP] memset x0=7f00007efb80 x1=0 x2=400 lr=48522f0
+[IMP] fgets x0=7f00007efb80 x1=3ff x2=700000001000 lr=485238c
+[IMP] sscanf x0=7f00007efb80 x1=7f00007eff80 x2=7f00007efb68 lr=48523b8
+[IMP] fgets x0=7f00007efb80 x1=3ff x2=700000001000 lr=485238c
+[IMP] sscanf x0=7f00007efb80 x1=7f00007eff80 x2=7f00007efb68 lr=48523b8
+[IMP] fgets x0=7f00007efb80 x1=3ff x2=700000001000 lr=485238c
+[IMP] sscanf x0=7f00007efb80 x1=7f00007eff80 x2=7f00007efb68 lr=48523b8
+[IMP] fgets x0=7f00007efb80 x1=3ff x2=700000001000 lr=485238c
+[RUN-END] start=0x48bb3f0 pc=0x600000000000 reached_STOP=True elapsed=0.0s
+[CTOR 3] 0x48bbc5c
+[IMP] sysconf x0=27 x1=7f0001484737 x2=700000001000 lr=48bb580
+[IMP] sysconf x0=27 x1=7f0001484737 x2=700000001000 lr=48bb594
+[IMP] sysconf x0=27 x1=7f0001484737 x2=700000001000 lr=48bb5a8
+[IMP] mprotect x0=48db000 x1=1000 x2=7 lr=48bb5f0
+[IMP] mprotect x0=48db000 x1=1000 x2=5 lr=48bb8dc
+[IMP] sysconf x0=27 x1=7f0001484737 x2=5 lr=48bb580
+[IMP] sysconf x0=27 x1=7f0001484737 x2=5 lr=48bb594
+[IMP] sysconf x0=27 x1=7f0001484737 x2=5 lr=48bb5a8
+[IMP] mprotect x0=48db000 x1=1000 x2=7 lr=48bb5f0
+[IMP] mprotect x0=48db000 x1=1000 x2=5 lr=48bb8dc
+[IMP] fopen x0=4836115 x1=483541b x2=5 lr=4851974
+[IMP] fgets x0=7f00007efa60 x1=400 x2=700000002000 lr=48519c0
+[IMP] sscanf x0=7f00007efa60 x1=4834e8d x2=7f00007efa50 lr=48519f0
+[IMP] fgets x0=7f00007efa60 x1=400 x2=700000002000 lr=48519c0
+[IMP] sscanf x0=7f00007efa60 x1=4834e8d x2=7f00007efa50 lr=48519f0
+[IMP] fgets x0=7f00007efa60 x1=400 x2=700000002000 lr=48519c0
+[IMP] sscanf x0=7f00007efa60 x1=4834e8d x2=7f00007efa50 lr=48519f0
+[IMP] fgets x0=7f00007efa60 x1=400 x2=700000002000 lr=48519c0
+[IMP] malloc x0=1a8 x1=400 x2=700000002000 lr=48bbd2c
+[IMP] memset x0=700000003000 x1=0 x2=1a8 lr=48bbd40
+[IMP] memcmp x0=0 x1=48343d1 x2=4 lr=484dae0
+[IMP] free x0=700000003000 x1=bc757 x2=4 lr=48bbf90
+[RUN-END] start=0x48bbc5c pc=0x600000000000 reached_STOP=True elapsed=0.0s
+[CTOR 4] 0x48bc354
+[DRIVER] arg1=0x491ae28 arg2=0x0
+[IMP] malloc x0=1a8 x1=0 x2=4 lr=484fba4
+[IMP] memset x0=700000004000 x1=0 x2=1a8 lr=484fbb8
+[FN-ENTRY] x0=7f00007efe90 x1(param_2)=491ae28 x2(param_3)=0 lr=484fbe0
+  param_2 head: 000000000000000000000000000000008801000000000000a8f28f0400000000301d000000000000301d000000000000c0229d00000000000000000000000000c0229d0000000000b000000000000000b0bba1010000000088aa8f040000000000000000000000000700000000000000e68a0600000000000000000000000000030000000014100480239d000500000000000000bc000000000a000060b40100ffffffffffffffff
+[IMP] malloc x0=9d2380 x1=491ae28 x2=0 lr=484d4dc
+[CRYPT] src=0x491aed8 sz=0x9d2380 dst=0x700000005000 key=b''
+[IMP] memcpy x0=700000005000 x1=491aed8 x2=9d2380 lr=4849eb8
+[IMP] memset x0=7f00007efb70 x1=d7 x2=40 lr=4849f14
+[IMP] strlen x0=7f00007efdf9 x1=d7 x2=40 lr=4849f24
+[IMP] memcpy x0=7f00007efbbc x1=700000005040 x2=80 lr=484a178
+[IMP] malloc x0=4101400 x1=54 x2=2a5cdcdd06e5 lr=484d65c
+[AFTER-CRYPT2?] pc=484d66c x0=7000009d8000
+[CRYPT] src=0x238 sz=0x4101400 dst=0x7000009d8000 key=b''
+[IMP] memcpy x0=7000009d8000 x1=238 x2=4101400 lr=4849eb8
+[IMP] memset x0=7f00007efb70 x1=d7 x2=40 lr=4849f14
+[IMP] strlen x0=7f00007efdf9 x1=d7 x2=40 lr=4849f24
+[IMP] memcpy x0=7f00007efbbc x1=7000009d8040 x2=80 lr=484a178
+[RUN-END] start=0x48bc354 pc=0x484a714 reached_STOP=False elapsed=120.0s
+[CTOR 5] 0x48a3ffc
+[IMP] dlopen x0=48343d6 x1=0 x2=7f00007efb60 lr=48a4018
+[IMP] dlsym x0=700004ada000 x1=4834eaf x2=7f00007efb60 lr=48a402c
+[IMP] dlsym x0=700004ada000 x1=48356ef x2=7f00007efb60 lr=48a4060
+[IMP] dlclose x0=700004ada000 x1=48356ef x2=7f00007efb60 lr=600000000000
+[RUN-END] start=0x48a3ffc pc=0x600000000000 reached_STOP=True elapsed=0.0s
+[CTOR 6] 0x48b1f1c
+[IMP] sysconf x0=27 x1=48356ef x2=7f00007efb60 lr=48b1f2c
+[RUN-END] start=0x48b1f1c pc=0x600000000000 reached_STOP=True elapsed=0.0s
+[GLOBALS] cfg=0x491ae28 hdrptr=0x0
+[DRIVER] calling FUN_0494fb64
+[DRIVER] arg1=0x491ae28 arg2=0x0
+[IMP] malloc x0=1a8 x1=0 x2=7f00007efb60 lr=484fba4
+[IMP] memset x0=700004adb000 x1=0 x2=1a8 lr=484fbb8
+[FN-ENTRY] x0=7f00007efa30 x1(param_2)=491ae28 x2(param_3)=0 lr=484fbe0
+  param_2 head: 000000000000000000000000000000008801000000000000a8f28f0400000000301d000000000000301d000000000000c0229d00000000000000000000000000c0229d0000000000b000000000000000b0bba1010000000088aa8f040000000000000000000000000700000000000000e68a0600000000000000000000000000030000000014100480239d000500000000000000bc000000000a000060b40100ffffffffffffffff
+[IMP] malloc x0=9d2380 x1=491ae28 x2=0 lr=484d4dc
+[CRYPT] src=0x491aed8 sz=0x9d2380 dst=0x700004adc000 key=b''
+[IMP] memcpy x0=700004adc000 x1=491aed8 x2=9d2380 lr=4849eb8
+[IMP] memset x0=7f00007ef710 x1=d7 x2=40 lr=4849f14
+[IMP] strlen x0=7f00007ef999 x1=d7 x2=40 lr=4849f24
+[IMP] memcpy x0=7f00007ef75c x1=700004adc040 x2=80 lr=484a178
+[IMP] malloc x0=4101400 x1=54 x2=2a5cdcdd06e5 lr=484d65c
+[AFTER-CRYPT2?] pc=484d66c x0=7000054af000
+[CRYPT] src=0x238 sz=0x4101400 dst=0x7000054af000 key=b''
+[IMP] memcpy x0=7000054af000 x1=238 x2=4101400 lr=4849eb8
+[IMP] memset x0=7f00007ef710 x1=d7 x2=40 lr=4849f14
+[IMP] strlen x0=7f00007ef999 x1=d7 x2=40 lr=4849f24
+[IMP] memcpy x0=7f00007ef75c x1=7000054af040 x2=80 lr=484a178
+[RUN-END] start=0x484fb64 pc=0x484a700 reached_STOP=False elapsed=120.0s
+[CFG] 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[CRYPT-OUT 0] src=0x491aed8 sz=0x9d2380 -> /tmp/crypt_out_0_0x491aed8.bin head=01000000040000000000000000000000
+[CRYPT-OUT 1] src=0x238 sz=0x4101400 -> /tmp/crypt_out_1_0x238.bin head=08a95e048f6c1101789cecbd79404ddd
+[CRYPT-OUT 2] src=0x491aed8 sz=0x9d2380 -> /tmp/crypt_out_2_0x491aed8.bin head=01000000040000000000000000000000
+[CRYPT-OUT 3] src=0x238 sz=0x4101400 -> /tmp/crypt_out_3_0x238.bin head=08a95e048f6c1101789cecbd79404ddd
+[SAVED] 68162560 bytes -> /tmp/unpacked_payload.bin
+[HEAD] 08a95e048f6c1101789cecbd79404dddfb37bccf39bb3aa5721a5024a75192844c21a784902495644a5221493293534212a542a624953924a2922209950a2153
+[TRACE] last 80 pcs in FN: 484d4a4 484d4a8 484d4ac 484d4b0 484d4b4 484d4b8 484d4bc 484d4c0 484d4c4 484d4c8 484d4cc 484d4d0 484d4d4 484d4d8 484d4dc 484d4e0 484d4e4 484d4e8 484d534 484d538 484d53c 484d588 484d58c 484d5d4 484d5d8 484d5dc 484d5e0 484d5e4 484d5e8 484d5ec 484d5f0 484d5f4 484d5f8 484d5fc 484d600 484d604 484d608 484d60c 484d610 484d614 484d618 484d61c 484d620 484d624 484d628 484d62c 484d630 484d634 484d638 484d63c 484d640 484d644 484d648 484d64c 484d650 484d654 484d658 484d65c 484d660 484d664 484d668 484d66c 484d6ec 484d6f0 484d6f4 484d6f8 484d6fc 484d700 484d704 484d708 484d8c4 484d8c8 484d8cc 484d8d0 484d8d4 484d8d8 484d8dc 484d8e0 484d8e4 484d8e8
+[TRACE] distinct pcs=112 total=205
+[TRACE] max pc in fn=484db6c
