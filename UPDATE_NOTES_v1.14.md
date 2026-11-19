@@ -1,7 +1,32 @@
 # UPDATE NOTES — v1.14.27 vs v1.9.5
 
-**Status:** em andamento (2026-11-18). Meta: mapear o que mudou entre a versão estudada (1.9.5, abril/2026) e a atual (1.14.27, nov/2026).
+**Status: ✅ CONCLUÍDO** (2026-11-18/19, 4 campanhas de subagentes). Meta alcançada: mapeamento completo do que mudou entre 1.9.5 (abril/2026) e 1.14.27 (nov/2026).
 
+## ⭐⭐⭐ RESULTADO FINAL — Diff de classes (o objetivo do projeto)
+
+Superfície completa extraída das duas versões via metadata HTPX decodificado + validação cruzada contra o dump 1.9.5 original do runtime (10.995/10.997 classes idênticas):
+
+- **Classes**: 10.997 → **11.681** (79 → 85 assemblies)
+- **Assembly-CSharp**: 3.513 → 3.998 (+530/-45)
+- **6 assemblies novos**: Google.LibraryWrapper.OpenJdk8 (74), Play.Games.InputMapping (20), smartHelp (10), wjx (9), Google.LibraryWrapper.Java (5), **CenturyGame.GameFramework** (3)
+- **Métodos** (classes comuns): **+2.182/-688**
+- **Keywords de features (classes novas)**: towerdefense/mapa 188, battle 61, UI 43, activity 34, hero 7, gateway/net 6
+- Relatório completo: `reports/diff_195_vs_114_classes.md`; dumps JSON em `~/work/apk/il2cpp_dump_{114,195}/`
+
+## 🔓 A resposta técnica completa (como o metadata foi aberto)
+
+1. **HTPX** = metadata v24 em claro ⊕ keystream XOR periódica de 1152 B (9×128)
+2. **Gerador da keystream REPRODUZIDO** (`reports/keystream_gen.md` + `htpx_decrypt.py`): vive no libunity @0x1447040; chave CRC32 (poly 0x04C11DB7 derivada do tamanho) semeia RC4 modificado; palavras do header escolhem 1 de 4 classes de blocos XOR por 128 B — valida as duas versões byte a byte
+3. **Layout v24 resolvido** (o pulo do gato: os pares do header apontam +8 além do início real): typeDefs 0x58, images 0x28 (layout completo no relatório), methods 36 B — 0 divergências em 92.976 declarações
+4. Emulador semeado: packer inteiro em ~6 s (era 120 s preso na cifra)
+
+## Bloco 0 dos bundles (estado final)
+
+- **Keystream GLOBAL** (mesma K[i] p/ todos os bundles e ambas versões — premissa por-bundle refutada com evidência); gerada em runtime (sem tabela estática)
+- Reader do libunity = Unity puro (chain toda decompilada, `reports/libunity_reader.md`); a transformação está em outro ponto do runtime — candidata natural: o mesmo gerador RC4/CRC32 do HTPX (mesma família de assinatura)
+- Faltam: recuperar K[0..4095] (runs idênticos entre bundles dão o caminho) e achar a rotina que aplica
+
+---
 ## ⭐ Diff de conteúdo (bundles) — PRONTO
 
 Análise completa dos 7279 bundles (0 erros, sem precisar do bloco 0): **+2044 bundles novos / −1397 removidos / +130 MB**. Destaques:
