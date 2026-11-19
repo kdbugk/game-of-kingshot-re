@@ -25,6 +25,16 @@ O leitor do bloco 0 NÃO foi localizado na imagem desempacotada: strings UnityFS
 
 A hipótese da sessão anterior foi derrubada com evidência (subagente): o dump `metadata_live_dump.bin` é um **heap arena do il2cpp/Unity**, não o buffer do global-metadata — sem string heap sequencial, sem `.ctor`/`mscorlib`/`<Module>`, sem sanity 0xFAB11BAF. As âncoras "Assembly-CSharp" estavam dentro de structs runtime. Próximos passos corretos documentados em `reports/meta_recon.md`: scan por runs `<Module>\0.ctor\0`, ponteiro global do metadata na lib, ou decriptar o HTPX via emulador.
 
+## 🔓 libil2cpp COMPLETO reconstruído + teoria IFix (campanha subagentes #2)
+
+**Part B resolvido** (lane E): o blob = Phdr[7] + Sym[295] + Rela[428.774] do ELF original; aplicadas as RELATIVE → **`libil2cpp_114_full.so` e `libil2cpp_195_full.so` completos** (tabelas RW/vtables/GOT) — relatório `reports/partb_format.md`.
+
+**Bloco 0 decifrado em camadas** (lane C, 119 bundles): prólogo = tokens LZ4 normais; criptografia = XOR 0xA6 (~bytes 50-80) + chave por-bundle a partir do byte ~81; **apenas os primeiros 4096 bytes são cifrados** (resto = LZ4 puro); indício de período 128 na chave. Chave derivável de campos do header (csz/usz/nome CAB). Relatório `reports/block0_statistical.md`.
+
+**Loader hunt** (lane D): o caminho C# é Unity puro (`AssetBundle.LoadFromFile(path, 0, get_BundleEncryptOffset())`) e o offset vem de **stub IFix** — retorna 0 sem patch. `BundleLoader::Load` idêntico entre versões. **TEORIA UNIFICADA: o decryptor do bloco 0 é código IFix aplicado em runtime** (por isso ausente de todos os binários). Mapeamento 1.9.5 corrigido: file_off = RVA − 0x4000 (não −0x238). Relatório `reports/loader_hunt.md`.
+
+**Ponte verificada 1.9.5→1.14.27** (RVAs do dump.cs): initDecrypt → 0x1b0d950 (92%), ButtonEx.OnPointerClick → 0x26de590 (95%).
+
 ---
 
 ## Aquisição
