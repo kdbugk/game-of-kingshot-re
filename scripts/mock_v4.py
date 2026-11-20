@@ -193,9 +193,9 @@ class Session:
         self.push("notify_produced_resource_update", {"data": out})
 
     def h_hunting_tool_obtain(self, m):
-        # ciclo de caca = so esta req (nao existe hunting_start): obtain -> work_endtime da ferramenta (furniture type18)
-        # volta ao futuro curto (30s) via notify_shelter_info; recompensa em recurso; sobrevivente fica em status 2
+        # receita do servidor REAL (cap_combat2): push notify_produced_resource_update ANTES da resp
         sid = m["obj"].get("sid"); end = self.now() + 30
+        self.push("notify_produced_resource_update", {"data": [{"id": 192, "count": 422569387}, {"id": 102, "count": 16887448}]})
         self.reply(m, {"code": 0, "work_endtime": end})
         fid = None
         for s_ in (self.burst_tpl("notify_survivor_info") or {}).get("survivor_list", []):
