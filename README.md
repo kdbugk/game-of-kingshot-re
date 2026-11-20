@@ -66,3 +66,12 @@ a mensagens legítimas pontuais da própria conta, e o servidor de produção re
 não bate com o estado: ver lição 10); (2) o campo de provas é o **mock próprio**, que
 replica fielmente o protocolo. O objetivo final é construtivo: o blueprint de um jogo
 próprio.
+
+## docs/ — as cartilhas teóricas (comece aqui!)
+
+| Cartilha | Lê em |
+|---|---|
+| `docs/COMO-O-JOGO-FUNCIONA.md` | 5 min — arquitetura, quem manda no quê, os loops |
+| `docs/COMO-A-REDE-FUNCIONA.md` | 5 min — sproto, sessões, cifras, o catálogo |
+| `docs/COMO-O-ANTI-TAMPER-FUNCIONA.md` | 5 min — packer, motor de vigilância, veredito |
+| `docs/COMO-OS-ASSETS-FUNCIONAM.md` | 4 min — bundles, cifra do bloco 0, o luapackage |
