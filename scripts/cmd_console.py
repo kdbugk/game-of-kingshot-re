@@ -92,9 +92,9 @@ def main():
     }
     obj = args if args else DEFAULTS.get(name, {})
 
-    # print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
-    # resp = req(name, obj, 6.0)
-    # print(f"[resposta] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
+    print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
+    resp = req(name, obj, 6.0)
+    print(f"[resposta] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
 
 
     def enviar(name, obj):
