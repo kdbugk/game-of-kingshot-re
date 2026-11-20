@@ -87,6 +87,25 @@ class Session:
         # rtmcode!=0 = chat RTM indisponivel (esperamos que o cliente desista e siga)
         self.reply(m, {"code": 0, "rtmcode": 1, "token": ""})
 
+    # ---- ACOES: handlers com recompensa real (sandbox generoso)
+    def h_hangup(self, m):
+        rew = [{"id": 102, "value": 100000}, {"id": 103, "value": 50000}, {"id": 105, "value": 20000}]
+        self.reply(m, {"code": 0, "hang_start_time": self.now() - 3600, "current_reward": rew, "expert_reward": []})
+
+    def h_hangup_view(self, m):
+        rew = [{"id": 102, "value": 100000}, {"id": 103, "value": 50000}]
+        self.reply(m, {"open_hang_up_reward_view_time": self.now(), "current_reward": rew, "expert_reward": []})
+
+    def h_online_reward(self, m):
+        self.reply(m, {"code": 0, "online_reward": [{"id": 101, "count": 500}, {"id": 102, "count": 20000}], "receive_start_time": self.now() + 3600})
+
+    def h_daily_award(self, m):
+        self.reply(m, {"code": 0, "integral": 999, "geted_boxid": [], "expert_effect_map": []})
+
+    def h_recruit(self, m):
+        res = [{"code": 0, "bid": b, "soldier_id": 601, "soldier_num": 100} for b in (m["obj"].get("arr_bid") or [])]
+        self.reply(m, {"code": 0, "map_result": res})
+
     def h_cheat_add(self, m):
         items = m["obj"].get("data") or []
         for it in items:
@@ -115,7 +134,10 @@ class Session:
          "req_trigger_opinion": h_opinion, "req_save_client_data": h_save,
          "req_players_base_info_with_permission": h_players,
          "req_cheat_add": h_cheat_add, "req_cheat_set_hero_lev": h_cheat_hero,
-         "req_chat_get_token": h_chat_token}
+         "req_chat_get_token": h_chat_token,
+         "req_get_hang_up_reward": h_hangup, "req_open_hang_up_reward_view": h_hangup_view,
+         "req_receive_online_reward": h_online_reward, "req_get_all_dailyquest_award": h_daily_award,
+         "req_barrack_recruit_soldier": h_recruit}
 
     def run(self):
         try:
