@@ -125,15 +125,29 @@ class Session:
     # ---- LOTE 2: familias que o operador usou e nao funcionavam (sandbox generoso)
     def push(self, name, obj): self.send(L.build_push(self.S, name, obj))
 
+    def push_survivor_info(self, sid=None, status=None):
+        tpl = None
+        for n, o in (self.fx or {}).get("burst", []):
+            if n == "notify_survivor_info": tpl = o; break
+        if tpl is None: return
+        o = json.loads(json.dumps(tpl))
+        if sid is not None:
+            for s in o.get("survivor_list", []):
+                if s.get("sid") == sid and status is not None: s["status"] = status
+        self.push("notify_survivor_info", o)
+
     def h_survivor_work_start(self, m):
-        self.surv_work.add(m["obj"].get("sid")); self.reply(m, {"code": 0, "time": self.now()})
+        sid = m["obj"].get("sid"); self.surv_work.add(sid); self.reply(m, {"code": 0, "time": self.now()})
+        self.push_survivor_info(sid, 2)
 
     def h_survivor_work_pause(self, m):
         for s in m["obj"].get("sid_list") or []: self.surv_work.discard(s)
         self.reply(m, {"code": 0})
+        self.push_survivor_info()
 
     def h_hunting_tool_obtain(self, m):
         self.reply(m, {"code": 0, "work_endtime": self.now() + 60})
+        self.push_survivor_info(m["obj"].get("sid"), 2)
 
     def h_upgrade_building(self, m):
         o = m["obj"]; bid = o.get("bid"); qid = o.get("qid") or 10001
