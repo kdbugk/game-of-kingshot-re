@@ -15,6 +15,8 @@ Uso:
 import sys, os, socket, json, pickle, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sproto_lib as L
+import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 TARGETS = {"mock": ("127.0.0.1", 30101), "prod": ("3.33.245.139", 30101)}
 TRANSCRIPT = "/home/re/work/apk/gw_transcript115.pkl"
@@ -86,13 +88,31 @@ def main():
         "req_mail_type_info": {},
         "req_shop_info": {"arr_id": [101, 601]},
         "req_rank_info": {"list_type": [{"type": 1, "ext": {"aid": 0}}]},
-        "req_climbtower_challenge": {"id": 40021, "formation_prefab": [{"id": 1, "prefab": {"soldier": [{"k": 21000, "v": 51400}]}}]},
+        "req_climbtower_challenge": {"id": 40023, "formation_prefab": [{"id": 1, "prefab": {"soldier": [{"k": 21000, "v": 51400}]}}]},
     }
     obj = args if args else DEFAULTS.get(name, {})
 
-    print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
-    resp = req(name, obj, 6.0)
-    print(f"[resposta] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
+    # print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
+    # resp = req(name, obj, 6.0)
+    # print(f"[resposta] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
+
+
+    def enviar(name, obj):
+        print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
+        return req(name, obj, 6.0)
+
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futuros = {pool.submit(enviar, name, obj): name for name, obj in itens}
+        for fut in as_completed(futuros):
+            name = futuros[fut]
+            try:
+                resp = fut.result()
+            except Exception as e:
+                print(f"[erro] {name} {e!r}")
+                continue
+            print(f"[resposta] {name} {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
+
+
     sock.close()
     print("[fim]")
 
