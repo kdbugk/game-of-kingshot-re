@@ -1,0 +1,2893 @@
+c2s	3301	req_schedule_info	
+c2s	13251	req_icebound_amazing_open_chest	开启宝箱
+c2s	13252	req_icebound_amazing_refresh	刷新宝箱
+c2s	13253	req_icebound_amazing_progress_reward	领取进度奖励
+c2s	13254	req_icebound_amazing_winners_watch	
+c2s	13255	req_icebound_amazing_winners_watch_rsp	
+c2s	9751	req_accumulative_collect_reward	
+c2s	10051	req_achievement_info	获取所有情报任务
+c2s	10052	req_achievement_get_rank_data	获取排行任务的排行榜
+c2s	10053	req_achievement_get_reward	获取奖励
+c2s	11401	req_get_active_recharge_quest_reward	领取任务奖励
+c2s	11402	req_get_active_recharge_score_reward	领取宝箱奖励
+c2s	2151	req_activity_drop_data	获取活动掉落数据
+c2s	9901	req_activity_calendar_get_data	获取日历数据
+c2s	21131	req_activity_gift_popup_claim	领取赠礼
+c2s	30971	req_adgame_setting	信息提交(废弃协议)
+c2s	30972	req_adgame_save_info	小游戏进度提交(废弃协议)
+c2s	30973	req_adgame_get_reward	小游戏领奖
+c2s	1501	req_begin_adventure_pve	开始挑战
+c2s	1502	req_end_adventure_pve	完成挑战
+c2s	1503	req_get_hang_up_reward	领取挂机收益
+c2s	1504	req_open_hang_up_reward_view	打开挂机奖励
+c2s	12651	req_advertising_end	广告播放结束
+c2s	12652	req_advertising_get_reward	领取广告奖励
+c2s	12653	req_advertising_get_stage_reward	领取累积奖励
+c2s	12654	req_advertising_skip_and_get_reward	广告播放结束的同时领取奖励(用于付费玩家)
+c2s	5101	req_alliance_create	创建联盟
+c2s	5102	req_alliance_check_name	名称检查
+c2s	5103	req_alliance_check_abbr	简称检查
+c2s	5104	req_alliance_modify_notice	修改公告
+c2s	5105	req_alliance_modify_name	修改名称
+c2s	5106	req_alliance_modify_abbr	修改简称
+c2s	5107	req_alliance_modify_flag	修改旗帜
+c2s	5108	req_alliance_modify_manifesto	修改修改宣言
+c2s	5109	req_alliance_modify_recruit_type	修改招募类型
+c2s	5110	req_alliance_modify_recruit_cond	修改招募条件
+c2s	5111	req_alliance_modify_language	修改语言
+c2s	5112	req_alliance_dismiss	解散联盟
+c2s	5113	req_alliance_change_leader	转让盟主
+c2s	5114	req_alliance_del_member	踢出联盟
+c2s	5115	req_alliance_join	加入联盟
+c2s	5116	req_alliance_apply_join	申请加入联盟(联盟公开时直接加入)
+c2s	5117	req_alliance_deal_apply	处理申请
+c2s	5118	req_alliance_invite_member	邀请
+c2s	5119	req_alliance_deal_invite	处理邀请
+c2s	5120	req_alliance_change_rank	修改阶级
+c2s	5121	req_alliance_quit	退盟
+c2s	5122	req_alliance_replace_leader	取代盟主
+c2s	5123	req_alliance_members	成员列表
+c2s	5124	req_alliance_applys	申请列表
+c2s	5125	req_alliance_modify_rank_name	修改阶级名称
+c2s	5126	req_alliances_info	获取联盟信息(本王国的)
+c2s	5127	req_alliance_search_by_key	根据关键字搜索联盟
+c2s	5128	req_alliance_search_init	联盟推荐列表
+c2s	5129	req_alliance_recommend_players	邀请推荐列表
+c2s	5131	req_alliance_setting	请求联盟设置
+c2s	5132	req_alliance_cancel_apply	取消申请
+c2s	5133	req_alliance_fast_join	一键加入
+c2s	5134	req_alliances_baseinfo	获取联盟基础信息
+c2s	5135	req_alliance_recommend_alliance	获取单个推荐联盟
+c2s	5136	req_alliance_init_data	请求联盟初始化信息
+c2s	5138	req_alliance_detail_info	获取联盟详细信息
+c2s	5139	req_alliances_brief_info	获取联盟简要信息(支持跨服)
+c2s	5140	req_alliance_power	获取本盟战力
+c2s	5141	req_alliance_exchange_resource	联盟资源兑换
+c2s	5142	req_alliance_online_info	联盟成员在线信息
+c2s	5143	req_alliance_cross_capital_war_win_history	请求指定联盟的跨服王战获胜记录
+c2s	5144	req_alliance_get_notice_history	分页获取公告历史
+c2s	5145	req_alliance_del_notice_history	删除公告历史
+c2s	5146	req_alliance_whitelist_get	获取白名单列表
+c2s	5147	req_alliance_whitelist_add	添加白名单
+c2s	5148	req_alliance_whitelist_del	删除白名单
+c2s	5149	req_alliance_like_notice	点赞联盟公告
+c2s	5150	req_alliance_cur_notice_like_data	请求当前点赞数量
+c2s	5151	req_alliance_honor_get_league_history	请求指定联盟的联赛记录
+c2s	5152	req_alliance_check_whitelist_by_uid	检查目标是否在当前联盟的白名单中
+c2s	5153	req_alliance_reserve_notice	发布预约联盟公告
+c2s	5154	req_alliance_cancel_reserve_notice	取消发布预约联盟公告
+c2s	5155	req_alliance_change_reserve_notice	修改预约的联盟公告
+c2s	5156	req_alliance_get_all_reserve_notice	拉取联盟预约公告列表
+c2s	5157	req_alliance_get_reserve_notice_count	获取预约公告的数量
+c2s	5160	req_alliance_cover_info	获取联盟封面信息, 目前仅开放给国王和霸主
+c2s	5161	req_alliance_star_history_notice	历史公告设置星标
+c2s	5162	req_alliance_top_history_notice	历史公告置顶
+c2s	5163	req_alliance_history_notice_open_like	修改联盟历史公告可点赞状态
+c2s	5164	req_alliance_get_notice_star_history	分页获取星标历史公告
+c2s	10001	req_alliance_activity_auto_join_info	
+c2s	10002	req_alliance_activity_auto_join_open	
+c2s	10003	req_alliance_activity_auto_join_close	
+c2s	16951	req_alliance_bomb_use	
+c2s	8201	req_alliance_building_add	
+c2s	8202	req_alliance_building_remove	
+c2s	8203	req_alliance_hall_move	
+c2s	8204	req_alliance_building_list	
+c2s	8205	req_alliance_building_list_exist	
+c2s	8206	req_remind_place_alliance_resource	
+c2s	5301	req_alliance_receive_chest	领取联盟宝箱
+c2s	5302	req_alliance_receive_chest_by_type	根据类型领取宝箱(旧协议)
+c2s	5303	req_alliance_chest_set_anonymity	设置宝箱匿名
+c2s	5304	req_alliance_receive_chest_by_ids	根据宝箱ID列表领取
+c2s	30211	req_alliance_dev_get_main	获取开拓界面数据
+c2s	30212	req_alliance_dev_get_daily	领取每日奖励
+c2s	30213	req_alliance_dev_get_week	领取周宝箱
+c2s	30214	req_alliance_dev_get_rank	获取开拓排行榜
+c2s	17181	req_alliance_duel_get_box_reward	领取宝箱
+c2s	17182	req_alliance_duel_show_info	获取活动对决展示数据
+c2s	17183	req_alliance_duel_group_info	获取赛程展示数据
+c2s	17184	req_alliance_duel_user_score_record	获取玩家积分记录
+c2s	17185	req_alliance_duel_user_score_rank	获取联盟内玩家积分排行
+c2s	17186	req_alliance_duel_settlement_info	获取结算数据
+c2s	17187	req_alliance_duel_get_player_total_score	获取自己的总积分
+c2s	17188	req_alliance_duel_get_history	获取联盟对决历史记录
+c2s	17189	req_alliance_duel_allowed_alliance	请求允许的联盟id
+c2s	17190	req_alliance_duel_opponent_stage_score	获取对手积分阶段积分数据
+c2s	17191	req_alliance_duel_opponent_score_rank	获取对手总积分排名
+c2s	17192	req_alliance_duel_get_all_stage_score	获取所有阶段积分
+c2s	17193	req_alliance_duel_get_all_box_reward	一键领取所有宝箱
+c2s	17194	req_alliance_duel_get_stage_result	获取阶段结果
+c2s	5251	req_alliance_help_all	帮助所有队列
+c2s	9601	req_alliances_log	请求联盟日志
+c2s	9602	req_alliance_battle_logs	请求联盟战斗日志
+c2s	9603	req_alliance_activity_logs	请求联盟活动日志
+c2s	9604	req_alliance_activity_sub_logs	请求联盟活动子日志
+c2s	5401	req_alliance_player_rank_data	玩家捐献数据
+c2s	5402	req_alliance_rank_data	联盟排行榜数据
+c2s	5403	req_alliance_rank_get_rewards	领取捐献排行奖励
+c2s	5404	req_alliance_members_power_rank	查询联盟成员战力
+c2s	5405	req_alliance_members_kill_num_rank	查询联盟成员杀敌数
+c2s	5201	req_alliance_science_recommend	推荐科技
+c2s	5202	req_alliance_science_cancel_recommend	取消推荐科技
+c2s	5203	req_alliance_science_research	研究科技
+c2s	5204	req_alliance_science_donate	请求联盟捐献
+c2s	5205	req_alliance_science_diamond_donate	请求联盟钻石捐献
+c2s	9801	req_alliance_showdown_activity_info	活动首页信息
+c2s	9802	req_alliance_showdown_alliance_info	联盟分路信息
+c2s	9803	req_alliance_showdown_apply	报名
+c2s	9804	req_alliance_showdown_change_type	玩家修改自己的分路
+c2s	9805	req_alliance_showdown_apply_list	本联盟报名信息
+c2s	9806	req_alliance_showdown_apply_detail	报名编队详情
+c2s	9807	req_alliance_showdown_reorganize	R4/R5调整分路(旧版本协议,弃用)
+c2s	9808	req_alliance_showdown_group_info	联盟赛程信息
+c2s	9809	req_alliance_showdown_can_invite_uids	可邀请成员
+c2s	9810	req_alliance_showdown_invite_apply	发送邀请报名邮件
+c2s	9840	req_alliance_showdown_battle_report	战报详情
+c2s	9841	req_alliance_showdown_battle_wave_report	波次战报详情
+c2s	9842	req_alliance_showdown_kingdom_join_alliances	王国成功报名联盟
+c2s	9843	req_alliance_showdown_rank_list	段位排行榜
+c2s	9844	req_alliance_showdown_rank_info	本联盟排行榜信息
+c2s	9845	req_alliance_showdown_battle_round_report	联盟本赛季回合战报
+c2s	9846	req_alliance_showdown_reorganize_way	R4/R5调整分路
+c2s	9847	req_alliance_showdown_change_player_way	R4/R5调整单个玩家分路
+c2s	9848	req_alliance_showdown_operate_records	获取操作记录
+c2s	10401	req_alliance_trap_info	
+c2s	10402	req_alliance_trap_start	
+c2s	10403	req_alliane_trap_start_reserve	
+c2s	10404	req_alliance_trap_buff_strengthen	
+c2s	10405	req_alliance_trap_score_rank	
+c2s	10406	req_alliance_trap_join_count	指定时间联盟可参与陷阱的人数
+c2s	10407	req_alliance_trap_get_personal_score_reward	猎熊陷阱领取个人积分奖励
+c2s	10408	req_alliance_trap_batch_get_personal_score_reward	猎熊陷阱批量领取个人积分奖励
+c2s	10409	req_alliance_trap_get_mass_record	查询个人伤害记录
+c2s	10410	req_alliance_trap_auto_reserve	设置预约陷阱开关
+c2s	15251	req_alliance_vote_add	新增投票
+c2s	15252	req_alliance_vote_top	投票置顶
+c2s	15253	req_alliance_vote_finish	立即结束投票
+c2s	15254	req_alliance_vote_delete_record	删除投票记录
+c2s	15255	req_alliance_vote_select	投票
+c2s	15256	req_alliance_vote_records	投票记录
+c2s	15257	req_alliance_vote_record_detail	投票记录详情
+c2s	15258	req_alliance_vote_share_to_uids	发送投票通知给玩家
+c2s	30331	req_alliance_war_mark_leader	收藏集结发起者
+c2s	20701	req_anniv_preview_watch	观看视频
+c2s	20702	req_gain_anniv_preview_reward	领取奖励
+c2s	20703	req_anniv_preview_send_bullet	
+c2s	20704	req_anniv_preview_get_bullet_chats	
+c2s	30221	req_anniv_review_get_mail_reward	领取邮件奖励
+c2s	30222	req_anniv_review_get_punch_reward	领取猜拳奖励
+c2s	30223	req_anniv_review_get_scene_reward	领取场景奖励
+c2s	16231	req_annual_stat_get_info	请求周年回顾数据
+c2s	8451	req_arena_rank_range	获取排行榜数据
+c2s	8452	req_arena_set_defence_heroes	设置防守阵容
+c2s	8453	req_arena_refresh_opponent	刷新对手
+c2s	8454	req_arena_fight	战斗
+c2s	8455	req_arena_buy_challenge_times	购买挑战次数
+c2s	8456	req_arena_report	获取战报
+c2s	8457	req_arena_get_defence_team_info	获取阵容信息
+c2s	8458	req_arena_get_battle_data	
+c2s	8459	req_arena_read_report	
+c2s	8460	req_arena_get_opponent	获取对手
+c2s	8461	req_arena_get_share_battle_data	查看分享的竞技场战报
+c2s	30581	req_arsenal_league_legion_match_info	获取军团匹配数据
+c2s	30582	req_arsenal_league_schedule	获取赛区赛程表
+c2s	30583	req_arsenal_league_legion_rank	军团战力排行榜
+c2s	30584	req_arsenal_league_legion_score_rank	军团净胜分排行榜
+c2s	30585	req_arsenal_league_match_info	查看场次对阵详情
+c2s	30586	req_arsenal_league_match_infos_8_stage	查看指定阶段指定轮次的场次详情
+c2s	30587	req_arsenal_league_refresh_match_info	刷新比赛数据
+c2s	30588	req_arsenal_league_last_battle_reuslt	战斗结果回顾
+c2s	30589	req_arsenal_league_get_zone_info	获取赛区信息
+c2s	30590	req_arsenal_league_scoring_schedule	获取赛区积分赛赛程表
+c2s	30521	req_alliance_arsenal_league_get_history	获取历史数据
+c2s	30522	req_alliance_arsenal_league_vote	跨服战投票
+c2s	30523	req_alliance_arsenal_league_vote_notice	跨服战投票通知
+c2s	30524	req_alliance_arsenal_league_sign_up	跨服战报名
+c2s	30525	req_alliance_arsenal_league_ask_for_battle	请战
+c2s	30526	req_alliance_arsenal_league_onekey_dispatch	一键派遣(暂时废弃)
+c2s	30527	req_alliance_arsenal_league_send_vote_mail	发送投票邮件
+c2s	30528	req_alliance_arsenal_league_send_request_mail	发送请战邮件
+c2s	30529	req_alliance_arsenal_league_dispatch_operator	派遣操作
+c2s	30530	req_alliance_arsenal_league_records	请求兵工厂记录
+c2s	30531	req_alliance_arsenal_league_forbid_for_battle	不出战
+c2s	30532	req_alliance_arsenal_league_power_strike_score	获取袭击分数
+c2s	30533	req_alliance_arsenal_league_login_weekly	每周登陆数量
+c2s	30534	req_alliance_arsenal_league_get_participant_uids	
+c2s	17301	req_arsenal_league_enter_battlefield	进入战场
+c2s	17302	req_arsenal_league_move_city	高级迁城
+c2s	17303	req_arsenal_league_march	出征
+c2s	17304	req_arsenal_league_march_speedup	加速部队
+c2s	17305	req_arsenal_league_march_recall	召回部队(包括行军中的集结部队)
+c2s	17306	req_arsenal_league_march_off_work	召回己方working中的部队
+c2s	17307	req_arsenal_league_march_detail	请求部队（地图行军）详情
+c2s	17308	req_arsenal_league_detail_4_player_situation	请求部队(个人军情)详情
+c2s	17309	req_arsenal_league_mass_march_detail_4_player_situation	请求集结部队(个人军情)详情
+c2s	17310	req_arsenal_league_mass_march_detail_4_alliance_situation	请求集结部队(联盟军情)详情
+c2s	17311	req_arsenal_league_defense_march_detail_4_alliance_situation	请求防御部队(联盟军情)详情
+c2s	17312	req_arsenal_league_call_zombie	召唤丧尸
+c2s	17313	req_arsenal_league_exit_battlefield	退出战场
+c2s	17314	req_arsenal_league_del_watch	移除战场监听
+c2s	17315	req_arsenal_league_mass_master_detail	请求集结部队（地图行军）详情
+c2s	17316	req_arsenal_league_mass_prepare_cancel	取消联盟集结(准备阶段)
+c2s	17317	req_arsenal_league_battlefield_map_info	# 获取战场地图相关数据
+c2s	17318	req_arsenal_league_mass_slave_repatriate	队长遣返集结从属部队（集结部队准备阶段）
+c2s	17319	req_arsenal_league_occupy_obj_repatriate	队长或联盟管理遣返建筑内盟友部队
+c2s	17320	req_arsenal_league_occupy_obj_change_captain	队长或联盟管理转让建筑队长
+c2s	17321	req_arsenal_league_mass_invite	集结邀请
+c2s	17322	req_arsenal_league_embassy_repatriation	
+c2s	17323	req_arsenal_league_embassy_help_simple_info	请求目标玩家援军简要信息
+c2s	17324	req_arsenal_league_embassy_help_march_detail_list	请求自己的援军详情界面
+c2s	17325	req_arsenal_league_occupy_obj_repatriate_recall	遣返在路上的部队
+c2s	17326	req_arsenal_league_battlefield_stat_info	战场统计详情
+c2s	17328	req_arsenal_league_buidling_defense_detail	队列详情
+c2s	17329	req_arsenal_league_building_send_map_expression	发送建筑表情
+c2s	17330	req_arsenal_league_march_send_map_expression	发送队列表情
+c2s	17331	req_arsenal_league_alliance_mass_prepare_cancel	联盟管理取消集结(准备阶段)
+c2s	17332	req_arsenal_league_mass_slave_alliance_repatriate	遣返集结从属部队（集结部队准备阶段）
+c2s	17333	req_arsenal_league_spectator_enter_battlefield	进入自己联盟的战场观战
+c2s	17334	req_arsenal_league_spectator_battlefield_map_info	# 获取观战地图相关数据
+c2s	17335	req_arsenal_league_spectator_exit_battlefield	退出观战战场
+c2s	17336	req_arsenal_league_spectator_battlefield_stat_info	观战战场统计详情
+c2s	17337	req_arsenal_league_mass_slave_top	集结发起者置顶队员顺位
+c2s	30481	req_arsenal_league_guess_bet_winner	胜负竞猜 投注/加注
+c2s	30482	req_arsenal_league_guess_get_winner_bet_info	胜负竞猜 获取投注信息
+c2s	30483	req_arsenal_league_guess_get_winner_bet_history	胜负竞猜 获取投注历史
+c2s	30484	req_arsenal_league_guess_bet_champion	冠军竞猜 投注/加注
+c2s	30485	req_arsenal_league_guess_get_champion_bet_info	冠军竞猜 获取投注信息
+c2s	30486	req_arsenal_league_guess_get_champion_bet_history	冠军竞猜 获取投注历史
+c2s	30488	req_arsenal_league_guess_get_champion_bet_get_champion_reward	冠军竞猜 获取冠军奖励
+c2s	30489	req_arsenal_league_guess_get_rank	竞猜排行榜
+c2s	30631	req_arsenal_league_honor_hall_reward	领取荣耀殿堂奖励
+c2s	30632	req_arsenal_league_honor_alliance_rank	
+c2s	30633	req_arsenal_league_honor_mvp_info	
+c2s	30634	req_arsenal_league_honor_kingdom_reward	领取王国奖励
+c2s	30571	req_arsenal_league_task_reward	领取任务奖励
+c2s	11101	req_arsenal_war_enter_battlefield	进入战场
+c2s	11102	req_arsenal_war_move_city	高级迁城
+c2s	11103	req_arsenal_war_march	出征
+c2s	11104	req_arsenal_war_march_speedup	加速部队
+c2s	11105	req_arsenal_war_march_recall	召回部队(包括行军中的集结部队)
+c2s	11106	req_arsenal_war_march_off_work	召回己方working中的部队
+c2s	11107	req_arsenal_war_march_detail	请求部队（地图行军）详情
+c2s	11108	req_arsenal_war_detail_4_player_situation	请求部队(个人军情)详情
+c2s	11109	req_arsenal_war_mass_march_detail_4_player_situation	请求集结部队(个人军情)详情
+c2s	11110	req_arsenal_war_mass_march_detail_4_alliance_situation	请求集结部队(联盟军情)详情
+c2s	11111	req_arsenal_war_defense_march_detail_4_alliance_situation	请求防御部队(联盟军情)详情
+c2s	11112	req_arsenal_war_call_zombie	召唤丧尸
+c2s	11113	req_arsenal_war_exit_battlefield	退出战场
+c2s	11114	req_arsenal_war_del_watch	移除战场监听
+c2s	11116	req_arsenal_war_mass_master_detail	请求集结部队（地图行军）详情
+c2s	11117	req_arsenal_war_mass_prepare_cancel	取消联盟集结(准备阶段)
+c2s	11118	req_arsenal_war_battlefield_map_info	# 获取战场地图相关数据
+c2s	11119	req_arsenal_war_mass_slave_repatriate	遣返集结从属部队（集结部队准备阶段）
+c2s	11121	req_arsenal_war_occupy_obj_repatriate	遣返建筑内盟友部队
+c2s	11122	req_arsenal_war_occupy_obj_change_captain	转让建筑队长
+c2s	11123	req_arsenal_war_mass_invite	集结邀请
+c2s	11124	req_arsenal_war_embassy_repatriation	
+c2s	11125	req_arsenal_war_embassy_help_simple_info	请求目标玩家援军简要信息
+c2s	11126	req_arsenal_war_embassy_help_march_detail_list	请求自己的援军详情界面
+c2s	11127	req_arsenal_war_occupy_obj_repatriate_recall	遣返在路上的部队
+c2s	11128	req_arsenal_war_battlefield_stat_info	战场统计详情
+c2s	11129	req_arsenal_war_get_count_reward	领取倒数奖励
+c2s	11130	req_arsenal_war_buidling_defense_detail	队列详情
+c2s	11131	req_arsenal_war_building_send_map_expression	发送建筑表情
+c2s	11132	req_arsenal_war_march_send_map_expression	发送队列表情
+c2s	11133	req_arsenal_war_alliance_mass_prepare_cancel	联盟管理取消集结(准备阶段)
+c2s	11134	req_arsenal_war_mass_slave_alliance_repatriate	遣返集结从属部队（集结部队准备阶段）
+c2s	11135	req_arsenal_war_mass_slave_top	集结发起者置顶队员顺位
+c2s	11901	req_alliance_arsenal_war_get_history	获取历史数据
+c2s	11902	req_alliance_arsenal_war_vote	跨服战投票
+c2s	11903	req_alliance_arsenal_war_vote_notice	跨服战投票通知
+c2s	11904	req_alliance_arsenal_war_sign_up	跨服战报名
+c2s	11905	req_alliance_arsenal_war_dispatch	派遣
+c2s	11906	req_alliance_arsenal_war_ask_for_battle	请战
+c2s	11907	req_arsenal_war_alliance_power_strike_score	获取袭击分数
+c2s	11908	req_alliance_arsenal_war_onekey_dispatch	一键派遣
+c2s	11909	req_alliance_arsenal_war_get_show_info	获取活动界面展示数据
+c2s	11910	req_alliance_arsenal_win_rate_rank_list	兵工厂胜率排行榜
+c2s	11911	req_alliance_arsenal_send_vote_mail	发送投票邮件
+c2s	11912	req_alliance_arsenal_send_request_mail	发送请战邮件
+c2s	11913	req_alliance_arsenal_war_dispatch_operator	派遣操作
+c2s	11914	req_alliance_arsenal_war_records	请求兵工厂记录
+c2s	11915	req_alliance_arsenal_war_forbid_for_battle	不出战
+c2s	11916	req_arsenal_war_alliance_power_strike_score_new	获取袭击分数
+c2s	11992	req_alliance_arsenal_war_allowed_alliance	请求允许的联盟id
+c2s	11993	req_alliance_arsenal_war_login_weekly	每周登陆数量
+c2s	11994	req_arsenal_war_last_battle_result	战斗结果回顾
+c2s	11751	req_arsenal_war_hospital_heal_soldier	治疗士兵
+c2s	11752	req_arsenal_war_hospital_speed_up	治疗加速
+c2s	11753	req_arsenal_war_hospital_cancel_heal	取消治疗
+c2s	11754	req_arsenal_war_hospital_wound_dismiss	解散伤兵
+c2s	11755	req_arsenal_league_hospital_heal_soldier	联赛-治疗士兵
+c2s	11756	req_arsenal_league_hospital_speed_up	联赛-治疗加速
+c2s	11757	req_arsenal_league_hospital_cancel_heal	联赛-取消治疗
+c2s	11758	req_arsenal_league_hospital_wound_dismiss	联赛-解散伤兵
+c2s	11852	req_arsenal_war_wall_outfire	灭火
+c2s	11853	req_arsenal_war_wall_fix_defense	修复城墙
+c2s	11854	req_arsenal_league_wall_outfire	联赛-灭火
+c2s	11855	req_arsenal_league_wall_fix_defense	联赛-修复城墙
+c2s	13101	req_auto_monster_option	自动打怪设置
+c2s	13102	req_auto_monster_modify_formation	编辑队伍
+c2s	13103	req_auto_monster_formation_cancel	队伍解散
+c2s	15201	req_back_bp_get_reward	
+c2s	15202	req_back_bp_get_all_reward	
+c2s	15221	req_back_guide_finish	回归引导结束
+c2s	15151	req_back_quest_get_reward	领取任务奖励
+c2s	15152	req_back_quest_get_score_reward	领取积分奖励
+c2s	15051	req_back_sign_in_one_click_award	请求一键领奖
+c2s	15052	req_back_sign_in_getaward_byday	请求领奖
+c2s	1103	req_use_item	道具使用
+c2s	1104	req_merge_item	物品合成
+c2s	1105	req_exchange_expire_item	兑换过期道具
+c2s	1106	req_batch_use_item	批量道具使用
+c2s	2251	req_barrack_train_soldier	训练士兵
+c2s	2252	req_barrack_recruit_soldier	收取士兵
+c2s	2253	req_barrack_upgrade_soldier	晋升士兵
+c2s	2254	req_barrack_speed_up	训练加速
+c2s	2255	req_barrack_cancel_train	取消训练
+c2s	1003	req_player_modify_name	修改玩家昵称
+c2s	1004	req_player_check_name	检查玩家昵称
+c2s	1005	req_player_modify_image	修改形象
+c2s	1021	req_player_detail_info	请求玩家详情信息
+c2s	1022	req_player_info_by_name	通过昵称搜索玩家(精准匹配)
+c2s	1023	req_players_base_info	玩家基础信息
+c2s	1024	req_players_info_by_key	通过关键字搜索玩家列表
+c2s	1025	req_player_self_record	请求玩家记录
+c2s	1026	req_player_other_record	请求其他玩家记录
+c2s	1027	req_players_info_from_kingdoms	通过昵称在多个王国搜索玩家(模糊匹配)
+c2s	1028	req_player_info_by_fid	通过fid查找玩家信息
+c2s	1029	req_players_base_info_with_permission	玩家基础信息
+c2s	1031	req_player_set_init_kid_show	设置初始王国是否可见
+c2s	1032	req_alliance_member_info_by_key	通过关键字搜索盟友
+c2s	2602	req_battle_adventure_battle_result_error	
+c2s	2603	req_battle_by_key	
+c2s	9251	req_battle_pass_collect_reward	
+c2s	9252	req_battle_pass_buy_score	
+c2s	9253	req_battle_pass_collect_all_reward	
+c2s	9254	req_battle_pass_choose_item	
+c2s	17501	req_brawl_war_get_task_reward	领取任务奖励
+c2s	17502	req_brawl_war_get_achievement_reward	领取成就奖励
+c2s	17503	req_brawl_war_player_record	玩家历史排名数据
+c2s	17504	req_brawl_war_match_request	请求匹配
+c2s	17505	req_brawl_war_match_cancel	取消匹配
+c2s	17506	req_brawl_war_match_ready	匹配准备
+c2s	17231	req_brawl_war_enter_battlefield	进入战场
+c2s	17232	req_brawl_war_battlefield_map_info	# 获取战场地图相关数据
+c2s	17233	req_brawl_war_move_city	高级迁城
+c2s	17234	req_brawl_war_march	出征
+c2s	17235	req_brawl_war_march_speedup	加速部队
+c2s	17236	req_brawl_war_march_recall	召回部队(包括行军中的集结部队)
+c2s	17237	req_brawl_war_march_off_work	召回己方working中的部队
+c2s	17238	req_brawl_war_march_detail	请求部队（地图行军）详情
+c2s	17239	req_brawl_war_exit_battlefield	退出战场
+c2s	17240	req_brawl_war_del_watch	移除战场监听
+c2s	17242	req_brawl_war_wall_outfire	灭火
+c2s	17243	req_brawl_war_wall_fix_defense	修复城墙
+c2s	17244	req_brawl_war_detail_4_player_situation	请求部队(个人军情)详情
+c2s	17245	req_brawl_war_use_airdrop_item	使用空投道具
+c2s	17246	req_brawl_war_resource_info	请求资源点信息
+c2s	17247	req_brawl_war_score_rank	请求积分排行
+c2s	17248	req_brawl_war_building_send_map_expression	发送建筑表情
+c2s	17249	req_brawl_war_march_send_map_expression	发送队列表情
+c2s	17551	req_brawl_war_hospital_heal_soldier	治疗士兵
+c2s	17552	req_brawl_war_hospital_speed_up	治疗加速
+c2s	17553	req_brawl_war_hospital_cancel_heal	取消治疗
+c2s	10901	req_capital_war_goal_rank	请求积分排行榜
+c2s	10902	req_capital_war_elect	选举总统
+c2s	10903	req_capital_war_appoint	任命
+c2s	10904	req_capital_war_dismissal	解雇
+c2s	10905	req_capital_war_hall_of_president	获取名人堂
+c2s	10906	req_capital_war_use_skill	使用技能
+c2s	10907	req_capital_war_skill_record	获取技能使用记录
+c2s	10908	req_capital_war_gift	赏赐
+c2s	10909	req_capital_war_gift_record	赏赐记录
+c2s	10910	req_capital_war_set_kingdom_name	设置王国名字
+c2s	10911	req_capital_war_set_kingdom_flag	设置王国旗帜
+c2s	10912	req_capital_war_kingdom_showinfo_list	
+c2s	10913	watch_capital_war_info	监听活动信息
+c2s	10914	rsp_watch_capital_war_info	
+c2s	10915	watch_capital_war_president_data	监听总统数据
+c2s	10916	rsp_watch_capital_war_president_data	
+c2s	10917	req_capital_war_receive_president_reward	领取总统奖励
+c2s	10918	req_capital_war_set_manifesto	设置宣言
+c2s	10919	req_capital_war_check_name	检查国王名字是否合法
+c2s	10920	req_capital_war_kingdom_showinfo	请求单个王国显示信息
+c2s	10921	req_capital_war_president_info	请求某个王国的总统数据
+c2s	10922	req_capital_war_apply_office	申请官职
+c2s	10923	req_capital_war_review_application	审批官职申请
+c2s	10924	req_capital_war_agree_all_application	同意某官职的所有申请
+c2s	10925	req_capital_war_auto_agree_application	自动同意某官职的申请
+c2s	10926	req_capital_war_modify_order	修改预约
+c2s	10927	req_capital_war_get_application_list	获取申请列表
+c2s	10928	watch_capital_war_order_list	监听总统数据
+c2s	10929	rsp_watch_capital_war_order_list	
+c2s	10930	req_capital_war_appoint_list	获取任命记录
+c2s	10931	req_capital_war_change_office_buff	国王改变buff
+c2s	10932	req_capital_war_add_schedule_task	添加预约任务
+c2s	10933	req_capital_war_get_schedule_task	获取预约任务列表
+c2s	10934	req_capital_war_modify_schedule_task	修改预约任务
+c2s	10935	req_capital_war_get_goals_by_uid_set	获取玩家积分
+c2s	10936	req_capital_war_ban_office_apply	禁止申请官职
+c2s	10937	req_capital_war_get_merge_history	获取合服历史
+c2s	10938	req_capital_war_get_president_history	获取总统历史记录
+c2s	10939	req_capital_search_alliance_by_key	根据关键字搜索联盟
+c2s	10940	req_capital_war_set_office_mode	设置官职模式
+c2s	10941	req_capital_war_bid_office	申请时段官职
+c2s	10942	req_capital_war_modify_candidate	修改内定人选, 同意单个玩家时也走这个协议
+c2s	10943	req_capital_war_add_candidate_batch	一键同意
+c2s	10944	req_capital_war_get_slot_application_list	获取指定时段申请列表
+c2s	10945	req_capital_war_quit_office_self	玩家主动退出当前官职（仅正面官职，任职满10分钟可退）
+c2s	10551	req_card_bp_collect_reward	
+c2s	10553	req_card_bp_collect_all_reward	一键领取所有可领奖励
+c2s	10552	req_card_bp_select_card	选择礼包
+c2s	3901	req_get_chapter_award	领取章节奖励
+c2s	3902	req_get_chapterquest_award	领取任务奖励
+c2s	3402	req_chat_send_p2p	私聊
+c2s	3408	req_chat_send_to_uids	多人聊天
+c2s	3403	req_chat_send_kingdom	王国聊天
+c2s	3404	req_chat_send_alliance	联盟聊天
+c2s	3405	req_chat_get_token	请求聊天token
+c2s	3406	req_chat_block	屏蔽
+c2s	3407	req_chat_unblock	解除屏蔽
+c2s	3409	req_chat_send_room	房间聊天
+c2s	3410	req_chat_cross_capital_send_kingdom	跨服王国聊天（最强王国战专用）
+c2s	3411	req_chat_temporary_block	临时屏蔽
+c2s	3412	req_chat_set_reddot_ts	设置聊天红点时间
+c2s	3413	req_chat_translate_feedback	翻译质量反馈
+c2s	3414	req_chat_set_p2p_history_del_ts	设置聊天删除时间
+c2s	3415	req_chat_set_stranger_lv_limit	设置陌生人私聊限制
+c2s	3416	req_chat_translate	聊天消息翻译
+c2s	3417	req_chat_send_to_self	
+c2s	3418	req_chat_players_info_by_key	通过关键字搜索玩家列表
+c2s	3419	req_chat_set_recent_contact	设置私聊列表uid
+c2s	3420	req_chat_share_to_chat	聊天通用分享
+c2s	3421	req_chat_clean_at	已读at消息, 服务端收到后清除@消息
+c2s	3422	req_chat_set_read_mark	设置聊天已读标记
+c2s	3423	req_chat_at	聊天at
+c2s	3424	req_chat_withdraw	撤回消息
+c2s	3425	req_chat_add_unread_mark	设置未读标记
+c2s	3426	req_chat_remove_unread_mark	移除未读标记
+c2s	3427	req_chat_ban_stranger	设置屏蔽陌生人
+c2s	3428	req_chat_check_p2p_limit	检查是否可以发起私聊
+c2s	3429	req_chat_set_show_self_skin	设置优先显示自己的私聊背景装扮
+c2s	3460	req_chat_send_alliance_r4	联盟r4聊天
+c2s	13551	req_chat_group_create	创建聊天组
+c2s	13552	req_chat_group_add_member	邀请进入聊天组
+c2s	13553	req_chat_group_del_member	移除成员
+c2s	13554	req_chat_group_modify_name	修改群名
+c2s	13555	req_chat_group_quit	退出群聊
+c2s	13556	req_chat_group_detail	查询群聊详细信息
+c2s	13557	req_check_group_name	检查群聊名称是否合规
+c2s	13558	req_chat_login_room	登录房间
+c2s	13559	req_chat_group_change_group_owner	转让群聊群主
+c2s	13560	req_chat_group_change_group_notice	修改群聊公告
+c2s	13561	req_chat_group_del_history_notice	删除历史公告
+c2s	13562	req_chat_group_get_group_notice	请求群聊公告
+c2s	13563	req_chat_group_get_group_notice_history	请求群聊历史公告
+c2s	13564	req_chat_group_change_invite_review	修改邀请权限
+c2s	13565	req_chat_group_agree_member	群主同意群聊邀请
+c2s	13566	req_chat_group_disagree_member	群主拒绝群聊邀请
+c2s	17571	req_chat_group_vote_add	新增投票
+c2s	17572	req_chat_group_vote_top	投票置顶
+c2s	17573	req_chat_group_vote_finish	立即结束投票
+c2s	17574	req_chat_group_vote_delete_record	删除投票记录
+c2s	17575	req_chat_group_vote_select	投票
+c2s	17576	req_chat_group_vote_records	投票记录
+c2s	17577	req_chat_group_vote_record_detail	投票记录详情
+c2s	7201	req_city_item_free_use	
+c2s	3001	req_save_client_data	客户端保存幸存者数据
+c2s	20461	req_climbtower_info	请求爬塔界面信息
+c2s	20462	req_climbtower_tower_info	请求爬塔关卡界面信息
+c2s	20463	req_climbtower_challenge	挑战关卡
+c2s	20464	req_climbtower_quick_challenge	快速挑战
+c2s	20465	req_climbtower_sweep	扫荡
+c2s	20467	req_climbtower_chest_reward	领取累计通关奖励
+c2s	20468	req_climbtower_reports	请求战报界面数据
+c2s	20469	req_climbtower_report_detail	请求战报详情
+c2s	20470	req_climbtower_share_report	分享爬塔战报
+c2s	20471	req_climbtower_share_report_detail	查看分享战报详情
+c2s	20472	req_climbtower_report_readall	战报一键已读
+c2s	20476	req_player_climbtower_info	请求玩家爬塔信息
+c2s	20477	req_climbtower_batch_read_report	批量已读战报
+c2s	9951	req_continuous_recharge_daily_reward	领取每日奖励
+c2s	9952	req_continuous_recharge_reward	领取充值奖励
+c2s	9953	req_continuous_recharge_accumulative_reward	领取宝箱奖励
+c2s	13031	req_cross_capital_war_revive	请求复活
+c2s	13032	req_cross_capital_war_get_user_revive_data	请求其他玩家的复活数据
+c2s	13033	req_cross_capital_war_help_revive	帮助盟友复活
+c2s	13034	req_cross_capital_war_buy_medkit	购买急救包
+c2s	13035	req_cross_capital_war_revive_call_alliance_help	复活帮助请求发送到联盟
+c2s	13040	req_cross_capital_war_rank_data_list	请求排行榜单人数据
+c2s	13041	req_cross_capital_war_rank_range	请求排行数据
+c2s	13042	req_cross_capital_get_emblem_reward	领取徽记奖励
+c2s	13043	req_cross_capital_get_arms_race_kingdom_goal	获取军备阶段王国分数
+c2s	13044	req_cross_capital_get_arms_personal_goal_reward	
+c2s	13045	req_cross_capital_get_arms_alliance_goal_reward	
+c2s	13046	req_cross_capital_get_fight_personal_goal_reward	
+c2s	13047	req_cross_capital_get_fight_alliance_goal_reward	
+c2s	13048	req_cross_capital_get_fight_winner	获取争霸阶段胜利方盟主信息
+c2s	13049	req_cross_capital_power_top50	请求两国战力前50的玩家
+c2s	13050	req_cross_capital_prepare_group_rank	请求备战小组排名
+c2s	13056	req_cross_capital_prepare_group_first_list	请求备战各小组第一名
+c2s	13057	req_cross_capital_get_extra_emblem_reward	一键领取徽记额外奖励
+c2s	12801	req_cross_most_lords_get_reward	获取当前阶段的奖励
+c2s	12802	req_cross_most_lords_get_special_reward	获取荣誉勋章奖励
+c2s	12803	req_cross_most_lords_rank	查询排名信息
+c2s	12804	req_cross_most_lords_global_rank	查询跨服排行榜
+c2s	12805	req_cross_most_lords_self_rank	查询玩家自己的排名
+c2s	12806	req_cross_most_lords_get_match_result	
+c2s	12807	req_cross_most_lords_get_all_reward	一键领取当前阶段所有已解锁奖励
+c2s	11201	req_customize_item	自订道具
+c2s	11202	req_customize_item_get_free_box	领取免费宝箱
+c2s	4351	req_daily_bundle_select_hero	选择英雄
+c2s	4352	req_daily_bundle_get_free_gift	领取免费奖励
+c2s	12921	req_daily_task_activity_get_task_reward	领取任务奖励
+c2s	12922	req_daily_task_activity_get_integral_reward	领取积分奖励
+c2s	12923	req_daily_task_activity_get_all_task_reward	一键领取任务奖励
+c2s	12924	req_daily_task_activity_get_all_integral_reward	一键领取积分奖励
+c2s	4401	req_get_dailyquest_award	领取奖励
+c2s	4405	req_get_all_dailyquest_award	领取所有奖励
+c2s	16051	req_delete_role_query_role_list	查询角色信息
+c2s	16052	req_delete_role_delete_role	删除角色
+c2s	16053	req_delete_role_is_delete_role	查询角色是否删除
+c2s	20401	req_dig_treasure_gain_quest_reward	领取任务奖励
+c2s	20402	req_dig_treasure_start_level	开始关卡
+c2s	20403	req_dig_treasure_click_brick	挖宝操作
+c2s	11051	req_download_reward_receive	领取奖励
+c2s	21001	req_duck_market_gacha	抽取
+c2s	21002	req_duck_market_reward	领奖
+c2s	21003	req_duck_market_get_quest_award	领取任务奖励
+c2s	21004	req_duck_market_get_cost_award	领取道具消耗奖励
+c2s	21005	req_duck_market_records	查询领奖记录
+c2s	13821	req_dun163_doubtful_check	易盾透传
+c2s	13822	req_dun163_get_config	易盾 配置下发接口
+c2s	13823	req_dun163_risk_check	易盾风险检测
+c2s	8601	req_wear_equipment	请求穿戴装备
+c2s	8602	req_quick_wear_equipment	请求快速穿戴装备
+c2s	8603	req_strengthen_equipment	强化装备
+c2s	8604	req_refined_equipment	专精装备
+c2s	8605	req_quick_takeoff_equipment	一键脱下
+c2s	8606	req_takeoff_equipment	脱下装备
+c2s	8607	req_equipment_strength_recast_free	免费强化等级重铸
+c2s	8608	req_equipment_strength_recast	免费强化等级重铸
+c2s	8609	req_equipment_refined_recast_free	免费专精等级重铸
+c2s	8610	req_equipment_refined_recast	专精等级重铸
+c2s	8611	req_equipment_break	装备突破
+c2s	8612	req_equipment_temper	装备淬炼
+c2s	11351	req_exchange_activity_exchange	兑换
+c2s	30431	req_expert_unlock_room	解锁专家房间
+c2s	30432	req_expert_send_gift	赠送好感度礼物
+c2s	30433	req_expert_break	专家进阶
+c2s	30434	req_expert_story	领取专家故事奖励
+c2s	30435	req_expert_skill_research	专家技能学习
+c2s	30436	req_expert_skill_research_speedup	专家技能加速学习
+c2s	30437	req_expert_skill_cancel_research	专家技能终止学习
+c2s	30438	req_expert_skill_lv_up	专家技能升级
+c2s	30439	req_expert_drawing_lv_up	专家图纸升级
+c2s	30440	req_get_expert_quest_award	领取成就奖励
+c2s	30441	req_use_expert_skill	使用专家主动技能
+c2s	30442	req_expert_debris_exchange	兑换专家印记
+c2s	30443	req_expert_drawing_onekey_lv_up	专家图纸一键升级
+c2s	7451	req_favorites_single_tab_modify	编辑个人标记
+c2s	7452	req_favorites_single_tab_del	删除个人标记
+c2s	7453	req_favorites_alliance_tab_modify	编辑联盟标记
+c2s	7454	req_favorites_alliance_tab_del	删除联盟标记
+c2s	7455	req_favorites_message_add	增加留言
+c2s	7456	req_favorites_message_del	删除留言
+c2s	7457	req_favorites_message_request	请求留言
+c2s	7458	req_favorites_arsenal_single_tab_modify	编辑个人标记
+c2s	7459	req_favorites_arsenal_single_tab_del	删除个人标记
+c2s	7460	req_favorites_arsenal_alliance_tab_modify	编辑联盟标记
+c2s	7461	req_favorites_arsenal_alliance_tab_del	删除联盟标记
+c2s	7462	req_favorites_triangle_alliance_tab_modify	编辑联盟标记
+c2s	7463	req_favorites_triangle_alliance_tab_del	删除联盟标记
+c2s	7464	req_favorites_supremacy_single_tab_modify	编辑个人标记
+c2s	7465	req_favorites_supremacy_single_tab_del	删除个人标记
+c2s	7466	req_favorites_supremacy_alliance_tab_modify	编辑联盟标记
+c2s	7467	req_favorites_supremacy_alliance_tab_del	删除联盟标记
+c2s	7468	req_favorites_arsenal_league_single_tab_modify	编辑个人标记
+c2s	7469	req_favorites_arsenal_league_single_tab_del	删除个人标记
+c2s	7470	req_favorites_arsenal_league_alliance_tab_modify	兵工厂联赛-编辑联盟标记
+c2s	7471	req_favorites_arsenal_league_alliance_tab_del	兵工厂联赛-删除联盟标记
+c2s	13751	req_fes_bp_dailytask_get_bp_reward	领取通行证奖励
+c2s	13752	req_fes_bp_dailytask_get_all_reward	一键领取通行证奖励
+c2s	13753	req_fes_bp_dailytask_get_extra_reward	领取通行证额外奖励
+c2s	13754	req_fes_bp_dailytask_get_task_reward	领取任务奖励
+c2s	11651	req_fes_bp_get_reward	
+c2s	11652	req_fes_bp_get_all_reward	
+c2s	11653	req_fes_bp_get_box_reward	领取宝箱奖励
+c2s	11654	req_fes_bp_donate_item	捐赠道具
+c2s	11655	req_fes_bp_rank	查询排名信息
+c2s	11656	req_fes_bp_get_extra_reward	领取额外奖励
+c2s	11551	req_get_festival_sevendays_quest_reward	领取任务奖励
+c2s	11552	req_get_festival_sevendays_score_reward	领取宝箱奖励
+c2s	20641	req_festival_turntable_normal_roll	
+c2s	20642	req_festival_turntable_lucky_roll	
+c2s	20643	req_festival_turntable_process_reward	
+c2s	20644	req_festival_turntable_task_reward	
+c2s	20645	req_festival_turntable_shop_buy	
+c2s	20646	req_festival_turntable_free_gift	
+c2s	20931	req_find_goods_start_chapter	开启章节
+c2s	20932	req_find_goods_scene_start	开始游戏（仅创建场景和物品，stop_ts=0）需要单独请求开始计时
+c2s	20933	req_find_goods_scene_mark	单人寻物点击物品
+c2s	20934	req_find_goods_match	随机匹配
+c2s	20935	req_find_goods_match_cancel	取消随机匹配
+c2s	20936	req_find_goods_create_room	创建队伍房间
+c2s	20937	req_find_goods_dissolve_room	解散队伍房间（房主解散组队房间）
+c2s	20938	req_find_goods_room_ready	成员玩家准备（匹配房间需要准备和组队房间成员需要准备）
+c2s	20939	req_find_goods_join_room	加入房间
+c2s	20940	req_find_goods_challenge_records	获取挑战记录（个人组队历史）
+c2s	20941	req_find_goods_room_scene_start	开始双人（组队房间队长手动开始）
+c2s	20942	req_find_goods_room_scene_enter_confirm	进入双人场景（客户端场景加载确认）收到两个确认后开始计时，否则自动开始计时
+c2s	20943	req_find_goods_room_scene_mark	双人房间点击物品
+c2s	20944	req_find_goods_daily_score_reward	双人寻物积分奖励（达标奖励全部领取）
+c2s	20945	req_find_goods_progress_grade_reward	寻物等级奖励领取（一键领取所有未领取等级）(只能领取<=conf_max_grade时)
+c2s	20946	req_find_goods_over_option	游戏时间到
+c2s	20947	req_find_goods_scene_tip	当前场景物品提示
+c2s	20948	req_find_goods_out_room	离开房间
+c2s	20949	req_find_goods_remove_room_member	移除房员（组队房间房主操作）
+c2s	20950	req_find_goods_scene_time_begin	开始计时（单人活动）
+c2s	20951	req_find_goods_task_reward	领取任务奖励（批量领取）
+c2s	20952	req_find_goods_share_room_invite	分享组队房间
+c2s	20953	req_find_goods_room_unready	成员玩家取消准备
+c2s	20954	req_find_goods_room_enter	进入房间，不做任何操作仅标记是否进入过
+c2s	20955	req_find_goods_progress_infinite_receive	寻物等级
+c2s	20956	req_find_goods_rank_info	请求排行榜信息
+c2s	20957	req_find_goods_settle	单人关卡结算
+c2s	20958	req_find_goods_quick_chat	双人房间快速聊天
+c2s	20959	req_update_find_goods_server_time	请求服务器时间（单人场景、双人房间内）
+c2s	30311	req_get_firecrystal_quest_award	领取奖励
+c2s	30312	req_get_firecrystal_chest_award	领取进度积分奖励
+c2s	13502	req_fishing_gear_upgrade	渔具升级
+c2s	13503	req_fishing_begin_level	开始关卡
+c2s	13504	req_fishing_end_level	结束关卡
+c2s	13506	req_fishing_take_handbook_reward	领取图鉴奖励
+c2s	13507	req_fishing_get_free_gift	领取每日免费礼包
+c2s	13508	req_fishing_use_double_card	使用加倍卡
+c2s	13509	req_fishing_rank	查询排名信息
+c2s	13512	req_fishing_self_rank	查询玩家自己的排名
+c2s	13513	req_fishing_get_daily_rewards	领取每日奖励
+c2s	13514	req_fishing_get_task_reward	领取任务奖励
+c2s	13518	req_fishing_get_all_task_reward	一键领取任务奖励
+c2s	13451	req_fishing_bp_get_reward	
+c2s	13452	req_fishing_bp_get_all_reward	
+c2s	13453	req_fishing_bp_get_extra_reward	领取通行证额外奖励
+c2s	13401	req_fishing_turntable_play	转盘抽奖
+c2s	2451	req_fog_start_recon	开始探索
+c2s	2452	req_fog_change_recon_point	修改探索目标
+c2s	2453	req_fog_march_recall	召回
+c2s	10705	req_fortwar_apply_fort	报名据点/修改报名时间
+c2s	10706	req_fortwar_cancel_apply_fort	取消报名
+c2s	10707	req_fortwar_dispense_rewards	分配特殊奖励
+c2s	10708	req_fortwar_season_goal_rank	赛季积分数据
+c2s	10709	req_fortwar_alliance_reward_record	联盟本赛季奖励记录
+c2s	10710	req_fortwar_occupy_history	据点历史占领信息
+c2s	10712	req_fortwar_alliance_reward_record_by_fort	联盟本期据点的奖励分配情况
+c2s	10713	req_watch_fortwar_fort_info	开始关注堡垒战据点信息
+c2s	10714	req_rsp_fortwar_fort_info	继续关注堡垒战据点信息
+c2s	10715	req_fortwar_apply_data	
+c2s	10716	req_fortwar_goal_data	
+c2s	11001	req_fortune_card_restart	重置
+c2s	11002	req_fortune_card_extra_reward	领取额外奖励
+c2s	11003	req_fortune_card_open	翻牌
+c2s	11004	req_fortune_card_set_flag	提供客户端设置标记
+c2s	11005	req_fortune_card_get_daily_free_gift	领取每日免费奖励
+c2s	11006	watch_fortune_card_winning_info	
+c2s	11007	rsp_watch_fortune_card_winning_info	
+c2s	9701	req_fourteen_sign_get_reward	请求领奖
+c2s	9702	req_fourteen_sign_get_all_reward	领取当前可以领取的所有奖励
+c2s	8102	req_friend_add	申请好友
+c2s	8103	req_friend_accept	批准好友申请
+c2s	8104	req_friend_refuse	拒绝好友申请
+c2s	8105	req_friend_del	删除好友
+c2s	8106	req_friend_set_apply_lv_limit	设置申请等级限制
+c2s	8130	req_friend_set_alias	设置好友备注
+c2s	8131	req_friend_get_alias	获取好友备注
+c2s	8132	req_friend_check_alias	检查好友备注合法性
+c2s	13301	req_frostfire_war_enter_warzone	进入战场
+c2s	13302	req_frostfire_war_map_info	请求矿区战场地图
+c2s	13303	req_frostfire_war_move_city	高级迁城
+c2s	13304	req_frostfire_war_del_watch	离开矿区战场地图时发送
+c2s	13305	req_frostfire_war_march	矿区战场地图-出征
+c2s	13306	req_frostfire_war_exit_warzone	退出战场
+c2s	13307	req_frostfire_war_player_record	玩家历史排名数据
+c2s	13308	req_frostfire_war_march_recall	召回行军中的部队
+c2s	13309	req_frostfire_war_march_speedup	加速部队
+c2s	13310	req_frostfire_war_march_off_work	召回己方working中的部队
+c2s	13311	req_frostfire_war_apply	
+c2s	13312	req_frostfire_war_score_rank	请求积分排行
+c2s	13313	req_frostfire_war_set_prefab	设置编队
+c2s	13314	req_frostfire_war_learn_skill	学习技能
+c2s	13315	req_frostfire_war_use_skill	使用技能
+c2s	13316	req_frostfire_war_center_rank	请求中心建筑排行
+c2s	13317	req_frostfire_war_resource_info	请求资源点信息
+c2s	13318	req_frostfire_war_search_monster	怪物搜索
+c2s	13319	req_frostfire_war_march_detail_4_player_situation	请求部队(个人军情)详情
+c2s	13320	req_frostfire_war_get_collect_reward	领取积分奖励
+c2s	13321	req_frostfire_war_building_send_map_expression	发送建筑表情
+c2s	13322	req_frostfire_war_march_send_map_expression	发送队列表情
+c2s	13323	req_frostfire_war_self_score_rank	单独请求玩家的积分排名
+c2s	13324	req_frostfire_war_get_all_collect_reward	一键领取所有积分奖励
+c2s	13201	req_frozen_soil_get_bp_reward	领取通行证奖励
+c2s	13202	req_frozen_soil_get_all_reward	一键领取通行证奖励
+c2s	13203	req_frozen_soil_get_extra_reward	领取通行证额外奖励
+c2s	13204	req_frozen_soil_get_task_reward	领取任务奖励
+c2s	12551	req_frozen_treasure_get_quest_reward	
+c2s	12552	req_frozen_treasure_get_treasure_reward	
+c2s	9501	req_fund_get_award	
+c2s	15471	req_general_bp_get_reward	领取奖励
+c2s	15472	req_general_bp_get_all_reward	领取所有奖励
+c2s	15473	req_general_bp_get_extra_reward	领取积分额外奖励
+c2s	7431	req_gift_buy_free_gift	购买免费礼包
+c2s	16151	req_gift_message_get_reward	
+c2s	16152	req_gift_message_get_bear_reward	
+c2s	30731	req_google_achievement_quest_award	
+c2s	4501	req_get_growthquest_award	领取奖励
+c2s	8001	req_guide_set_step	设置引导完成步骤
+c2s	10101	req_embassy_help_simple_info	
+c2s	10102	req_embassy_help_info	
+c2s	10103	req_embassy_repatriation	
+c2s	1811	req_hero_upgrade	升级
+c2s	1812	req_hero_promote_star	提升星级
+c2s	1813	req_recruit_hero	招募
+c2s	1814	req_hero_debris_exchange	兑换碎片
+c2s	1816	req_hero_upgrade_skill	升级技能
+c2s	1817	req_hero_set_hint_status	设置提示状态
+c2s	1818	req_unlock_exclusive_equipment	解锁专属装备
+c2s	1819	req_strengthen_exclusive_equipment	强化专属装备
+c2s	30811	req_hero_growth_bp_get_free_gift_reward	领取免费礼包奖励
+c2s	30812	req_hero_growth_bp_get_all_reward	领取通行证奖励
+c2s	4701	req_hero_search_times	英雄搜索
+c2s	12451	req_hero_story_claim_reward	领取奖励
+c2s	9651	req_hero_training_set_slot_hero	设置学员
+c2s	9652	req_hero_training_reset_hero_lev	重置英雄等级
+c2s	9653	req_hero_training_train_clear_cd	清除训练位置cd
+c2s	9654	req_hero_training_reset_lev_clear_cd	清除重置等级cd
+c2s	16501	req_hero_trial_get_reward	领奖
+c2s	10351	req_hero_turntable_play	抽奖
+c2s	10352	req_hero_turntable_extra_reward	领取额外奖励
+c2s	10353	req_hero_turntable_get_free_gift	领取每日免费礼包
+c2s	10354	req_hero_turntable_switch_version	
+c2s	16251	req_home_guide_collect_reward	领取奖励
+c2s	16252	req_home_sign_get_reward	请求领奖
+c2s	16253	req_home_sign_get_all_reward	一键领取
+c2s	20000	req_homeland_save_npc_wood	保存npc砍伐的木材
+c2s	20001	req_homeland_commit_npc_wood	提交npc木材到伐木小屋
+c2s	20002	req_homeland_open_box	开启宝箱
+c2s	20003	req_homeland_repair_building	建筑修复
+c2s	20004	req_homeland_place_building	建筑放置
+c2s	20005	req_homeland_move_building	建筑移动
+c2s	20006	req_homeland_upgrade_building	建筑升级
+c2s	20007	req_homeland_disassemble_building	建筑拆解
+c2s	20008	req_homeland_exchange_universal_piece	万能碎片兑换
+c2s	20009	req_homeland_recovery_building	建筑回收
+c2s	20010	req_homeland_take_life_tree_coin	领取生命树家园币
+c2s	20011	req_homeland_take_logging_cabin_tree	领取伐木小屋树木
+c2s	20012	req_homeland_set_skin	设置场景装扮
+c2s	20013	req_homeland_buy_store_item	购买商店物品
+c2s	20014	req_homeland_sell_store_item	出售商店物品
+c2s	20015	req_homeland_visit_other_homeland	查看他人家园
+c2s	20016	req_homeland_assist	家园互助
+c2s	20017	req_homeland_get_assist_record	查看家园互助记录
+c2s	20018	req_homeland_enter_homeland	进入家园
+c2s	20019	req_homeland_exit_homeland	退出家园
+c2s	20020	req_homeland_save_offline_npc_wood	保存离线npc砍伐的木材
+c2s	20021	req_homeland_skin_upgrade	装扮升级
+c2s	20022	req_homeland_skin_upgrade_speed_up	装扮升级加速
+c2s	20023	req_homeland_skin_item_exchange	装扮道具兑换
+c2s	20024	req_homeland_player_homeland_info	玩家家园信息
+c2s	20025	req_homeland_like_homeland	点赞家园
+c2s	20026	req_homeland_take_logging_site	领取伐木场
+c2s	20027	req_homeland_logging_site_npc_opt	npc进出伐木场操作
+c2s	20028	req_homeland_take_logging_site_coin	领取伐木场家园币
+c2s	20034	req_homeland_get_belike_record	查看被点赞记录
+c2s	20035	req_homeland_prosperity_task_reward	领取繁荣度任务奖励
+c2s	20036	req_homeland_prosperity_task_all_reward	一键领取繁荣度任务奖励
+c2s	20101	req_get_homestead_quest_award	领取奖励
+c2s	2351	req_hospital_heal_soldier	治疗士兵
+c2s	2352	req_hospital_speed_up	治疗加速
+c2s	2353	req_hospital_cancel_heal	取消治疗
+c2s	2354	req_hospital_wound_dismiss	解散伤兵
+c2s	30206	req_hotfix_protocol	热更c2s
+c2s	10651	req_icefield_hunter_collect_master_reward	领取集结发起次数奖励
+c2s	10652	req_icefield_hunter_spawn_monster	刷新怪物
+c2s	10653	req_icefield_hunter_exchange	兑换
+c2s	12771	req_icefield_hunter2_collect_master_reward	领取集结发起次数奖励
+c2s	12772	req_icefield_hunter2_exchange	兑换
+c2s	12201	req_infinite_box_get_reward	获取奖励
+c2s	12202	req_infinite_box_change_group	修改奖励组
+c2s	30681	req_inner_permission_remove_watermark	
+c2s	3801	req_intelligence_start_battle	战斗开始，pve用
+c2s	3802	req_intelligence_end_battle	报告战斗结果，pve用
+c2s	3805	req_intelligence_receive	领取事件奖励
+c2s	3806	req_intelligence_play_animation	已播放事件剧情
+c2s	3807	req_intelligence_receive_onekey	一键领取事件奖励
+c2s	15451	req_interactive_act_get_free_gift	请求领取免费奖励
+c2s	1701	req_kitchen_set_production	设置制作的食物
+c2s	1702	req_kitchen_cook_finish	制作食物完成
+c2s	1703	req_kitchen_eat_finish	吃饭完成
+c2s	15371	req_knock_self_door	请求敲自己的门
+c2s	15372	req_knock_other_door	请求敲别人的门
+c2s	15373	req_knock_door_special_event_settlement	特殊事件结算
+c2s	15374	req_share_knock_door_info	分享门的消息
+c2s	15375	req_get_visitor_knock_door_reward	领取访客敲门的奖励
+c2s	15376	req_knock_door_get_visit_list	获取拜访列表
+c2s	1601	req_enact_law	颁布法典
+c2s	1602	req_clear_law_cd	法典冷却清除
+c2s	16291	req_limit_time_shop_buy	购买商品
+c2s	16292	req_limit_time_shop_get_free_gift	领取免费礼包
+c2s	16293	req_limit_time_shop_get_box_reward	领取宝箱奖励
+c2s	16271	req_limit_time_task_get_reward	领取任务奖励
+c2s	30751	req_linkage_monopoly_accept_invite	接受组队邀请 [退出并加入]
+c2s	30752	req_linkage_monopoly_apply_team	申请加入队伍
+c2s	30753	req_linkage_monopoly_cancel_apply	取消申请
+c2s	30754	req_linkage_monopoly_get_recommend_teams	获取推荐队伍列表
+c2s	30755	req_linkage_monopoly_get_my_applies	获取已申请列表
+c2s	30756	req_linkage_monopoly_get_invite_list	获取频道邀请的好友列表（同王国）
+c2s	30757	req_linkage_monopoly_accept_apply	同意入队申请
+c2s	30758	req_linkage_monopoly_reject_apply	拒绝入队申请
+c2s	30759	req_linkage_monopoly_reject_all_apply	全部拒绝
+c2s	30760	req_linkage_monopoly_get_apply_list	获取收到的申请列表（队长）
+c2s	30761	req_linkage_monopoly_kick_member	踢出队伍成员
+c2s	30762	req_linkage_monopoly_quit_team	退出队伍
+c2s	30763	req_linkage_monopoly_play_normal_dice	普通投掷（单次/五连）
+c2s	30764	req_linkage_monopoly_play_free	免费投掷
+c2s	30765	req_linkage_monopoly_play_gold_dice	定点投掷
+c2s	30766	req_linkage_monopoly_open_activity	打开活动界面
+c2s	30767	req_linkage_monopoly_get_reward	领取投掷进度奖励
+c2s	30768	req_linkage_monopoly_get_boss_reward	领取 Boss 奖励
+c2s	30769	req_linkage_monopoly_claim_teammate_gift	领取队友赠送奖励
+c2s	30770	req_linkage_monopoly_get_quest_reward	领取每日任务奖励
+c2s	30771	req_linkage_monopoly_get_team_detail	获取队伍详情
+c2s	30772	req_linkage_monopoly_watch_winning_info	监听中奖信息
+c2s	30773	req_linkage_monopoly_watch_winning_info_rsp	响应 watch 推送
+c2s	30774	req_linkage_monopoly_record_reward_id	记录奖励播放到的id
+c2s	30775	req_linkage_monopoly_get_other_team_info	获取其他队伍信息（分享界面）
+c2s	30776	req_linkage_monopoly_mark_cutscene	客户端过场动画播放完成标记
+c2s	30777	req_linkage_monopoly_get_free_gift	领取免费礼包
+c2s	30778	req_linkage_monopoly_rewards_summary	获取奖励汇总信息
+c2s	15831	req_look_for_npc_get_reward	
+c2s	10451	req_uplv_lords_equipment	提升领主装备
+c2s	10452	req_uplv_lords_equipment_gem	提升装备宝石
+c2s	10453	req_set_lords_equipment_show	设置领主装备对其他玩家是否可见
+c2s	10454	req_lords_equipment_infusion	领主装备注能
+c2s	10455	req_lords_equipment_gem_infusion	领主装备注能
+c2s	12901	req_lost_treasure_get_daily_reward	领取每日免费奖励
+c2s	12902	req_lost_treasure_get_grand_reward	领取大奖
+c2s	12903	req_lost_treasure_set_grand_idx	设置大奖
+c2s	21031	req_magic_potion_start	开启/继续关卡
+c2s	21032	req_magic_potion_submit	提交本轮摆放
+c2s	21033	req_magic_potion_task_reward	领取任务奖励
+c2s	21034	req_magic_potion_process_reward	领取道具消耗奖励
+c2s	21035	req_magic_potion_give_up	放弃关卡
+c2s	2501	req_mail_cover_list	请求邮件封面
+c2s	2502	req_batch_mail_read	一键已读
+c2s	2503	req_batch_mail_delete	一键删除邮件
+c2s	2504	req_mail_collect	收藏邮件
+c2s	2505	req_mail_cancel_collect	取消收藏邮件
+c2s	2506	req_mail_receive	附件领取
+c2s	2508	req_mail_detail_info	邮件读取详细信息
+c2s	2509	req_mail_delete	邮件删除
+c2s	2510	req_mail_read	读取单封邮件
+c2s	2511	req_mail_like	邮件点赞
+c2s	2512	req_mail_unlike	邮件吐嘈
+c2s	2513	req_mail_like_info	读取单封邮件
+c2s	2514	req_mail_type_info	请求各类型邮件基本信息
+c2s	2515	req_unlock_mail_attach	
+c2s	2518	req_update_read_time	更新邮件的已读时间
+c2s	2519	req_mail_delete_by_firt_type	删除类型下的所有邮件
+c2s	2520	req_mail_detail_info_share	请求分享邮件
+c2s	2521	req_mail_cache_detail_info	请求分享邮件的详细信息
+c2s	2522	req_mail_detail_info_forward	转发分享邮件
+c2s	2523	req_mail_onekey_read	一键已读所有
+c2s	13703	req_map_expression_opt	表情操作
+c2s	12051	req_mercenary_choose_difficulty	设置难度等级
+c2s	12052	req_mercenary_spawn_player_monster	刷新怪物
+c2s	12053	req_mercenary_spawn_alliance_monster	刷新联盟怪
+c2s	12054	req_mercenary_schedule_spawn_alliance_monster	预约刷新联盟怪
+c2s	12056	req_mercenary_call_help	请求帮助
+c2s	30741	req_merge_milestone_quest_info	获取所有任务
+c2s	30742	req_merge_milestone_get_reward	获取奖励
+c2s	15851	req_migrant_set_power_limit	设置移民战力限制
+c2s	15852	req_migrant_get_kingdom_list	获取王国列表
+c2s	15853	req_migrant_get_kingdom_info	获取单个王国数据
+c2s	15854	req_migrant_invite	移民邀请
+c2s	15855	req_migrant_reject_invitation	拒绝邀请
+c2s	15856	req_migrant_submit_application	提交移民申请
+c2s	15857	req_migrant_reject_application	拒绝申请
+c2s	15858	req_migrant_migrate	
+c2s	15859	req_migrant_first_login	移民后首次登录完成时, 调用将首登标记设置为false
+c2s	15860	req_migrant_transfer_president	更换国王
+c2s	15861	req_migrant_handle_transfer	处理国王转让
+c2s	15862	req_migrant_cancel_transfer	取消国王转让
+c2s	15863	req_migrant_get_act_history	获取活动历史
+c2s	15864	req_migrant_get_super_count	获取累计强盛次数
+c2s	10151	req_mobilization_get_quest	接取任务
+c2s	10152	req_mobilization_get_personal_quest	接取专属任务
+c2s	10153	req_mobilization_give_up_quest	放弃任务
+c2s	10154	req_mobilization_get_quest_reward	领取任务奖励
+c2s	10155	req_mobilization_refresh_personal_quest	删除专属格子任务
+c2s	10156	req_mobilization_refresh_quest	删除联盟格子任务
+c2s	10157	req_mobilization_get_milestone_reward	领取里程碑奖励
+c2s	10158	req_mobilization_buy_count	购买任务次数
+c2s	10159	req_mobilization_alliance_rank_list	小组排行榜
+c2s	10160	req_mobilization_player_rank_list	联盟内成员积分排行
+c2s	10161	req_mobilization_open_info	请求开始阶段信息（联盟任务列表）
+c2s	10162	req_mobilization_batch_get_milestone	一键领取里程碑
+c2s	10163	req_mobilization_refresh_personal_quest_immediately	钻石消除专属格子冷却时间
+c2s	10164	req_mobilization_get_unlimited_reward	领取里程碑无限补给奖励
+c2s	10165	req_mobilization_pick_personal_quest	选择并接取个人任务
+c2s	10166	req_mobilization_get_score_reward	领取个人积分奖励
+c2s	13651	req_monopoly_play_normal_dice	使用普通骰子
+c2s	13652	req_monopoly_play_gold_dice	使用黄金骰子
+c2s	13653	req_monopoly_get_reward	领取点数阶段奖励
+c2s	13654	req_monopoly_play_free	使用免费投掷
+c2s	13655	req_monopoly_watch_winning_info	
+c2s	13656	req_monopoly_watch_winning_info_rsp	
+c2s	10211	req_monster_siege_summon	立即召唤
+c2s	10212	req_monster_siege_set_timer	定时召唤
+c2s	10213	req_monster_siege_get_score_reward	领取积分奖励
+c2s	10214	req_monster_siege_personal_history	请求个人历史排行榜
+c2s	10215	req_monster_siege_alliance_history	请求联盟历史排行榜
+c2s	10242	req_monster_siege_get_all_score_reward	一键领取积分奖励
+c2s	10243	req_monster_siege_get_def_player	获取联盟防御人员名单
+c2s	10245	req_monster_siege_get_expert_reward	获取专家奖励, 领取一份专家奖励
+c2s	9401	req_month_card_get_daily_reaward	领取每日奖励
+c2s	20351	req_mood_set	设置心情
+c2s	20352	req_mood_cancel	提前结束心情
+c2s	10501	req_most_lords_get_reward	获取当前阶段的奖励
+c2s	10502	req_most_lords_rank	查询排名信息
+c2s	10503	req_most_lords_self_rank	查询玩家自己的排名
+c2s	11451	req_multiple_choice_pack_get_free_box	领取免费宝箱
+c2s	10301	req_new_server_sprint_get_reward	获取奖励
+c2s	16321	req_new_soldier_bp_buy_score	
+c2s	16322	req_new_soldier_bp_collect_reward	
+c2s	16323	req_new_soldier_bp_collect_all_reward	
+c2s	8501	req_trigger_opinion	
+c2s	8502	req_process_opinion	
+c2s	8503	req_receive_satisfaction_reward	
+c2s	8504	req_update_4_new_day	
+c2s	11251	req_optional_gift_pack_get_free_box	领取免费宝箱
+c2s	20421	req_pachinko_start	发射弹珠
+c2s	20422	req_pachinko_progress_reward	领取进度奖励
+c2s	21246	req_paid_sprint_single_claim	领取单笔充值任务奖励
+c2s	21247	req_paid_sprint_daily_claim	领取当日累计充值任务奖励
+c2s	21248	req_paid_sprint_placeholder	占位协议（预留，后续按需补充字段）
+c2s	15521	req_get_personal_7days_reward	领取任务奖励
+c2s	15522	req_get_personal_7days_score_reward	领取宝箱奖励
+c2s	15321	req_pet_upgrade	升级
+c2s	15322	req_pet_break	突破
+c2s	15323	req_pet_attr_wash	宠物属性洗炼
+c2s	15324	req_pet_replace_attr	替换洗炼的属性
+c2s	15325	req_pet_play	宠物交互(该功能目前屏蔽)
+c2s	15326	req_pet_use_skill	使用宠物技能
+c2s	15327	req_pet_set_show	设置展示的宠物
+c2s	15328	req_pet_domestication	宠物驯化
+c2s	15329	req_pet_monster_search	地图宠物对应的怪物搜索
+c2s	15330	req_pet_get_upgrade_initial_item	获取宠物升级初始道具
+c2s	15331	req_pet_cancel_wash_attr	取消洗炼的属性
+c2s	15541	req_pet_adventure_dispatch	宠物派遣
+c2s	15542	req_pet_adventure_get_reward	领取奖励
+c2s	15543	req_pet_adventure_share_alliance_reward	分享联盟奖励
+c2s	15544	req_pet_adventure_self_share_lst	我的分享列表
+c2s	15545	req_pet_adventure_take_alliance_reward	领取联盟奖励
+c2s	15546	req_pet_adventure_get_alliance_reward_info	查看单个已分享的联盟奖励信息
+c2s	15547	req_pet_adventure_get_alliance_reward_list	查看联盟的分享奖励列表
+c2s	15548	req_pet_adventure_batch_take_alliance_reward	一键领取联盟奖励
+c2s	15549	req_pet_adventure_onekey_dispatch	一键寻宝
+c2s	15550	req_pet_adventure_onekey_get_reward	一键领取全部已完成探险奖励
+c2s	15501	req_pet_recharge_collect_reward	领取奖励
+c2s	20221	req_pick_one_gift_check_buy	
+c2s	21051	req_pin_game_task	领取任务奖励
+c2s	21052	req_pin_game_start	开始关卡
+c2s	21053	req_pin_game_over	结束关卡
+c2s	21054	req_pin_game_exit	退出关卡
+c2s	21056	req_pin_game_pause	暂停关卡
+c2s	20901	req_pitch_pot_start	开始
+c2s	20902	req_pitch_pot_settle	结算
+c2s	20903	req_pitch_pot_task_reward	领取任务奖励
+c2s	21	req_loaddata	请求加载数据
+c2s	22	req_heartbeat	心跳包
+c2s	23	req_del_account_pre_review	申请删除账号(生成删号倒计时)
+c2s	24	req_del_account	删除账号
+c2s	25	req_del_account_cancel_pre_review	删除账号-取消申请
+c2s	26	req_spectator_get_auth_token	获取观战token
+c2s	27	req_del_account_cancel_del_account	删除账号-撤销删除账号
+c2s	28	req_add_client_track_log	客户端打点
+c2s	20301	req_polar_expedition_unlock	解锁队列
+c2s	20302	req_polar_expedition_start	派遣
+c2s	20303	req_polar_expedition_start_all	派遣所有小队
+c2s	20304	req_polar_expedition_speed_up	加速指定队列
+c2s	20305	req_polar_expedition_speed_up_all	一键完成所有队列
+c2s	20306	req_polar_expedition_get_chest	领取宝箱奖励
+c2s	20307	req_polar_expedition_get_all_chest	领取所有宝箱奖励
+c2s	20308	req_polar_expedition_get_times_reward	领取次数奖励
+c2s	20309	req_polar_expedition_merge_chest	合成宝箱
+c2s	20310	req_polar_expedition_get_daily_reward	领取每日免费奖励
+c2s	15421	req_pound_the_pumpkin	砸南瓜
+c2s	15422	req_pound_the_pumpkin_daily	每日奖励
+c2s	15423	req_pound_the_pumpkin_watch_req	请求活动数据
+c2s	15424	req_pound_the_pumpkin_watch_rsp	请求活动数据
+c2s	15425	req_pound_the_pumpkin_get_scores	获取积分
+c2s	15426	req_pound_the_pumpkin_rewards_summary	获取奖励汇总信息
+c2s	15891	req_privacy_policy_agree	同意隐私政策
+c2s	15892	req_privacy_policy_set_age	设置年龄
+c2s	15893	req_privacy_policy_send_mail_verify	发送邮件验证
+c2s	15894	req_privacy_policy_confirm_parental_consent_tips	确认收到父母同意提醒
+c2s	1951	req_produced_resource_need_update	
+c2s	15751	req_push_customize_item_select_reward	选择自选奖励
+c2s	15752	req_push_customize_item_free_buy	购买免费礼包
+c2s	20501	req_push_multiple_choice_free_buy	购买免费礼包
+c2s	4302	req_send_clientquest_info	客户端通知类型任务 触发通知
+c2s	9201	req_questionnaire_writed	通知服务器完成问卷
+c2s	9202	req_questionnaire_get_reward	领奖
+c2s	9203	req_questionnaire_give_up	放弃问卷
+c2s	2901	req_purchase_queue_time	
+c2s	2902	req_building_queue_speed	
+c2s	2903	req_queue_ask_for_help	
+c2s	16081	req_ramadan_hope_free	免费祈福
+c2s	16082	req_ramadan_hope	祈福
+c2s	16083	req_ramadan_get_hope_progress_reward	领取祈福进度奖励
+c2s	16084	req_ramadan_get_share_hope_reward	领取分享的祈福奖励
+c2s	16085	req_ramadan_get_all_share_hope_reward	一键领取分享的祈福奖励
+c2s	16086	req_ramadan_get_quest_reward	领取任务奖励
+c2s	3201	req_rank_info	请求排行榜信息
+c2s	3202	req_rank_range	请求排行数据
+c2s	3203	req_search_rank	查找排名
+c2s	3204	req_global_rank_info	请求全服排行榜信息
+c2s	3205	req_global_rank_range	请求全服排行数据
+c2s	3206	req_battle_field_rank_info	请求战区排行榜信息
+c2s	3207	req_battle_field_rank_range	请求战区排行数据
+c2s	6705	req_recharge_get_first_reward	领取首充奖励
+c2s	6706	req_recharge_collect_accumulative_reward	领取累充奖励
+c2s	6707	req_recharge_by_voucher	代金券充值
+c2s	6708	req_recharge_by_token	代币充值
+c2s	6792	req_frost_star_shop_gift_info	寒霜商店礼包信息
+c2s	6793	req_frost_star_shop_gift_limit_info	寒霜商店礼包限购信息
+c2s	6794	req_frost_star_shop_get_free_reward	领取每周免费宝箱
+c2s	6795	req_webshop_login_license	请求webshop登录凭证
+c2s	4251	req_recruitment_collect_soldier	立即招募士兵（免费招募）
+c2s	4252	req_recruitment_recruit_soldier	招募士兵
+c2s	4253	req_recruitment_dismiss	解散伤兵
+c2s	4254	req_recruitment_get_supply_reward	获取支援奖励
+c2s	20511	req_red_packet_send	红包发送（默认发送到联盟频道）
+c2s	20512	req_red_packet_check_content	内容检查
+c2s	20513	req_red_packet_get	红包领取
+c2s	20514	req_red_packet_refresh	红包列表刷新
+c2s	20515	req_red_packet_get_detail	红包领取详情
+c2s	20516	req_red_packet_get_brief	红包简略数据
+c2s	20517	req_red_packet_exist	红包是否有存在可领取的
+c2s	30351	req_relic_adventure_draw	抽一次奖
+c2s	30352	req_relic_adventure_auto_draw	自动抽奖
+c2s	30353	req_relic_adventure_task	领取任务奖励
+c2s	30354	req_relic_adventure_select	选择大奖
+c2s	30355	req_relic_adventure_acc_box	领取进度宝箱奖励
+c2s	30356	req_relic_adventure_set_auto	设置进入下一层自动选择前一层的大奖
+c2s	30357	req_relic_adventure_free_gift	领取每日免费礼包
+c2s	30358	req_relic_adventure_watch_winning_info	
+c2s	30359	req_relic_adventure_watch_winning_info_rsp	
+c2s	30360	req_relic_adventure_start_floor	开启当前层
+c2s	30841	req_report_userkey	请求举报的用户参数
+c2s	9101	req_receive_online_reward	领取在线奖励
+c2s	9102	req_receive_spec_reward	
+c2s	9103	req_clear_online_unlock_show	
+c2s	9104	req_bank_deopsit	储值
+c2s	9105	req_bank_withdraw	取值
+c2s	9106	req_bank_cancel	取消
+c2s	4101	req_begin_research	申请研究
+c2s	4102	req_research_complete_immediately	立即完成
+c2s	4103	req_research_stop	停止研究
+c2s	4104	req_research_speed_up	科技加速
+c2s	3601	req_server_list	请求服务器别表
+c2s	3602	req_role_list	请求角色列表
+c2s	3604	req_update_setting_info	更新设置信息
+c2s	3605	req_exchange_cdkey	
+c2s	3606	req_unlock_module	解锁模块
+c2s	3609	req_set_notify_state	
+c2s	3610	req_settings_set_star_kid	
+c2s	3611	req_settings_bind_test_account	绑定删档测试账号(回归奖励直接进背包)
+c2s	3612	req_settings_get_rebate_reward	领取封测返利奖励
+c2s	3613	req_settings_set_device	更新设备
+c2s	3614	req_truck_escort_fliter_kingdom_self	设置是否过滤本王国
+c2s	4902	req_get_sevenrecruit_socre_award_buy_id	通过领取积分奖励
+c2s	4903	req_seven_recruit_quest_get_award	领取任务奖励
+c2s	20261	req_get_sevenday_task_reward	领取任务奖励
+c2s	20262	req_get_sevenday_task_score_reward	领取宝箱奖励
+c2s	3501	req_seven_sign_one_click_award	请求一键领奖
+c2s	3502	req_getaward_byday	请求领奖
+c2s	2702	req_upgrade_building	
+c2s	2703	req_upgrade_furniture	
+c2s	2704	req_create_furniture	
+c2s	2707	req_stove_combustion_switch	
+c2s	2708	req_upgrade_building_cancel	
+c2s	2709	req_change_building_mode	
+c2s	2710	req_set_building_pattern	
+c2s	2711	req_dorm_bed_obtain	宿舍-床获得资源
+c2s	2712	req_building_record_flag	记录标记
+c2s	2001	req_shop_quick_buy	快捷购买
+c2s	2002	req_shop_info	商店数据
+c2s	2003	req_shop_buy	购买
+c2s	2004	req_shop_refresh	刷新
+c2s	2005	req_shop_info_array	商店数据
+c2s	15301	req_sign_21day_get_reward	请求领奖
+c2s	15302	req_sign_21day_get_all_reward	领取当前可以领取的所有奖励
+c2s	16131	req_sign_draw_get_sign_progress_reward	领取签到进度奖励
+c2s	16132	req_sign_draw_lottery	抽奖
+c2s	16133	req_sign_draw_lottery_free	免费抽奖
+c2s	8701	req_skin_equip	装备皮肤
+c2s	8702	req_skin_get_condition_activity_skin	获取满足活动开启条件的皮肤
+c2s	8703	req_skin_set_march_skin	设置行军皮肤
+c2s	8704	req_skin_auto_use_and_equip	自动使用道具并装备皮肤
+c2s	30861	req_slg_3_arena_info	打开界面
+c2s	30863	req_slg_3_arena_save_formation	编队；报名后可按编队 ID 增量更新
+c2s	30864	req_slg_3_arena_match	匹配
+c2s	30865	req_slg_3_arena_challenge	挑战
+c2s	30866	req_slg_3_arena_rank	
+c2s	30867	req_slg_3_arena_battle_record_overview	
+c2s	30868	req_slg_3_arena_battle_report	
+c2s	30869	req_slg_3_arena_battle_records	
+c2s	30870	req_slg_3_arena_reward_info	
+c2s	30871	req_slg_3_arena_claim_reward	
+c2s	30872	req_slg_3_arena_share_report_detail	
+c2s	30873	req_slg_3_arena_swap_formation	交换编队
+c2s	30874	req_slg_3_arena_view_formation	查看匹配对手的编队
+c2s	17611	req_slg_3_league_apply	报名活动
+c2s	17612	req_slg_3_league_save_formation	编队，可按编队 ID 增量更新
+c2s	17613	req_slg_3_league_set_manifesto	设置个人宣言
+c2s	17614	req_slg_3_league_get_rank	获取排行榜
+c2s	17615	req_slg_3_league_get_match_info	获取场次信息
+c2s	17616	req_slg_3_league_schedule	获取赛区赛程表
+c2s	17617	req_slg_3_league_check_manifesto	检查宣言是否合法
+c2s	17618	req_slg_3_league_get_player_info	获取玩家信息
+c2s	17619	req_slg_3_league_like	点赞前三
+c2s	17620	req_slg_3_league_get_champion_info	请求前三信息
+c2s	17621	req_slg_3_league_get_match_result	获取玩家所有阶段的战斗数据
+c2s	17622	req_slg_3_league_get_battle_result_overview	获取比赛结果概览
+c2s	17623	req_slg_3_league_get_battle_report	
+c2s	17624	req_slg_3_league_check_champion_manifesto	检测冠军宣言是否合法
+c2s	17625	req_slg_3_league_set_champion_manifesto	设置冠军宣言
+c2s	17626	req_slg_3_league_get_all_qua_win_reward	获取海选赛胜利奖励
+c2s	17627	req_slg_3_league_get_kids	获取赛区中的王国id列表
+c2s	17628	req_slg_3_league_share_report_detail	查看分享战斗战报详情
+c2s	17629	req_slg_3_league_swap_formation	交换两个编队位置，复用上次保存的编队属性
+c2s	17711	req_slg_3_league_guess_add	竞猜 投注/加注
+c2s	17712	req_slg_3_league_guess_get_info	获取投注信息
+c2s	17713	req_slg_3_league_guess_get_history	获取投注历史
+c2s	17714	req_slg_3_league_get_task_reward	领取任务奖励
+c2s	30722	req_slot_matrix_draw	请求抽数字
+c2s	30723	req_slot_matrix_gain_times_reward	领取次数奖励
+c2s	30724	req_slot_matrix_gain_jackpot	领取大奖
+c2s	30725	req_slot_matrix_reset	重置关卡
+c2s	30726	req_slot_matrix_watch_record_info	请求监听广播记录
+c2s	30727	rsp_slot_matrix_watch_records	响应监听广播信息推送
+c2s	17101	req_snow_fund_get_reward	领取奖励
+c2s	17102	req_snow_fund_get_all_reward	一键领取通行证奖励
+c2s	4801	req_get_snow_guide_reward	领取奖励
+c2s	7701	req_social_media_open	开启
+c2s	7702	req_social_media_receive	领取
+c2s	7703	req_account_bind	账号绑定
+c2s	7704	req_account_bind_receive	账号绑定奖励
+c2s	7705	req_community_enter	进入社区
+c2s	7706	req_community_enter_receive	进入社区奖励
+c2s	20251	req_social_media_act_community	进入社区
+c2s	20252	req_social_media_act_community_receive	进入社区奖励
+c2s	4051	req_soldier_set_prefab	
+c2s	4052	req_soldier_dismiss	
+c2s	4053	req_soldier_set_auto_join_prefab	设置自动加入集结队伍
+c2s	4054	req_soldier_check_name	检查编队名称
+c2s	20371	req_souvenir_get_reward	领取纪念品奖励
+c2s	12501	req_spar_purify	
+c2s	12502	req_spar_super_purify	
+c2s	12301	req_spar_laboratory_buy_gift_by_diamond	钻石购买礼包
+c2s	12302	req_spar_laboratory_get_quest_reward	领取任务奖励
+c2s	12303	req_spar_laboratory_exchange	兑换
+c2s	12601	req_spar_leak_buy	
+c2s	12701	req_spar_science_begin_research	申请研究
+c2s	12702	req_spar_science_research_complete_immediately	立即完成
+c2s	12703	req_spar_science_research_stop	停止研究
+c2s	12704	req_spar_science_research_speed_up	科技加速
+c2s	13601	req_super_vip_get_join_reward	领取加入会员的奖励
+c2s	13602	req_super_vip_set_info	设置会员信息
+c2s	13603	req_super_vip_get_free_reward	领取免费奖励
+c2s	13604	req_super_vip_customize_item	设置自选道具
+c2s	13605	req_svip_recharge_reward	领取累充奖励
+c2s	13606	req_svip_reset_password	重置二级密码
+c2s	13607	req_svip_score_display	显示积分（需要验证密码）
+c2s	13608	req_svip_score_hide	隐藏积分（隐藏前必须先设置密码）
+c2s	16601	req_supremacy_war_enter	进入战场
+c2s	16602	req_supremacy_war_move_city	高级迁城
+c2s	16603	req_supremacy_war_march	出征
+c2s	16604	req_supremacy_war_march_recall	召回部队(包括行军中的集结部队)
+c2s	16605	req_supremacy_war_march_speedup	加速部队
+c2s	16606	req_supremacy_war_march_off_work	召回己方working中的部队
+c2s	16607	req_supremacy_war_mass_prepare_cancel	取消联盟集结(准备阶段)
+c2s	16608	req_supremacy_war_mass_slave_repatriate	遣返集结从属部队（集结部队准备阶段）
+c2s	16609	req_supremacy_war_mass_master_detail	请求集结部队（地图行军）详情
+c2s	16610	req_supremacy_war_march_detail	请求部队（地图行军）详情
+c2s	16611	req_supremacy_war_march_detail_4_player_situation	请求部队(个人军情)详情
+c2s	16612	req_supremacy_war_mass_march_detail_4_player_situation	请求集结部队(个人军情)详情
+c2s	16613	req_supremacy_war_mass_march_detail_4_alliance_situation	请求集结部队(联盟军情)详情
+c2s	16614	req_supremacy_war_defense_march_detail_4_alliance_situation	请求防御部队(联盟军情)详情
+c2s	16615	req_supremacy_war_alliance_mass_prepare_cancel	联盟管理取消集结(准备阶段)
+c2s	16616	req_supremacy_war_mass_slave_alliance_repatriate	联盟遣返集结从属部队（集结部队准备阶段）
+c2s	16617	req_supremacy_war_occupy_obj_repatriate	遣返建筑内盟友部队
+c2s	16618	req_supremacy_war_occupy_obj_change_captain	转让建筑队长
+c2s	16619	req_supremacy_war_captain_repatriation	队长遣返路上队员
+c2s	16620	req_supremacy_war_fort_rank_watch	主殿排行
+c2s	16621	req_supremacy_war_fort_rank_rsp	主殿排行rsp
+c2s	16622	req_supremacy_war_map_info	请求战场地图
+c2s	16623	req_supremacy_war_exit	退出战场
+c2s	16624	req_supremacy_war_embassy_repatriation	
+c2s	16625	req_supremacy_war_embassy_help_simple_info	请求目标玩家援军简要信息
+c2s	16626	req_supremacy_war_embassy_help_march_detail_list	请求自己的援军详情界面
+c2s	16627	req_supremacy_war_wall_outfire	灭火
+c2s	16628	req_supremacy_war_wall_fix_defense	修复城墙
+c2s	16629	req_supremacy_war_extra_situation_info	请求宫殿/守卫建筑个人军情
+c2s	16630	req_supremacy_war_extra_alliance_situation_info	请求宫殿/守卫建筑联盟军情
+c2s	16631	req_supremacy_war_control_list	控制列表
+c2s	16632	req_supremacy_war_fort_defense_watch	防守队列
+c2s	16633	req_supremacy_war_fort_defense_rsp	防守队列rsp
+c2s	16634	req_supremacy_war_building_send_map_expression	发送建筑表情
+c2s	16635	req_supremacy_war_alliance_mass_invite	集结邀请
+c2s	16636	req_supremacy_war_del_watch	取消同步地图信息
+c2s	16637	req_supremacy_war_march_detail_4_recon_situation	请求侦查部队(个人军情)详情
+c2s	16638	req_supremacy_war_map_search	搜索
+c2s	16639	req_supremacy_war_resource_info	请求资源点信息
+c2s	16640	req_supremacy_war_watch_alliance_skill	监听联盟技能变化
+c2s	16641	req_supremacy_war_rsp_watch_alliance_skill	
+c2s	16642	req_supremacy_war_use_alliance_skill	使用联盟技能
+c2s	16643	req_supremacy_war_get_alliance_skill_op_record	获取联盟技能操作记录
+c2s	16644	req_supremacy_war_server_get_ranklist	请求服务器奖励排行
+c2s	16645	req_supremacy_war_server_get_rank_reward	获取服务器奖励排行
+c2s	16646	req_supremacy_war_mass_slave_top	集结发起者置顶队员顺位
+c2s	16521	req_alliance_supremacy_war_sign_up	报名
+c2s	16522	req_alliance_supremacy_war_dispatch_operator	委派操作
+c2s	16523	req_alliance_supremacy_war_ask_for_battle	请战
+c2s	16524	req_alliance_supremacy_war_forbid_for_battle	不出战
+c2s	16525	req_alliance_supremacy_war_records	操作记录
+c2s	16526	req_alliance_supremacy_war_send_request_mail	发送请战邮件
+c2s	16528	req_alliance_supremacy_war_group_alliance_rank	赛区联盟排行榜
+c2s	16532	req_alliance_supremacy_war_power_strike_score	获取袭击分数
+c2s	16533	req_alliance_supremacy_war_get_points	获取战场积分
+c2s	16534	req_alliance_supremacy_war_get_points_rank	获取战场积分排名
+c2s	16535	req_alliance_supremacy_war_get_alliance_points_rank	获取联盟战场积分排行榜
+c2s	16536	req_alliance_supremacy_war_get_members_points_rank	获取联盟成员战场积分排名
+c2s	16537	req_alliance_supremacy_war_get_alliance_points	获取自己联盟战场积分排名
+c2s	16538	req_alliance_supremacy_war_get_per_point_rewards	获取个人目标奖励
+c2s	16801	req_supremacy_war_feast_open	开启
+c2s	16802	req_supremacy_war_feast_reserve	预约
+c2s	16803	req_supremacy_war_feast_list	宴会列表
+c2s	16804	req_supremacy_war_feast_tables	宴会加餐记录
+c2s	16805	req_supremacy_war_feast_table_satiated_info	入席记录
+c2s	16806	req_supremacy_war_feast_player_records	玩家参与记录
+c2s	16807	watch_supremacy_war_feast_tables	关注请求本王国宴会加餐记录
+c2s	16808	rsp_watch_supremacy_war_feast_tables	继续关注加餐记录
+c2s	16851	req_supremacy_war_gov_get_history	获取名人堂
+c2s	16852	req_supremacy_war_appoint	任命官职
+c2s	16853	req_supremacy_war_dismiss	解除官职
+c2s	16854	req_supremacy_war_get_president_reward	获取霸主奖励
+c2s	16855	req_supremacy_war_send_gift	赏赐礼包
+c2s	16856	req_supremacy_war_gift_record	获取赏赐记录
+c2s	16857	req_supremacy_war_set_manifesto	设置宣言
+c2s	16868	watch_supremacy_war_gov_data	监听霸主政府数据, 对应notify_supremacy_war_gov_data
+c2s	16869	rsp_supremacy_war_gov_data	
+c2s	16870	req_supremacy_war_gov_group_overview	获取指定赛区的霸主概述
+c2s	16871	req_supremacy_war_gov_group_dominance	霸主膜拜
+c2s	16872	req_supremacy_war_gov_get_dominion	获取本赛区的王国数据
+c2s	16873	req_supremacy_war_gov_get_points	获取个人积分数据, 出霸主后才可调用此接口
+c2s	16874	req_supremacy_war_gov_get_points_rank	获取积分排行榜, 出霸主后才可调用此接口
+c2s	16875	req_supremacy_war_gov_get_palace_self_rank	获取自己占领主殿的排名, 出霸主后才可调用此接口
+c2s	16876	req_supremacy_war_gov_get_palace_rank	获取占领主殿排行榜, 出霸主后才可调用此接口
+c2s	16877	req_supremacy_war_gov_get_all_president	
+c2s	16878	req_supremacy_war_gov_get_100_player_uid	获取100个玩家uid
+c2s	16879	req_supremacy_war_gov_get_alliance_points_rank	获取联盟积分排行榜, 出霸主后才可调用此接口
+c2s	16880	req_supremacy_war_gov_get_alliance_points	获取联盟积分排名, 出霸主后才可调用此接口
+c2s	16887	req_supremacy_war_gov_get_members_points_rank	获取联盟成员战场积分排名, 活动结束后才可调用此接口
+c2s	16888	req_supremacy_war_gov_get_palace_alliance_rank	获取占领主殿联盟排行榜, 出霸主后才可调用此接口
+c2s	16889	req_supremacy_war_gov_get_palace_alliance_self_rank	获取自己联盟占领主殿的排名, 出霸主后才可调用此接口
+c2s	16890	req_supremacy_war_gov_search_alliance_by_key	根据关键字搜索联盟
+c2s	16891	req_supremacy_war_gov_get_player_points	获取玩家积分, 出霸主后才可调用此接口
+c2s	16892	req_supremacy_war_gov_get_top_100_uids	获取辖区内前100玩家uid
+c2s	16701	req_supremacy_war_guess_info	请求参赛联盟和答题数据
+c2s	16702	req_supremacy_war_guess_alliance	竞猜联盟
+c2s	16703	req_supremacy_war_guess_question	选择题
+c2s	16751	req_supremacy_war_prepare_get_box_reward	领取宝箱
+c2s	16752	req_supremacy_war_prepare_show_info	请求界面数据
+c2s	16901	req_supremacy_war_shop_get_free_gift	领取免费礼包
+c2s	16571	req_supremacy_war_task_reward	领取任务奖励
+c2s	2801	req_survivor_send_or_fired	
+c2s	2802	req_survivor_sick	
+c2s	2803	req_survivor_update_cure_end_time	
+c2s	2804	req_survivor_cure_finish	
+c2s	2805	req_temp_survivor_confirm	
+c2s	2806	req_survivor_riot	
+c2s	2807	req_survivor_work_start	
+c2s	2808	req_survivor_work_pause	
+c2s	2809	req_hunting_tool_obtain	
+c2s	2810	req_survivor_update_riot_detect_time	
+c2s	2811	req_guide_come_survivor	
+c2s	2812	req_guide_dead_survivor	
+c2s	2813	req_loaddata_4_survivor	
+c2s	2814	req_survivor_alloc_td	
+c2s	2815	req_survivor_alloc_td_save	
+c2s	2816	req_guide_come_survivor_1	
+c2s	2817	req_survivor_auto_send_switch	
+c2s	2818	req_survivor_multi_send	
+c2s	10251	req_target_integral_get_reward	获取奖励
+c2s	10252	req_target_integral_rank	查询排名
+c2s	10253	req_target_integral_get_all_reward	一键领取所有已解锁奖励
+c2s	16451	req_td_box_set_pos	箱子设置位置
+c2s	16452	req_td_box_get	箱子领取
+c2s	16351	req_td_event_start_stage	开始关卡
+c2s	16352	req_td_event_settle_stage	结算关卡
+c2s	16353	req_td_event_get_survivor	获取塔防幸存者
+c2s	16354	req_td_event_fast_challenge	快速挑战
+c2s	16401	req_td_troops_set_hero	设置驻防部队的英雄
+c2s	15681	req_thanksgiving_bp_get_reward	领取奖励
+c2s	15682	req_thanksgiving_bp_get_all_reward	领取所有奖励
+c2s	15683	req_thanksgiving_bp_alliance_member_rank	联盟成员贡献排行榜
+c2s	15651	req_thanksgiving_cooking_tiro	烹饪新手
+c2s	15652	req_thanksgiving_cooking_adept	烹饪老手
+c2s	15653	req_thanksgiving_cooking_submit_exchange	提交食材交换
+c2s	15654	req_thanksgiving_cooking_cancel_exchange	取消食材交换
+c2s	15655	req_thanksgiving_cooking_exchange	食材交换
+c2s	15656	req_thanksgiving_cooking_get_exchange	领取食材交换
+c2s	15657	req_thanksgiving_cooking_exchange_lst	食材交换列表
+c2s	15658	req_thanksgiving_cooking_watch_exchange_lst_nums	
+c2s	15659	req_thanksgiving_cooking_watch_exchange_lst_nums_rsp	
+c2s	15660	req_thanksgiving_cooking_apply_food	申请食材
+c2s	15661	req_thanksgiving_cooking_cancel_apply	取消食材申请
+c2s	15662	req_thanksgiving_cooking_give_food	赠送食材
+c2s	15663	req_thanksgiving_cooking_get_apply_food	领取申请的食材
+c2s	15664	req_thanksgiving_cooking_apply_food_lst	食材申请列表
+c2s	15665	req_thanksgiving_cooking_watch_apply_lst_nums	
+c2s	15666	req_thanksgiving_cooking_watch_apply_lst_nums_rsp	
+c2s	15701	req_thanksgiving_feast_open	开启
+c2s	15702	req_thanksgiving_feast_reserve	预约
+c2s	15703	req_thanksgiving_feast_list	宴会列表
+c2s	15704	req_thanksgiving_feast_tables	联盟加餐记录
+c2s	15705	req_thanksgiving_feast_table_satiated_info	入席记录
+c2s	15706	req_thanksgiving_feast_player_records	玩参与记录
+c2s	15707	req_thanksgiving_feast_self_rank	查询玩家自己的排名
+c2s	15621	req_thanksgiving_menu_submit_dishes	提交菜品
+c2s	15622	req_thanksgiving_menu_rank	查询排名信息
+c2s	15623	req_thanksgiving_menu_self_rank	查询玩家自己的排名
+c2s	15624	req_thanksgiving_menu_get_bind_alliance_info	查询玩家绑定联盟信息
+c2s	15625	req_thanksgiving_menu_take_daily_chest	领取每日积分宝箱
+c2s	15626	req_thanksgiving_menu_take_preview_reward	领取预告奖励
+c2s	15627	req_thanksgiving_menu_take_chest	领取积分宝箱
+c2s	15628	req_thanksgiving_menu_get_chest_reward_record	查看积分宝箱奖励记录
+c2s	15629	req_thanksgiving_menu_big_reward_watch	watch大奖
+c2s	15630	req_thanksgiving_menu_big_reward_watch_rsp	
+c2s	15631	req_thanksgiving_menu_main_watch	主界面watch,推送大奖和食材申请
+c2s	15632	req_thanksgiving_menu_main_watch_rsp	
+c2s	15601	req_thanksgiving_sign_get_reward	请求领奖
+c2s	15602	req_thanksgiving_sign_get_all_reward	一键领取
+c2s	15781	req_three_tiles_get_quest_reward	领取任务奖励
+c2s	15782	req_three_tiles_get_progress_reward	领取进度奖励
+c2s	15783	req_three_tiles_get_rank_info	查询排名信息
+c2s	15784	req_three_tiles_start_level	开始关卡
+c2s	15785	req_three_tiles_over_level	结束关卡
+c2s	15786	req_three_tiles_level_use_item	使用道具
+c2s	15787	req_three_tiles_level_click_gray	关卡格子点击
+c2s	15788	req_three_tiles_get_level_info	请求关卡数据
+c2s	13801	req_todo_list_add	手动增加待办事项。请求成功后,客户端请求者根据add通知添加事项
+c2s	13802	req_todo_list_remove	手动取消待办事项。请求成功后，客户端请求者根据remove通知添加事项
+c2s	30371	req_tower_defense_start	开启关卡
+c2s	30372	req_tower_defense_over	通关关卡
+c2s	30373	req_tower_defense_exit	退出关卡
+c2s	30374	req_tower_defense_sweep	扫荡关卡
+c2s	30375	req_tower_defense_equipment_upgrade	升级装备
+c2s	30376	req_tower_defense_claim_level_box	一键领取某关宝箱
+c2s	30377	req_tower_defense_buy_energy	购买体力
+c2s	30378	req_tower_defense_get_handbook_reward	领取图鉴奖励
+c2s	30379	req_tower_defense_active_illust	激活图鉴
+c2s	30380	req_tower_defense_rank	查询排名信息
+c2s	30381	req_tower_defense_get_task_reward	领取任务奖励
+c2s	30471	req_td_bp_get_reward	
+c2s	30472	req_td_bp_get_all_reward	
+c2s	30473	req_td_bp_get_extra_reward	领取通行证额外奖励
+c2s	30401	req_travel_info	游历信息
+c2s	30402	req_travel_recv_energy	领取行动力
+c2s	30403	req_travel_buy_energy	购买行动力
+c2s	30404	req_normal_travel	普通游历
+c2s	30405	req_travel_choice_expert	指定专家
+c2s	30406	req_expert_travel	特殊游历
+c2s	30407	req_travel_finish_segment	完成片段
+c2s	30408	req_travel_submit_checkpoint	提交片段检查点信息
+c2s	30409	req_travel_record	查询游历记录
+c2s	30410	req_travel_expert_memory	专家回顾
+c2s	30411	req_normal_travel_afk	开启普通游历挂机
+c2s	30412	req_expert_travel_afk	开启特殊游历挂机
+c2s	30413	req_cancel_travel_afk	取消游历挂机
+c2s	30414	req_travel_atk_info_noted	
+c2s	15981	req_triangle_war_enter_warzone	进入战场
+c2s	15982	req_triangle_war_map_info	请求战场地图
+c2s	15983	req_triangle_war_del_watch	取消战场地图监听
+c2s	15984	req_triangle_war_march_revive	复活队列
+c2s	15985	req_triangle_war_march_move	战场地图部队移动
+c2s	15986	req_triangle_war_quit_warzone	退出战场
+c2s	15987	req_triangle_war_march_speedup	加速部队
+c2s	15988	req_triangle_war_score_rank	战场内请求玩家积分排行
+c2s	15989	req_triangle_war_appoint_lord	任命城主
+c2s	15990	req_triangle_war_march_conscription	征兵
+c2s	15991	req_triangle_war_march_dismiss	解散
+c2s	15992	req_triangle_war_march_rush	战场地图部队突袭
+c2s	15993	req_triangle_war_march_retreat	战场地图部队撤退
+c2s	15994	req_triangle_war_battle_speedup	战斗加速
+c2s	15995	req_triangle_war_building_detail	建筑详情
+c2s	15996	req_triangle_war_apply_for_lord	申请成为城主
+c2s	15998	req_triangle_war_get_building_battle_report	查看建筑战报
+c2s	15999	req_triangle_war_get_player_info_by_appoint	查询玩家任命所需信息
+c2s	16000	req_triangle_war_get_building_battle_report_detail	查看建筑战报详情
+c2s	16001	req_triangle_war_heartbeat	三盟心跳
+c2s	15931	req_alliance_triangle_war_vote	投票
+c2s	15932	req_alliance_triangle_war_vote_notice	投票通知
+c2s	15933	req_alliance_triangle_war_sign_up	报名
+c2s	15934	req_alliance_triangle_war_dispatch	派遣
+c2s	15935	req_alliance_triangle_war_ask_for_battle	请战
+c2s	15936	req_alliance_triangle_war_match_score	获取匹配分
+c2s	15937	req_alliance_triangle_war_get_show_info	获取活动界面展示数据
+c2s	15938	req_alliance_triangle_war_set_formation	设置出战部队
+c2s	15939	req_alliance_triangle_war_login_weekly	每周登陆数量
+c2s	15940	req_alliance_triangle_war_player_settle	获取玩家结算（战斗已结束）
+c2s	15941	req_alliance_triangle_war_alliance_settle	获取联盟结算（战斗已结束）
+c2s	15942	req_alliance_triangle_war_allowed_alliance	请求允许的联盟id
+c2s	15943	req_alliance_triangle_war_get_history	获取历史数据
+c2s	15944	req_alliance_triangle_war_dispatch_operator	派遣操作
+c2s	15945	req_alliance_triangle_war_get_formations	获取编队
+c2s	15946	req_alliance_triangle_war_records	请求三盟记录
+c2s	15947	req_alliance_triangle_war_forbid_for_battle	不出战
+c2s	15948	req_alliance_triangle_send_vote_mail	发送投票邮件
+c2s	15949	req_alliance_triangle_send_request_mail	发送请战邮件
+c2s	15950	req_triangle_war_onekey_dispatch	一键派遣
+c2s	15951	req_triangle_war_player_score	获取分数
+c2s	15952	req_triangle_war_alliance_appoint_commander	任命军团指挥官
+c2s	20121	req_truck_escort_refresh_truck_reward	刷新货车奖励
+c2s	20122	req_truck_escort_take_truck_reward	领取货车奖励
+c2s	20123	req_truck_escort_get_truck_record	查看货车记录
+c2s	20124	req_truck_escort_new_plunder_list	获取新的掠夺列表
+c2s	20125	req_truck_escort_plunder_fight	掠夺战斗
+c2s	20126	req_truck_escort_plunder_records	掠夺记录,登陆后第一次请求会下发所有的记录,后面再请求只下发新增的,已下发的客户端要保存
+c2s	20127	req_truck_escort_plunder_battle_report	掠夺战报
+c2s	20128	req_truck_escort_refresh_plunder_list	刷新掠夺列表
+c2s	20129	req_truck_escort_issue_assisting_unit	发布协助部队
+c2s	20130	req_truck_escort_modify_assisting_unit	修改协助部队
+c2s	20131	req_truck_escort_withdraw_assisting_unit	撤回协助部队
+c2s	20132	watch_truck_escort_assisting_unit_list	watch协助列表
+c2s	20133	rsp_truck_escort_assisting_unit_list	
+c2s	20134	req_truck_escort_get_assist_info	
+c2s	20135	req_truck_escort_get_assist_unit	获取自己的协助部队数据
+c2s	20136	req_truck_escort_get_truck_assist_formation	查看货车协助玩家的编队信息
+c2s	20137	req_truck_escort_get_other_truck_info	查看其他人货车信息
+c2s	20138	req_truck_escort_new_enemy_list	获取新的仇人列表
+c2s	20139	req_truck_escort_refresh_enemy_list	刷新仇人列表
+c2s	8326	req_upload_image_erase	移除图片
+c2s	8327	req_get_hd_image	查看玩家大图
+c2s	8328	req_set_check_image_visible	设置大图是否可见
+c2s	10801	req_value_exchange_exchange	兑换
+c2s	10802	req_value_exchange_free_exchange	免费兑换
+c2s	13151	req_version_up_get_reward	领取奖励
+c2s	4651	req_vip_get_daily_exp	获取登录点数奖励
+c2s	4652	req_vip_get_daily_free_gift	获取每日免费礼包
+c2s	16171	req_vip_privilege_turntable_play_free	免费转盘
+c2s	16172	req_vip_privilege_turntable_play	转盘
+c2s	16173	req_vip_privilege_puzzle	拼图
+c2s	16174	req_vip_privilege_get_red_packet_reward	拼图完成领取红包奖励
+c2s	20241	req_vip_social_close	请求关闭活动
+c2s	20242	req_vip_social_code	
+c2s	20243	req_vip_social_link	
+c2s	6411	req_wall_set_defence_hero	设置驻防英雄
+c2s	6412	req_wall_outfire	灭火
+c2s	6413	req_wall_fix_defense	修复城墙
+c2s	17151	req_weekly_special_progress_reward	领取进度奖励
+c2s	5601	req_world_map_info	
+c2s	5602	req_world_random_move_city	随机迁城
+c2s	5603	req_world_del_watch	离开大地图时发送
+c2s	5604	req_world_move_city	迁城
+c2s	5607	req_world_resource_info	请求资源点信息
+c2s	5608	req_world_resource_speed_up	
+c2s	5609	req_world_general_data	请求王国全貌数据
+c2s	5610	req_world_kingdom_info	请求王国数量
+c2s	5611	req_world_occupy_obj_repatriate	遣返建筑内盟友部队
+c2s	5612	req_world_occupy_obj_change_captain	转让建筑队长
+c2s	5613	req_world_fort_info	
+c2s	5615	req_world_map_search	世界地图搜索
+c2s	5616	req_world_map_fog	请求迷雾信息
+c2s	5617	req_world_mapobj	请求地图对象信息
+c2s	5618	req_world_territory_buff	
+c2s	5621	req_world_fort_info_client_watch	请求据点信息的感兴趣机制
+c2s	5622	req_world_alliance_building_detail	请求联盟建筑详细信息
+c2s	5623	req_world_alliance_building_watch	请求关注联盟建筑更新
+c2s	5624	req_world_get_minor_fort_can_fight	请求可占领的
+c2s	5625	watch_world_fort_defenses	监听据点信息
+c2s	5626	rsp_watch_world_fort_defenses	
+c2s	5627	req_occupy_obj_repatriation	
+c2s	5628	req_world_control_list	控制列表
+c2s	5629	req_world_fort_pro_progress	地图建筑进度
+c2s	5630	req_world_wormhole_jumping_random	跨服随机迁城
+c2s	5631	req_world_gohome	跨服回家
+c2s	5632	req_world_wormhole_jumping_to_point	跨服高级迁城
+c2s	5633	req_world_gohome_to_point	跨服高级回家
+c2s	5634	req_world_building_send_map_expression	发送建筑表情
+c2s	5635	req_world_search_table	搜索餐桌
+c2s	5636	req_world_fort_move_city	堡垒迁城
+c2s	5637	req_world_search_supremacy_table	搜索霸主餐桌
+c2s	5638	req_world_alliance_resource_info	请求联盟资源点信息
+c2s	5639	req_world_shield_situation_notification	屏蔽军情推送
+c2s	7001	req_world_alliance_mass_invite	集结邀请
+c2s	7002	req_world_alliance_move_city_point	请求联盟迁城坐标
+c2s	7003	req_world_alliance_move_city	联盟迁城
+c2s	7006	watch_alliance_situation_activity	开始关注活动军情
+c2s	7007	req_unwatch_alliance_situation_activity	关闭关注活动军情列表
+c2s	7008	req_world_alliance_territory_move_city_point	请求领地迁城坐标
+c2s	7009	req_world_alliance_territory_move_city	请求领地迁城
+c2s	20611	req_world_boss_get_quest_reward	领取任务奖励
+c2s	20612	req_world_boss_get_rank	获取世界boss排行榜
+c2s	20613	req_world_boss_get_last_attack_records	获取尾刀记录
+c2s	20614	req_world_boss_get_boss_info	获取世界boss信息
+c2s	5701	req_world_march	
+c2s	5702	req_world_march_recall	召回部队(包括行军中的集结部队)
+c2s	5703	req_world_march_speedup	加速部队
+c2s	5704	req_world_march_off_work	召回己方working中的部队
+c2s	5705	req_world_mass_prepare_cancel	取消联盟集结(准备阶段)
+c2s	5707	req_world_mass_slave_repatriate	遣返集结从属部队（集结部队准备阶段）
+c2s	5708	req_world_mass_master_detail	请求集结部队（地图行军）详情
+c2s	5709	req_world_march_detail	请求部队（地图行军）详情
+c2s	5710	req_world_march_detail_4_player_situation	请求部队(个人军情)详情
+c2s	5711	req_world_mass_march_detail_4_player_situation	请求集结部队(个人军情)详情
+c2s	5712	req_world_mass_march_detail_4_alliance_situation	请求集结部队(联盟军情)详情
+c2s	5713	req_world_defense_march_detail_4_alliance_situation	请求防御部队(联盟军情)详情
+c2s	5714	req_world_march_send_map_expression	发送队列表情
+c2s	5715	req_world_alliance_mass_prepare_cancel	联盟管理取消集结(准备阶段)
+c2s	5716	req_world_mass_slave_alliance_repatriate	联盟遣返集结从属部队（集结部队准备阶段）
+c2s	5717	req_world_mass_slave_top	集结发起者置顶队员顺位
+c2s	1	loginauth	
+c2s	51	req_spectator_agent_heartbeat	
+c2s	52	req_spectator_agent_auth	
+c2s	17401	req_spectator_arsenal_league_enter	观战进入战场
+c2s	17402	req_spectator_arsenal_league_map_info	请求战场地图
+c2s	17403	req_spectator_arsenal_league_exit	退出观战战场
+c2s	17404	req_spectator_arsenal_league_battlefield_stat_info	观战战场统计详情
+c2s	17405	req_spectator_arsenal_league_watch_count	获取观战人数
+c2s	17001	req_spectator_supremacy_war_enter	观战进入战场
+c2s	17002	req_spectator_supremacy_war_map_info	请求战场地图
+c2s	17003	req_spectator_supremacy_war_fort_rank_watch	主殿排行
+c2s	17004	req_spectator_supremacy_war_fort_rank_rsp	主殿排行rsp
+c2s	17005	req_spectator_supremacy_war_exit	退出观战战场
+c2s	17006	req_spectator_supremacy_war_control_list	控制列表
+c2s	17007	req_spectator_supremacy_war_get_guard_info	请求战场守护建筑信息
+c2s	17008	req_spectator_supremacy_war_fort_alliance_rank_watch	主殿联盟排行
+c2s	17009	req_spectator_supremacy_war_fort_alliance_rank_rsp	主殿联盟排行rsp
+c2s	1201	req_cheat_add	作弊添加
+c2s	1202	req_cheat_reduce	作弊减少
+c2s	1203	req_cheat_get_count	查询物品数量
+c2s	1204	req_cheat_echo	
+c2s	1210	req_cheat_clear_backpack	清空背包
+c2s	1211	req_cheat_recharge	礼包测试接口
+c2s	1212	req_cheat_set_guide_step	新手引导作弊
+c2s	1213	req_cheat_shelter_upgrade_all	内城升级
+c2s	1214	req_cheat_icefield_hunter2_inc	
+c2s	1215	req_monopoly_play_dice_cheat	大富翁作弊
+c2s	1216	req_cheat_fishing_update_rank	钓鱼排行榜作弊
+c2s	1217	req_cheat_fishing_handbook_unlock	钓鱼图鉴解锁作弊
+c2s	1218	req_monopoly_play_dice_points_cheat	大富翁作弊指定每次的点数
+c2s	1219	req_cheat_monopoly_next_adventure_cheque	大富翁作弊指定下次探险宝箱格子
+c2s	1220	req_cheat_add_wound	
+c2s	1221	req_cheat_finish_chapter	完成章节 id nil 为当前章节
+c2s	1222	req_cheat_finish_chapterquest	完成任务id
+c2s	1223	req_cheat_change_sys_time	修改系统时间
+c2s	1224	req_cheat_test_drop	测试drop
+c2s	1225	req_cheat_set_pass_checkpoint	探险光卡设置
+c2s	1226	req_cheat_set_hero_lev	设置英雄等级
+c2s	1227	req_cheat_finish_all_chapter_quests	完成当前章节任务
+c2s	1228	req_cheat_alliance_building_add	
+c2s	1229	req_cheat_alliance_building_change_hp	
+c2s	1230	req_cheat_alliance_building_remove	
+c2s	1231	req_cheat_push_gift_group	
+c2s	1232	req_cheat_remove_gift_group	
+c2s	1233	req_cheat_use_item	
+c2s	1234	req_cheat_start_activity	
+c2s	1235	req_cheat_close_activity	
+c2s	1236	req_cheat_add_skin_time	
+c2s	1237	req_cheat_alliance_hall_move	
+c2s	1238	req_cheat_triger_quest_processs	
+c2s	1239	req_cheat_set_quest_processs	
+c2s	1240	req_cheat_intelligence_finish	
+c2s	1241	req_chest_add_alliance_chest	
+c2s	1242	req_cheat_remove_fog	
+c2s	1243	req_cheat_alliance_territory_change	
+c2s	1244	req_cheat_add_all_equipment	
+c2s	1245	req_cheat_delete_nest	
+c2s	1246	req_cheat_mosnter_siege_start	
+c2s	1247	req_cheat_mosnter_siege_over	
+c2s	1248	req_cheat_create_nest	
+c2s	1249	req_cheat_fort_pro_start_fight	
+c2s	1250	req_cheat_fort_pro_over	
+c2s	1251	req_cheat_new_quest	
+c2s	1252	req_cheat_get_city_point	
+c2s	1253	req_cheat_fort_pro_marquee	
+c2s	1254	req_cheat_restart_chapter_quest	
+c2s	1255	req_cheat_world_march_mass_lets_go	结束等待立即出发
+c2s	1256	req_cheat_intelligence_finish_all	情报站事件全部完成
+c2s	1257	req_cheat_intelligence_add_event	添加指定事件
+c2s	1258	req_cheat_finish_growth_quest	完成成长任务领奖
+c2s	1259	req_cheat_notification	
+c2s	1260	req_set_cheat_record_info	
+c2s	1261	req_get_cheat_record_info	
+c2s	1262	req_add_cheat_mass_slave_win_count	
+c2s	1263	req_add_cheat_finish_all_science	
+c2s	1264	req_cheat_capital_war_timeup	提前结束国王战当前阶段
+c2s	1265	req_cheat_set_bind_account	设置首充金额账号(uid已绑定将被重置)
+c2s	1266	req_cheat_move_to_black	随机迁城到首都周围
+c2s	1267	req_cheat_get_buff	获取buff
+c2s	1268	req_cheat_arsenal_war_timeup	提前结束当前阶段
+c2s	1269	req_cheat_arsenal_war_first_open	开启兵工厂
+c2s	1270	req_cheat_arsenal_open_battlefield	作弊开启战场
+c2s	1271	req_cheat_arsenal_start	arsenal开始
+c2s	1272	req_cheat_arsenal_over	arsenal战场结束
+c2s	1273	req_cheat_alliance_science_upgrade_all	联盟科技一键满级
+c2s	1275	req_cheat_global_rank_add	
+c2s	1276	req_cheat_global_rank_del	
+c2s	1277	req_cheat_mercenary_progress	佣兵荣耀设置进度
+c2s	1278	req_cheat_refresh_activity_event	
+c2s	1279	req_cheat_frozen_treasure_set_quest_progress	
+c2s	1280	req_cheat_fes_bp_add_integral	
+c2s	1281	req_cheat_finish_all_daily_quest	所有任务满进度
+c2s	1282	req_cheat_wormhole_jumping	
+c2s	1283	req_cheat_go_home	
+c2s	1284	req_cheat_switch_wormhole	
+c2s	1285	req_cheat_cross_capital_war_set_task_progress	设置跨服国王战军备阶段任务进度
+c2s	1286	req_cheat_cross_capital_next_big_stage	跨服王战作弊调大阶段
+c2s	1287	req_cheat_cross_capital_add_emblem	跨服战添加徽记
+c2s	1288	req_cheat_multiverse_capital_war_timeup	提前结束国王战当前阶段
+c2s	1289	req_cheat_auto_monster_set_expire	提前结束国王战当前阶段
+c2s	1290	req_cheat_finish_frozen_soil_task	任务满进度
+c2s	1291	req_cheat_cross_capital_match_info	跨服战匹配信息
+c2s	1292	req_cheat_cross_capital_set_fight_result	跨服战设置争霸阶段结果
+c2s	1293	req_cheat_cross_capital_clear_match_record	清理匹配记录
+c2s	1294	req_cheat_cross_capital_test_match	根据匹配数据测试跨服战匹配
+c2s	1295	req_cheat_most_lords_set_task_progress	设置最强领主任务进度(包括跨服最强领主)
+c2s	1296	req_cheat_uproot_all_multiverse_city	清理所有入侵者
+c2s	1297	req_cheat_create_frostfire_warzone	作弊开启矿区战场
+c2s	1298	req_cheat_frostfire_add_skill_point	作弊加矿区战场技能积分
+c2s	1299	req_cheat_refresh_burst_res	
+c2s	8480	req_arena_cheat_add_active_user	
+c2s	8481	req_arena_cheat_defense_power	
+c2s	8482	req_arena_cheat_global_debug_info	
+c2s	14001	req_cheat_mercenary_alliance_unlock	
+c2s	14002	req_cheat_back_quest_set_progress	
+c2s	14003	req_cheat_back_start	
+c2s	14004	req_cheat_back_end	
+c2s	14005	req_cheat_unlock_sign_21day	
+c2s	14006	req_cheat_finish_festival_sevenday_quest	
+c2s	14007	req_cheat_pet_unlock	解锁宠物
+c2s	14008	req_cheat_open_global_activity	开启全服活动
+c2s	14009	req_cheat_knock_door_add_visit_list	敲门增加拜访列表
+c2s	14010	req_cheat_monopoly_winning	大富翁作弊中奖
+c2s	14011	req_cheat_pound_the_pumpkin_add_final_record	砸南瓜增加最终大奖记录
+c2s	14012	req_cheat_send_pound_the_pumpkin_alliance_chat	砸南瓜增加最终大奖记录
+c2s	14013	req_cheat_pet_adventure_share_alliance_reward	宠物探险作弊分享联盟奖励
+c2s	14014	req_cheat_pet_set_attr_quality	设置宠物属性品质
+c2s	14015	req_cheat_finish_personal_sevenday_quest	
+c2s	14016	req_cheat_thanksgiving_menu_add_integral	感恩节盛宴筹备加积分
+c2s	14017	req_cheat_thanksgiving_menu_add_alliace_integral	感恩节盛宴筹备加联盟积分(盛宴活动使用)
+c2s	14018	req_cheat_three_tiles_add_progress	三消增加进度
+c2s	14019	req_cheat_finish_three_tiles_quest	三消任务满进度
+c2s	14020	req_cheat_migration	迁移
+c2s	14021	req_cheat_get_hero_buff	
+c2s	14022	req_cheat_three_tiles_start_level	三消开始关卡作弊
+c2s	14023	req_cheat_three_tiles_finish_level	三消完成当前关卡作弊
+c2s	14024	req_cheat_questionnaire_add	作弊添加问卷调查
+c2s	14025	req_cheat_set_migrant_president	作弊设置移民国王
+c2s	14026	req_cheat_opt_privacy_policy	作弊操作隐私政策
+c2s	14027	req_cheat_send_mail	发邮件
+c2s	14028	req_cheat_refresh_resource	刷新资源
+c2s	14029	req_cheat_refresh_monster	刷新怪物
+c2s	14030	req_cheat_three_tiles_start_level_fixed	开始关卡固定的卡牌-压测
+c2s	14031	req_cheat_recover_delete_role	恢复删除的角色
+c2s	14032	req_cheat_abtest_opt	abtest操作
+c2s	14033	req_cheat_create_triangle_warzone	创建战场
+c2s	14034	req_cheat_annual_stat_archive	周年回顾归档
+c2s	14035	req_cheat_triangle_warzone_set_food	设置玩家食物
+c2s	14036	req_cheat_triangle_war_set_formation	作弊设置出战部队
+c2s	14037	req_cheat_ramadan_alliance_share	作弊斋月联盟所有成员分享
+c2s	14038	req_cheat_triangle_war_get_warzone_id	作弊查看战场id
+c2s	14039	req_cheat_triangle_war_add_alliance_score	三盟作弊加联盟积分
+c2s	14040	req_cheat_triangle_war_add_player_exploit	三盟作弊加玩家战功
+c2s	14041	req_cheat_finish_all_td_event_quest	作弊完成所有塔防任务
+c2s	14042	req_cheat_survivor_event	作弊触发幸存者接收事件
+c2s	14043	req_cheat_survivor_die	作弊触发幸存者死亡
+c2s	14044	req_cheat_survivor_td_finish	作弊触发居民塔防事件结束
+c2s	14045	req_cheat_trigger_opinion	作弊触发民意信箱
+c2s	14046	req_cheat_td_event_trigger	作弊触发塔防事件(当前有塔防事件，无法触发)
+c2s	14047	req_cheat_equip_full	作弊装备填充
+c2s	14048	req_cheat_underage_parental_consent_opt	作弊未成年父母同意操作
+c2s	14050	req_cheat_finish_relic_adventure_quest	
+c2s	14051	req_cheat_relic_adventure_info	
+c2s	14052	req_cheat_relic_adventure_set_floor	
+c2s	14071	req_cheat_supremacy_war_prepare_add_score	作弊增加霸主战备玩家阶段积分
+c2s	14094	req_cheat_inject_lua_script	作弊注入lua脚本
+c2s	14095	req_cheat_alliance_set_honor_level	作弊设置联盟荣誉等级
+c2s	14096	req_cheat_unlock_homeland	作弊解锁家园
+c2s	14097	req_cheat_get_homeland_all_tree_info	作弊查询家园地图树木信息
+c2s	14098	req_cheat_homeland_set_fell_tree_check	作弊开关服务器砍树检查
+c2s	14099	req_cheat_homeland_add_building	作弊加家园建筑
+c2s	14100	req_cheat_homeland_fell_all_tree	家园作弊砍掉所有的树
+c2s	14101	req_cheat_homeland_recovery_all_building	作弊回收家园建筑
+c2s	14102	req_cheat_homeland_like_add_value	作弊修改家园点赞相关次数
+c2s	14113	req_cheat_clear_wound_soldier	作弊清除伤兵
+c2s	14114	req_cheat_monster_siege_set_diff	作弊设置疯狂乔伊已完成难度
+c2s	14115	req_cheat_alliance_duel_add_score	作弊增加当前阶段的联盟积分
+c2s	14116	req_cheat_alliance_duel_set_grade	作弊设置联盟对决星级
+c2s	14117	req_cheat_truck_escort_modify_truck_info	作弊修改货车信息
+c2s	14118	req_cheat_truck_escort_get_assisting_unit	作弊获取协助部队信息
+c2s	14119	req_cheat_publish_kingdom_channel	作弊推送到kingdom channel
+c2s	14120	req_cheat_set_alliance_trap_personal_score	作弊设置猎熊个人积分
+c2s	14121	req_cheat_query_player_data	查询玩家表数据
+c2s	14122	req_cheat_overload_query_player_data	过载查询玩家表数据
+c2s	14082	req_cheat_climbtower	爬塔作弊
+c2s	14083	req_cheat_dig_treasure_jump_level	挖宝活动跳关
+c2s	14084	req_cheat_climbtower_formation	爬塔查询编队出征上限和战力
+c2s	14085	req_cheat_pachinko_start	作弊发射弹珠，无法实际获得奖励，只返回轨迹
+c2s	14086	req_cheat_add_glory	作弊增加荣誉
+c2s	14087	req_cheat_finish_activity_quest	活动任务作弊完成
+c2s	14088	req_supremacy_war_cheat_open	作弊开启霸主战
+c2s	14089	req_cheat_supremacy_war_mass_lets_go	结束等待立即出发
+c2s	14090	req_supremacy_war_cheat_close	作弊关闭霸主战
+c2s	14091	req_supremacy_war_cheat_open_new	作弊开启霸主战2个赛区
+c2s	14092	req_supremacy_war_cheat_enter	作弊进入战场
+c2s	14107	req_cheat_supremacy_battlefield_clear_all_monster	作弊清除所有怪物
+c2s	14108	req_cheat_supremacy_battlefield_clear_all_resource	作弊清除所有资源
+c2s	14109	req_cheat_add_supremacy_table	作弊增加餐桌
+c2s	14163	req_cheat_hotfix_config	作弊热更配置
+c2s	14074	req_cheat_supremacy_war_points	作弊增加霸主战积分
+c2s	14075	req_supremacy_war_cheat_set_crystal	作弊设置霸主战水晶数量
+c2s	14076	req_supremacy_war_cheat_reset_alliance_skill	作弊重置霸主战技能
+c2s	14132	req_cheat_alliance_showdown_next_stage	作弊调到下个阶段
+c2s	14133	req_cheat_alliance_showdown_set_grade	作弊调段位
+c2s	14134	req_alliance_showdown_test_battle	战斗测试
+c2s	14139	req_cheat_mobilization_next_stage	调时间到下个阶段
+c2s	14140	req_cheat_mobilization_add_score	作弊添加积分
+c2s	14141	req_cheat_mobilization_set_grade	作弊设置段位
+c2s	14142	req_cheat_mobilization_refresh_quest	刷新任务到联盟第一位置上
+c2s	14145	req_cheat_reset_travel_expert	作弊重置游历数据
+c2s	14146	req_cheat_reset_expert	作弊清除专家数据
+c2s	14147	req_cheat_finish_expert_quest	专家成就作弊完成
+c2s	14148	req_cheat_clear_expert_data	作弊重置专家系统数据
+c2s	14149	req_cheat_unlock_expert	作弊解锁专家
+c2s	14150	req_cheat_travel	作弊触发指定游历事件
+c2s	14151	req_cheat_set_travel_cnt	作弊设置游历次数
+c2s	14152	req_cheat_add_expert_skill_exp	作弊增加专家技能经验
+c2s	14153	req_cheat_super_expert	作弊超级专家
+c2s	14154	req_cheat_expert_unlock_drawing	作弊专家解锁图纸
+c2s	14155	req_cheat_add_travel_energy	作弊设置普通行动力
+c2s	14156	req_cheat_multi_normal_travel	作弊查看普通概率
+c2s	14157	req_cheat_open_expert_system	作弊开专家系统
+c2s	14159	req_cheat_pet_reset_skill	作弊重置宠物技能
+c2s	14167	req_cheat_build_supre_feast	作弊创建霸主盛宴
+c2s	14168	req_cheat_migrant_set_conti_super_count	作弊设置连续次数
+c2s	14169	req_cheat_migrant_set_super_count	作弊设置累计强盛次数
+c2s	14170	req_cheat_create_world_boss	
+c2s	14171	req_cheat_add_world_boss_points	作弊增加世界boss积分
+c2s	14172	req_cheat_finish_firecrystal_quest	火晶任务作弊完成
+c2s	14173	req_cheat_add_equipment	作弊添加装备
+c2s	14174	req_cheat_supremacy_gov_add_dominance	作弊增加霸主战统治力
+c2s	14175	req_cheat_supremacy_war_feast_result	作弊设置霸主宴会的霸主
+c2s	14176	req_cheat_battle_delay	设置战斗延迟
+c2s	14177	req_cheat_finish_quest_type	作弊完成指定任务类型的任务
+c2s	14178	req_cheat_register_hotfix_protocol	注册热更协议
+c2s	14179	req_cheat_unregister_hotfix_protocol	注销热更协议
+c2s	14180	req_cheat_notify_hotfix_protocol	测试下发热更协议
+c2s	14181	req_cheat_tower_defense_active_illust	作弊激活塔防图鉴
+c2s	14182	req_cheat_get_annual_rank	作弊获取周年回顾排行榜数据
+c2s	14183	req_cheat_annual_stat_get_info	查询最新的周年归档id
+c2s	14184	req_cheat_pre_merge_warzone	作弊预设合并战区
+c2s	14185	req_cheat_tower_defense_pass_level	作弊通关塔防关卡
+c2s	14187	req_cheat_set_normal_travel_cnt	作弊设置普通游历次数
+c2s	14188	req_cheat_merge_kingdom	作弊开启合服
+c2s	14189	req_cheat_start_merge_milestone	作弊开启合服里程碑
+c2s	14190	req_merge_milestone_cheat_add_count	作弊合服里程碑增加任务进度
+c2s	10701	req_cheat_fortwar_next_stage	
+c2s	10702	req_cheat_fortwar_occupy_fort	作弊占领据点
+c2s	10703	req_cheat_fortwar_fight_start	作弊据点进入战斗状态
+c2s	12741	req_cheat_finish_all_spar_science	
+c2s	10241	req_monster_siege_cheat_add_score	作弊加积分
+c2s	11991	req_cheat_alliance_arsenal_war_set_fraction	作弊设置兵工厂评级积分
+c2s	5220	req_cheat_alliance_science_research	
+c2s	14201	req_cheat_check_travel_config	检查游历配置
+c2s	14202	req_cheat_capital_war_set_president	作弊设置国王战国王
+c2s	14203	req_cheat_supremacy_war_set_president	作弊设置霸主战霸主
+c2s	14204	req_cheat_arsenal_league_next_stage	作弊 兵工厂联赛下一个阶段
+c2s	14205	req_cheat_open_arsenal_league_battlefield	作弊开启联盟战战场
+c2s	14206	req_cheat_close_arsenal_league_battlefield	作弊关闭联盟战战场
+c2s	14207	req_cheat_enter_arsenal_league_battlefield	作弊进入联盟战战场
+c2s	14208	req_cheat_arsenal_league_close_activity	作弊 兵工厂联赛关闭
+c2s	14210	req_cheat_arsenal_league_mail	兵工厂联赛作弊 发放赛事邮件
+c2s	14212	req_arsenal_league_cheat_legion_sign_up	作弊 兵工厂联赛军团报名
+c2s	14213	req_cheat_finish_arsenal_league_task_process	作弊增加兵工厂联赛任务进度
+c2s	14214	req_cheat_arsenal_league_legion_battle_result	作弊指定某场比赛的胜利方
+c2s	14215	req_cheat_arsenal_league_rematch	兵工厂联赛-作弊重赛
+c2s	14216	req_cheat_arsenal_league_set_max_rank	作弊设置联赛排名
+c2s	14217	req_cheat_arsenal_league_gen_legion_pos	兵工厂作弊生成对阵表
+c2s	14218	req_cheat_arsenal_league_honor_rematch	
+c2s	14219	req_alliance_members_cheat_login	作弊登录联盟全部成员
+c2s	14220	req_cheat_alliance_building_merge	作弊创造联盟建筑合服数据
+c2s	14221	req_cheat_start_sevenday_task	作弊开启通用七日任务
+c2s	14222	req_cheat_sevenday_task_progress	作弊完成通用七日任务
+c2s	14223	req_cheat_add_total_recharge_diamond	加累充积分
+c2s	14224	req_cheat_get_world_random_idle_point	作弊获取世界空闲位置
+c2s	14225	req_cheat_finish_wjx_questionnaire	作弊完成wjx问卷调查
+c2s	14230	req_cheat_linkage_monopoly_try_join_teams	雪原大冒险联动自动找联盟中的人组队
+c2s	14231	req_cheat_linkage_monopoly_play_dice_points	联动大富翁作弊指定每次的点数
+c2s	14232	req_cheat_share_to_chat_svip	
+c2s	14233	req_cheat_arsenal_league_add_player_score	兵工厂联赛作弊增加个人积分
+c2s	14234	req_cheat_chat_self_developed_pre_translate	自研翻译进行预翻译
+c2s	14235	req_cheat_chat_self_developed_translate	自研翻译进行翻译
+c2s	14236	req_cheat_hero_growth_bp_open	作弊开启英雄养成基金
+c2s	14237	req_cheat_hero_growth_bp_close	作弊关闭英雄养成基金
+c2s	14238	req_cheat_hero_growth_bp_add_score	作弊英雄养成基金增加积分
+c2s	14239	req_cheat_duckmarket	黄鸭集市作弊
+c2s	14240	req_cheat_duck_market_gacha	黄鸭集市作弊抽取
+c2s	14241	req_cheat_find_goods_scene_time	寻物单人加时
+c2s	14242	req_cheat_pass_chapter_level	单人寻物通过（只有chapter&level都传才选关， 否则仅通关当前关卡）
+c2s	14243	req_cheat_find_goods_add_progress	寻物历程加经验
+c2s	14244	req_cheat_slot_matrix_next_level	设置下一轮的矩阵等级
+c2s	14245	req_cheat_slot_matrix_add_broadcast	新增作弊记录
+c2s	14246	req_cheat_set_slot_matrix_reset_rate	
+c2s	14247	req_cheat_magic_potion_add_task_progress	魔法药剂，增加任务进度
+c2s	14248	req_cheat_magic_potion_jump_level	魔法药剂，跳到指定关卡
+c2s	14249	req_cheat_event_brawl_war_finish	作弊触发"完成战斗战场"任务事件
+c2s	14250	req_cheat_event_brawl_war_use_item	作弊触发"乱斗战场使用道具" 任务事件
+c2s	14251	req_cheat_finish_brawl_war_task	作弊完成乱斗战场活动任务
+c2s	14252	req_cheat_create_brawl_warzone	作弊创建乱斗战场
+c2s	14253	req_cheat_enter_brawl_warzone	作弊进入乱斗战场
+c2s	14254	req_cheat_brawl_war_add_airdrop	作弊增加乱斗战场空投道具
+c2s	14255	req_cheat_brawl_war_match_request	作弊请求匹配
+c2s	14256	req_cheat_brawl_war_mail	
+c2s	14257	req_cheat_set_brawl_match_gen	设置乱斗战场匹配英雄代数
+c2s	14258	req_cheat_brawl_war_set_people_num	乱斗战场设置匹配人数
+c2s	14259	req_cheat_rank_range	作弊请求排行数据
+c2s	14260	req_cheat_opt_area_arsenal_league_battlefield	作弊开关多个赛区联赛战场
+c2s	14314	req_cheat_paid_sprint_set_enable	大额付费冲刺：作弊翻开领奖屏蔽开关 enable
+c2s	14315	req_cheat_find_goods_add_daily_score	寻物双人加积分
+c2s	14316	req_cheat_find_goods_room_settle	结算
+c2s	14317	req_cheat_find_goods_challenge_record	结算
+c2s	14262	req_cheat_slg_3_league_control_task	作弊打开SLG3V3任务活动
+c2s	14263	req_cheat_slg_3_league_get_bye_account	作弊获取海选赛轮空账号
+c2s	14264	req_cheat_slg_3_league_start_activity	作弊开启SLG3V3活动
+c2s	14265	req_cheat_send_slg_3_league_mail	作弊发送SLG3V3邮件
+c2s	14266	req_cheat_slg_3_league_apply	作弊报名
+c2s	14267	req_cheat_slg_3_league_save_formation	作弊保存编队
+c2s	14268	req_cheat_slg_3_league_battle	作弊战斗
+c2s	14269	req_cheat_pin_game_close_check	见缝插针关闭作弊检测
+c2s	14270	req_cheat_pin_game_pass	作弊完成见缝插针关卡
+c2s	14271	req_cheat_slg_3_arena_apply	3v3竞技活动作弊报名
+c2s	14272	req_cheat_manage_expression	删除表情捆绑包
+c2s	14273	req_cheat_get_power_strike_score_detail	查询三种玩法的袭击分计算明细
+c2s	14274	req_cheat_open_slg_3_arena	作弊开启3v3竞技活动
+c2s	14275	req_cheat_slg_3_league_save_max_formation	按当前最高可训练兵种保存联赛编队
+s2c	3301	req_schedule_info	
+s2c	13275	notify_icebound_amazing_info	
+s2c	13276	notify_icebound_amazing_winner_list	
+s2c	15591	notify_abtest_init	
+s2c	15592	notify_abtest_add	
+s2c	15593	notify_abtest_rm	
+s2c	9770	notify_accumulative_info	同步数据
+s2c	9771	notify_accumulative_prepared	新活动准备
+s2c	9772	notify_accumulative_progress_change	积分更新
+s2c	10081	notify_achievement_info	
+s2c	11426	notify_active_recharge_init	同步数据
+s2c	11427	notify_update_active_recharge_quest	任务创建，任务数据更新通知
+s2c	2101	notify_test_activity_info	
+s2c	2102	notify_activity_force_close	
+s2c	2103	notify_activity_drop_direct	通知直接掉落的活动掉落
+s2c	9925	notify_activity_calendar_data	同步数据
+s2c	21136	notify_activity_gift_popup_info	登录同步弹窗数据
+s2c	30980	notify_adgame_info	基本信息推送
+s2c	30981	notify_adgame_reward_info	小游戏领奖信息推送
+s2c	1550	notify_adventure_pve_info	初始化
+s2c	12670	notify_advertising_act_info	同步数据
+s2c	12671	notify_advertising_act_can_skip	玩家可以跳过广告
+s2c	5171	notify_alliance_init	联盟初始化
+s2c	5172	notify_alliance_update	联盟信息变化
+s2c	5173	notify_alliance_player_update	联盟玩家信息变化
+s2c	5174	notify_alliance_exp_update	联盟经验等级变化
+s2c	5175	notify_alliance_apply_num_update	联盟申请数量变化
+s2c	5176	notify_alliance_resource_update	联盟资源信息变化
+s2c	5177	notify_alliance_member_pos_info	同步联盟成员坐标信息
+s2c	5178	notify_alliance_member_pos_add	
+s2c	5179	notify_alliance_member_pos_update	
+s2c	5180	notify_alliance_member_pos_del	
+s2c	5181	notify_alliance_is_city_in_territory	
+s2c	5182	notify_alliance_fort_pro_uids_add	
+s2c	5183	notify_alliance_member_init	联盟成员列表初始化
+s2c	5184	notify_alliance_whitelist_init	白名单初始化, 用于确认自己处于哪些联盟的白名单中
+s2c	5185	notify_alliance_whitelist_update	白名单更新, 被加入或删除白名单时发送
+s2c	5186	notify_alliance_history_notice_update	通知客户端刷新历史联盟公告列表
+s2c	5188	notify_alliance_delta_data	联盟增量数据变化
+s2c	16961	notify_alliance_bomb_info	
+s2c	8251	notify_alliance_building_simple_info	
+s2c	8252	notify_alliance_building_add	
+s2c	8253	notify_alliance_building_update	
+s2c	8254	notify_alliance_building_remove	
+s2c	8255	notify_alliance_building_redtip	
+s2c	5350	notify_alliance_chest_init	联盟宝箱初始化
+s2c	5351	notify_alliance_chest_add	联盟宝箱增加
+s2c	5352	notify_alliance_chest_brilliant_update	联盟荣耀值变化
+s2c	5353	notify_alliance_chest_update	联盟宝箱刷新
+s2c	5354	notify_alliance_chest_delete	联盟宝箱删除
+s2c	30217	notify_alliance_dev_init	
+s2c	30218	notify_alliance_dev_update	
+s2c	17210	notify_alliance_duel_info	同步联盟对决活动信息(联盟、玩家数据有变化时也会更新)
+s2c	17211	notify_alliance_duel_user_score_update	同步联盟对决玩家积分更新
+s2c	17212	notify_alliance_duel_settlement	同步联盟对决结算数据
+s2c	17213	notify_alliance_duel_stage_start	阶段开始时通知
+s2c	17214	notify_alliance_duel_base_info	联盟对决基础数据
+s2c	5281	notify_alliance_help_update_all	联盟帮助列表变化(别人帮助)
+s2c	5282	notify_alliance_help_update	新增帮助信息
+s2c	5283	notify_alliance_help_init	联盟帮助初始化
+s2c	5284	notify_alliance_help_auto_help	联盟帮助自动帮助
+s2c	5426	notify_alliance_settle_rank_success	联盟结算捐献排行结束通知
+s2c	5231	notify_alliance_science_init	联盟科技初始化数据
+s2c	5232	notify_alliance_science_exp_update	联盟科技经验变化
+s2c	5233	notify_alliance_science_recommend_update	联盟科技经验变化
+s2c	5234	notify_alliance_science_research_start	联盟科技研究开始
+s2c	5235	notify_alliance_science_research_finish	联盟科技研究完成
+s2c	9851	notify_alliance_showdown_global_activity	全服信息
+s2c	9852	notify_alliance_showdown_activity	王国活动时间
+s2c	9853	notify_alliance_showdown_grade	联盟段位初始化/变化
+s2c	10430	notify_alliance_trap_update	
+s2c	10431	notify_alliance_trap_score_update	
+s2c	15291	notify_alliance_vote_init	初始化
+s2c	15292	notify_alliance_vote_update	投票模块数据变化
+s2c	15293	notify_alliance_vote_player_update	玩家投票更新
+s2c	15294	notify_alliance_vote_finish	投票结束
+s2c	30341	notify_alliance_war_mark_queue	通知集结发起者收藏列表
+s2c	20711	notify_anniv_preview_info	推送活动数据
+s2c	30226	notify_anniv_review_init	推送活动数据
+s2c	16241	notify_annual_stat	同步数据
+s2c	8401	notify_arena_init	初始化
+s2c	8402	notify_arena_report	通知新战报
+s2c	30600	notify_arsenal_league_act_info	通知联赛活动数据
+s2c	30560	notify_alliance_arsenal_league_info	同步联盟跨服战信息
+s2c	17350	notify_arsenal_league_player_init	兵工厂争夺战初始数据
+s2c	17351	notify_arsenal_league_battlefield_city_update	
+s2c	17352	notify_arsenal_league_mapobj_add	战场-地图对象广播-增加
+s2c	17353	notify_arsenal_league_mapobj_update	战场-地图对象广播-更新
+s2c	17354	notify_arsenal_league_mapobj_del	战场-地图对象广播-删除
+s2c	17355	notify_arsenal_league_march_add	战场-出征队列广播-增加
+s2c	17356	notify_arsenal_league_march_update	战场-出征队列广播-更新
+s2c	17357	notify_arsenal_league_march_del	战场-出征队列广播-删除
+s2c	17358	notify_arsenal_league_situation_info_add	军情增加
+s2c	17359	notify_arsenal_league_situation_info_del	军情删除
+s2c	17360	notify_arsenal_league_situation_info_up	军情更新
+s2c	17361	notify_arsenal_league_situation_info	同步军情信息(分批)
+s2c	17362	notify_arsenal_league_move_city_free	
+s2c	17363	notify_arsenal_league_battlefield_result	战场结果
+s2c	17364	notify_arsenal_league_kick_player	玩家被踢出战场
+s2c	17365	notify_arsenal_league_alliance_situation_add	联盟军情新增
+s2c	17366	notify_arsenal_league_alliance_situation_del	联盟军情删除
+s2c	17367	notify_arsenal_league_alliance_situation_update	联盟军情更新
+s2c	17368	notify_arsenal_league_alliance_situation_point_update	联盟军情点变化
+s2c	17369	notify_arsenal_league_alliance_score_update	联盟积分变化
+s2c	17370	notify_arsenal_league_alliance_info_update	联盟信息变化
+s2c	17371	notify_arsenal_league_alliance_mass_invite	集结邀请
+s2c	17372	notify_arsenal_league_battlefield_map_init_info	初始化地图信息
+s2c	17373	notify_arsenal_league_battlefield_situation_init_info	初始化军情信息
+s2c	17374	notify_arsenal_league_spectator_battlefield_result	战场结果
+s2c	17375	notify_arsenal_league_spectator_alliance_info_update	联盟信息变化
+s2c	30500	notify_arsenal_league_guess_info	兵工厂联赛竞猜信息
+s2c	30501	notify_arsenal_league_guess_champion_reward	兵工厂联赛竞猜冠军奖励通知，一个赛区冠军产生时下发
+s2c	30631	notify_arsenal_league_honor_info	
+s2c	30632	notify_arsenal_league_honor_kingdom_reward_record_update	
+s2c	30633	notify_arsenal_league_honor_rematch	
+s2c	30571	notify_arsenal_league_task_info	下发总数据
+s2c	30572	notify_arsenal_league_task_update	任务进度更新通知
+s2c	11151	notify_arsenal_war_player_init	兵工厂争夺战初始数据
+s2c	11152	notify_arsenal_war_battlefield_city_update	
+s2c	11153	notify_arsenal_war_mapobj_add	战场-地图对象广播-增加
+s2c	11154	notify_arsenal_war_mapobj_update	战场-地图对象广播-更新
+s2c	11155	notify_arsenal_war_mapobj_del	战场-地图对象广播-删除
+s2c	11156	notify_arsenal_war_march_add	战场-出征队列广播-增加
+s2c	11157	notify_arsenal_war_march_update	战场-出征队列广播-更新
+s2c	11158	notify_arsenal_war_march_del	战场-出征队列广播-删除
+s2c	11161	notify_arsenal_war_situation_info_add	军情增加
+s2c	11162	notify_arsenal_war_situation_info_del	军情删除
+s2c	11163	notify_arsenal_war_situation_info_up	军情更新
+s2c	11164	notify_arsenal_war_situation_info	同步军情信息(分批)
+s2c	11165	notify_arsenal_war_move_city_free	
+s2c	11166	notify_arsenal_war_battlefield_result	战场结果
+s2c	11167	notify_arsenal_war_kick_player	玩家被踢出战场
+s2c	11168	notify_arsenal_war_alliance_situation_add	联盟军情新增
+s2c	11169	notify_arsenal_war_alliance_situation_del	联盟军情删除
+s2c	11170	notify_arsenal_war_alliance_situation_update	联盟军情更新
+s2c	11171	notify_arsenal_war_alliance_situation_point_update	联盟军情点变化
+s2c	11172	notify_arsenal_war_alliance_score_update	联盟积分变化
+s2c	11173	notify_arsenal_war_alliance_info_update	联盟信息变化
+s2c	11174	notify_arsenal_war_alliance_mass_invite	集结邀请
+s2c	11175	notify_arsenal_war_chat_room_update	军团聊天频道更新
+s2c	11951	notify_alliance_arsenal_war_info	同步联盟跨服战信息
+s2c	11701	notify_arsenal_war_hospital_init	初始化
+s2c	11702	notify_arsenal_war_hospital_heal_finish	医院治疗完成
+s2c	11703	notify_arsenal_war_hospital_wound_soldiers	通知伤兵
+s2c	11704	notify_arsenal_war_hospital_heal_speed_up	通知治疗加速
+s2c	11705	notify_arsenal_war_hospital_reset	重置医院数据，结束进行中的治疗，清空所有伤兵
+s2c	11706	notify_arsenal_league_hospital_init	联赛-初始化
+s2c	11707	notify_arsenal_league_hospital_heal_finish	联赛-医院治疗完成
+s2c	11708	notify_arsenal_league_hospital_wound_soldiers	联赛-通知伤兵
+s2c	11709	notify_arsenal_league_hospital_heal_speed_up	联赛-通知治疗加速
+s2c	11710	notify_arsenal_league_hospital_reset	联赛-重置医院数据，结束进行中的治疗，清空所有伤兵
+s2c	11801	notify_arsenal_war_wall_init	登录时如果在战场中才会发送，否则会在进入战场时发
+s2c	11802	notify_arsenal_war_wall_update	更新(全量)
+s2c	11803	notify_arsenal_league_wall_init	联赛-登录时如果在战场中才会发送，否则会在进入战场时发
+s2c	11804	notify_arsenal_league_wall_update	联赛-更新(全量)
+s2c	13125	notify_auto_monster_info	
+s2c	13126	notify_auto_monster_stop	自动打怪停止
+s2c	13127	notify_auto_formation_stop	自动打怪队列停止
+s2c	15211	notify_back_bp_info	
+s2c	15212	notify_back_bp_purchase	购买通行证通知
+s2c	15213	notify_back_bp_integral_update	积分变化
+s2c	15001	notify_back_buff_init_info	回归buff信息通知
+s2c	15230	notify_back_guide_info	同步数据 (登陆/开始活动 下发)
+s2c	15101	notify_back_new_journey_init_info	回归buff信息通知
+s2c	15171	notify_back_quest_info	同步数据 (登陆/跨天/开始活动 下发)
+s2c	15172	notify_update_back_quest	进度更新
+s2c	15173	notify_update_back_quest_score	更新积分
+s2c	15053	notify_back_sign_in_init_info	回归签到信息通知
+s2c	1101	notify_backpack_init	初始化
+s2c	1102	notify_backpack_update	变化通知
+s2c	1103	notify_backpack_auto_use	自动使用道具通知
+s2c	21061	notify_banner_show_data	
+s2c	21062	notify_banner_show_close	
+s2c	2201	notify_barrack_init	初始化
+s2c	2202	notify_barrack_speed_up	通知训练加速
+s2c	2203	notify_barrack_train_finish	通知训练完成
+s2c	1010	notify_base_info	通知
+s2c	1011	notify_player_power_update	威望变化
+s2c	1012	notify_player_level_up	玩家升级
+s2c	1014	notify_player_upload_image	通知更新上传图片
+s2c	1015	notify_player_first_def_city_lose	首次防御城市失败
+s2c	1016	notify_player_appoint_office	通知玩家被任命官职
+s2c	1017	notify_player_dismissal_office	通知玩家被解除官职
+s2c	1018	notify_player_name_force_change	强制改名通知
+s2c	1019	notify_player_ban_modify_name_end_time	通知禁止改名结束时间
+s2c	1020	notify_operator_message	
+s2c	1021	notify_player_activity_power_update	活动相关战力变化
+s2c	1022	notify_player_image_update	形象变化通知
+s2c	10851	notify_battle_hero_arrange_data	登录战斗英雄数据
+s2c	10852	notify_update_battle_hero_arrange	更新战斗英雄数据
+s2c	9270	notify_battle_pass_info	同步数据
+s2c	9271	notify_battle_pass_purchase	战令购买通知
+s2c	9272	notify_battle_pass_prepared	新战令准备
+s2c	9273	notify_battle_pass_score_change	积分变化通知
+s2c	17525	notify_brawl_war_init	初始数据
+s2c	17526	notify_brawl_war_room_info	房间信息
+s2c	17527	notify_brawl_war_task_update	活动任务进度更新
+s2c	17528	notify_brawl_war_achievement_update	成就任务进度更新
+s2c	17529	notify_brawl_war_match_info	匹配信息
+s2c	17280	notify_brawl_war_enter_battlefield	通知玩家进入战场
+s2c	17281	notify_brawl_war_battlefield_city_update	
+s2c	17282	notify_brawl_war_mapobj_add	战场-地图对象广播-增加
+s2c	17283	notify_brawl_war_mapobj_update	战场-地图对象广播-更新
+s2c	17284	notify_brawl_war_mapobj_del	战场-地图对象广播-删除
+s2c	17285	notify_brawl_war_march_add	战场-出征队列广播-增加
+s2c	17286	notify_brawl_war_march_update	战场-出征队列广播-更新
+s2c	17287	notify_brawl_war_march_del	战场-出征队列广播-删除
+s2c	17288	notify_brawl_war_move_city_free	
+s2c	17289	notify_brawl_war_battlefield_result	战场结果
+s2c	17290	notify_brawl_war_kick_player	玩家被踢出战场
+s2c	17291	notify_brawl_war_battlefield_map_init_info	初始化地图信息
+s2c	17292	notify_brawl_war_wall_init	
+s2c	17293	notify_brawl_war_wall_update	更新(全量)
+s2c	17294	notify_brawl_war_score_update	玩家积分变动
+s2c	17295	notify_brawl_war_airdrop_item_update	空投道具变动
+s2c	17296	notify_brawl_war_player_init	登录初始化数据
+s2c	17297	notify_brawl_war_continual_kill	玩家连杀数
+s2c	17554	notify_brawl_war_hospital_init	初始化
+s2c	17555	notify_brawl_war_hospital_heal_finish	医院治疗完成
+s2c	17556	notify_brawl_war_hospital_wound_soldiers	通知伤兵
+s2c	17557	notify_brawl_war_hospital_heal_speed_up	通知治疗加速
+s2c	17558	notify_brawl_war_hospital_reset	重置医院数据，结束进行中的治疗，清空所有伤兵
+s2c	17559	notify_brawl_war_hospital_heal_data_update	治疗队列的数据变更
+s2c	3701	notify_buff_show	buff展示
+s2c	3702	notify_buff_show_update	buff更新
+s2c	3703	notify_buff_show_delete	删除buff
+s2c	10951	notify_capital_war_init	
+s2c	10952	notify_capital_war_set_buff	添加BUFF
+s2c	10953	notify_capital_war_remove_buff	移除BUFF
+s2c	10954	notify_capital_war_be_war_banned	战争禁令
+s2c	10955	notify_capital_war_update_dominance	更新统治力
+s2c	10956	notify_capital_war_update_state	更新活动状态(全服在线推送)
+s2c	10957	notify_capital_war_president_data	watch的普通玩家也会收到,更新总统使用的数据(产生总统时下方给总统, 或产生内政部长时发给内政部长)
+s2c	10958	notify_capital_war_watch_info	更新占领信息
+s2c	10959	notify_capital_war_win	通知获胜联盟成员(同步选举信息)
+s2c	10960	notify_capital_war_office_init	官职数据初始化
+s2c	10961	notify_capital_war_new_application	新的官职申请或者自动同意状态变化 只有国王和内政部长会收到
+s2c	10962	notify_capital_war_office_watch_data	官职watch数据
+s2c	10963	notify_capital_war_application_update	通知官职申请状态变化
+s2c	10964	notify_capital_war_skill_update	技能更新 用于预约技能触发时的数据更新
+s2c	10965	notify_capital_war_ban_office	通知官职禁用
+s2c	10966	notify_capital_war_ban_list_init	通知官职禁止列表初始化
+s2c	10967	notify_capital_war_apply_slot_update	通知候选人申请数据更新
+s2c	10968	notify_capital_war_info_update	通知任期信息更新
+s2c	10560	notify_card_bp_info	同步数据
+s2c	10561	notify_card_bp_prepared	新战令准备
+s2c	10562	notify_card_bp_progress_change	积分更新
+s2c	10563	notify_card_bp_buy_gfit	购买礼包通知
+s2c	3951	notify_chapterquests	进入游戏下发
+s2c	3952	notify_update_chapterquest	任务创建，任务数据更新通知
+s2c	3401	notify_chat_init	通知
+s2c	3420	notify_chat_new_expression	得到新表情
+s2c	3421	notify_chat_new_at	新的at通知
+s2c	3422	notify_chat_at_init	at消息初始化
+s2c	3423	notify_chat_expression_gift_buy_success	表情礼包购买成功
+s2c	3430	notify_chat_expression_refresh	聊天表情全量刷新通知
+s2c	13581	notify_chat_group_info	所在的群聊信息
+s2c	13582	notify_chat_group_disbanded	群聊解散,所有成员收到
+s2c	13583	notify_chat_group_owner	群主变更,所有成员收到
+s2c	13584	notify_chat_group_join	进入群聊,所有成员收到
+s2c	13585	notify_chat_group_leave	离开群聊,所有成员收到
+s2c	13586	notify_chat_group_modify_name	修改群名,所有成员收到
+s2c	13587	notify_chat_group_invite_list_init	初始化群聊邀请列表， 群主收到
+s2c	13588	notify_chat_group_invite_list_update	更新群聊邀请列表， 群主收到
+s2c	13589	notify_chat_group_update	群聊公告刷新，群聊成员收到
+s2c	17571	notify_chat_group_vote_init	初始化
+s2c	17572	notify_chat_group_vote_update	投票模块数据变化
+s2c	17573	notify_chat_group_vote_player_update	玩家投票更新
+s2c	17574	notify_chat_group_vote_finish	投票结束
+s2c	30641	notify_own_city_field_list	玩家拥有的领域列表
+s2c	30642	notify_city_field_effect_init	领域效果初始化, 登录下发
+s2c	30643	notify_city_field_effect_update	领域效果变动
+s2c	7226	notify_city_item_init	
+s2c	7227	notify_city_item_update	更新信息
+s2c	3051	notify_clientsave_data	登录推送客户端保存数据
+s2c	3052	notify_law_point_add	通知增加法典值
+s2c	20466	notify_climbtower_tower_update	通知塔信息变更
+s2c	20474	notify_climbtower_currency_update	通知爬塔商店货币数量变更
+s2c	20475	notify_climbtower_tower_brief_info	登录通知塔简要信息
+s2c	9981	notify_continuous_recharge_info	同步活动信息
+s2c	9982	notify_continuous_recharge_update	更新充值金额
+s2c	9983	notify_continuous_prepared	
+s2c	13051	notify_cross_capital_war_init	初始数据
+s2c	13052	notify_cross_capital_war_activity_update	活动变化
+s2c	13053	notify_cross_capital_war_arms_race_alliance_goal	通知联盟分数变化
+s2c	13054	notify_cross_capital_war_arms_race_personal_goal	通知个人分数变化
+s2c	13055	notify_cross_capital_war_emblem_update	徽记数量变化
+s2c	13082	notify_cross_capital_war_revive_receive_help	复活阶段收到帮助
+s2c	13083	notify_cross_capital_war_dead_map_update	同步死亡士兵数据，只下发变化的士兵数据
+s2c	13084	notify_cross_capital_war_attack_side_kid	攻击方王国id
+s2c	13085	notify_cross_capital_war_winner_kid	胜利方王国id
+s2c	13086	notify_cross_capital_war_fight_alliance_goal	通知联盟分数变化
+s2c	13087	notify_cross_capital_war_fight_personal_goal	通知个人分数变化
+s2c	12851	notify_cross_most_lords_info	
+s2c	12852	notify_cross_most_lords_prepared	新活动准备(阶段切换时也会通知)
+s2c	12853	notify_cross_most_lords_preview	预告通知
+s2c	12854	notify_cross_most_lords_integral	积分变化通知
+s2c	12855	notify_cross_most_lords_special_integral	荣誉勋章变化通知
+s2c	11226	notify_customize_item_init	同步数据
+s2c	11227	notify_customize_buy_success	购买成功通知
+s2c	4301	notify_daily_bundle_info	登录下发数据
+s2c	4302	notify_daily_bundle_buy_success	购买成功通知
+s2c	12931	notify_daily_task_activity_info	
+s2c	12932	notify_daily_task_activity_task_update	任务进度更新通知
+s2c	12933	notify_daily_task_activity_integral_update	
+s2c	4402	notify_dailyquests	
+s2c	4403	notify_update_dailyquest	新增任务，进度变化
+s2c	4404	notify_update_dailyquest_integral	更新积分
+s2c	20410	notify_dig_treasure_info	活动数据推送
+s2c	20411	notify_dig_treasure_quest_update	任务更新
+s2c	20412	notify_dig_treasure_task_info	同步任务数据
+s2c	11052	notify_download_reward_init	初始化数据
+s2c	11501	notify_drop_event_info	
+s2c	21021	notify_duck_market_act_info	通知活动数据（登录下发/跨天刷新任务时）
+s2c	21022	notify_update_duck_market_quest	任务进度变化
+s2c	13829	notify_dun163_config_fragment	
+s2c	8651	notify_equipment_info	装备信息
+s2c	8652	notify_equipment_update	变化通知
+s2c	11301	notify_exchange_activity_info	
+s2c	30461	notify_expert_info	
+s2c	30462	notify_update_expert_info	
+s2c	30463	notify_update_expert_skill_info	
+s2c	30464	notify_expert_quests	
+s2c	30466	notify_update_expert_quest	新增任务，进度变化
+s2c	7476	notify_favorites_info	同步收藏夹信息
+s2c	7477	notify_favorites_alliance_tab_modify	同步联盟标记变化
+s2c	7478	notify_favorites_alliance_tab_message	同步联盟标记留言
+s2c	7479	notify_favorites_arsenal_info	同步收藏夹信息
+s2c	7480	notify_favorites_arsenal_alliance_tab_modify	同步联盟标记变化
+s2c	7481	notify_favorites_triangle_info	同步收藏夹信息
+s2c	7482	notify_favorites_triangle_alliance_tab_modify	同步联盟标记变化
+s2c	7483	notify_favorites_supremacy_info	同步收藏夹信息
+s2c	7484	notify_favorites_supremacy_alliance_tab_modify	同步联盟标记变化
+s2c	7485	notify_favorites_arsenal_league_info	同步收藏夹信息
+s2c	7486	notify_favorites_arsenal_league_alliance_tab_modify	同步联盟标记变化
+s2c	13781	notify_fes_bp_dailytask_info	
+s2c	13782	notify_fes_bp_dailytask_purchase	购买通知
+s2c	13783	notify_fes_bp_dailytask_task_update	任务进度更新通知
+s2c	13784	notify_fes_bp_dailytask_integral_update	积分变化
+s2c	13785	notify_fes_bp_dailytask_task_info	同步任务数据
+s2c	11681	notify_fes_bp_info	
+s2c	11682	notify_fes_bp_prepared	新活动准备
+s2c	11683	notify_fes_bp_purchase	购买通知
+s2c	11684	notify_fes_bp_buy_gift	购买礼包通知
+s2c	11576	notify_festival_sevendays_init	同步数据
+s2c	11577	notify_update_festival_sevendays_quest	任务创建，任务数据更新通知
+s2c	20647	notify_festival_turntable_info	活动总数据下发
+s2c	20648	notify_festival_turntable_task_update	任务进度更新通知
+s2c	20970	notify_find_goods_act_info	登录同步（需要id判断，该系列活动都可能收到通知【单人、双人、通行证...】）
+s2c	20971	notify_find_goods_common	登录同步（玩法相关数据）
+s2c	20972	notify_find_goods_room_member_join	更新房间成员（队友加入）
+s2c	20973	notify_find_goods_room_member_leave	更新房间成员（离开）
+s2c	20974	notify_find_goods_room_member_update	更新房间成员局内变化（更新成员信息）
+s2c	20975	notify_find_goods_match_result	匹配结果（匹配到了房间）
+s2c	20976	notify_find_goods_room_member_mark	队友找了物品
+s2c	20977	notify_find_goods_progress_num	更新等级进度值
+s2c	20978	notify_find_goods_task_update	任务进度更新通知
+s2c	20979	notify_find_goods_match_timeout	匹配超时
+s2c	20980	notify_find_goods_room_member_ready	更新成员准备状态
+s2c	20981	notify_find_goods_room_member_dissolve	更新房间成员（解散）
+s2c	20982	notify_find_goods_room_start	房间游戏开始
+s2c	20983	notify_find_goods_room_scene_time_begin	资源加载完毕，房间开始计时
+s2c	20984	notify_find_goods_room_member_removed	你被房主移除房间
+s2c	20985	notify_find_goods_room_timeout	在房间中没有timer内没有操作（房间解散）
+s2c	20986	notify_find_goods_room_daily_score	双人积分
+s2c	20987	notify_find_goods_energy	获得道具
+s2c	20988	notify_find_goods_room_settle	队友找了物品
+s2c	20989	notify_find_goods_quick_chat	同步快速聊天信息
+s2c	20990	notify_find_goods_room_team	同步队伍分数
+s2c	20992	notify_find_goods_auto_tip	单人场景同步自动提示信息
+s2c	20993	notify_find_goods_room_force_close	房间被强制关闭（管理员操作或移民特殊情况）
+s2c	30313	notify_firecrystal_quests	
+s2c	30314	notify_update_firecrystal_quest	任务进度变化
+s2c	30315	notify_update_firecrystal_integral	积分变化
+s2c	13501	notify_fishing_activity_info	活动信息通知
+s2c	13505	notify_fishing_handbook_info	图鉴信息通知
+s2c	13510	notify_fishing_open_time	通知开启时间
+s2c	13511	notify_fishing_item_change	物品变化通知
+s2c	13515	notify_fishing_task_update	任务进度更新通知
+s2c	13516	notify_fishing_task_info	同步任务数据
+s2c	13517	notify_fishing_unlock_item_info	同步解锁物件类型
+s2c	13481	notify_fishing_bp_info	
+s2c	13482	notify_fishing_bp_purchase	购买通行证通知
+s2c	13483	notify_fishing_bp_integral_update	积分变化
+s2c	13425	notify_fishing_turntable_info	
+s2c	2401	notify_fog_data	同步数据
+s2c	2402	notify_fog_change	迷雾变化
+s2c	2403	notify_fog_march_change	探索部队变化
+s2c	2404	notify_fog_march_del	探索部队删除
+s2c	10761	notify_fortwar_activity_init	枢纽争夺战活动数据
+s2c	10762	notify_fortwar_activity_update	枢纽争夺战活动时间变化
+s2c	10764	notify_fortwar_alliance_apply_update	联盟报名信息变化（报名/改时间）
+s2c	10765	notify_fortwar_fortinfo_update	据点信息变化
+s2c	10766	notify_fortwar_alliance_goal_update	联盟赛季积分变化
+s2c	10767	notify_all_fortwar_forts_info	通知所有据点信息
+s2c	10768	notify_fort_move_update	通知堡垒迁城更新, 更换联盟之类的会直接推送
+s2c	11026	notify_fortune_card_init	同步数据
+s2c	11027	notify_fortune_card_reward_pool	通知奖池
+s2c	11028	notify_fortune_card_winning_records	通知中奖记录
+s2c	9731	notify_fourteen_sign_info	同步数据
+s2c	9732	notify_fourteen_purchase	通知购买通知
+s2c	8101	notify_friend_init	初始信息
+s2c	8108	notify_friend_application	
+s2c	8109	notify_friend_add	好友列表同步
+s2c	8110	notify_friend_del	好友列表同步
+s2c	8111	notify_friend_gift	通知有新礼物
+s2c	8112	notify_friend_alias_update	备注数据更新
+s2c	13351	notify_frostfire_war_player_init	初始数据
+s2c	13352	notify_frostfire_war_mapobjs	矿区战场-数据请求-地图对象回包
+s2c	13353	notify_frostfire_war_mapobj_add	矿区战场-地图对象广播-增加
+s2c	13354	notify_frostfire_war_mapobj_update	矿区战场-地图对象广播-更新
+s2c	13355	notify_frostfire_war_mapobj_del	矿区战场-地图对象广播-删除
+s2c	13356	notify_frostfire_war_move_city_free	
+s2c	13357	notify_frostfire_war_marchs	矿区战场数据请求-出征队列回包
+s2c	13358	notify_frostfire_war_march_add	矿区战场-出征队列广播-增加
+s2c	13359	notify_frostfire_war_march_update	矿区战场-出征队列广播-更新
+s2c	13360	notify_frostfire_war_march_del	矿区战场-出征队列广播-删除
+s2c	13361	notify_frostfire_war_info	
+s2c	13371	notify_frostfire_war_self_march_add	矿区战场-玩家队列-添加
+s2c	13372	notify_frostfire_war_self_march_update	矿区战场-玩家队列-更新
+s2c	13373	notify_frostfire_war_self_march_del	矿区战场-玩家队列-删除
+s2c	13374	notify_frostfire_war_player_num	矿区战场-战场玩家数量
+s2c	13375	notify_frostfire_war_warzone_result	战场结果
+s2c	13376	notify_frostfire_formation_update	队列数据更新
+s2c	13377	notify_frostfire_hero_injured	英雄受伤通知
+s2c	13378	notify_frostfire_skill_point_update	战场技能点变化
+s2c	13379	notify_frostfire_score	
+s2c	13380	notify_frostfire_situation_info_add	军情增加
+s2c	13381	notify_frostfire_situation_info_del	军情删除
+s2c	13382	notify_frostfire_situation_info_up	军情更新
+s2c	13383	notify_frostfire_situation_info	同步军情信息(分批)
+s2c	13384	notify_frostfire_war_skill_used	技能使用通知
+s2c	13231	notify_frozen_soil_info	
+s2c	13232	notify_frozen_soil_purchase	购买通知
+s2c	13233	notify_frozen_soil_task_update	任务进度更新通知
+s2c	13234	notify_frozen_soil_integral_update	积分变化
+s2c	13235	notify_frozen_soil_task_info	同步任务数据
+s2c	12581	notify_frozen_treasure_info	
+s2c	12582	notify_frozen_treasure_quest_update	
+s2c	9502	notify_fund_info	同步数据
+s2c	9503	notify_fund_active	基金开放或购买通知
+s2c	15480	notify_general_bp_normal_info	通用普通通行证
+s2c	15481	notify_general_bp_extra_info	通用额外奖励通行证
+s2c	15482	notify_general_bp_purchase	购买通知
+s2c	15483	notify_general_bp_integral_update	积分更新
+s2c	7401	notify_gift_group_info	同步数据
+s2c	7402	notify_new_gift_group_info	新礼包组推送
+s2c	7403	notify_gift_group_buy_success	购买礼包通知
+s2c	7405	notify_remove_gift_group	移除礼包组
+s2c	7406	notify_gm_gift_config	通知礼包配置
+s2c	16160	notify_gift_message_info	
+s2c	20340	notify_glory_info	
+s2c	30731	notify_google_achievement_quests	
+s2c	30732	notify_update_google_achievement_quest	
+s2c	4502	notify_growthquests	
+s2c	4503	notify_update_growthquest	添加任务 任务数据更新通知
+s2c	8001	notify_guide_init	初始化
+s2c	10125	notify_embassy_world_march_add	
+s2c	10126	notify_embassy_world_march_del	
+s2c	10127	notify_embassy_world_march_info	
+s2c	10128	notify_embassy_other_world_march_add	
+s2c	10129	notify_embassy_other_world_march_del	
+s2c	1801	notify_hero_init	初始化
+s2c	1802	notify_hero_update	通知
+s2c	1803	notify_hero_transform_fragment	英雄全部转换碎片通知
+s2c	30831	notify_hero_growth_bp_info	同步数据
+s2c	30832	notify_hero_growth_bp_purchase	购买通行证通知
+s2c	30833	notify_hero_growth_bp_score_update	积分变化
+s2c	4703	notify_hero_search_data	进入游戏下发
+s2c	12401	notify_hero_story_info	上线同步数据
+s2c	9675	notify_hero_training_init	初始化
+s2c	9676	notify_hero_training_teacher_update	通知
+s2c	16511	notify_hero_trial_info	同步数据
+s2c	10376	notify_hero_turntable_init	同步数据
+s2c	16260	notify_home_guide_info	同步数据
+s2c	16261	notify_home_sign_info	同步签到数据
+s2c	20060	notify_homeland_info	家园信息通知
+s2c	20061	notify_homeland_life_tree_output_update	通知生命树产量变化
+s2c	20062	notify_homeland_warehouse_item_update	通知仓库物品变化
+s2c	20063	notify_homeland_logging_cabin_add_npc	通知伐木小屋增加npc
+s2c	20064	notify_homeland_assisted	被援助通知
+s2c	20065	notify_homeland_like	被点赞通知
+s2c	20066	notify_homeland_set_skin	设置场景装扮通知
+s2c	20067	notify_homeland_logging_site_update_info	伐木场信息更新通知
+s2c	20111	notify_homestead_quests	
+s2c	20112	notify_update_homestead_quest	添加任务 任务数据更新通知
+s2c	2301	notify_hospital_init	初始化
+s2c	2302	notify_hospital_heal_finish	医院治疗完成
+s2c	2303	notify_hospital_wound_soldiers	通知伤兵
+s2c	2304	notify_hospital_heal_speed_up	通知治疗加速
+s2c	30207	notify_hotfix_protocol	热更s2c
+s2c	10601	notify_icefield_hunter_info	
+s2c	10602	notify_icefield_hunter_update	
+s2c	10603	notify_icefield_hunter_boss_info	怪物列表
+s2c	10604	notify_icefield_hunter_boss_del	通知怪物删除
+s2c	12751	notify_icefield_hunter2_info	
+s2c	12752	notify_icefield_hunter2_update	
+s2c	12753	notify_icefield_hunter2_open_info	是否开启过活动
+s2c	12211	notify_infinite_box_info	
+s2c	12212	notify_infinite_box_prepared	新活动准备
+s2c	12213	notify_infinite_box_recharge_success	充值奖励领取成功通知
+s2c	30682	notify_add_watermark	
+s2c	3851	notify_intelligence_info	同步事务信息
+s2c	3854	notify_intelligence_events	世界同步事件
+s2c	3855	notify_intelligence_battle_result	战斗胜利
+s2c	3856	notify_intelligence_power_info	同步奖励等级
+s2c	3857	notify_intelligence_events_del	删除事件
+s2c	15461	notify_interactive_act_info	同步活动信息
+s2c	3751	notify_daily_build_glory	每日获得的建造建筑联盟荣耀数量，登录和每次变化时会通知
+s2c	15400	notify_knock_door_activity_info	敲门活动数据下发
+s2c	15401	notify_knock_door_visitor_lst	敲门访客列表
+s2c	15402	notify_knock_door_visitor_add	敲门访客增加
+s2c	15403	notify_knock_door_info_update	更新门的信息
+s2c	1651	notify_law_info	
+s2c	16310	notify_limit_time_shop_info	登陆同步数据
+s2c	16311	notify_limit_time_shop_integral_update	积分更新
+s2c	16280	notify_limit_time_task_info	登陆同步数据
+s2c	16281	notify_limit_time_task_update	任务数据更新通知
+s2c	30789	notify_linkage_monopoly_info	登录/阶段切换时下发数据
+s2c	30790	notify_linkage_monopoly_team_member_change	队伍成员变更通知
+s2c	30791	notify_linkage_monopoly_new_apply	收到新的入队申请通知
+s2c	30793	notify_linkage_monopoly_match_complete	系统匹配完成通知
+s2c	30794	notify_linkage_monopoly_play_dice_info	每次投掷信息通知
+s2c	30795	notify_linkage_monopoly_cheque_reward_lst_add	格子奖励记录增加通知
+s2c	30796	notify_linkage_monopoly_winning_records	大奖中奖记录推送
+s2c	30797	notify_linkage_monopoly_quest_info	每日任务全量同步
+s2c	30798	notify_linkage_monopoly_quest_update	每日任务单条更新
+s2c	30799	notify_linkage_monopoly_boss_damage_update	Boss 伤害更新通知
+s2c	30800	notify_linkage_monopoly_teammate_gift_received	收到队友奖励通知
+s2c	15840	notify_look_for_npc_info	
+s2c	10476	notify_lords_equipment_info	初始化
+s2c	12911	notify_lost_treasure_info	
+s2c	12912	notify_lost_treasure_purchase	
+s2c	21031	notify_magic_potion_init	活动数据初始化
+s2c	21032	notify_magic_potion_task_update	任务进度更新
+s2c	2560	notify_mail_type_info_syn	通知各分类邮件未读数
+s2c	2561	notify_new_mail_syn	新邮件通知
+s2c	2562	notify_mail_important	重要邮件
+s2c	2563	notify_unlock_mail_attach	解锁邮件附件通知
+s2c	13701	notify_map_expression_init_info	地图表情信息通知
+s2c	13702	notify_map_expression_update_info	地图表情更新通知
+s2c	13704	notify_map_expression_refresh_info	地图表情全量刷新通知
+s2c	12001	notify_mercenary_info	
+s2c	12002	notify_mercenary_update	更新数据
+s2c	12003	notify_mercenary_help_count_update	更新帮助次数
+s2c	12004	notify_mercenary_alliance_data_init	玩家登录时通知联盟数据
+s2c	12005	notify_mercenary_alliance_monster_data	通知联盟怪物数据
+s2c	12006	notify_mercenary_alliance_data_update	怪物死亡时通知联盟数据
+s2c	12007	notify_mercenary_alliance_member_update	通知联盟成员数据更新
+s2c	12008	notify_mercenary_alliance_schedule_spawn	预约刷新联盟怪
+s2c	30743	notify_merge_milestone_info	合服里程碑主活动信息推送
+s2c	30744	notify_merge_milestone_preview_info	合服里程碑预告活动信息推送
+s2c	15881	notify_migrant_init	移民初始化数据
+s2c	15882	notify_migrant_new_application	新的移民申请
+s2c	15883	notify_migrant_new_invitation	新的移民邀请
+s2c	15884	notify_migrant_application_update	申请状态更新, 申请人和国王都会收到
+s2c	15885	notify_migrant_invitation_update	邀请状态更新, 只发给邀请人
+s2c	15886	notify_migrant_first_login	移民后首次登录通知
+s2c	15887	notify_migrant_init_application_packet	后续的申请数据
+s2c	15888	notify_migrant_init_invitation_packet	后续的邀请数据
+s2c	15889	notify_migrant_chat_room_id	改语言后, 移民频道变更
+s2c	15890	notify_migrant_transfer_update	国王转让更新
+s2c	10171	notify_mobilization_init	初始化
+s2c	10172	notify_mobilization_activity_update	活动数据变化
+s2c	10173	notify_mobilization_position_update	联盟任务列表变化
+s2c	10174	notify_mobilization_score_update	联盟积分变化
+s2c	10175	notify_mobilization_quest_update	玩家任务进度变化
+s2c	10176	notify_mobilization_personal_position_update	专属位置变化
+s2c	10177	notify_mobilization_del_receive_info	删除联盟任务领取记录
+s2c	10178	notify_mobilization_alliance_init	联盟总动员数据(初始化/变化)
+s2c	10179	notify_mobilization_gift_update	礼包数据变化
+s2c	13671	notify_monopoly_info	
+s2c	13672	notify_monopoly_buy_gift	购买礼包通知
+s2c	13673	notify_monopoly_cheque_reward_lst_add	活动期间最近100条道具格及探险宝箱奖励格的获取奖励列表增加通知
+s2c	13674	notify_monopoly_play_dice_info	每一次投掷的信息
+s2c	13675	notify_monopoly_winning_records	通知中奖记录
+s2c	10202	notify_monster_siege_alliance_update	联盟数据变化
+s2c	10203	notify_monster_siege_activity	活动数据
+s2c	10204	notify_monster_siege_player_update	玩家数据变化
+s2c	10205	notify_monster_siege_endtime	最后一波结束时间
+s2c	10206	notify_monster_siege_wave	黑骑士波次信息
+s2c	9451	notify_month_card_info	同步数据
+s2c	9452	notify_month_card_active	月卡开放或购买通知
+s2c	10530	notify_most_lords_info	
+s2c	10531	notify_most_lords_prepared	新活动准备(阶段切换时也会通知)
+s2c	10532	notify_most_lords_preview	预告通知
+s2c	10533	notify_most_lords_integral	积分变化通知
+s2c	11476	notify_multiple_choice_pack_init	同步数据
+s2c	11477	notify_multiple_choice_pack_buy_success	购买成功通知
+s2c	10331	notify_new_server_sprint_info	
+s2c	10332	notify_new_server_sprint_prepared	新活动准备
+s2c	10333	notify_new_server_sprint_reward_cursor_change	领奖下标改变
+s2c	16340	notify_new_soldier_bp_info	同步数据
+s2c	16341	notify_new_soldier_bp_purchase	战令购买通知
+s2c	16342	notify_new_soldier_bp_score_change	积分变化通知
+s2c	8551	notify_opinion_info	
+s2c	8552	notify_opinion_update	
+s2c	11276	notify_optional_gift_pack_init	同步数据
+s2c	11277	notify_optional_gift_pack_buy_success	购买成功通知
+s2c	20441	notify_pachinko_info	活动数据
+s2c	20442	notify_pachinko_route	
+s2c	21250	notify_paid_sprint_info	全量同步（登录/变更时下发）
+s2c	21251	notify_paid_sprint_placeholder	占位通知（预留，后续按需补充字段）
+s2c	12101	notify_payback_info	
+s2c	12102	notify_payback_pay_success	还款成功
+s2c	15531	notify_personal_7days_init	同步数据
+s2c	15532	notify_update_personal_7days_quest	任务创建，任务数据更新通知
+s2c	15351	notify_pet_info	宠物信息
+s2c	15352	notify_pet_update	宠物信息更新
+s2c	15353	notify_pet_ex_info	宠物额外信息
+s2c	15354	notify_pet_ex_update_skill_event	更新宠物使用技能事件
+s2c	15560	notify_pet_adventure_info	宠物探险数据
+s2c	15561	notify_pet_adventure_alliance_share_reward	联盟分享奖励通知
+s2c	15510	notify_pet_recharge_info	同步数据
+s2c	15511	notify_pet_recharge_progress_update	进度更新
+s2c	20231	notify_pick_one_gift_info	
+s2c	20232	notify_pick_one_gift_buy_success	
+s2c	21057	notify_pin_game_info	活动数据
+s2c	21058	notify_pin_game_update	任务进度更新通知
+s2c	20925	notify_pitch_pot_info	登录同步
+s2c	20926	notify_pitch_pot_ticket	获得道具
+s2c	20927	notify_pitch_pot_task_update	任务进度更新通知
+s2c	20928	notify_pitch_pot_task_info	任务信息通知
+s2c	31	notify_logout	通知退出
+s2c	32	notify_server_time	主动通知时间
+s2c	33	notify_game_init	收到req_loaddata后同步服务器信息
+s2c	34	notify_del_account_pre_review_refuse	GM拒绝删除账户
+s2c	35	notify_game_warzone_offset_update	战区偏移更新通知
+s2c	36	notify_pre_merge_kingdom	#合服预告开启后推送
+s2c	37	notify_del_account_cancel_del_account	cgc后台撤销删号
+s2c	20311	notify_polar_expedition_info	
+s2c	20312	notify_polar_expedition_update	更新队列数据
+s2c	15436	notify_pound_the_pumpkin_info	同步数据
+s2c	15437	notify_pound_the_pumpkin_watch	推送活动数据
+s2c	15910	notify_privacy_policy_age_info	年龄信息同步
+s2c	3101	notify_private_record_info	
+s2c	1901	notify_produced_resource_init	初始化
+s2c	1902	notify_produced_resource_update	更新
+s2c	15765	notify_push_customize_item_activity_info	活动信息通知
+s2c	15766	notify_push_customize_item_buy_success	购买成功后组信息更新
+s2c	20506	notify_push_multiple_choice_activity_info	活动信息通知
+s2c	20507	notify_push_multiple_choice_buy_success	购买成功后组信息更新
+s2c	4303	notify_quests	
+s2c	4304	notify_update_quest	更新对应任务进度
+s2c	9211	notify_questionnaire_info	通知（上线通知）
+s2c	9212	notify_trigger_questionnaire	通知触发当条
+s2c	9213	notify_answer_questionnaire	通知完成问卷
+s2c	2950	notify_queue_info	
+s2c	2952	notify_queue_timeout	
+s2c	2953	notify_queue_update	
+s2c	2954	notify_queue_be_help	
+s2c	2955	notify_queue_cancel	
+s2c	16110	notify_ramadan_info	斋月活动数据
+s2c	16111	notify_ramadan_hope_share_lst	祈福分享列表
+s2c	16112	notify_ramadan_hope_share_info_add	祈福分享信息增加
+s2c	16113	notify_ramadan_quest_info	斋月任务
+s2c	16114	notify_ramadan_quest_upadte	
+s2c	6701	notify_recharge_init	钻石礼包初始化
+s2c	6702	notify_buy_diamond_success	购买钻石礼包成功通知
+s2c	6703	notify_total_recharge_amount	更新累计充值金额
+s2c	6704	notify_recharge_fail	充值失败
+s2c	6705	notify_google_play_points_gift_revieve	
+s2c	6706	notify_frost_star_shop_gift_buy_success	寒霜补给站礼包购买成功
+s2c	6707	notify_frost_star_shop_gift_limit_info	寒霜补给站礼包限购信息更新
+s2c	6708	notify_offer_code_gift_revieve	
+s2c	6709	notify_play_reward_gift_revieve	play_reward 发货成功
+s2c	1401	notify_recover_resource_init	初始化
+s2c	1402	notify_recover_resource_update	更新
+s2c	4201	notify_recruitment_init	初始化
+s2c	4202	notify_recruitment_soldiers	通知募兵处士兵数量变化，只发有变化的
+s2c	4203	notify_recruitment_loyalty	通知忠诚度变化
+s2c	4204	notify_loyalty_supply_data	通知忠诚值奖励激活
+s2c	20530	notify_red_packet_user_info	玩家红包相关数据
+s2c	30361	notify_relic_adventure_info	活动数据
+s2c	30362	notify_relic_adventure_update	任务进度更新通知
+s2c	30363	notify_relic_adventure_winning_records	通知中奖记录
+s2c	1301	notify_resource_init	初始化
+s2c	1302	notify_resource_update	变化通知
+s2c	9111	notify_reward_info	
+s2c	9112	notify_start_online_reward	开始在线奖励计时
+s2c	9113	notify_online_reward_timeup	在线奖励可领取
+s2c	9120	notify_bank_unlock_locker	银行储物柜解锁
+s2c	3351	notify_schedule_update	
+s2c	4151	notify_all_research	进入游戏下发
+s2c	4152	notify_research_complete	研究完成
+s2c	4153	notify_research_update	研究更新
+s2c	21141	notify_series_preview_data	
+s2c	3603	notify_setting_info	同步设置数据
+s2c	3607	notify_unlock_module_info	同步已解锁模块
+s2c	3613	notify_test_account_bind_info	测试账号信息初始化 不发表示没有可绑定的账号信息
+s2c	3652	notify_setting_game_notice	游戏公告
+s2c	3653	notify_setting_gm_mark	GM标记
+s2c	3654	notify_block_init	全服禁娱初始化
+s2c	3655	notify_block_update	全服禁娱变动
+s2c	4904	notify_seven_recruit_info	发送情况 （登录/跨天/开始活动 下发）
+s2c	4905	notify_update_seven_recruit_quest	任务进度变化
+s2c	4906	notify_update_seven_recruit_score	更新积分
+s2c	20263	notify_sevenday_task_init	同步数据
+s2c	20264	notify_update_sevenday_task_quest	任务创建，任务数据更新通知
+s2c	3551	notify_sevensign_info	发送情况
+s2c	2750	notify_shelter_info	
+s2c	2751	notify_building_upgrade_finish	
+s2c	2752	notify_stove_info	
+s2c	2051	notify_shop_open	
+s2c	2052	notify_shop_close	
+s2c	15311	notify_sign_21day_info	同步数据
+s2c	15312	notify_sign_21day_purchase	通知购买通知
+s2c	16140	notify_sign_draw_info	
+s2c	8750	notify_skin_info	
+s2c	8751	notify_skin_add_time	皮肤变化通知
+s2c	8752	notify_skin_time_out	皮肤到期
+s2c	8753	notify_skin_equiped	装备皮肤通知
+s2c	30891	notify_slg_3_arena_init	
+s2c	30892	notify_slg_3_arena_stage_update	
+s2c	17680	notify_slg_3_league_init	
+s2c	17681	notify_slg_3_league_update	
+s2c	17682	notify_slg_3_league_champion_update	通知在线玩家本赛区前三产生
+s2c	17683	notify_slg_3_league_reset_manifesto	重置玩家的宣言
+s2c	17711	notify_slg_3_league_info_init	任务数据下发
+s2c	17712	notify_slg_3_league_task_update	活动任务进度更新
+s2c	30721	notify_slot_matrix_info	推送活动数据
+s2c	30728	notify_slot_matrix_broadcast_records	通知广播记录
+s2c	17125	notify_snow_fund_info	
+s2c	17126	notify_snow_fund_purchase	购买通知
+s2c	4851	notify_snow_guide_info	初始化
+s2c	4852	notify_snow_guide_trigger	触发暴风雪
+s2c	4853	notify_update_snowquest	任务数据更新通知
+s2c	4854	notify_system_finish_update	更新system_finish
+s2c	4855	notify_snow_end	暴风雪结束通知
+s2c	7751	notify_social_media_info	同步数据
+s2c	20251	notify_social_media_act_info	同步数据
+s2c	4001	notify_soldier_init	
+s2c	4002	notify_soldier_update	士兵变化通知
+s2c	4003	notify_soldier_formation_update	
+s2c	20391	notify_souvenir_info	登陆下发纪念品数据
+s2c	12525	notify_spar_info	
+s2c	12321	notify_spar_laboratory_activity	活动初始化信息
+s2c	12322	notify_spar_laboratory_gift_buy_success	充值礼包购买成功
+s2c	12323	notify_spar_laboratory_quest_update	任务数据变化
+s2c	12324	notify_spar_laboratory_preview	预告通知
+s2c	12625	notify_spar_leak_info	
+s2c	12731	notify_spar_science_all_research	进入游戏下发
+s2c	12732	notify_spar_science_research_complete	研究完成
+s2c	12733	notify_spar_science_research_update	研究更新
+s2c	13625	notify_super_vip_info	尊享会员的信息
+s2c	13626	notify_super_vip_update	会员等级、经验等其他信息
+s2c	13627	notify_super_vip_set_info_update	会员设置的信息
+s2c	13628	notify_super_vip_birthday_reward	尊享会员生日奖励数据
+s2c	13629	notify_super_vip_customize_buy_success	自选购买成功通知
+s2c	13630	notify_super_vip_birthday_reward_push	生日奖励推送
+s2c	13631	notify_svip_recharge_reward_info	尊享vip累充奖励
+s2c	16650	notify_supremacy_war_player_init	初始化信息
+s2c	16651	notify_supremacy_war_mapobjs	大地图数据请求-地图对象回包
+s2c	16652	notify_supremacy_war_mapobj_add	大地图-地图对象广播-增加
+s2c	16653	notify_supremacy_war_mapobj_update	大地图-地图对象广播-更新
+s2c	16654	notify_supremacy_war_mapobj_del	大地图-地图对象广播-删除
+s2c	16655	notify_supremacy_war_city_update	玩家城市-位置变化
+s2c	16656	notify_supremacy_war_situation_info_add	军情增加
+s2c	16657	notify_supremacy_war_situation_info_del	军情删除
+s2c	16658	notify_supremacy_war_situation_info_up	军情更新
+s2c	16659	notify_supremacy_war_situation_info	同步军情信息(分批)
+s2c	16660	notify_supremacy_war_fort_captain_change	据点队长改变
+s2c	16662	notify_supremacy_war_marchs	大地图数据请求-出征队列回包
+s2c	16663	notify_supremacy_war_march_add	大地图-出征队列广播-增加
+s2c	16664	notify_supremacy_war_march_update	大地图-出征队列广播-更新
+s2c	16665	notify_supremacy_war_march_del	大地图-出征队列广播-删除
+s2c	16666	notify_supremacy_war_help_march_update	
+s2c	16667	notify_supremacy_war_mass_march_add	集结关联队列-增加
+s2c	16668	notify_supremacy_war_mass_march_update	集结关联队列-更新
+s2c	16669	notify_supremacy_war_mass_march_del	集结关联队列-删除
+s2c	16670	notify_supremacy_war_player_march_add	玩家队列-添加
+s2c	16671	notify_supremacy_war_player_march_update	玩家队列-更新
+s2c	16672	notify_supremacy_war_player_march_del	玩家队列-删除
+s2c	16673	notify_supremacy_war_wall_init	登录时如果在战场中才会发送，否则会在进入战场时发
+s2c	16674	notify_supremacy_war_wall_update	更新(全量)
+s2c	16675	notify_embassy_supremacy_war_march_add	
+s2c	16676	notify_embassy_supremacy_war_march_del	
+s2c	16677	notify_embassy_supremacy_war_march_info	
+s2c	16678	notify_embassy_other_supremacy_war_march_add	
+s2c	16679	notify_embassy_other_supremacy_war_march_del	
+s2c	16680	notify_supremacy_war_alliance_situation_add	联盟军情新增
+s2c	16681	notify_supremacy_war_alliance_situation_del	联盟军情删除
+s2c	16682	notify_supremacy_war_alliance_situation_update	联盟军情更新
+s2c	16683	notify_supremacy_war_alliance_situation_point_update	联盟军情点变化
+s2c	16684	notify_supremacy_war_alliance_situation_init	联盟情报初始化
+s2c	16685	notify_supremacy_war_extra_situation_shell	宫殿/守护建筑个人军情壳推送
+s2c	16686	notify_supremacy_war_extra_alliance_situation_shell	宫殿/守护建筑联盟军情壳推送
+s2c	16687	notify_supremacy_war_fort_rank	推送占领时长排行
+s2c	16688	notify_supremacy_war_fort_defense	推送
+s2c	16689	notify_supremacy_war_palace_npc_dead	主殿npc击杀
+s2c	16690	notify_supremacy_war_alliance_fort	联盟占领的据点
+s2c	16691	notify_supremacy_war_alliance_fort_add	联盟占领的据点增加
+s2c	16692	notify_supremacy_war_alliance_fort_del	联盟占领的据点减少
+s2c	16693	notify_supremacy_war_alliance_enter	联盟成员进入战场
+s2c	16694	notify_supremacy_war_alliance_exit	联盟成员退出战场
+s2c	16695	notify_supremacy_war_alliance_members	战场内的联盟成员
+s2c	16696	notify_supremacy_war_alliance_mass_invite	集结邀请
+s2c	16697	notify_supremacy_war_alliance_member_pos_update	
+s2c	16698	notify_supremacy_war_city_item_info	城市增益信息通知
+s2c	16699	notify_supremacy_war_alliance_situation_slave_moving_update	联盟军情集结参与部队行军变化
+s2c	16700	notify_supremacy_war_guard_info_init	初始守护建筑信息
+s2c	20651	notify_supremacy_war_alliance_info_update	霸主战场联盟信息变更
+s2c	20653	notify_supremacy_war_guard_info_update	守护建筑信息更新
+s2c	20654	notify_supremacy_war_city_be_skill	破城禁锢时间
+s2c	16551	notify_supremacy_war_info	初始数据
+s2c	16552	notify_supremacy_war_points	霸主战场积分更新
+s2c	16811	notify_supremacy_war_feast_init	活动数据通知
+s2c	16812	notify_supremacy_war_feast_kingdom	王国数据通知(活动结束)
+s2c	16813	notify_supremacy_war_feast_add_table	新增加餐
+s2c	16815	notify_supremacy_war_feast_gift_buy	礼包购买次数通知
+s2c	16816	notify_supremacy_war_feast_unread_record	有未读记录
+s2c	16817	notify_supremacy_war_table_tink_add	可赴宴餐桌提示增加
+s2c	16818	notify_supremacy_war_table_tink_del	可赴宴餐桌提示删除
+s2c	16881	notify_supremacy_war_init	此协议仅发给霸主任期内, 且处于霸主管辖王国的玩家
+s2c	16882	notify_supremacy_war_appoint	通知被任命,仅发送给被任命的人,霸主被任命时也有这个通知
+s2c	16883	notify_supremacy_war_dismiss	通知被解雇
+s2c	16884	notify_supremacy_war_gov_data	
+s2c	16885	notify_supremacy_war_battle_finish	霸主战战斗结束
+s2c	16886	notify_supremacy_war_gov_init	任何时候,任何玩家都会收到的初始化消息
+s2c	16725	notify_supremacy_war_guess_info	登录推送个人数据
+s2c	16726	notify_supremacy_war_guess_sync	跨阶段时推送最新的数据
+s2c	16727	notify_supremacy_war_guess_result	结算阶段开始推送结果
+s2c	16770	notify_supremacy_war_prepare_info	同步活动信息
+s2c	16771	notify_supremacy_war_prepare_score_update	同步玩家积分更新
+s2c	16772	notify_supremacy_war_prepare_stage_start	阶段开始时通知
+s2c	16773	notify_supremacy_war_prepare_alliance_score_update	同步联盟积分更新(领取宝箱时会给联盟加积分，这个只会自己收到，不会广播)
+s2c	16930	notify_supremacy_war_shop_info	登陆\活动开启同步数据
+s2c	16581	notify_supremacy_war_task_info	活动数据
+s2c	16582	notify_supremacy_war_task_update	任务进度更新通知
+s2c	2851	notify_survivor_info	
+s2c	2852	notify_survivor_add	
+s2c	2854	notify_temp_survivor	
+s2c	2855	notify_offline_info	
+s2c	2856	notify_survivor_riot_end	
+s2c	2857	notify_survivor_td_dead	
+s2c	2858	notify_temp_survivor_quest	
+s2c	2859	notify_survivor_alloc_num_update	
+s2c	10281	notify_target_integral_info	
+s2c	10282	notify_target_integral_prepared	新活动准备
+s2c	10283	notify_target_integral_preview	预告通知
+s2c	10284	notify_target_integral_change_integral	积分变化通知
+s2c	16480	notify_td_box_info	登陆、产生箱子时同步
+s2c	16381	notify_td_event_info	初始化
+s2c	16382	notify_td_event_trigger	塔防事件触发通知
+s2c	16383	notify_td_event_quest_update	任务数据更新通知
+s2c	16384	notify_td_event_over	塔防事件结束通知（只通知，策划配置的）
+s2c	16431	notify_td_troops_info	登陆初始化
+s2c	15690	notify_thanksgiving_bp_info	
+s2c	15691	notify_thanksgiving_bp_purchase	购买通知
+s2c	15692	notify_thanksgiving_bp_integral_update	积分更新
+s2c	15670	notify_thanksgiving_cooking_info	
+s2c	15671	notify_thanksgiving_cooking_exchange_update	自己的交换数据更新
+s2c	15672	notify_thanksgiving_cooking_exchange_lst_nums_update	交换列表数量更新
+s2c	15673	notify_thanksgiving_cooking_apply_update	自己的申请数据更新
+s2c	15674	notify_thanksgiving_cooking_apply_lst_nums_update	申请食物列表数量更新
+s2c	15711	notify_thanksgiving_feast_init	活动数据通知
+s2c	15712	notify_thanksgiving_feast_alliance	联盟数据通知(活动结束/退出联盟要清理)
+s2c	15713	notify_thanksgiving_feast_add_table	新增加餐)、
+s2c	15714	notify_thanksgiving_table_tink	可赴宴餐桌提示
+s2c	15715	notify_thanksgiving_feast_gift_buy	礼包购买次数通知
+s2c	15716	notify_thanksgiving_feast_unread_record	有未读记录
+s2c	15635	notify_thanksgiving_menu_activity_info	活动信息通知
+s2c	15636	notify_thanksgiving_menu_stage_change	活动阶段变化通知
+s2c	15637	notify_thanksgiving_menu_big_reward_list	大奖通知
+s2c	15638	notify_thanksgiving_menu_main_info	主界面通知
+s2c	15610	notify_thanksgiving_sign_info	同步数据
+s2c	15611	notify_thanksgiving_sign_purchase	通知购买通知
+s2c	15810	notify_three_tiles_info	
+s2c	15811	notify_three_tiles_quest_upadte	任务更新
+s2c	15812	notify_three_tiles_level_settlement	关卡结算
+s2c	15813	notify_three_tiles_level_info	使用刷新道具，同步关卡信息
+s2c	15814	notify_three_tiles_task_info	同步任务数据
+s2c	13811	notify_todo_list_init	通知所有待办事项
+s2c	13812	notify_todo_list_add	新增待办事项
+s2c	13813	notify_todo_list_update	待办事项更新, 收到通知的时候取end_ts判断是否结束, 取start_ts判断是否修改开启时间
+s2c	13814	notify_todo_list_remove	待办事项移除
+s2c	30391	notify_tower_defense_info	活动数据推送
+s2c	30392	notify_tower_defense_energy_update	体力更新推送
+s2c	30393	notify_tower_defense_task_update	任务进度更新通知
+s2c	30394	notify_tower_defense_level_star_update	图鉴累计星级更新通知
+s2c	30475	notify_td_bp_info	
+s2c	30476	notify_td_bp_purchase	购买通行证通知
+s2c	30478	notify_td_bp_integral_update	积分变化
+s2c	16201	notify_town_interaction_info	同步基础信息
+s2c	30450	notify_travel_info	游历系统数据（登录下发）
+s2c	30451	notify_travel_afk_info	游历挂机奖励（登录或者结束挂机时下发）
+s2c	30452	notify_travel_info_update	游历数据变化
+s2c	16021	notify_triangle_war_mapobjs	战场数据请求-地图对象回包
+s2c	16022	notify_triangle_war_marchs	战场数据请求-出征队列回包
+s2c	16023	notify_triangle_war_mapobj_update	战场-地图对象广播-更新
+s2c	16024	notify_triangle_war_march_add	战场-出征队列广播-增加
+s2c	16025	notify_triangle_war_march_update	战场-出征队列广播-更新
+s2c	16026	notify_triangle_war_march_del	战场-出征队列广播-删除
+s2c	16027	notify_triangle_war_map_update	战场地图对象更新
+s2c	16028	notify_triangle_war_warzone_result	战场结果
+s2c	16030	notify_triangle_war_camp_update	
+s2c	16031	notify_triangle_war_player_enter	
+s2c	16032	notify_triangle_war_player_quit	
+s2c	16033	notify_triangle_war_player_food_update	
+s2c	16034	notify_triangle_war_player_init	
+s2c	16035	notify_triangle_war_information	战场资讯通知
+s2c	16037	notify_triangle_war_player_stat_info_update	玩家统计数据变化
+s2c	16039	notify_triangle_war_server_time	主动通知时间
+s2c	16040	notify_triangle_war_player_lord	任命城主通知
+s2c	16041	notify_triangle_war_be_speedup	被别人战斗加速
+s2c	15961	notify_alliance_triangle_war_info	同步联盟跨服战信息
+s2c	20161	notify_truck_escort_info	
+s2c	20162	notify_truck_assisting_unit_list	
+s2c	20163	notify_refresh_truck_escort_info	货车刷新通知
+s2c	20164	notify_truck_escort_send_truck_info	货车已发车信息通知
+s2c	20165	notify_truck_escort_new_enemy	添加新仇人
+s2c	20166	notify_truck_escort_truck_predator_info	货车被掠夺通知
+s2c	20167	notify_finish_refresh_quality_guide	完成刷新品质引导通知
+s2c	20168	notify_truck_escort_update	更新货车信息
+s2c	20169	notify_truck_escort_enemy_redpoint	仇人红点通知
+s2c	8301	notify_upload_image_init	初始化信息
+s2c	8302	notify_upload_image_update	通知审核通过
+s2c	8303	notify_upload_image_under_review	通知图片审核中
+s2c	8304	notify_upload_image_refuse	通知图片未通过审核
+s2c	8305	notify_upload_image_erase	通知图片被强制删除
+s2c	8306	notify_upload_block	通知功能被封禁
+s2c	8307	notify_upload_image_reduce_cd_update	更新减cd状态
+s2c	10826	notify_value_exchange_init	同步数据
+s2c	13161	notify_version_up_activity	活动初始化信息
+s2c	4603	notify_vip_info	vip数据
+s2c	4604	notify_vip_update	
+s2c	16190	notify_vip_privilege_info	vip特权数据
+s2c	20241	notify_vip_social_info	
+s2c	6401	notify_wall_init	初始化
+s2c	6402	notify_wall_update	更新(全量)
+s2c	17170	notify_weekly_special_info	
+s2c	17171	notify_weekly_special_progress_update	
+s2c	5651	notify_world_player_init	
+s2c	5652	notify_world_mapobjs	大地图数据请求-地图对象回包
+s2c	5653	notify_world_mapobj_add	大地图-地图对象广播-增加
+s2c	5654	notify_world_mapobj_update	大地图-地图对象广播-更新
+s2c	5655	notify_world_mapobj_del	大地图-地图对象广播-删除
+s2c	5656	notify_player_city_update	玩家城市-位置变化
+s2c	5657	notify_world_resource_info	
+s2c	5658	notify_world_situation_info_add	军情增加
+s2c	5659	notify_world_situation_info_del	军情删除
+s2c	5660	notify_world_situation_info_up	军情更新
+s2c	5661	notify_world_situation_info	同步军情信息(分批)
+s2c	5662	notify_world_alliance_fort_info	联盟同步据点信息
+s2c	5665	notify_world_fort_captain_change	据点队长改变
+s2c	5666	notify_world_fort_info_client_watch_all	推送据点信息的感兴趣机制
+s2c	5667	notify_world_fort_info_client_watch_change	推送据点信息变化的感兴趣机制
+s2c	5668	notify_alliance_building_watch_update	联盟建筑关注更新
+s2c	5669	notify_alliance_building_watch_all	联盟建筑关注全量
+s2c	5670	notify_world_fort_defenses	推送
+s2c	5671	notify_world_add_extra_march	更新世界模块出征队列
+s2c	5672	notify_world_minor_fort_can_fight	联盟领地相邻的小据点
+s2c	5673	notify_world_player_jump_info	玩家跨服时的信息同步
+s2c	7051	notify_world_alliance_situation_init	联盟情报
+s2c	7052	notify_world_alliance_situation_add	联盟情报添加
+s2c	7053	notify_world_alliance_situation_del	联盟集结删除
+s2c	7054	notify_world_alliance_situation_update	联盟军情状态变化
+s2c	7055	notify_world_alliance_mass_invite	集结邀请
+s2c	7056	notify_world_alliance_situation_point_update	军情点信息变化
+s2c	7057	notify_world_alliance_situation_activity_count	活动军情数量
+s2c	7058	notify_world_alliance_situation_activity	活动军情
+s2c	7059	notify_world_alliance_situation_activity_add	活动军情添加
+s2c	7060	notify_world_alliance_situation_activity_del	活动军情删除
+s2c	7061	notify_world_alliance_situation_activity_update	活动军情状态变化
+s2c	7062	notify_world_alliance_situation_slave_moving_update	联盟军情集结参与部队行军变化
+s2c	20631	notify_world_boss_info	
+s2c	20632	notify_world_boss_info_update	活动基础数据更新
+s2c	5751	notify_world_marchs	大地图数据请求-出征队列回包
+s2c	5752	notify_world_march_add	大地图-出征队列广播-增加
+s2c	5753	notify_world_march_update	大地图-出征队列广播-更新
+s2c	5754	notify_world_march_del	大地图-出征队列广播-删除
+s2c	5755	notify_player_march_add	玩家队列-添加
+s2c	5756	notify_player_march_update	玩家队列-更新
+s2c	5757	notify_player_march_del	玩家队列-删除
+s2c	5758	notify_mass_march_add	集结关联队列-增加
+s2c	5759	notify_mass_march_update	集结关联队列-更新
+s2c	5760	notify_mass_march_del	集结关联队列-删除
+s2c	5761	notify_help_march_update	
+s2c	5762	notify_world_march_return_result	
+s2c	6501	notify_world_npc_init	
+s2c	6502	notify_world_npc_update	
+s2c	17451	notify_spectator_arsenal_league_battlefield_init_info	大地图数据请求-地图对象回包
+s2c	17452	notify_spectator_arsenal_league_mapobj_add	大地图-地图对象广播-增加
+s2c	17453	notify_spectator_arsenal_league_mapobj_update	大地图-地图对象广播-更新
+s2c	17454	notify_spectator_arsenal_league_mapobj_del	大地图-地图对象广播-删除
+s2c	17457	notify_spectator_arsenal_league_march_add	大地图-出征队列广播-增加
+s2c	17458	notify_spectator_arsenal_league_march_update	大地图-出征队列广播-更新
+s2c	17459	notify_spectator_arsenal_league_march_del	大地图-出征队列广播-删除
+s2c	17460	notify_spectator_arsenal_league_battlefield_result	战场结果
+s2c	17461	notify_spectator_arsenal_league_alliance_score_update	联盟积分变化
+s2c	17462	notify_spectator_arsenal_league_mapobj_init	大地图-地图对象广播-初始化
+s2c	17463	notify_spectator_arsenal_league_alliance_info_update	联盟信息变化
+s2c	17051	notify_spectator_supremacy_war_mapobjs	大地图数据请求-地图对象回包
+s2c	17052	notify_spectator_supremacy_war_mapobj_add	大地图-地图对象广播-增加
+s2c	17053	notify_spectator_supremacy_war_mapobj_update	大地图-地图对象广播-更新
+s2c	17054	notify_spectator_supremacy_war_mapobj_del	大地图-地图对象广播-删除
+s2c	17055	notify_spectator_supremacy_war_fort_captain_change	据点队长改变
+s2c	17056	notify_spectator_supremacy_war_marchs	大地图数据请求-出征队列回包
+s2c	17057	notify_spectator_supremacy_war_march_add	大地图-出征队列广播-增加
+s2c	17058	notify_spectator_supremacy_war_march_update	大地图-出征队列广播-更新
+s2c	17059	notify_spectator_supremacy_war_march_del	大地图-出征队列广播-删除
+s2c	17060	notify_spectator_supremacy_war_fort_rank	推送主殿占领信息
+s2c	17061	notify_spectator_supremacy_war_guard_info_update	守护建筑信息更新
+s2c	17062	notify_spectator_supremacy_war_fort_alliance_rank	推送主殿联盟占领信息
+s2c	1300	notify_cheat_record_info	
