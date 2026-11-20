@@ -38,6 +38,7 @@ class Session:
         self.stats = {}
         self.gm_items = {}   # GM (lab): inventário do sandbox
         self.gm_hero = {}    # GM (lab): níveis de herói do sandbox
+        self.surv_work = set(); self.bld_lv = {}; self.fur_lv = {}
 
     def now(self): return SERVER_T0 + int(time.time() - self.t0)
 
@@ -121,6 +122,58 @@ class Session:
         self.log(f"[GM] req_cheat_set_hero_lev: {o} -> herois={self.gm_hero}")
         self.reply(m, {"code": 0})
 
+    # ---- LOTE 2: familias que o operador usou e nao funcionavam (sandbox generoso)
+    def push(self, name, obj): self.send(L.build_push(self.S, name, obj))
+
+    def h_survivor_work_start(self, m):
+        self.surv_work.add(m["obj"].get("sid")); self.reply(m, {"code": 0, "time": self.now()})
+
+    def h_survivor_work_pause(self, m):
+        for s in m["obj"].get("sid_list") or []: self.surv_work.discard(s)
+        self.reply(m, {"code": 0})
+
+    def h_hunting_tool_obtain(self, m):
+        self.reply(m, {"code": 0, "work_endtime": self.now() + 60})
+
+    def h_upgrade_building(self, m):
+        o = m["obj"]; bid = o.get("bid"); qid = o.get("qid") or 10001
+        base = ((self.fx or {}).get("player_base") or {}).get("stove_lv", 1) if bid == 301 else 1
+        lv = self.bld_lv.get(bid, base) + 1; self.bld_lv[bid] = lv
+        self.reply(m, {"code": 0, "qid": qid, "expert_reduce_time": 0})
+        t = self.now()
+        # UI depende de notify_*: fila ocupada -> obra concluida (instantanea no sandbox) -> fila livre
+        self.push("notify_queue_update", {"queue_map": [{"qid": qid, "status": 2, "end_time": t + 1, "total_time": 1, "base": {"qtype": 1, "purchased_endtime": -1}}]})
+        self.push("notify_building_upgrade_finish", {"bid": bid, "lv": lv, "furniture_list": [], "mode": 0})
+        self.push("notify_queue_update", {"queue_map": [{"qid": qid, "status": 1, "base": {"qtype": 1, "purchased_endtime": -1}}]})
+        self.log(f"[SBX] building {bid} -> lv {lv}")
+
+    def h_upgrade_furniture(self, m):
+        o = m["obj"]; k = (o.get("bid"), o.get("conf_fid"))
+        lv = self.fur_lv.get(k, 1) + max(1, o.get("add_lv") or 1); self.fur_lv[k] = lv
+        self.reply(m, {"code": 0, "lv": lv})
+
+    def h_td_start(self, m):
+        box = [{"box_id": i, "pos": {"x": 3 + i, "y": 4}, "reward": [{"id": 102, "count": 50000}]} for i in (1, 2, 3)]
+        self.reply(m, {"code": 0, "start_stage_ts": self.now(), "td_box": box,
+                       "td_survivor": [{"type": 1, "sid": [1, 2, 3, 4]}, {"type": 2, "sid": [6, 203, 205]}]})
+
+    def h_td_settle(self, m):
+        win = bool(m["obj"].get("is_win"))
+        rew = [{"id": 101, "count": 500}, {"id": 102, "count": 200000}, {"id": 103, "count": 100000}, {"id": 105, "count": 50000}] if win else [{"id": 102, "count": 10000}]
+        self.reply(m, {"code": 0, "reward": rew})
+
+    def h_skin_cond(self, m): self.reply(m, {"code": 0, "show_skins": [], "sale_type_skins": []})
+
+    def h_mail_onekey(self, m):
+        self.reply(m, {"code": 0, "rewards": [{"id": 101, "count": 100}, {"id": 102, "count": 50000}], "readlist": []})
+
+    def h_train(self, m):
+        o = m["obj"]; t = self.now()
+        self.reply(m, {"code": 0, "barrack": {"bid": 0, "soldier_id": o.get("soldier_id"), "soldier_num": o.get("soldier_num"),
+                                              "finish_ts": t + 1, "total_time": 1, "from_soldier_id": 0, "qid": 0}})
+
+    def h_cover(self, m): self.reply(m, {"code": 0, "coverlist": []})
+
     def h_default(self, m):
         tpl = ((self.fx or {}).get("templates") or {}).get(m["name"])
         if tpl is not None: self.reply(m, tpl); self.stats["tpl"] = self.stats.get("tpl", 0) + 1; return
@@ -137,7 +190,13 @@ class Session:
          "req_chat_get_token": h_chat_token,
          "req_get_hang_up_reward": h_hangup, "req_open_hang_up_reward_view": h_hangup_view,
          "req_receive_online_reward": h_online_reward, "req_get_all_dailyquest_award": h_daily_award,
-         "req_barrack_recruit_soldier": h_recruit}
+         "req_barrack_recruit_soldier": h_recruit,
+         "req_survivor_work_start": h_survivor_work_start, "req_survivor_work_pause": h_survivor_work_pause,
+         "req_hunting_tool_obtain": h_hunting_tool_obtain, "req_upgrade_building": h_upgrade_building,
+         "req_upgrade_furniture": h_upgrade_furniture, "req_td_event_start_stage": h_td_start,
+         "req_td_event_settle_stage": h_td_settle, "req_skin_get_condition_activity_skin": h_skin_cond,
+         "req_mail_onekey_read": h_mail_onekey, "req_barrack_train_soldier": h_train,
+         "req_mail_cover_list": h_cover}
 
     def run(self):
         try:
