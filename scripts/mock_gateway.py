@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""mock_gateway.py v0 — servidor-lab do protocolo do gateway (Kingshot RE).
-O cliente real (via iptables DNAT no celular) conecta aqui; seguimos o transcript
-da cap115 (cold-start completo) como roteiro. LOGA tudo que o cliente manda.
+"""mock_gateway.py v3 — servidor-lab do protocolo do gateway (Kingshot RE).
+v3: timeline completa do transcript + respostas por família com ID TRANSPLANTADO
+do request vivo (offsets aprendidos do transcript) — o cliente casa resposta por id.
 
-Usage: python3 mock_gateway.py [porta]
-"""
+Usage: python3 mock_gateway.py [porta]"""
 import socket, struct, threading, time, pickle, sys, collections, os
 
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 30101
@@ -12,27 +11,30 @@ TRANSCRIPT = "/home/re/work/apk/gw_transcript115.pkl"
 LOGDIR = "/home/re/work/apk/mock_sessions"
 os.makedirs(LOGDIR, exist_ok=True)
 
-frames = pickle.load(open(TRANSCRIPT, "rb"))  # [(t, dir, bytes)]
-C2S = [(t, f) for t, d, f in frames if d == "C>S"]
+frames = pickle.load(open(TRANSCRIPT, "rb"))
 S2C = [(t, f) for t, d, f in frames if d == "S>C"]
-print(f"[mock] transcript: {len(C2S)} C>S / {len(S2C)} S>C")
 
 def frame(body):
     return struct.pack(">H", len(body)) + body
 
+# mapa de famílias: (reqop,reqb1) -> (respop,respb1, req_off, resp_off, id_len)
+FAMILY = {
+    (0x15, 0x02): (0x15, 0x01, 3, 3, 1),   # heartbeat -> pong (id em [3])
+    (0x5d, 0x02): (0x55, 0x02, 4, 3, 1),   # comando -> resposta (id 1B: req[4]->resp[3])
+    (0x1d, 0x03): (0x15, 0x03, 4, 3, 2),   # kind-03 -> kind-03 (id 2B: req[4:6]->resp[3:5])
+    (0x1d, 0x02): (0x1d, 0x01, 4, 3, 1),
+    (0x59, 0x02): (0x55, 0x02, 4, 3, 1),
+}
+
 class Session:
     def __init__(self, conn, addr):
-        self.conn = conn
-        self.addr = addr
-        self.log = open(f"{LOGDIR}/sess_{int(time.time())}_{addr[0]}.txt", "w")
-        self.rx = collections.Counter()
-        self.c2s_i = 0  # posição no transcript C>S
-        self.cursors = {}  # (op,b1) -> próximo índice no S2C a considerar
-        self.t0 = None
-        self.burst_sent = False
+        self.conn = conn; self.addr = addr
+        self.log = open(f"{LOGDIR}/sess_{int(time.time()*10)}.txt", "w")
+        self.cursors = {}
+        self.req_n = 0
 
-    def note(self, msg):
-        self.log.write(msg + "\n"); self.log.flush()
+    def note(self, m):
+        self.log.write(m + "\n"); self.log.flush()
 
     def recv_frame(self):
         hdr = b""
@@ -50,83 +52,70 @@ class Session:
 
     def send(self, f, why=""):
         try:
-            self.conn.sendall(frame(f))
-            self.note(f"[TX {why}] {f.hex()}")
+            self.conn.sendall(frame(f)); self.note(f"[TX {why}] {f.hex()}")
         except Exception as e:
             self.note(f"[TX-ERR {why}] {e}")
 
-    def match_reply(self, req):
-        """respostas em sequência por família (op,b1): consome o transcript S2C na ordem"""
-        op = (req[0], req[1] if len(req) > 1 else 0)
-        idx = self.cursors.get(op, 0)
-        s2c_same = [f for t, d, f in frames if d == "S>C" and (f[0], f[1] if len(f) > 1 else 0) == (op[0], op[1] ^ 0x20 if False else (0x75 if op[0] == 0x5d else op[1]))]
-        # mapa de resposta: 5d/02->75/02 (cap115) ; mesmo op senão
-        rop = {0x5d: 0x75, 0x15: 0x15, 0x55: 0x55, 0x1d: 0x1d}.get(op[0], op[0])
-        rb1 = {0x02: 0x02}.get(op[1], op[1])
-        cands = [f for t, d, f in frames if d == "S>C" and (f[0], f[1] if len(f) > 1 else 0) == (rop, rb1)]
-        if not cands:
-            cands = [f for t, d, f in frames if d == "S>C" and (f[0], f[1] if len(f) > 1 else 0) == (op[0], op[1])]
-        if not cands:
-            return None
+    def next_recorded(self, respop, respb1, tag=None):
+        idx = self.cursors.get((respop, respb1), 0)
+        cands = [f for t, d, f in frames if d == "S>C" and f[0] == respop and (f[1] if len(f) > 1 else 0) == respb1]
+        if not cands: return None, idx
+        # preferencia por tag no resp[2:4]? responses nao carregam tag; usa ordem
         r = cands[min(idx, len(cands) - 1)]
-        self.cursors[op] = idx + 1
-        return r
+        self.cursors[(respop, respb1)] = idx + 1
+        return r, idx
 
-    def initial_burst(self):
-        """push do estado inicial (1d/01 etc) como no cold-start, com timing relativo"""
-        tstart = None
-        sent = 0
-        for (t, d, f) in frames:
-            if d != "S>C": continue
-            if t > 60: break  # só o primeiro minuto (burst inicial + settle)
-            if (f[0], f[1] if len(f) > 1 else 0) == (0x15, 0x01): continue  # heartbeats vêm on-demand
-            if tstart is None:
-                tstart = t; time.sleep(0.05)
-            else:
-                dt = t - tstart
-                if dt > 0.01: time.sleep(min(dt, 0.25))
-                tstart = t
-            self.send(f, f"burst@{t:.2f}")
-            sent += 1
-        self.note(f"[burst] {sent} frames")
+    def transplant_id(self, req, resp):
+        fam = FAMILY.get((req[0], req[1] if len(req) > 1 else 0))
+        if not fam: return resp
+        ro, so, L = fam[2], fam[3], fam[4]
+        if len(req) >= ro + L and len(resp) >= so + L:
+            resp = resp[:so] + req[ro:ro+L] + resp[so+L:]
+        return resp
+
+    def full_timeline(self):
+        tprev = None
+        for t, f in S2C:
+            if tprev is not None:
+                dt = t - tprev
+                if dt > 0: time.sleep(min(dt, 0.5))
+            tprev = t
+            self.send(f, f"tl@{t:.2f}")
+            if t > 70:  # primeira fase do timeline chega ate 70s; resto sob demanda
+                break
 
     def run(self):
         self.note(f"[conn] {self.addr}")
-        burst_thread = None
+        tl = None
         while True:
             req = self.recv_frame()
             if req is None:
-                self.note("[disconnect]")
-                break
-            now = time.time() if self.t0 is None else time.time()
-            if self.t0 is None: self.t0 = time.time()
-            self.rx[(req[0], req[1] if len(req) > 1 else 0)] += 1
-            self.note(f"[RX] {req.hex()}")
+                self.note("[disconnect]"); break
+            self.req_n += 1
             op = (req[0], req[1] if len(req) > 1 else 0)
+            self.note(f"[RX #{self.req_n}] {req.hex()}")
             if op == (0x55, 0x02):
-                # handshake: resposta gravada (64B) — versão/token do transcript
                 resp = next(f for t, d, f in frames if d == "S>C" and f[0] == 0x55)
                 self.send(resp, "handshake")
-                # dispara o burst de estado inicial em paralelo
-                threading.Thread(target=self.initial_burst, daemon=True).start()
-            elif op == (0x15, 0x02):
-                # heartbeat: eco com o corpo registrado (pong)
-                resp = next((f for t, d, f in frames if d == "S>C" and f[0] == 0x15), None)
-                if resp: self.send(resp, "pong")
-            else:
-                m = self.match_reply(req)
-                if m is not None:
-                    self.send(m, "match")
-                else:
-                    self.note(f"[no-reply] op={op[0]:02x}/{op[1]:02x} len={len(req)}")
+                if tl is None:
+                    tl = threading.Thread(target=self.full_timeline, daemon=True)
+                    tl.start()
+                continue
+            fam = FAMILY.get(op)
+            if fam:
+                rec, idx = self.next_recorded(fam[0], fam[1])
+                if rec is not None:
+                    resp = self.transplant_id(req, bytearray(rec))
+                    self.send(bytes(resp), f"fam{op[0]:02x}/{op[1]:02x}#{idx}")
+                    continue
+            self.note(f"[no-fam] {op[0]:02x}/{op[1]:02x} len={len(req)}")
         self.log.close()
 
 def main():
     srv = socket.socket()
     srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    srv.bind(("0.0.0.0", PORT))
-    srv.listen(4)
-    print(f"[mock] ouvindo 0.0.0.0:{PORT}")
+    srv.bind(("0.0.0.0", PORT)); srv.listen(4)
+    print(f"[mock v3] ouvindo 0.0.0.0:{PORT}")
     while True:
         conn, addr = srv.accept()
         threading.Thread(target=Session(conn, addr).run, daemon=True).start()
