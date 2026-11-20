@@ -1,0 +1,7922 @@
+{
+ "loginauth": {
+  "sdkToken": "test",
+  "account": "test",
+  "serverid": 717599,
+  "version": "test",
+  "uid": 289013,
+  "is_create": true,
+  "group": 775744,
+  "device": "test",
+  "device_os": "test",
+  "ip": "test",
+  "country_code": "test",
+  "distinct_id": "test",
+  "origin_serverid": 767035,
+  "lan": "test",
+  "is_simulator": true,
+  "source_player_info": {
+   "serverid": 357788,
+   "uid": 123132
+  },
+  "device_lan": "test",
+  "device_id": "test",
+  "inner_permission_account": "test",
+  "inner_permission_token": "test",
+  "device_sub_type": 7,
+  "ad_source": "test"
+ },
+ "req_account_bind": {},
+ "req_account_bind_receive": {},
+ "req_accumulative_collect_reward": {
+  "id": 156374,
+  "stage": 676780
+ },
+ "req_achievement_get_rank_data": {
+  "id": 990105,
+  "kid": 879341
+ },
+ "req_achievement_get_reward": {
+  "id": 514916
+ },
+ "req_achievement_info": {},
+ "req_activity_calendar_get_data": {},
+ "req_activity_drop_data": {
+  "id": 991811
+ },
+ "req_activity_gift_popup_claim": {
+  "id": 307416
+ },
+ "req_add_cheat_finish_all_science": {},
+ "req_add_cheat_mass_slave_win_count": {},
+ "req_add_client_track_log": {
+  "event_name": "test",
+  "properties": "test"
+ },
+ "req_adgame_get_reward": {
+  "param": {
+   "type": 1,
+   "level": 9
+  }
+ },
+ "req_adgame_save_info": {
+  "param": {
+   "type": 1,
+   "level": 19
+  }
+ },
+ "req_adgame_setting": {
+  "setting": "test"
+ },
+ "req_advertising_end": {
+  "id": 19692
+ },
+ "req_advertising_get_reward": {
+  "id": 259194
+ },
+ "req_advertising_get_stage_reward": {
+  "id": 579768,
+  "stage": 861895
+ },
+ "req_advertising_skip_and_get_reward": {
+  "id": 849933
+ },
+ "req_alliance_activity_auto_join_close": {},
+ "req_alliance_activity_auto_join_info": {
+  "auto_mass_id_list": [
+   875158,
+   35865
+  ]
+ },
+ "req_alliance_activity_auto_join_open": {
+  "just_soldier": true,
+  "auto_mass_id_list": [
+   694170,
+   838018
+  ],
+  "offline": false,
+  "limit": 11
+ },
+ "req_alliance_activity_logs": {
+  "last_id": 931202
+ },
+ "req_alliance_activity_sub_logs": {
+  "last_id": 315780,
+  "type": 7
+ },
+ "req_alliance_apply_join": {
+  "aid": 458963
+ },
+ "req_alliance_applys": {},
+ "req_alliance_arsenal_league_ask_for_battle": {
+  "id": 975585,
+  "legion": 801716
+ },
+ "req_alliance_arsenal_league_dispatch_operator": {
+  "id": 444809,
+  "uid": 493966,
+  "operator": 277323,
+  "legion": 813941
+ },
+ "req_alliance_arsenal_league_forbid_for_battle": {
+  "id": 774157,
+  "infos": [
+   {
+    "legion": 43708,
+    "state": 405069
+   }
+  ]
+ },
+ "req_alliance_arsenal_league_get_history": {
+  "id": 559512,
+  "aid": 682593,
+  "start": 1790039314,
+  "count": 29,
+  "legion_id": 494283
+ },
+ "req_alliance_arsenal_league_get_participant_uids": {
+  "id": 213481
+ },
+ "req_alliance_arsenal_league_login_weekly": {
+  "id": 522151
+ },
+ "req_alliance_arsenal_league_onekey_dispatch": {
+  "id": 593946,
+  "legion": 594139,
+  "except": [
+   {
+    "uid": 363048,
+    "v": false
+   }
+  ]
+ },
+ "req_alliance_arsenal_league_power_strike_score": {
+  "id": 286190
+ },
+ "req_alliance_arsenal_league_records": {
+  "id": 833185
+ },
+ "req_alliance_arsenal_league_send_request_mail": {
+  "id": 663254,
+  "uids": [
+   305503,
+   244647
+  ]
+ },
+ "req_alliance_arsenal_league_send_vote_mail": {
+  "id": 462541,
+  "uids": [
+   538117,
+   472021
+  ]
+ },
+ "req_alliance_arsenal_league_sign_up": {
+  "id": 386715,
+  "indexes": [
+   1790045754,
+   1790066567
+  ],
+  "legion": 545162
+ },
+ "req_alliance_arsenal_league_vote": {
+  "id": 622208,
+  "indexes": [
+   1790047263,
+   1790088453
+  ]
+ },
+ "req_alliance_arsenal_league_vote_notice": {
+  "id": 470105
+ },
+ "req_alliance_arsenal_send_request_mail": {
+  "uids": [
+   322099,
+   161262
+  ]
+ },
+ "req_alliance_arsenal_send_vote_mail": {
+  "uids": [
+   290563,
+   131253
+  ]
+ },
+ "req_alliance_arsenal_war_allowed_alliance": {},
+ "req_alliance_arsenal_war_ask_for_battle": {
+  "legion": 510425
+ },
+ "req_alliance_arsenal_war_dispatch": {
+  "fights": [
+   1790014601,
+   1790005869
+  ],
+  "substitutes": [
+   407531
+  ],
+  "legion": 555686
+ },
+ "req_alliance_arsenal_war_dispatch_operator": {
+  "uid": 298602,
+  "operator": 741188,
+  "legion": 976844
+ },
+ "req_alliance_arsenal_war_forbid_for_battle": {
+  "infos": [
+   {
+    "legion": 701286,
+    "state": 476118
+   }
+  ]
+ },
+ "req_alliance_arsenal_war_get_history": {
+  "start": 1790080073,
+  "count": 84
+ },
+ "req_alliance_arsenal_war_get_show_info": {},
+ "req_alliance_arsenal_war_login_weekly": {},
+ "req_alliance_arsenal_war_onekey_dispatch": {},
+ "req_alliance_arsenal_war_records": {},
+ "req_alliance_arsenal_war_sign_up": {
+  "indexes": [
+   1790066779
+  ],
+  "legion": 23956
+ },
+ "req_alliance_arsenal_war_vote": {
+  "indexes": [
+   1790080913
+  ]
+ },
+ "req_alliance_arsenal_war_vote_notice": {},
+ "req_alliance_arsenal_win_rate_rank_list": {},
+ "req_alliance_battle_logs": {
+  "last_id": 728531
+ },
+ "req_alliance_bomb_use": {
+  "pos": {
+   "x": 671,
+   "y": 1030
+  }
+ },
+ "req_alliance_building_add": {
+  "x": 334,
+  "y": 745,
+  "bid": 448022
+ },
+ "req_alliance_building_list": {},
+ "req_alliance_building_list_exist": {
+  "mapobj_type": 8
+ },
+ "req_alliance_building_remove": {
+  "id": 255645,
+  "x": 399,
+  "y": 791,
+  "mapobj_type": 7
+ },
+ "req_alliance_cancel_apply": {
+  "aid": 28815
+ },
+ "req_alliance_cancel_reserve_notice": {
+  "uuid": "test"
+ },
+ "req_alliance_change_leader": {
+  "uid": 855333
+ },
+ "req_alliance_change_rank": {
+  "uid": 296643,
+  "rank": 772824
+ },
+ "req_alliance_change_reserve_notice": {
+  "uuid": "test",
+  "notice": "test",
+  "ts": 1790003648,
+  "open_like": true,
+  "top": false,
+  "star": true
+ },
+ "req_alliance_check_abbr": {
+  "abbr": "test"
+ },
+ "req_alliance_check_name": {
+  "name": "test"
+ },
+ "req_alliance_check_whitelist_by_uid": {
+  "uid": 997273
+ },
+ "req_alliance_chest_set_anonymity": {
+  "anonymity": true
+ },
+ "req_alliance_cover_info": {
+  "aids": [
+   126168
+  ]
+ },
+ "req_alliance_create": {
+  "name": "test",
+  "flag": 320488,
+  "flag_bg": 435691,
+  "manifesto": "test",
+  "language": 276512,
+  "public": false
+ },
+ "req_alliance_cross_capital_war_win_history": {
+  "aid": 172255,
+  "kid": 467410
+ },
+ "req_alliance_cur_notice_like_data": {},
+ "req_alliance_deal_apply": {
+  "uid": 812803,
+  "agree": false
+ },
+ "req_alliance_deal_invite": {
+  "aid": 785537,
+  "agree": false
+ },
+ "req_alliance_del_member": {
+  "uid": 99764
+ },
+ "req_alliance_del_notice_history": {
+  "idx": 6
+ },
+ "req_alliance_detail_info": {
+  "aid": 143548,
+  "kid": 649754
+ },
+ "req_alliance_dev_get_daily": {},
+ "req_alliance_dev_get_main": {},
+ "req_alliance_dev_get_rank": {},
+ "req_alliance_dev_get_week": {},
+ "req_alliance_dismiss": {},
+ "req_alliance_duel_allowed_alliance": {
+  "id": 843582
+ },
+ "req_alliance_duel_get_all_box_reward": {
+  "id": 543997,
+  "stage": 573411
+ },
+ "req_alliance_duel_get_all_stage_score": {
+  "id": 202173
+ },
+ "req_alliance_duel_get_box_reward": {
+  "id": 42439,
+  "stage": 547025,
+  "score": 592184
+ },
+ "req_alliance_duel_get_history": {
+  "idx": 5,
+  "size": 480164
+ },
+ "req_alliance_duel_get_player_total_score": {
+  "id": 83373
+ },
+ "req_alliance_duel_get_stage_result": {
+  "id": 49017,
+  "stage": 283190
+ },
+ "req_alliance_duel_group_info": {
+  "id": 272392
+ },
+ "req_alliance_duel_opponent_score_rank": {
+  "id": 330009
+ },
+ "req_alliance_duel_opponent_stage_score": {
+  "id": 672114,
+  "stage": 239987
+ },
+ "req_alliance_duel_settlement_info": {
+  "id": 725500
+ },
+ "req_alliance_duel_show_info": {
+  "id": 498610,
+  "stage": 108028
+ },
+ "req_alliance_duel_user_score_rank": {
+  "id": 221052
+ },
+ "req_alliance_duel_user_score_record": {
+  "id": 737406,
+  "stage": 514958
+ },
+ "req_alliance_exchange_resource": {
+  "id": 869206,
+  "count": 63
+ },
+ "req_alliance_fast_join": {},
+ "req_alliance_get_all_reserve_notice": {},
+ "req_alliance_get_notice_history": {
+  "idx": 7,
+  "size": 320104
+ },
+ "req_alliance_get_notice_star_history": {
+  "idx": 5,
+  "size": 854643
+ },
+ "req_alliance_get_reserve_notice_count": {},
+ "req_alliance_hall_move": {
+  "x": 215,
+  "y": 190,
+  "target_x": 141513,
+  "target_y": 530730,
+  "id": 158420
+ },
+ "req_alliance_help_all": {},
+ "req_alliance_history_notice_open_like": {
+  "uuid": "test",
+  "open_like": true
+ },
+ "req_alliance_honor_get_league_history": {
+  "aid": 350485,
+  "kid": 584469,
+  "league_type": 6
+ },
+ "req_alliance_init_data": {},
+ "req_alliance_invite_member": {
+  "uid": 660068
+ },
+ "req_alliance_join": {
+  "aid": 653612
+ },
+ "req_alliance_like_notice": {
+  "is_cur": true,
+  "history_idx": 5,
+  "type": 9,
+  "uuid": "test"
+ },
+ "req_alliance_member_info_by_key": {
+  "key": "test"
+ },
+ "req_alliance_members": {
+  "aid": 583521,
+  "kid": 867777
+ },
+ "req_alliance_members_cheat_login": {
+  "aid": 377462
+ },
+ "req_alliance_members_kill_num_rank": {},
+ "req_alliance_members_power_rank": {},
+ "req_alliance_modify_abbr": {
+  "abbr": "test"
+ },
+ "req_alliance_modify_flag": {
+  "flag": 524660,
+  "flag_bg": 565488
+ },
+ "req_alliance_modify_language": {
+  "language": 869432
+ },
+ "req_alliance_modify_manifesto": {
+  "manifesto": "test"
+ },
+ "req_alliance_modify_name": {
+  "name": "test"
+ },
+ "req_alliance_modify_notice": {
+  "notice": "test",
+  "open_like": false,
+  "top": false,
+  "star": false
+ },
+ "req_alliance_modify_rank_name": {
+  "rank_names": [
+   {
+    "rank": 203878,
+    "name": "test"
+   }
+  ]
+ },
+ "req_alliance_modify_recruit_cond": {
+  "level": 28,
+  "power": 392764
+ },
+ "req_alliance_modify_recruit_type": {
+  "public": false
+ },
+ "req_alliance_online_info": {},
+ "req_alliance_player_rank_data": {
+  "type": 4
+ },
+ "req_alliance_power": {},
+ "req_alliance_quit": {},
+ "req_alliance_rank_data": {
+  "type": 2,
+  "season": 48826
+ },
+ "req_alliance_rank_get_rewards": {
+  "type": 3
+ },
+ "req_alliance_receive_chest": {
+  "id": 738726,
+  "type": 9
+ },
+ "req_alliance_receive_chest_by_ids": {
+  "ids": [
+   304644,
+   223188
+  ]
+ },
+ "req_alliance_receive_chest_by_type": {
+  "type": 5
+ },
+ "req_alliance_recommend_alliance": {},
+ "req_alliance_recommend_players": {},
+ "req_alliance_replace_leader": {},
+ "req_alliance_reserve_notice": {
+  "notice": "test",
+  "ts": 1790055593,
+  "open_like": false,
+  "top": false,
+  "star": false
+ },
+ "req_alliance_science_cancel_recommend": {
+  "id": 130452
+ },
+ "req_alliance_science_diamond_donate": {
+  "id": 868785
+ },
+ "req_alliance_science_donate": {
+  "id": 679507,
+  "level": 7
+ },
+ "req_alliance_science_recommend": {
+  "id": 201275
+ },
+ "req_alliance_science_research": {
+  "id": 115586
+ },
+ "req_alliance_search_by_key": {
+  "key": "test"
+ },
+ "req_alliance_search_init": {
+  "language": 209726
+ },
+ "req_alliance_setting": {},
+ "req_alliance_showdown_activity_info": {},
+ "req_alliance_showdown_alliance_info": {},
+ "req_alliance_showdown_apply": {
+  "type": 3,
+  "formation": {
+   "hero_id": [
+    {
+     "k": 915289,
+     "v": 642630
+    }
+   ],
+   "soldier": [
+    {
+     "k": 173597,
+     "v": 525344
+    }
+   ]
+  }
+ },
+ "req_alliance_showdown_apply_detail": {
+  "uid": 538592
+ },
+ "req_alliance_showdown_apply_list": {},
+ "req_alliance_showdown_battle_report": {
+  "reportid": "test"
+ },
+ "req_alliance_showdown_battle_round_report": {
+  "round": 889722
+ },
+ "req_alliance_showdown_battle_wave_report": {
+  "reportid": "test",
+  "type": 9,
+  "wave": 170091
+ },
+ "req_alliance_showdown_can_invite_uids": {},
+ "req_alliance_showdown_change_player_way": {
+  "from": 327428,
+  "to": 343107,
+  "order": [
+   121941,
+   497167
+  ],
+  "uid": 523356
+ },
+ "req_alliance_showdown_change_type": {
+  "type": 7
+ },
+ "req_alliance_showdown_group_info": {
+  "season": 351160,
+  "aid": 640336
+ },
+ "req_alliance_showdown_invite_apply": {
+  "uids": [
+   794160,
+   539586
+  ]
+ },
+ "req_alliance_showdown_kingdom_join_alliances": {},
+ "req_alliance_showdown_operate_records": {},
+ "req_alliance_showdown_rank_info": {},
+ "req_alliance_showdown_rank_list": {},
+ "req_alliance_showdown_reorganize": {
+  "order": [
+   432141,
+   490214
+  ]
+ },
+ "req_alliance_showdown_reorganize_way": {
+  "from": 24055,
+  "to": 621201,
+  "order": [
+   608943,
+   822668
+  ]
+ },
+ "req_alliance_showdown_test_battle": {},
+ "req_alliance_star_history_notice": {
+  "uuid": "test",
+  "star": false
+ },
+ "req_alliance_supremacy_war_ask_for_battle": {
+  "id": 113851
+ },
+ "req_alliance_supremacy_war_dispatch_operator": {
+  "id": 364963,
+  "uid": 121701,
+  "operator": 418037
+ },
+ "req_alliance_supremacy_war_forbid_for_battle": {
+  "id": 371971,
+  "state": 171747
+ },
+ "req_alliance_supremacy_war_get_alliance_points": {
+  "id": 45536,
+  "group_id": 997155
+ },
+ "req_alliance_supremacy_war_get_alliance_points_rank": {
+  "id": 669668,
+  "group_id": 89123
+ },
+ "req_alliance_supremacy_war_get_members_points_rank": {
+  "id": 760422
+ },
+ "req_alliance_supremacy_war_get_per_point_rewards": {
+  "id": 979821,
+  "grade": 20,
+  "all": false
+ },
+ "req_alliance_supremacy_war_get_points": {
+  "id": 296428
+ },
+ "req_alliance_supremacy_war_get_points_rank": {
+  "id": 18362,
+  "start": 1790019818,
+  "count": 13
+ },
+ "req_alliance_supremacy_war_group_alliance_rank": {
+  "id": 134045,
+  "group_id": 635134
+ },
+ "req_alliance_supremacy_war_power_strike_score": {
+  "id": 298819
+ },
+ "req_alliance_supremacy_war_records": {
+  "id": 792260
+ },
+ "req_alliance_supremacy_war_send_request_mail": {
+  "id": 813459,
+  "uids": [
+   508848,
+   968439
+  ]
+ },
+ "req_alliance_supremacy_war_sign_up": {
+  "id": 886132
+ },
+ "req_alliance_top_history_notice": {
+  "uuid": "test",
+  "top": false
+ },
+ "req_alliance_trap_auto_reserve": {
+  "trap_id": 100152,
+  "auto_reserve": true
+ },
+ "req_alliance_trap_batch_get_personal_score_reward": {},
+ "req_alliance_trap_buff_strengthen": {
+  "count": 65,
+  "trap_id": 912342
+ },
+ "req_alliance_trap_get_mass_record": {
+  "trap_id": 523487
+ },
+ "req_alliance_trap_get_personal_score_reward": {
+  "id": 341809
+ },
+ "req_alliance_trap_info": {
+  "trap_id": 214285
+ },
+ "req_alliance_trap_join_count": {
+  "time": 1790083663
+ },
+ "req_alliance_trap_score_rank": {
+  "trap_id": 583415
+ },
+ "req_alliance_trap_start": {
+  "trap_id": 65820
+ },
+ "req_alliance_triangle_send_request_mail": {
+  "uids": [
+   710861
+  ]
+ },
+ "req_alliance_triangle_send_vote_mail": {
+  "uids": [
+   862720
+  ]
+ },
+ "req_alliance_triangle_war_alliance_settle": {
+  "legion": 264968
+ },
+ "req_alliance_triangle_war_allowed_alliance": {},
+ "req_alliance_triangle_war_ask_for_battle": {
+  "legion": 605629
+ },
+ "req_alliance_triangle_war_dispatch": {
+  "fights": [
+   1790006438
+  ],
+  "substitutes": [
+   958463,
+   78725
+  ],
+  "legion": 789807
+ },
+ "req_alliance_triangle_war_dispatch_operator": {
+  "uid": 110376,
+  "operator": 807778,
+  "legion": 472346
+ },
+ "req_alliance_triangle_war_forbid_for_battle": {
+  "infos": [
+   {
+    "legion": 50703,
+    "state": 426611
+   }
+  ]
+ },
+ "req_alliance_triangle_war_get_formations": {},
+ "req_alliance_triangle_war_get_history": {
+  "start": 1790091555,
+  "count": 44
+ },
+ "req_alliance_triangle_war_get_show_info": {},
+ "req_alliance_triangle_war_login_weekly": {},
+ "req_alliance_triangle_war_match_score": {},
+ "req_alliance_triangle_war_player_settle": {
+  "legion": 656538
+ },
+ "req_alliance_triangle_war_records": {},
+ "req_alliance_triangle_war_set_formation": {
+  "formationid": 723330,
+  "hero_map": [
+   {
+    "k": 525267,
+    "v": 269614
+   }
+  ]
+ },
+ "req_alliance_triangle_war_sign_up": {
+  "indexes": [
+   1790091638
+  ],
+  "legion": 480028
+ },
+ "req_alliance_triangle_war_vote": {
+  "indexes": [
+   1790022494,
+   1790011374
+  ]
+ },
+ "req_alliance_triangle_war_vote_notice": {},
+ "req_alliance_vote_add": {
+  "is_multi": true,
+  "title": "test",
+  "options": [
+   "test"
+  ],
+  "top": false,
+  "time": 1790028277,
+  "join_ranks": [
+   {
+    "k": 947605,
+    "v": true
+   }
+  ]
+ },
+ "req_alliance_vote_delete_record": {
+  "id": 754770
+ },
+ "req_alliance_vote_finish": {
+  "id": 318794
+ },
+ "req_alliance_vote_record_detail": {
+  "id": 258223,
+  "need_info": true
+ },
+ "req_alliance_vote_records": {},
+ "req_alliance_vote_select": {
+  "id": 637095,
+  "list": [
+   549692
+  ]
+ },
+ "req_alliance_vote_share_to_uids": {
+  "id": 373585,
+  "uids": [
+   333450
+  ],
+  "no_send": false
+ },
+ "req_alliance_vote_top": {
+  "id": 476712,
+  "top": true
+ },
+ "req_alliance_war_mark_leader": {
+  "uid": 50246,
+  "type": 5
+ },
+ "req_alliance_whitelist_add": {
+  "uids": [
+   957745,
+   449045
+  ]
+ },
+ "req_alliance_whitelist_del": {
+  "uids": [
+   295183
+  ]
+ },
+ "req_alliance_whitelist_get": {},
+ "req_alliances_baseinfo": {
+  "aids": [
+   951818
+  ]
+ },
+ "req_alliances_brief_info": {
+  "aids": [
+   976252,
+   177064
+  ]
+ },
+ "req_alliances_info": {
+  "aids": [
+   902492
+  ]
+ },
+ "req_alliances_log": {
+  "last_id": 664606,
+  "btype": 9
+ },
+ "req_alliane_trap_start_reserve": {
+  "time": 1790062465,
+  "trap_id": 132701
+ },
+ "req_anniv_preview_get_bullet_chats": {
+  "id": 495323
+ },
+ "req_anniv_preview_send_bullet": {
+  "id": 662999,
+  "bid": 801241
+ },
+ "req_anniv_preview_watch": {
+  "id": 762532
+ },
+ "req_anniv_review_get_mail_reward": {
+  "id": 192547
+ },
+ "req_anniv_review_get_punch_reward": {
+  "id": 297158
+ },
+ "req_anniv_review_get_scene_reward": {
+  "id": 691725,
+  "scene_id": 186348
+ },
+ "req_annual_stat_get_info": {
+  "idx": 2
+ },
+ "req_arena_buy_challenge_times": {
+  "buy_times": 1790002444
+ },
+ "req_arena_cheat_add_active_user": {
+  "num": 9
+ },
+ "req_arena_cheat_defense_power": {
+  "defence_power": 846945
+ },
+ "req_arena_cheat_global_debug_info": {},
+ "req_arena_fight": {
+  "opponent_type": 2,
+  "opponent_id": 220422,
+  "hero_array": [
+   988973,
+   201468
+  ],
+  "report_id": 522099,
+  "version": 313353
+ },
+ "req_arena_get_battle_data": {
+  "report_id": 897882,
+  "uid": 824144,
+  "season": 927527
+ },
+ "req_arena_get_defence_team_info": {
+  "uid": 76842
+ },
+ "req_arena_get_opponent": {},
+ "req_arena_get_share_battle_data": {
+  "share_key": "test"
+ },
+ "req_arena_rank_range": {},
+ "req_arena_read_report": {
+  "report_id": 559265
+ },
+ "req_arena_refresh_opponent": {},
+ "req_arena_report": {},
+ "req_arena_set_defence_heroes": {
+  "hero_array": [
+   51829
+  ]
+ },
+ "req_arsenal_league_alliance_mass_prepare_cancel": {
+  "owner": 134295,
+  "id": 475274
+ },
+ "req_arsenal_league_battlefield_map_info": {},
+ "req_arsenal_league_battlefield_stat_info": {},
+ "req_arsenal_league_buidling_defense_detail": {
+  "id": 3798
+ },
+ "req_arsenal_league_building_send_map_expression": {
+  "point": {
+   "x": 476,
+   "y": 625
+  },
+  "expression_id": 896937
+ },
+ "req_arsenal_league_call_zombie": {
+  "id": 29054
+ },
+ "req_arsenal_league_cheat_legion_sign_up": {
+  "group_id": 507804,
+  "cnt": 96
+ },
+ "req_arsenal_league_defense_march_detail_4_alliance_situation": {
+  "point": {
+   "x": 15,
+   "y": 890
+  }
+ },
+ "req_arsenal_league_del_watch": {},
+ "req_arsenal_league_detail_4_player_situation": {
+  "owner": 12600,
+  "id": 474435
+ },
+ "req_arsenal_league_embassy_help_march_detail_list": {
+  "uid": 26066
+ },
+ "req_arsenal_league_embassy_help_simple_info": {
+  "uid": 570541
+ },
+ "req_arsenal_league_embassy_repatriation": {
+  "target_uid": 288280
+ },
+ "req_arsenal_league_enter_battlefield": {},
+ "req_arsenal_league_exit_battlefield": {},
+ "req_arsenal_league_get_zone_info": {
+  "act_id": 54534,
+  "zone_id": 914169
+ },
+ "req_arsenal_league_guess_bet_champion": {
+  "id": 345301,
+  "group_id": 585847,
+  "aid": 217878,
+  "legion_id": 667684,
+  "num": 18
+ },
+ "req_arsenal_league_guess_bet_winner": {
+  "id": 113777,
+  "group_id": 509450,
+  "match_id": 894300,
+  "side": 946586,
+  "num": 29
+ },
+ "req_arsenal_league_guess_get_champion_bet_get_champion_reward": {
+  "id": 797706,
+  "group_id": 960880
+ },
+ "req_arsenal_league_guess_get_champion_bet_history": {
+  "id": 303771
+ },
+ "req_arsenal_league_guess_get_champion_bet_info": {
+  "id": 253720,
+  "group_id": 182941,
+  "alliance_legion_list": [
+   411935
+  ]
+ },
+ "req_arsenal_league_guess_get_rank": {
+  "id": 170577,
+  "type": 2,
+  "loc": 703535
+ },
+ "req_arsenal_league_guess_get_winner_bet_history": {
+  "id": 231846
+ },
+ "req_arsenal_league_guess_get_winner_bet_info": {
+  "id": 275834,
+  "group_id": 697243,
+  "matches": [
+   496677
+  ]
+ },
+ "req_arsenal_league_honor_alliance_rank": {
+  "id": 918054,
+  "season": 956610,
+  "group_id": 687502
+ },
+ "req_arsenal_league_honor_hall_reward": {
+  "id": 779350
+ },
+ "req_arsenal_league_honor_kingdom_reward": {
+  "id": 828788,
+  "group_id": 224724,
+  "rank": 842107
+ },
+ "req_arsenal_league_honor_mvp_info": {
+  "id": 323969,
+  "season": 539215,
+  "group_id": 962237,
+  "type": 7
+ },
+ "req_arsenal_league_hospital_cancel_heal": {},
+ "req_arsenal_league_hospital_heal_soldier": {
+  "soldiers": [
+   {
+    "k": 881205,
+    "v": 789224
+   }
+  ],
+  "immediate": false,
+  "is_free": true
+ },
+ "req_arsenal_league_hospital_speed_up": {
+  "use_diamond": true,
+  "items": [
+   {
+    "id": 339566,
+    "count": 93
+   }
+  ]
+ },
+ "req_arsenal_league_hospital_wound_dismiss": {
+  "id": 418376,
+  "count": 40
+ },
+ "req_arsenal_league_last_battle_reuslt": {
+  "act_id": 1387,
+  "lid": 452902
+ },
+ "req_arsenal_league_legion_match_info": {
+  "act_id": 325803,
+  "legion_ids": [
+   632030,
+   553394
+  ]
+ },
+ "req_arsenal_league_legion_rank": {
+  "act_id": 159090,
+  "zone_id": 464415,
+  "lid": 66055,
+  "need_list": true,
+  "from": 277683,
+  "num": 36
+ },
+ "req_arsenal_league_legion_score_rank": {
+  "act_id": 142197,
+  "group_id": 674719
+ },
+ "req_arsenal_league_march": {
+  "type": 3,
+  "endpoint": {
+   "x": 412,
+   "y": 735
+  },
+  "formation": {
+   "hero_id": [
+    {
+     "k": 491878,
+     "v": 405859
+    }
+   ],
+   "soldier": [
+    {
+     "k": 769513,
+     "v": 230774
+    }
+   ]
+  },
+  "extra": {
+   "prepare_time_index": 1790032529,
+   "master_marchid": 665365
+  }
+ },
+ "req_arsenal_league_march_detail": {
+  "owner": 934885,
+  "id": 134215
+ },
+ "req_arsenal_league_march_off_work": {
+  "id": 474994
+ },
+ "req_arsenal_league_march_recall": {
+  "id": 708704,
+  "itemid": 494877
+ },
+ "req_arsenal_league_march_send_map_expression": {
+  "id": 602314,
+  "expression_id": 528654
+ },
+ "req_arsenal_league_march_speedup": {
+  "id": 75604,
+  "itemid": 153750,
+  "owner": 775580
+ },
+ "req_arsenal_league_mass_invite": {
+  "id": 914379,
+  "uids": [
+   404165,
+   880149
+  ]
+ },
+ "req_arsenal_league_mass_march_detail_4_alliance_situation": {
+  "owner": 306528,
+  "id": 598280
+ },
+ "req_arsenal_league_mass_march_detail_4_player_situation": {
+  "owner": 51769,
+  "id": 823899
+ },
+ "req_arsenal_league_mass_master_detail": {
+  "id": 397736,
+  "owner": 828719
+ },
+ "req_arsenal_league_mass_prepare_cancel": {
+  "id": 563825
+ },
+ "req_arsenal_league_mass_slave_alliance_repatriate": {
+  "owner": 496491,
+  "id": 937137
+ },
+ "req_arsenal_league_mass_slave_repatriate": {
+  "owner": 539940,
+  "id": 294446
+ },
+ "req_arsenal_league_mass_slave_top": {
+  "owner": 500088,
+  "id": 143753
+ },
+ "req_arsenal_league_match_info": {
+  "act_id": 889417,
+  "group_id": 935870,
+  "match_id": 480855
+ },
+ "req_arsenal_league_match_infos_8_stage": {
+  "act_id": 151478,
+  "group_id": 594725,
+  "stage": 311199,
+  "round": 79419
+ },
+ "req_arsenal_league_move_city": {
+  "point": {
+   "x": 579,
+   "y": 1032
+  }
+ },
+ "req_arsenal_league_occupy_obj_change_captain": {
+  "point": {
+   "x": 1166,
+   "y": 457
+  },
+  "owner": 97539
+ },
+ "req_arsenal_league_occupy_obj_repatriate": {
+  "point": {
+   "x": 457,
+   "y": 1111
+  },
+  "owner": 698230
+ },
+ "req_arsenal_league_occupy_obj_repatriate_recall": {
+  "point": {
+   "x": 771,
+   "y": 894
+  },
+  "owner": 420637,
+  "march_id": 448634
+ },
+ "req_arsenal_league_refresh_match_info": {
+  "act_id": 505909,
+  "group_id": 822023,
+  "match_ids": [
+   209041,
+   437434
+  ]
+ },
+ "req_arsenal_league_schedule": {
+  "act_id": 929244,
+  "group_id": 67670,
+  "stage": 264679
+ },
+ "req_arsenal_league_scoring_schedule": {
+  "act_id": 475066,
+  "group_id": 910737,
+  "round": 524458
+ },
+ "req_arsenal_league_spectator_battlefield_map_info": {},
+ "req_arsenal_league_spectator_battlefield_stat_info": {},
+ "req_arsenal_league_spectator_enter_battlefield": {
+  "battlefield_id": "test"
+ },
+ "req_arsenal_league_spectator_exit_battlefield": {},
+ "req_arsenal_league_task_reward": {
+  "id": 840009,
+  "type": 4,
+  "task_id": 762244
+ },
+ "req_arsenal_league_wall_fix_defense": {},
+ "req_arsenal_league_wall_outfire": {},
+ "req_arsenal_war_alliance_mass_prepare_cancel": {
+  "owner": 477225,
+  "id": 145507
+ },
+ "req_arsenal_war_alliance_power_strike_score": {},
+ "req_arsenal_war_alliance_power_strike_score_new": {},
+ "req_arsenal_war_battlefield_map_info": {},
+ "req_arsenal_war_battlefield_stat_info": {},
+ "req_arsenal_war_buidling_defense_detail": {
+  "id": 941892
+ },
+ "req_arsenal_war_building_send_map_expression": {
+  "point": {
+   "x": 761,
+   "y": 1169
+  },
+  "expression_id": 27283
+ },
+ "req_arsenal_war_call_zombie": {
+  "id": 913908
+ },
+ "req_arsenal_war_defense_march_detail_4_alliance_situation": {
+  "point": {
+   "x": 878,
+   "y": 78
+  }
+ },
+ "req_arsenal_war_del_watch": {},
+ "req_arsenal_war_detail_4_player_situation": {
+  "owner": 510149,
+  "id": 758124
+ },
+ "req_arsenal_war_embassy_help_march_detail_list": {
+  "uid": 389177
+ },
+ "req_arsenal_war_embassy_help_simple_info": {
+  "uid": 202724
+ },
+ "req_arsenal_war_embassy_repatriation": {
+  "target_uid": 358319
+ },
+ "req_arsenal_war_enter_battlefield": {},
+ "req_arsenal_war_exit_battlefield": {},
+ "req_arsenal_war_get_count_reward": {},
+ "req_arsenal_war_hospital_cancel_heal": {},
+ "req_arsenal_war_hospital_heal_soldier": {
+  "soldiers": [
+   {
+    "k": 879972,
+    "v": 82449
+   }
+  ],
+  "immediate": true,
+  "is_free": true
+ },
+ "req_arsenal_war_hospital_speed_up": {
+  "use_diamond": true,
+  "items": [
+   {
+    "id": 334446,
+    "count": 85
+   },
+   {
+    "id": 865532,
+    "count": 48
+   }
+  ]
+ },
+ "req_arsenal_war_hospital_wound_dismiss": {
+  "id": 100329,
+  "count": 64
+ },
+ "req_arsenal_war_last_battle_result": {
+  "lid": 206340
+ },
+ "req_arsenal_war_march": {
+  "type": 1,
+  "endpoint": {
+   "x": 781,
+   "y": 159
+  },
+  "formation": {
+   "hero_id": [
+    {
+     "k": 957674,
+     "v": 920486
+    }
+   ],
+   "soldier": [
+    {
+     "k": 237341,
+     "v": 632325
+    }
+   ]
+  },
+  "extra": {
+   "prepare_time_index": 1790065772,
+   "master_marchid": 769981
+  }
+ },
+ "req_arsenal_war_march_detail": {
+  "owner": 67355,
+  "id": 1873
+ },
+ "req_arsenal_war_march_off_work": {
+  "id": 897655
+ },
+ "req_arsenal_war_march_recall": {
+  "id": 411525,
+  "itemid": 662042
+ },
+ "req_arsenal_war_march_send_map_expression": {
+  "id": 860969,
+  "expression_id": 23604
+ },
+ "req_arsenal_war_march_speedup": {
+  "id": 810257,
+  "itemid": 431914,
+  "owner": 492267
+ },
+ "req_arsenal_war_mass_invite": {
+  "id": 775019,
+  "uids": [
+   558867
+  ]
+ },
+ "req_arsenal_war_mass_march_detail_4_alliance_situation": {
+  "owner": 630438,
+  "id": 196587
+ },
+ "req_arsenal_war_mass_march_detail_4_player_situation": {
+  "owner": 571519,
+  "id": 714559
+ },
+ "req_arsenal_war_mass_master_detail": {
+  "id": 253499,
+  "owner": 870972
+ },
+ "req_arsenal_war_mass_prepare_cancel": {
+  "id": 908025
+ },
+ "req_arsenal_war_mass_slave_alliance_repatriate": {
+  "owner": 350197,
+  "id": 355336
+ },
+ "req_arsenal_war_mass_slave_repatriate": {
+  "owner": 253124,
+  "id": 73689
+ },
+ "req_arsenal_war_mass_slave_top": {
+  "owner": 719967,
+  "id": 762399
+ },
+ "req_arsenal_war_move_city": {
+  "point": {
+   "x": 82,
+   "y": 571
+  }
+ },
+ "req_arsenal_war_occupy_obj_change_captain": {
+  "point": {
+   "x": 640,
+   "y": 543
+  },
+  "owner": 671407
+ },
+ "req_arsenal_war_occupy_obj_repatriate": {
+  "point": {
+   "x": 574,
+   "y": 294
+  },
+  "owner": 820085
+ },
+ "req_arsenal_war_occupy_obj_repatriate_recall": {
+  "point": {
+   "x": 1160,
+   "y": 256
+  },
+  "owner": 879092,
+  "march_id": 946086
+ },
+ "req_arsenal_war_wall_fix_defense": {},
+ "req_arsenal_war_wall_outfire": {},
+ "req_auto_monster_formation_cancel": {
+  "ids": [
+   324714
+  ]
+ },
+ "req_auto_monster_modify_formation": {
+  "id": 674443,
+  "formation": {
+   "hero_id": [
+    {
+     "k": 6598,
+     "v": 713179
+    }
+   ],
+   "soldier": [
+    {
+     "k": 663423,
+     "v": 108555
+    }
+   ]
+  }
+ },
+ "req_auto_monster_option": {
+  "min_lv": 20,
+  "max_lv": 28,
+  "wounded_index": 16,
+  "item_count": 41,
+  "distance": 880575
+ },
+ "req_back_bp_get_all_reward": {},
+ "req_back_bp_get_reward": {
+  "stage": 146647
+ },
+ "req_back_guide_finish": {},
+ "req_back_quest_get_reward": {
+  "questid": 545267
+ },
+ "req_back_quest_get_score_reward": {
+  "stage": 642926
+ },
+ "req_back_sign_in_getaward_byday": {
+  "day": 596200
+ },
+ "req_back_sign_in_one_click_award": {},
+ "req_bank_cancel": {},
+ "req_bank_deopsit": {
+  "locker_id": 920748,
+  "amount": 47
+ },
+ "req_bank_withdraw": {},
+ "req_barrack_cancel_train": {
+  "bid": 459941
+ },
+ "req_barrack_recruit_soldier": {
+  "arr_bid": [
+   73712,
+   619194
+  ]
+ },
+ "req_barrack_speed_up": {
+  "bid": 960464,
+  "use_diamond": true,
+  "items": [
+   {
+    "id": 196859,
+    "count": 65
+   },
+   {
+    "id": 112372,
+    "count": 69
+   }
+  ]
+ },
+ "req_barrack_train_soldier": {
+  "soldier_id": 176172,
+  "soldier_num": 16,
+  "immediate": false
+ },
+ "req_barrack_upgrade_soldier": {
+  "soldier_id": 89315,
+  "soldier_num": 80,
+  "immediate": false
+ },
+ "req_batch_mail_delete": {
+  "first_type": 1,
+  "mid_list": [
+   412045
+  ],
+  "mid_list_new": [
+   "test",
+   "test"
+  ]
+ },
+ "req_batch_mail_read": {
+  "first_type": 1,
+  "mid_list": [
+   44308
+  ],
+  "mid_list_new": [
+   "test",
+   "test"
+  ]
+ },
+ "req_batch_use_item": {
+  "params": [
+   {
+    "id": 53726,
+    "count": 57,
+    "extra": {
+     "option": 998654,
+     "immediate_use": false,
+     "target": 43955
+    }
+   }
+  ]
+ },
+ "req_battle_adventure_battle_result_error": {
+  "battle_data": {
+   "seed": 843438,
+   "limit_time": 1790009903,
+   "battle_type": 6,
+   "me": [
+    {
+     "pid": 380124,
+     "unin_troops": {}
+    }
+   ],
+   "enemy": [
+    {
+     "pid": 599803,
+     "unin_troops": {}
+    }
+   ],
+   "id": 121111,
+   "version": 680330,
+   "me_expert_effect_map": [
+    {
+     "effect_type": 2,
+     "effect_map": [
+      {
+       "expert_id": 591856
+      }
+     ]
+    }
+   ],
+   "enemy_expert_effect_map": [
+    {
+     "effect_type": 4,
+     "effect_map": [
+      {
+       "expert_id": 250908
+      }
+     ]
+    }
+   ]
+  },
+  "client_version": 145987,
+  "operatedata": {
+   "key": 283198,
+   "value": [
+    {
+     "key": 73838,
+     "value": true
+    }
+   ]
+  },
+  "client_enddata": [
+   {
+    "index": 1,
+    "hp": 381496
+   }
+  ],
+  "server_enddata": [
+   {
+    "index": 4,
+    "hp": 520050
+   }
+  ],
+  "err_type": 2
+ },
+ "req_battle_by_key": {
+  "key": "test"
+ },
+ "req_battle_field_rank_info": {
+  "list_type": [
+   7,
+   1
+  ]
+ },
+ "req_battle_field_rank_range": {
+  "type": 6,
+  "key": 941453
+ },
+ "req_battle_pass_buy_score": {
+  "id": 154098,
+  "score": 989606
+ },
+ "req_battle_pass_choose_item": {
+  "id": 482819,
+  "item_id": 826763
+ },
+ "req_battle_pass_collect_all_reward": {
+  "id": 638806
+ },
+ "req_battle_pass_collect_reward": {
+  "id": 696060,
+  "reward_id": 646559
+ },
+ "req_begin_adventure_pve": {
+  "checkpoint": 416199,
+  "fight_heros_data": {
+   "source": 518354,
+   "fight_heros": [
+    960262
+   ]
+  }
+ },
+ "req_begin_research": {
+  "tid_lev": 16,
+  "qid": 358374
+ },
+ "req_brawl_war_battlefield_map_info": {},
+ "req_brawl_war_building_send_map_expression": {
+  "point": {
+   "x": 591,
+   "y": 1020
+  },
+  "expression_id": 29732
+ },
+ "req_brawl_war_del_watch": {},
+ "req_brawl_war_detail_4_player_situation": {
+  "owner": 944209,
+  "id": 66615
+ },
+ "req_brawl_war_enter_battlefield": {},
+ "req_brawl_war_exit_battlefield": {},
+ "req_brawl_war_get_achievement_reward": {
+  "id": 226250
+ },
+ "req_brawl_war_get_task_reward": {
+  "id": 434357,
+  "task_id": 118858
+ },
+ "req_brawl_war_hospital_cancel_heal": {},
+ "req_brawl_war_hospital_heal_soldier": {
+  "soldiers": [
+   {
+    "k": 103780,
+    "v": 123428
+   }
+  ],
+  "immediate": true
+ },
+ "req_brawl_war_hospital_speed_up": {
+  "use_diamond": false,
+  "items": [
+   {
+    "id": 843233,
+    "count": 5
+   },
+   {
+    "id": 582472,
+    "count": 78
+   }
+  ]
+ },
+ "req_brawl_war_march": {
+  "type": 8,
+  "endpoint": {
+   "x": 168,
+   "y": 1024
+  },
+  "formation": {
+   "hero_id": [
+    {
+     "k": 116755,
+     "v": 406867
+    }
+   ],
+   "soldier": [
+    {
+     "k": 440190,
+     "v": 845863
+    }
+   ]
+  }
+ },
+ "req_brawl_war_march_detail": {
+  "owner": 222429,
+  "id": 745873
+ },
+ "req_brawl_war_march_off_work": {
+  "id": 763164
+ },
+ "req_brawl_war_march_recall": {
+  "id": 618890
+ },
+ "req_brawl_war_march_send_map_expression": {
+  "id": 402876,
+  "expression_id": 266100
+ },
+ "req_brawl_war_march_speedup": {
+  "id": 643750,
+  "itemid": 538388
+ },
+ "req_brawl_war_match_cancel": {},
+ "req_brawl_war_match_ready": {},
+ "req_brawl_war_match_request": {
+  "mode": 112302
+ },
+ "req_brawl_war_move_city": {
+  "point": {
+   "x": 917,
+   "y": 585
+  }
+ },
+ "req_brawl_war_player_record": {
+  "index": 1,
+  "overview": false
+ },
+ "req_brawl_war_resource_info": {
+  "point": {
+   "x": 610,
+   "y": 1063
+  }
+ },
+ "req_brawl_war_score_rank": {},
+ "req_brawl_war_use_airdrop_item": {
+  "type": 4,
+  "point": {
+   "x": 247,
+   "y": 1041
+  }
+ },
+ "req_brawl_war_wall_fix_defense": {},
+ "req_brawl_war_wall_outfire": {},
+ "req_building_queue_speed": {
+  "qid": 35674,
+  "use_diamond": true,
+  "items": [
+   {
+    "id": 110388,
+    "count": 43
+   }
+  ]
+ },
+ "req_building_record_flag": {
+  "flag": 241542
+ },
+ "req_cancel_travel_afk": {},
+ "req_capital_search_alliance_by_key": {
+  "key": "test"
+ },
+ "req_capital_war_add_candidate_batch": {
+  "office": 743360,
+  "auto": false,
+  "only_native": true,
+  "lv_limit": 195777
+ },
+ "req_capital_war_add_schedule_task": {
+  "start_ts": 1790097339,
+  "task_type": 2,
+  "skill_data": {
+   "skill_id": 592782,
+   "enemy_effect": true
+  }
+ },
+ "req_capital_war_agree_all_application": {
+  "office": 870165
+ },
+ "req_capital_war_apply_office": {
+  "office": 610463,
+  "cancel": false
+ },
+ "req_capital_war_appoint": {
+  "uid": 179224,
+  "office": 933747
+ },
+ "req_capital_war_appoint_list": {
+  "office": 382375
+ },
+ "req_capital_war_auto_agree_application": {
+  "office": 807852,
+  "enable": false,
+  "only_native": false,
+  "lv_limit": 754446
+ },
+ "req_capital_war_ban_office_apply": {
+  "uid": 297102,
+  "ban": true
+ },
+ "req_capital_war_bid_office": {
+  "office": 205937,
+  "idx": 4,
+  "cancel": false
+ },
+ "req_capital_war_change_office_buff": {
+  "office": 298629
+ },
+ "req_capital_war_check_name": {
+  "name": "test"
+ },
+ "req_capital_war_dismissal": {
+  "office": 129687
+ },
+ "req_capital_war_elect": {
+  "uid": 567510
+ },
+ "req_capital_war_get_application_list": {
+  "office": 942998
+ },
+ "req_capital_war_get_goals_by_uid_set": {
+  "uid_set": [
+   {
+    "k": 908043,
+    "v": false
+   }
+  ]
+ },
+ "req_capital_war_get_merge_history": {
+  "kid": 868727
+ },
+ "req_capital_war_get_president_history": {
+  "kid": 271652,
+  "season": 754611,
+  "show_kid": 942699
+ },
+ "req_capital_war_get_schedule_task": {},
+ "req_capital_war_get_slot_application_list": {
+  "office": 113272,
+  "slot_idx": 7
+ },
+ "req_capital_war_gift": {
+  "giftid": 61080,
+  "uids": [
+   706398,
+   697288
+  ]
+ },
+ "req_capital_war_gift_record": {
+  "idx": 9
+ },
+ "req_capital_war_goal_rank": {},
+ "req_capital_war_hall_of_president": {
+  "kid": 847543
+ },
+ "req_capital_war_kingdom_showinfo": {
+  "kid": 671910
+ },
+ "req_capital_war_kingdom_showinfo_list": {},
+ "req_capital_war_modify_candidate": {
+  "office": 222880,
+  "uid": 894797,
+  "idx": 8
+ },
+ "req_capital_war_modify_order": {
+  "office": 764627,
+  "uid": 552903,
+  "opt": 412639,
+  "idx": 9
+ },
+ "req_capital_war_modify_schedule_task": {
+  "task_id": 196717,
+  "start_ts": 1790022798,
+  "task_type": 2,
+  "skill_data": {
+   "skill_id": 870017,
+   "enemy_effect": true
+  }
+ },
+ "req_capital_war_president_info": {
+  "kid": 563622
+ },
+ "req_capital_war_quit_office_self": {},
+ "req_capital_war_receive_president_reward": {},
+ "req_capital_war_review_application": {
+  "office": 140657,
+  "uid": 369047,
+  "opt": 175444
+ },
+ "req_capital_war_set_kingdom_flag": {
+  "flag": 773902
+ },
+ "req_capital_war_set_kingdom_name": {
+  "name": "test"
+ },
+ "req_capital_war_set_manifesto": {
+  "manifesto": "test"
+ },
+ "req_capital_war_set_office_mode": {
+  "mode": 459346
+ },
+ "req_capital_war_skill_record": {
+  "idx": 5
+ },
+ "req_capital_war_use_skill": {
+  "id": 841066,
+  "extra": {
+   "uid": 237356,
+   "enemy_effect": false
+  }
+ },
+ "req_card_bp_collect_all_reward": {
+  "id": 886360
+ },
+ "req_card_bp_collect_reward": {
+  "id": 15399,
+  "stage_id": 601386
+ },
+ "req_card_bp_select_card": {
+  "id": 53501,
+  "gift_id": 527327
+ },
+ "req_change_building_mode": {
+  "change_map": [
+   {
+    "bid": 308598,
+    "mode": 966366
+   }
+  ]
+ },
+ "req_chat_add_unread_mark": {
+  "p2p_mark_map": [
+   {
+    "k": 521270,
+    "v": 369579
+   }
+  ],
+  "room_mark_map": [
+   {
+    "k": 254847,
+    "v": 509102
+   }
+  ]
+ },
+ "req_chat_at": {
+  "type": 2,
+  "room_id": 407334,
+  "at_type": 1,
+  "uid_arr": [
+   226648
+  ],
+  "ms": 552388,
+  "mid": "test",
+  "del": true
+ },
+ "req_chat_ban_stranger": {
+  "opt": false
+ },
+ "req_chat_block": {
+  "to": 82736
+ },
+ "req_chat_check_p2p_limit": {
+  "uid": 830196
+ },
+ "req_chat_clean_at": {
+  "room_id": 569053,
+  "type": 8
+ },
+ "req_chat_cross_capital_send_kingdom": {
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_get_token": {},
+ "req_chat_group_add_member": {
+  "group_id": 422041,
+  "uid_arr": [
+   63751
+  ]
+ },
+ "req_chat_group_agree_member": {
+  "group_id": 842741,
+  "uid": 434278,
+  "inviter": 570994
+ },
+ "req_chat_group_change_group_notice": {
+  "group_id": 296698,
+  "notice": "test"
+ },
+ "req_chat_group_change_group_owner": {
+  "group_id": 751762,
+  "uid": 924971
+ },
+ "req_chat_group_change_invite_review": {
+  "group_id": 429199,
+  "invite_review": true
+ },
+ "req_chat_group_create": {
+  "uid_arr": [
+   976954
+  ]
+ },
+ "req_chat_group_del_history_notice": {
+  "group_id": 751709,
+  "uuid": "test"
+ },
+ "req_chat_group_del_member": {
+  "group_id": 823688,
+  "uid_arr": [
+   209311,
+   743504
+  ]
+ },
+ "req_chat_group_detail": {
+  "group_id": 432722
+ },
+ "req_chat_group_disagree_member": {
+  "group_id": 996078,
+  "uid": 918396,
+  "inviter": 207220
+ },
+ "req_chat_group_get_group_notice": {
+  "group_id": 398577
+ },
+ "req_chat_group_get_group_notice_history": {
+  "group_id": 514409
+ },
+ "req_chat_group_modify_name": {
+  "group_id": 609261,
+  "name": "test"
+ },
+ "req_chat_group_quit": {
+  "group_id": 834967
+ },
+ "req_chat_group_vote_add": {
+  "group_id": 149403,
+  "is_multi": true,
+  "title": "test",
+  "options": [
+   "test"
+  ],
+  "top": true,
+  "time": 1790075242
+ },
+ "req_chat_group_vote_delete_record": {
+  "group_id": 422604,
+  "id": 225551
+ },
+ "req_chat_group_vote_finish": {
+  "group_id": 251915,
+  "id": 913577
+ },
+ "req_chat_group_vote_record_detail": {
+  "group_id": 923005,
+  "id": 827335,
+  "need_info": true
+ },
+ "req_chat_group_vote_records": {
+  "group_id": 110725
+ },
+ "req_chat_group_vote_select": {
+  "group_id": 673454,
+  "id": 96401,
+  "list": [
+   662117,
+   84189
+  ]
+ },
+ "req_chat_group_vote_top": {
+  "group_id": 300982,
+  "id": 12694,
+  "top": false
+ },
+ "req_chat_login_room": {
+  "room_ids": [
+   171854
+  ]
+ },
+ "req_chat_players_info_by_key": {
+  "key": "test"
+ },
+ "req_chat_remove_unread_mark": {
+  "rm_p2p_list": [
+   37294,
+   8959
+  ],
+  "rm_room_list": [
+   305084
+  ]
+ },
+ "req_chat_send_alliance": {
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_send_alliance_r4": {
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_send_kingdom": {
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_send_p2p": {
+  "to": 479699,
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_send_room": {
+  "rid": 410357,
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_send_to_self": {
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_send_to_uids": {
+  "tos": [
+   70308
+  ],
+  "msg": "test",
+  "attrs": "test"
+ },
+ "req_chat_set_p2p_history_del_ts": {
+  "target": 759560,
+  "del_ts": 1790077536
+ },
+ "req_chat_set_read_mark": {
+  "room_id": 317304,
+  "ms": 73367,
+  "mid": "test"
+ },
+ "req_chat_set_recent_contact": {
+  "uid_set": [
+   {
+    "k": 981357,
+    "v": true
+   }
+  ]
+ },
+ "req_chat_set_reddot_ts": {},
+ "req_chat_set_show_self_skin": {
+  "is_show_self_skin": true
+ },
+ "req_chat_set_stranger_lv_limit": {
+  "lv": 238019
+ },
+ "req_chat_share_to_chat": {
+  "share_common_info": {
+   "type": 2,
+   "params": [
+    970070
+   ],
+   "msgtype": 4,
+   "msg": "test",
+   "reply_mid": "test"
+  },
+  "homeland_share_info": {
+   "uid": 407834
+  },
+  "favorite_share_info": {
+   "kid": 52922,
+   "x": 628,
+   "y": 32,
+   "key": "test",
+   "name": "test",
+   "flag": 581464
+  },
+  "alliance_vote_share_info": {
+   "id": 705273
+  },
+  "chat_expression_info": {
+   "ids": [
+    600499
+   ]
+  },
+  "mail_share_info": {
+   "mailid": "test",
+   "type": 1,
+   "can_forward": true
+  },
+  "truck_share_info": {
+   "kid": 994485,
+   "uid": 19980,
+   "id": 3641
+  },
+  "climbtower_info": {
+   "report_id": 186677
+  },
+  "chat_group_vote_share_info": {
+   "group_id": 772402,
+   "id": 249516
+  },
+  "linkage_monopoly_team_invite_info": {
+   "activity_id": 391804,
+   "team_id": 286112
+  },
+  "find_goods_room_invite_info": {
+   "room_id": "test"
+  },
+  "slg_3_league_info": {
+   "match_id": 733887,
+   "game_idx": 4,
+   "round_idx": 9,
+   "src_key": "test"
+  },
+  "slg_3_arena_info": {
+   "match_id": 619502,
+   "game_idx": 1,
+   "round_idx": 4,
+   "src_key": "test"
+  },
+  "arena_info": {
+   "report_id": 772901,
+   "season": 600256
+  }
+ },
+ "req_chat_temporary_block": {
+  "to": 858648,
+  "duration": 250963
+ },
+ "req_chat_translate": {
+  "target": "test",
+  "source_text": "test",
+  "mark": 208074,
+  "mid": "test",
+  "type": 2
+ },
+ "req_chat_translate_feedback": {
+  "source": "test",
+  "target": "test",
+  "sourceText": "test",
+  "targetText": "test",
+  "feedback": 554877,
+  "origin": 321712
+ },
+ "req_chat_unblock": {
+  "to": 41068
+ },
+ "req_chat_withdraw": {
+  "mid": "test",
+  "xid": 359028,
+  "x_type": 2
+ },
+ "req_cheat_abtest_opt": {
+  "type": 5,
+  "mark_id": 662535,
+  "param1": 202955,
+  "extra": "test"
+ },
+ "req_cheat_add": {
+  "data": [
+   {
+    "id": 557785,
+    "count": 87
+   }
+  ]
+ },
+ "req_cheat_add_all_equipment": {},
+ "req_cheat_add_equipment": {
+  "eid": 555271,
+  "slv": 29,
+  "exp": 202026,
+  "rlv": 17
+ },
+ "req_cheat_add_expert_skill_exp": {
+  "expert_id": 335942,
+  "skill_id": 659882,
+  "add_exp": 261302
+ },
+ "req_cheat_add_glory": {
+  "type": 8,
+  "time": 1790039949,
+  "param": [
+   515550,
+   966135
+  ]
+ },
+ "req_cheat_add_skin_time": {
+  "skinid": 706770,
+  "time": 1790079757
+ },
+ "req_cheat_add_supremacy_table": {
+  "x": 770,
+  "y": 122
+ },
+ "req_cheat_add_total_recharge_diamond": {
+  "add": 824441
+ },
+ "req_cheat_add_travel_energy": {
+  "cnt": 59
+ },
+ "req_cheat_add_world_boss_points": {
+  "id": 726896,
+  "loss_hp": 940036
+ },
+ "req_cheat_add_wound": {
+  "wound_map": [
+   {
+    "k": 515631,
+    "v": 118346
+   }
+  ],
+  "battlefield_type": 7
+ },
+ "req_cheat_alliance_arsenal_war_set_fraction": {
+  "fraction": 343984
+ },
+ "req_cheat_alliance_building_add": {
+  "x": 1144,
+  "y": 628,
+  "bid": 472973
+ },
+ "req_cheat_alliance_building_change_hp": {
+  "x": 887,
+  "y": 769,
+  "hp": 394667
+ },
+ "req_cheat_alliance_building_merge": {},
+ "req_cheat_alliance_building_remove": {
+  "x": 108,
+  "y": 797
+ },
+ "req_cheat_alliance_duel_add_score": {
+  "id": 381666,
+  "score": 153461
+ },
+ "req_cheat_alliance_duel_set_grade": {
+  "aid": 551438,
+  "grade": 4
+ },
+ "req_cheat_alliance_hall_move": {
+  "x": 26,
+  "y": 890,
+  "dst_x": 244877,
+  "dst_y": 940014
+ },
+ "req_cheat_alliance_science_research": {
+  "sid": 862120,
+  "lv": 497327
+ },
+ "req_cheat_alliance_science_upgrade_all": {},
+ "req_cheat_alliance_set_honor_level": {
+  "honor_level": 26
+ },
+ "req_cheat_alliance_showdown_next_stage": {},
+ "req_cheat_alliance_showdown_set_grade": {
+  "grade": 18
+ },
+ "req_cheat_alliance_territory_change": {
+  "aid": 113751
+ },
+ "req_cheat_annual_stat_archive": {
+  "ts": 1790023519
+ },
+ "req_cheat_annual_stat_get_info": {},
+ "req_cheat_arsenal_league_add_player_score": {
+  "score": 397990
+ },
+ "req_cheat_arsenal_league_close_activity": {},
+ "req_cheat_arsenal_league_gen_legion_pos": {
+  "group_id": 942753
+ },
+ "req_cheat_arsenal_league_honor_rematch": {
+  "season": 267237,
+  "group_id": 973341
+ },
+ "req_cheat_arsenal_league_legion_battle_result": {
+  "match_id": 596965,
+  "aid": 365420,
+  "legion_id": 389675
+ },
+ "req_cheat_arsenal_league_mail": {},
+ "req_cheat_arsenal_league_next_stage": {},
+ "req_cheat_arsenal_league_rematch": {
+  "group_id": 231138,
+  "match_id": 727446
+ },
+ "req_cheat_arsenal_league_set_max_rank": {
+  "rank": 220591,
+  "aid": 625476
+ },
+ "req_cheat_arsenal_open_battlefield": {
+  "target_aid": 197450
+ },
+ "req_cheat_arsenal_over": {},
+ "req_cheat_arsenal_start": {},
+ "req_cheat_arsenal_war_first_open": {},
+ "req_cheat_arsenal_war_timeup": {},
+ "req_cheat_auto_monster_set_expire": {
+  "expire": 1790055245
+ },
+ "req_cheat_back_end": {},
+ "req_cheat_back_quest_set_progress": {
+  "questid": 749134,
+  "progress": 773973
+ },
+ "req_cheat_back_start": {
+  "lost_day": 777994
+ },
+ "req_cheat_battle_delay": {
+  "delay": 806848
+ },
+ "req_cheat_brawl_war_add_airdrop": {
+  "item_type": 6,
+  "count": 4
+ },
+ "req_cheat_brawl_war_mail": {
+  "bomb_build_type": 6
+ },
+ "req_cheat_brawl_war_match_request": {
+  "mode": 406078
+ },
+ "req_cheat_brawl_war_set_people_num": {
+  "num": 89
+ },
+ "req_cheat_build_supre_feast": {},
+ "req_cheat_capital_war_set_president": {
+  "uid": 719118
+ },
+ "req_cheat_capital_war_timeup": {},
+ "req_cheat_change_sys_time": {
+  "time": 1790013734
+ },
+ "req_cheat_chat_self_developed_pre_translate": {
+  "source_text": "test"
+ },
+ "req_cheat_chat_self_developed_translate": {
+  "source_text": "test",
+  "target": "test"
+ },
+ "req_cheat_check_travel_config": {},
+ "req_cheat_clear_backpack": {},
+ "req_cheat_clear_expert_data": {},
+ "req_cheat_clear_wound_soldier": {},
+ "req_cheat_climbtower": {
+  "cmd": 5,
+  "param1": 463452,
+  "param2": 360901
+ },
+ "req_cheat_climbtower_formation": {
+  "tower_id": 950299,
+  "formation": {
+   "hero_id": [
+    {
+     "k": 945753,
+     "v": 115679
+    }
+   ],
+   "soldier": [
+    {
+     "k": 14825,
+     "v": 623399
+    }
+   ]
+  }
+ },
+ "req_cheat_close_activity": {
+  "id": 457579,
+  "kid": 900544
+ },
+ "req_cheat_close_arsenal_league_battlefield": {
+  "battlefield_id": "test"
+ },
+ "req_cheat_create_brawl_warzone": {
+  "id": "test",
+  "uids": [
+   615101
+  ],
+  "battle_time": 1790015750,
+  "mode": 243483
+ },
+ "req_cheat_create_frostfire_warzone": {},
+ "req_cheat_create_nest": {
+  "id": 62423
+ },
+ "req_cheat_create_triangle_warzone": {
+  "params": [
+   {
+    "kid": 213399,
+    "aid": 249678,
+    "legion": 937268
+   },
+   {
+    "kid": 61512,
+    "aid": 472745,
+    "legion": 206397
+   }
+  ]
+ },
+ "req_cheat_create_world_boss": {
+  "id": 907806,
+  "act_id": 774654,
+  "end_ts": 1790063801
+ },
+ "req_cheat_cross_capital_add_emblem": {
+  "score": 621143
+ },
+ "req_cheat_cross_capital_clear_match_record": {},
+ "req_cheat_cross_capital_match_info": {},
+ "req_cheat_cross_capital_next_big_stage": {},
+ "req_cheat_cross_capital_set_fight_result": {
+  "win": false
+ },
+ "req_cheat_cross_capital_test_match": {
+  "list": [
+   {
+    "kid": 78855,
+    "priority": 898779,
+    "score": 724351,
+    "records": [
+     714895
+    ],
+    "gid": 474180,
+    "open_day": 509300
+   }
+  ]
+ },
+ "req_cheat_cross_capital_war_set_task_progress": {
+  "task_id": 336126,
+  "progress": 259287
+ },
+ "req_cheat_delete_nest": {
+  "id": 656641
+ },
+ "req_cheat_dig_treasure_jump_level": {
+  "id": 601808,
+  "level": 2,
+  "level_id": 27
+ },
+ "req_cheat_duck_market_gacha": {
+  "act_id": 322658,
+  "gacha_type": 6
+ },
+ "req_cheat_duckmarket": {
+  "act_id": 319408,
+  "cmd": 43,
+  "int_param": 607286
+ },
+ "req_cheat_echo": {
+  "payload": "test"
+ },
+ "req_cheat_enter_arsenal_league_battlefield": {
+  "side": 53500,
+  "battlefield_id": "test"
+ },
+ "req_cheat_enter_brawl_warzone": {
+  "id": "test"
+ },
+ "req_cheat_equip_full": {
+  "count": 74
+ },
+ "req_cheat_event_brawl_war_finish": {
+  "kill_score": 659116,
+  "occupy_score": 166962,
+  "collect_score": 56871
+ },
+ "req_cheat_event_brawl_war_use_item": {
+  "num": 37
+ },
+ "req_cheat_expert_unlock_drawing": {
+  "expert_id": 695209
+ },
+ "req_cheat_fes_bp_add_integral": {
+  "activity_id": 893111,
+  "integral": 229502
+ },
+ "req_cheat_find_goods_add_daily_score": {
+  "id": 662234,
+  "score": 915653
+ },
+ "req_cheat_find_goods_add_progress": {
+  "id": 731044,
+  "exp": 722855
+ },
+ "req_cheat_find_goods_challenge_record": {
+  "u1": 352132,
+  "u2": 958648,
+  "begin_ts": 1790036733,
+  "score": 207949
+ },
+ "req_cheat_find_goods_room_settle": {
+  "id": 352492
+ },
+ "req_cheat_find_goods_scene_time": {
+  "id": 850700,
+  "sec": 144067
+ },
+ "req_cheat_finish_activity_quest": {
+  "id": 2871,
+  "task_id": 768955
+ },
+ "req_cheat_finish_all_chapter_quests": {},
+ "req_cheat_finish_all_daily_quest": {},
+ "req_cheat_finish_all_spar_science": {},
+ "req_cheat_finish_all_td_event_quest": {},
+ "req_cheat_finish_arsenal_league_task_process": {
+  "act_id": 303290,
+  "task_id": 580077,
+  "type": 8
+ },
+ "req_cheat_finish_brawl_war_task": {
+  "id": 284638,
+  "task_id": 375674
+ },
+ "req_cheat_finish_chapter": {
+  "id": 366320
+ },
+ "req_cheat_finish_chapterquest": {
+  "id": 791815
+ },
+ "req_cheat_finish_expert_quest": {
+  "quest_id": 109680
+ },
+ "req_cheat_finish_festival_sevenday_quest": {
+  "id": 101708
+ },
+ "req_cheat_finish_firecrystal_quest": {
+  "task_id": 858472
+ },
+ "req_cheat_finish_frozen_soil_task": {
+  "id": 298098,
+  "task_id": 333968
+ },
+ "req_cheat_finish_growth_quest": {
+  "qid": 460627,
+  "get_reward": false
+ },
+ "req_cheat_finish_personal_sevenday_quest": {
+  "id": 287603
+ },
+ "req_cheat_finish_quest_type": {
+  "type": 9,
+  "add_value": 34,
+  "condition": "test",
+  "param1": 782602,
+  "param2": 98035
+ },
+ "req_cheat_finish_relic_adventure_quest": {
+  "id": 661802,
+  "task_id": 637890
+ },
+ "req_cheat_finish_three_tiles_quest": {
+  "id": 165664,
+  "quest_id": 17085
+ },
+ "req_cheat_finish_wjx_questionnaire": {
+  "type": 9,
+  "param1": 466990
+ },
+ "req_cheat_fishing_handbook_unlock": {
+  "type": 8,
+  "id": 628456
+ },
+ "req_cheat_fishing_update_rank": {
+  "id": 378862
+ },
+ "req_cheat_fort_pro_marquee": {},
+ "req_cheat_fort_pro_over": {
+  "list": [
+   736428
+  ]
+ },
+ "req_cheat_fort_pro_start_fight": {
+  "list": [
+   {
+    "id": 378001,
+    "start": 1790088696,
+    "aids": [
+     649455
+    ]
+   }
+  ]
+ },
+ "req_cheat_fortwar_fight_start": {
+  "id": 512856
+ },
+ "req_cheat_fortwar_next_stage": {},
+ "req_cheat_fortwar_occupy_fort": {
+  "id": 610645
+ },
+ "req_cheat_frostfire_add_skill_point": {
+  "count": 3
+ },
+ "req_cheat_frozen_treasure_set_quest_progress": {
+  "activity_id": 325794,
+  "quest_id": 207130,
+  "progress": 682791
+ },
+ "req_cheat_get_annual_rank": {
+  "type": 1
+ },
+ "req_cheat_get_buff": {
+  "mode": 660920,
+  "buff_id": 193792,
+  "battle_type": 6
+ },
+ "req_cheat_get_city_point": {
+  "uid": 162477,
+  "kid": 485958
+ },
+ "req_cheat_get_count": {
+  "id": 181893
+ },
+ "req_cheat_get_hero_buff": {},
+ "req_cheat_get_homeland_all_tree_info": {},
+ "req_cheat_get_power_strike_score_detail": {},
+ "req_cheat_get_world_random_idle_point": {
+  "obj_type": 1,
+  "bid": 852728
+ },
+ "req_cheat_global_rank_add": {
+  "type": 3,
+  "key": 369673,
+  "value": 688318
+ },
+ "req_cheat_global_rank_del": {
+  "type": 7,
+  "key": 453114
+ },
+ "req_cheat_go_home": {},
+ "req_cheat_hero_growth_bp_add_score": {
+  "id": 336902,
+  "score": 587974
+ },
+ "req_cheat_hero_growth_bp_close": {
+  "id": 472042
+ },
+ "req_cheat_hero_growth_bp_open": {
+  "id": 662920
+ },
+ "req_cheat_homeland_add_building": {
+  "bid": 465369,
+  "level": 8,
+  "count": 74
+ },
+ "req_cheat_homeland_fell_all_tree": {},
+ "req_cheat_homeland_like_add_value": {
+  "type": 9,
+  "value": 773459
+ },
+ "req_cheat_homeland_recovery_all_building": {},
+ "req_cheat_homeland_set_fell_tree_check": {
+  "is_open": false
+ },
+ "req_cheat_hotfix_config": {
+  "node_type": 9,
+  "file_map": [
+   {
+    "filename": "test",
+    "content": "test"
+   }
+  ]
+ },
+ "req_cheat_icefield_hunter2_inc": {
+  "aid": 765396
+ },
+ "req_cheat_inject_lua_script": {
+  "node_id": 753286,
+  "service": "test",
+  "file_name": "test",
+  "content": "test",
+  "node_type": 7
+ },
+ "req_cheat_intelligence_add_event": {
+  "id": 652824
+ },
+ "req_cheat_intelligence_finish": {
+  "id": 408703
+ },
+ "req_cheat_intelligence_finish_all": {},
+ "req_cheat_knock_door_add_visit_list": {
+  "id": 893116,
+  "count": 2
+ },
+ "req_cheat_linkage_monopoly_play_dice_points": {
+  "id": 196272,
+  "cheat_points": [
+   1790081229
+  ]
+ },
+ "req_cheat_linkage_monopoly_try_join_teams": {
+  "act_id": 761680
+ },
+ "req_cheat_magic_potion_add_task_progress": {
+  "id": 119162,
+  "task_id": 892663,
+  "add": 743414
+ },
+ "req_cheat_magic_potion_jump_level": {
+  "id": 654668,
+  "level_id": 20
+ },
+ "req_cheat_manage_expression": {
+  "ids": [
+   843372
+  ]
+ },
+ "req_cheat_mercenary_alliance_unlock": {},
+ "req_cheat_mercenary_progress": {
+  "id": 630858,
+  "progress": 575914
+ },
+ "req_cheat_merge_kingdom": {
+  "merge_map": [
+   {
+    "k": 502095,
+    "v": 516338
+   }
+  ],
+  "merge_ts": 1790011830
+ },
+ "req_cheat_migrant_set_conti_super_count": {
+  "count": 83
+ },
+ "req_cheat_migrant_set_super_count": {
+  "count": 27
+ },
+ "req_cheat_migration": {
+  "to_kid": 485923
+ },
+ "req_cheat_mobilization_add_score": {
+  "score": 894592
+ },
+ "req_cheat_mobilization_next_stage": {},
+ "req_cheat_mobilization_refresh_quest": {
+  "id": 986304
+ },
+ "req_cheat_mobilization_set_grade": {
+  "grade": 26
+ },
+ "req_cheat_monopoly_next_adventure_cheque": {
+  "id": 279602,
+  "cheque_id": 574121
+ },
+ "req_cheat_monopoly_winning": {
+  "id": 208037,
+  "type": 7,
+  "reward": [
+   {
+    "id": 634378,
+    "count": 19
+   }
+  ]
+ },
+ "req_cheat_monster_siege_set_diff": {
+  "diff": 901328
+ },
+ "req_cheat_mosnter_siege_over": {},
+ "req_cheat_mosnter_siege_start": {
+  "diff": 993074
+ },
+ "req_cheat_most_lords_set_task_progress": {
+  "id": 467174,
+  "task_id": 988812,
+  "progress": 435948
+ },
+ "req_cheat_move_to_black": {},
+ "req_cheat_multi_normal_travel": {
+  "cnt": 28
+ },
+ "req_cheat_multiverse_capital_war_timeup": {
+  "kids": [
+   767007
+  ]
+ },
+ "req_cheat_new_quest": {
+  "qid": 448857,
+  "history": 666651
+ },
+ "req_cheat_notification": {},
+ "req_cheat_notify_hotfix_protocol": {
+  "sub": "test"
+ },
+ "req_cheat_open_arsenal_league_battlefield": {
+  "battlefield_id": "test",
+  "aid": 610064
+ },
+ "req_cheat_open_expert_system": {},
+ "req_cheat_open_global_activity": {
+  "id": 583068,
+  "begin_time": 1790034723,
+  "preview": 1790095878,
+  "kids": [
+   595008
+  ]
+ },
+ "req_cheat_open_slg_3_arena": {
+  "groups": [
+   {
+    "kids": [
+     763932
+    ]
+   }
+  ]
+ },
+ "req_cheat_opt_area_arsenal_league_battlefield": {
+  "area_num": 81,
+  "is_open": true
+ },
+ "req_cheat_opt_privacy_policy": {
+  "opt_type": 7,
+  "type": 8,
+  "begin_ts": 1790012843,
+  "end_ts": 1790044789
+ },
+ "req_cheat_overload_query_player_data": {},
+ "req_cheat_pachinko_start": {
+  "enter": 925495,
+  "exit": 818831,
+  "left": 60,
+  "right": 63,
+  "id": 218257
+ },
+ "req_cheat_paid_sprint_set_enable": {},
+ "req_cheat_pass_chapter_level": {
+  "id": 917568,
+  "chapter": 197540,
+  "level": 2
+ },
+ "req_cheat_pet_adventure_share_alliance_reward": {
+  "pet_id": 145459,
+  "opt_type": 7
+ },
+ "req_cheat_pet_reset_skill": {
+  "skill_type": 7
+ },
+ "req_cheat_pet_set_attr_quality": {
+  "pet_id": 765055,
+  "attr_quality": 8320
+ },
+ "req_cheat_pet_unlock": {
+  "id": 35370
+ },
+ "req_cheat_pin_game_close_check": {
+  "id": 769957
+ },
+ "req_cheat_pin_game_pass": {
+  "id": 65927,
+  "mission": 407654
+ },
+ "req_cheat_pound_the_pumpkin_add_final_record": {
+  "id": 639058
+ },
+ "req_cheat_pre_merge_warzone": {
+  "merge_warzone_kid_lst": [
+   {
+    "kid_lst": [
+     885298
+    ],
+    "offset": 448611
+   },
+   {
+    "kid_lst": [
+     289496
+    ],
+    "offset": 575499
+   }
+  ],
+  "merge_ts": 1790031524
+ },
+ "req_cheat_publish_kingdom_channel": {
+  "data": [
+   {
+    "channel_id": 65839,
+    "msg": [
+     {
+      "uid": 658642,
+      "value": {
+       "type": 6,
+       "kid": 557454
+      }
+     }
+    ]
+   },
+   {
+    "channel_id": 104071,
+    "msg": [
+     {
+      "uid": 470860,
+      "value": {
+       "type": 8,
+       "kid": 3742
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "req_cheat_push_gift_group": {
+  "id": 214914,
+  "expire_ts": 1790085679
+ },
+ "req_cheat_query_player_data": {
+  "uids": [
+   16982,
+   419562
+  ],
+  "tb_name": "test"
+ },
+ "req_cheat_questionnaire_add": {
+  "id": 756797
+ },
+ "req_cheat_ramadan_alliance_share": {},
+ "req_cheat_rank_range": {
+  "type": 2,
+  "key": 184105,
+  "ext": {
+   "aid": 487675,
+   "rank_id": 845973
+  },
+  "kid": 741637
+ },
+ "req_cheat_recharge": {
+  "id": 570404
+ },
+ "req_cheat_recover_delete_role": {},
+ "req_cheat_reduce": {
+  "data": [
+   {
+    "id": 122924,
+    "count": 80
+   }
+  ]
+ },
+ "req_cheat_refresh_activity_event": {
+  "activity_id": 636170
+ },
+ "req_cheat_refresh_burst_res": {
+  "lv": 705903
+ },
+ "req_cheat_refresh_monster": {},
+ "req_cheat_refresh_resource": {
+  "all": true
+ },
+ "req_cheat_register_hotfix_protocol": {
+  "sub": "test"
+ },
+ "req_cheat_relic_adventure_info": {
+  "id": 584734
+ },
+ "req_cheat_relic_adventure_set_floor": {
+  "id": 986566,
+  "floor_id": 106490
+ },
+ "req_cheat_remove_fog": {
+  "rect": [
+   358558
+  ]
+ },
+ "req_cheat_remove_gift_group": {
+  "id": 528798
+ },
+ "req_cheat_reset_expert": {
+  "expert_id": 940146
+ },
+ "req_cheat_reset_travel_expert": {},
+ "req_cheat_restart_chapter_quest": {},
+ "req_cheat_send_mail": {
+  "mail_id": 562632,
+  "cover": [
+   {
+    "key": "test",
+    "value": {
+     "str_value": "test",
+     "int_value": 984031,
+     "bool_value": false
+    }
+   }
+  ],
+  "reward": [
+   {
+    "id": 756348,
+    "count": 82
+   }
+  ],
+  "content": "test"
+ },
+ "req_cheat_send_pound_the_pumpkin_alliance_chat": {
+  "activity_id": 101586
+ },
+ "req_cheat_send_slg_3_league_mail": {},
+ "req_cheat_set_alliance_trap_personal_score": {
+  "score": 557607
+ },
+ "req_cheat_set_bind_account": {
+  "amount": 65
+ },
+ "req_cheat_set_brawl_match_gen": {
+  "gen": 535779
+ },
+ "req_cheat_set_guide_step": {
+  "id": 368337,
+  "step": 174715
+ },
+ "req_cheat_set_hero_lev": {
+  "id": 779721,
+  "lev": 15
+ },
+ "req_cheat_set_migrant_president": {
+  "uid": 238214,
+  "is_cw_lose": true
+ },
+ "req_cheat_set_normal_travel_cnt": {
+  "cnt": 25
+ },
+ "req_cheat_set_pass_checkpoint": {
+  "id": 281304
+ },
+ "req_cheat_set_quest_processs": {
+  "id": 209719
+ },
+ "req_cheat_set_slot_matrix_reset_rate": {
+  "id": 464650,
+  "probability": 543550
+ },
+ "req_cheat_set_travel_cnt": {
+  "cnt": 87
+ },
+ "req_cheat_sevenday_task_progress": {
+  "id": 972875,
+  "task_id": 223455
+ },
+ "req_cheat_share_to_chat_svip": {
+  "level": 5
+ },
+ "req_cheat_shelter_upgrade_all": {
+  "stove_lv": 583100
+ },
+ "req_cheat_slg_3_arena_apply": {
+  "gid": 58957,
+  "num": 45
+ },
+ "req_cheat_slg_3_league_apply": {
+  "num": 34
+ },
+ "req_cheat_slg_3_league_battle": {
+  "blue_uid": 397184,
+  "red_uid": 97412
+ },
+ "req_cheat_slg_3_league_control_task": {
+  "state": false
+ },
+ "req_cheat_slg_3_league_get_bye_account": {
+  "gid": 44690,
+  "round": 893828
+ },
+ "req_cheat_slg_3_league_save_formation": {
+  "formation_prefab": [
+   {
+    "id": 399697,
+    "prefab": {
+     "hero_id": [
+      {
+       "k": 145132,
+       "v": 98347
+      }
+     ],
+     "soldier": [
+      {
+       "k": 971337,
+       "v": 236283
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "req_cheat_slg_3_league_save_max_formation": {
+  "num": 88
+ },
+ "req_cheat_slg_3_league_start_activity": {},
+ "req_cheat_slot_matrix_add_broadcast": {
+  "id": 740715,
+  "level": 3,
+  "reward": [
+   {
+    "id": 583900,
+    "count": 69
+   }
+  ]
+ },
+ "req_cheat_slot_matrix_next_level": {
+  "id": 361579,
+  "level": 1
+ },
+ "req_cheat_start_activity": {
+  "id": 852358,
+  "kid": 667121,
+  "start_time": 1790050062,
+  "preview_duration": 209521,
+  "stage_duration": [
+   460027,
+   589861
+  ],
+  "extra": {
+   "rewards": [
+    124903
+   ],
+   "versions": [
+    {
+     "id": 479341,
+     "version": "test"
+    }
+   ]
+  }
+ },
+ "req_cheat_start_merge_milestone": {
+  "kid": 394079
+ },
+ "req_cheat_start_sevenday_task": {
+  "id": 511674
+ },
+ "req_cheat_super_expert": {
+  "expert_id": 232909
+ },
+ "req_cheat_supremacy_battlefield_clear_all_monster": {},
+ "req_cheat_supremacy_battlefield_clear_all_resource": {},
+ "req_cheat_supremacy_gov_add_dominance": {},
+ "req_cheat_supremacy_war_feast_result": {
+  "id": 318613,
+  "uid": 661200
+ },
+ "req_cheat_supremacy_war_mass_lets_go": {
+  "owner": 229782,
+  "id": 87510
+ },
+ "req_cheat_supremacy_war_points": {
+  "id": 728051,
+  "points_type": 1,
+  "points": 1790015459
+ },
+ "req_cheat_supremacy_war_prepare_add_score": {
+  "id": 773948,
+  "score": 606289
+ },
+ "req_cheat_supremacy_war_set_president": {
+  "uid": 218624,
+  "season": 232108,
+  "group_id": 210566
+ },
+ "req_cheat_survivor_die": {
+  "sids": [
+   721043
+  ]
+ },
+ "req_cheat_survivor_event": {
+  "id": 119807
+ },
+ "req_cheat_survivor_td_finish": {
+  "id": 70307,
+  "all_die": 371528,
+  "sids": [
+   844978
+  ]
+ },
+ "req_cheat_switch_wormhole": {
+  "state": 951367,
+  "kid": 949954
+ },
+ "req_cheat_td_event_trigger": {
+  "event_id": 275969
+ },
+ "req_cheat_test_drop": {
+  "dropid": 955341,
+  "times": 1790069410
+ },
+ "req_cheat_thanksgiving_menu_add_alliace_integral": {
+  "value": 440950
+ },
+ "req_cheat_thanksgiving_menu_add_integral": {
+  "id": 175913,
+  "value": 314782
+ },
+ "req_cheat_three_tiles_add_progress": {
+  "id": 853909,
+  "progress": 164911
+ },
+ "req_cheat_three_tiles_finish_level": {
+  "id": 494977
+ },
+ "req_cheat_three_tiles_start_level": {
+  "id": 514426,
+  "level": 10
+ },
+ "req_cheat_three_tiles_start_level_fixed": {
+  "id": 202876,
+  "level": 1
+ },
+ "req_cheat_tower_defense_active_illust": {
+  "illust_id": 286010
+ },
+ "req_cheat_tower_defense_pass_level": {
+  "level": 10,
+  "star": 10
+ },
+ "req_cheat_travel": {
+  "event_id": 625186,
+  "travel_type": 7
+ },
+ "req_cheat_triangle_war_add_alliance_score": {
+  "score": 747709
+ },
+ "req_cheat_triangle_war_add_player_exploit": {
+  "exploit": 372906
+ },
+ "req_cheat_triangle_war_get_warzone_id": {},
+ "req_cheat_triangle_war_set_formation": {
+  "formationid": 109993,
+  "hero_map": [
+   {
+    "k": 760752,
+    "v": 175298
+   }
+  ]
+ },
+ "req_cheat_triangle_warzone_set_food": {
+  "value": 555056
+ },
+ "req_cheat_triger_quest_processs": {},
+ "req_cheat_trigger_opinion": {
+  "type": 2,
+  "sid": 266946,
+  "content_id": 492808,
+  "choice_id": 974412,
+  "is_anonymity": false
+ },
+ "req_cheat_truck_escort_get_assisting_unit": {
+  "id": 429034
+ },
+ "req_cheat_truck_escort_modify_truck_info": {
+  "id": 835909,
+  "truck_id": 576450,
+  "quality": 719496,
+  "route_id": 216963
+ },
+ "req_cheat_underage_parental_consent_opt": {
+  "type": 6
+ },
+ "req_cheat_unlock_expert": {
+  "expert_id": 553868,
+  "favour": 924271
+ },
+ "req_cheat_unlock_homeland": {},
+ "req_cheat_unlock_sign_21day": {},
+ "req_cheat_unregister_hotfix_protocol": {
+  "sub": "test"
+ },
+ "req_cheat_uproot_all_multiverse_city": {
+  "kid": 379901
+ },
+ "req_cheat_use_item": {
+  "id": 474713,
+  "count": 67
+ },
+ "req_cheat_world_march_mass_lets_go": {
+  "owner": 597885,
+  "id": 686483
+ },
+ "req_cheat_wormhole_jumping": {
+  "kid": 719498,
+  "point": {
+   "x": 463,
+   "y": 359
+  }
+ },
+ "req_check_group_name": {
+  "group_id": 449100,
+  "name": "test"
+ },
+ "req_chest_add_alliance_chest": {
+  "id": 289735,
+  "num": 78,
+  "name": "test",
+  "giftid": 107751
+ },
+ "req_city_item_free_use": {
+  "free_id": 109766,
+  "type": 9
+ },
+ "req_clear_law_cd": {
+  "id": 528802
+ },
+ "req_clear_online_unlock_show": {},
+ "req_climbtower_batch_read_report": {
+  "ids": [
+   993577,
+   230410
+  ]
+ },
+ "req_climbtower_challenge": {
+  "id": 6425,
+  "formation_prefab": [
+   {
+    "id": 100257,
+    "prefab": {
+     "hero_id": [
+      {
+       "k": 728180,
+       "v": 619615
+      }
+     ],
+     "soldier": [
+      {
+       "k": 482451,
+       "v": 676467
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "req_climbtower_chest_reward": {
+  "chest_id_list": [
+   207899
+  ]
+ },
+ "req_climbtower_info": {},
+ "req_climbtower_quick_challenge": {
+  "tower_id": 644089
+ },
+ "req_climbtower_report_detail": {
+  "id": 140652
+ },
+ "req_climbtower_report_readall": {},
+ "req_climbtower_reports": {
+  "id": 295522
+ },
+ "req_climbtower_share_report": {
+  "id": 287361
+ },
+ "req_climbtower_share_report_detail": {
+  "share_key": "test"
+ },
+ "req_climbtower_sweep": {
+  "tower_id": 450052
+ },
+ "req_climbtower_tower_info": {
+  "id": 716529,
+  "chapter": 228160
+ },
+ "req_community_enter": {},
+ "req_community_enter_receive": {},
+ "req_continuous_recharge_accumulative_reward": {
+  "id": 45178,
+  "idx": 1
+ },
+ "req_continuous_recharge_daily_reward": {
+  "id": 871361
+ },
+ "req_continuous_recharge_reward": {
+  "id": 770103,
+  "round": 961934
+ },
+ "req_create_furniture": {
+  "bid": 85788,
+  "conf_fid": 905308
+ },
+ "req_cross_capital_get_arms_alliance_goal_reward": {
+  "goal": 229396
+ },
+ "req_cross_capital_get_arms_personal_goal_reward": {
+  "goal": 481790
+ },
+ "req_cross_capital_get_arms_race_kingdom_goal": {},
+ "req_cross_capital_get_emblem_reward": {
+  "num": 78
+ },
+ "req_cross_capital_get_extra_emblem_reward": {},
+ "req_cross_capital_get_fight_alliance_goal_reward": {
+  "goal": 302783
+ },
+ "req_cross_capital_get_fight_personal_goal_reward": {
+  "goal": 386854
+ },
+ "req_cross_capital_get_fight_winner": {},
+ "req_cross_capital_power_top50": {
+  "kids": [
+   461135,
+   605012
+  ]
+ },
+ "req_cross_capital_prepare_group_first_list": {
+  "stage_idx": 5
+ },
+ "req_cross_capital_prepare_group_rank": {
+  "stage_idx": 3
+ },
+ "req_cross_capital_war_buy_medkit": {
+  "count": 28
+ },
+ "req_cross_capital_war_get_user_revive_data": {
+  "uids": [
+   126324,
+   947319
+  ]
+ },
+ "req_cross_capital_war_help_revive": {
+  "uid": 508533,
+  "times": 1790065659
+ },
+ "req_cross_capital_war_rank_data_list": {
+  "rtype_list": [
+   {
+    "rtype": 5,
+    "key": 142826
+   },
+   {
+    "rtype": 5,
+    "key": 485970
+   }
+  ]
+ },
+ "req_cross_capital_war_rank_range": {
+  "rtype": 1,
+  "key": 232595,
+  "from": 144243,
+  "num": 39
+ },
+ "req_cross_capital_war_revive": {},
+ "req_cross_capital_war_revive_call_alliance_help": {},
+ "req_cross_most_lords_get_all_reward": {
+  "id": 875987
+ },
+ "req_cross_most_lords_get_match_result": {
+  "id": 595119
+ },
+ "req_cross_most_lords_get_reward": {
+  "id": 722472,
+  "stage": 991457
+ },
+ "req_cross_most_lords_get_special_reward": {
+  "id": 755844,
+  "stage": 217085
+ },
+ "req_cross_most_lords_global_rank": {
+  "id": 187472
+ },
+ "req_cross_most_lords_rank": {
+  "id": 953981,
+  "stage": 904973,
+  "overall": false
+ },
+ "req_cross_most_lords_self_rank": {
+  "id": 577961,
+  "stage": 481795,
+  "overall": false
+ },
+ "req_customize_item": {
+  "id": 885556,
+  "idx": 4,
+  "itemids": [
+   {
+    "k": 934239,
+    "v": 822153
+   }
+  ]
+ },
+ "req_customize_item_get_free_box": {
+  "id": 247475
+ },
+ "req_daily_bundle_get_free_gift": {},
+ "req_daily_bundle_select_hero": {
+  "hero_id": 806533
+ },
+ "req_daily_task_activity_get_all_integral_reward": {
+  "id": 642418
+ },
+ "req_daily_task_activity_get_all_task_reward": {
+  "id": 4061
+ },
+ "req_daily_task_activity_get_integral_reward": {
+  "id": 224873,
+  "integral": 96715
+ },
+ "req_daily_task_activity_get_task_reward": {
+  "id": 708443,
+  "task_id": 10401
+ },
+ "req_del_account": {},
+ "req_del_account_cancel_del_account": {},
+ "req_del_account_cancel_pre_review": {},
+ "req_del_account_pre_review": {
+  "info": {
+   "registration_time": "test",
+   "last_login_time": "test",
+   "recharge_orders": "test"
+  }
+ },
+ "req_delete_role_delete_role": {
+  "uid": 303495
+ },
+ "req_delete_role_is_delete_role": {
+  "uid": 182657
+ },
+ "req_delete_role_query_role_list": {},
+ "req_dig_treasure_click_brick": {
+  "id": 335240,
+  "key": 560622
+ },
+ "req_dig_treasure_gain_quest_reward": {
+  "id": 574806,
+  "quest_id": 340682
+ },
+ "req_dig_treasure_start_level": {
+  "id": 3617
+ },
+ "req_dorm_bed_obtain": {
+  "fid_map": [
+   {
+    "k": 839148,
+    "v": 137253
+   }
+  ]
+ },
+ "req_download_reward_receive": {
+  "version": 993544
+ },
+ "req_duck_market_gacha": {
+  "act_id": 549775,
+  "gacha_type": 7
+ },
+ "req_duck_market_get_cost_award": {
+  "act_id": 122012
+ },
+ "req_duck_market_get_quest_award": {
+  "act_id": 832956,
+  "quest_id": 507510
+ },
+ "req_duck_market_records": {
+  "act_id": 882471
+ },
+ "req_duck_market_reward": {
+  "act_id": 639123,
+  "reward_idx": 8
+ },
+ "req_dun163_doubtful_check": {
+  "data": "test"
+ },
+ "req_dun163_get_config": {
+  "ip": "test",
+  "sdk_data": "test",
+  "session": 909444
+ },
+ "req_dun163_risk_check": {
+  "token": "test"
+ },
+ "req_embassy_help_info": {
+  "uid": 116789
+ },
+ "req_embassy_help_simple_info": {
+  "uid": 720064
+ },
+ "req_embassy_repatriation": {
+  "target_uid": 310447
+ },
+ "req_enact_law": {
+  "id": 999304,
+  "client_data": {
+   "law_point": 782915,
+   "survivor": [
+    {
+     "sid": 754147,
+     "res601": 1.5,
+     "res602": 1.5,
+     "res603": 1.5,
+     "res604": 1.5,
+     "res607": 1.5
+    }
+   ]
+  }
+ },
+ "req_end_adventure_pve": {
+  "checkpoint": 816046,
+  "operatedata": [
+   {
+    "key": 586439,
+    "value": [
+     {
+      "key": 929833,
+      "value": true
+     }
+    ]
+   }
+  ],
+  "enddata": [
+   {
+    "index": 7,
+    "hp": 937539
+   },
+   {
+    "index": 2,
+    "hp": 143571
+   }
+  ],
+  "version": 466719
+ },
+ "req_equipment_break": {
+  "uid": 669528,
+  "cost_item": {
+   "item": [
+    {
+     "id": 490513,
+     "count": 38
+    }
+   ],
+   "equip_common": [
+    {
+     "eid": 173822,
+     "count": 49
+    }
+   ],
+   "uid_equip": [
+    308822
+   ]
+  }
+ },
+ "req_equipment_refined_recast": {
+  "uid": 334455
+ },
+ "req_equipment_refined_recast_free": {
+  "uid": 186971
+ },
+ "req_equipment_strength_recast": {
+  "uid": 615461
+ },
+ "req_equipment_strength_recast_free": {
+  "uid": 808547
+ },
+ "req_equipment_temper": {
+  "uid": 42746,
+  "cost_item": {
+   "item": [
+    {
+     "id": 370843,
+     "count": 45
+    }
+   ],
+   "equip_common": [
+    {
+     "eid": 368374,
+     "count": 16
+    }
+   ],
+   "uid_equip": [
+    289777
+   ]
+  }
+ },
+ "req_exchange_activity_exchange": {
+  "id": 687270,
+  "goods_id": 378607,
+  "goods_num": 53
+ },
+ "req_exchange_cdkey": {
+  "cdkey": "test",
+  "platform": 885621
+ },
+ "req_exchange_expire_item": {
+  "id": 57767,
+  "count": 70
+ },
+ "req_expert_break": {
+  "expert_id": 34401
+ },
+ "req_expert_debris_exchange": {
+  "expert_id": 875357,
+  "count": 26
+ },
+ "req_expert_drawing_lv_up": {
+  "expert_id": 269559
+ },
+ "req_expert_drawing_onekey_lv_up": {
+  "expert_id": 355436,
+  "cnt": 53
+ },
+ "req_expert_send_gift": {
+  "expert_id": 880928,
+  "items": [
+   {
+    "k": 578785,
+    "v": 840063
+   }
+  ]
+ },
+ "req_expert_skill_cancel_research": {
+  "expert_id": 894104,
+  "skill_id": 167576
+ },
+ "req_expert_skill_lv_up": {
+  "expert_id": 305664,
+  "skill_id": 970655
+ },
+ "req_expert_skill_research": {
+  "expert_id": 295873,
+  "skill_id": 48107,
+  "time_type": 1790007130,
+  "use_diamond": false
+ },
+ "req_expert_skill_research_speedup": {
+  "expert_id": 859327,
+  "skill_id": 357672,
+  "use_diamond": false,
+  "items": [
+   {
+    "id": 809899,
+    "count": 99
+   }
+  ]
+ },
+ "req_expert_story": {
+  "expert_id": 855937
+ },
+ "req_expert_travel": {},
+ "req_expert_travel_afk": {
+  "expert_id": 394111,
+  "cnt": 48
+ },
+ "req_expert_unlock_room": {
+  "expert_id": 673403
+ },
+ "req_favorites_alliance_tab_del": {
+  "type": 2
+ },
+ "req_favorites_alliance_tab_modify": {
+  "x": 941,
+  "y": 606,
+  "type": 2,
+  "name": "test",
+  "kid": 742506
+ },
+ "req_favorites_arsenal_alliance_tab_del": {
+  "type": 4
+ },
+ "req_favorites_arsenal_alliance_tab_modify": {
+  "x": 221,
+  "y": 376,
+  "type": 3,
+  "name": "test",
+  "kid": 792010
+ },
+ "req_favorites_arsenal_league_alliance_tab_del": {
+  "type": 4
+ },
+ "req_favorites_arsenal_league_alliance_tab_modify": {
+  "x": 1017,
+  "y": 552,
+  "type": 9,
+  "name": "test",
+  "kid": 474657
+ },
+ "req_favorites_arsenal_league_single_tab_del": {
+  "x": 639,
+  "y": 867,
+  "kid": 291052
+ },
+ "req_favorites_arsenal_league_single_tab_modify": {
+  "x": 61,
+  "y": 889,
+  "type": 7,
+  "name": "test",
+  "kid": 523060,
+  "is_key": false,
+  "key": "test"
+ },
+ "req_favorites_arsenal_single_tab_del": {
+  "x": 267,
+  "y": 171,
+  "kid": 74484
+ },
+ "req_favorites_arsenal_single_tab_modify": {
+  "x": 318,
+  "y": 645,
+  "type": 4,
+  "name": "test",
+  "kid": 594907,
+  "is_key": true,
+  "key": "test"
+ },
+ "req_favorites_message_add": {
+  "x": 201,
+  "y": 181,
+  "content": 368883
+ },
+ "req_favorites_message_del": {
+  "x": 708,
+  "y": 608,
+  "id": 438017
+ },
+ "req_favorites_message_request": {
+  "id": 152709
+ },
+ "req_favorites_single_tab_del": {
+  "x": 173,
+  "y": 536,
+  "kid": 820699
+ },
+ "req_favorites_single_tab_modify": {
+  "x": 366,
+  "y": 312,
+  "type": 7,
+  "name": "test",
+  "kid": 160848,
+  "is_key": true,
+  "key": "test"
+ },
+ "req_favorites_supremacy_alliance_tab_del": {
+  "type": 4
+ },
+ "req_favorites_supremacy_alliance_tab_modify": {
+  "x": 224,
+  "y": 327,
+  "type": 3,
+  "name": "test",
+  "kid": 962641
+ },
+ "req_favorites_supremacy_single_tab_del": {
+  "x": 959,
+  "y": 232,
+  "kid": 851823
+ },
+ "req_favorites_supremacy_single_tab_modify": {
+  "x": 255,
+  "y": 570,
+  "type": 1,
+  "name": "test",
+  "kid": 446623,
+  "is_key": true,
+  "key": "test"
+ },
+ "req_favorites_triangle_alliance_tab_del": {
+  "type": 7
+ },
+ "req_favorites_triangle_alliance_tab_modify": {
+  "bid": 65705,
+  "type": 6,
+  "name": "test",
+  "kid": 233586
+ },
+ "req_fes_bp_dailytask_get_all_reward": {
+  "id": 496236
+ },
+ "req_fes_bp_dailytask_get_bp_reward": {
+  "id": 319618,
+  "stage": 532569
+ },
+ "req_fes_bp_dailytask_get_extra_reward": {
+  "id": 140947
+ },
+ "req_fes_bp_dailytask_get_task_reward": {
+  "id": 719562,
+  "task_id": 910687
+ },
+ "req_fes_bp_donate_item": {
+  "id": 342436,
+  "item_id": 756544
+ },
+ "req_fes_bp_get_all_reward": {
+  "id": 847514
+ },
+ "req_fes_bp_get_box_reward": {
+  "id": 538860,
+  "lv": 613843
+ },
+ "req_fes_bp_get_extra_reward": {
+  "id": 457734
+ },
+ "req_fes_bp_get_reward": {
+  "id": 36801,
+  "stage": 646400,
+  "type": 2
+ },
+ "req_fes_bp_rank": {
+  "id": 888794
+ },
+ "req_festival_turntable_free_gift": {
+  "id": 997574
+ },
+ "req_festival_turntable_lucky_roll": {
+  "id": 752760
+ },
+ "req_festival_turntable_normal_roll": {
+  "id": 977020,
+  "count": 2
+ },
+ "req_festival_turntable_process_reward": {
+  "id": 401103
+ },
+ "req_festival_turntable_shop_buy": {
+  "id": 420422,
+  "index": 9,
+  "num": 47
+ },
+ "req_festival_turntable_task_reward": {
+  "id": 795615,
+  "task_id": 51121
+ },
+ "req_find_goods_challenge_records": {
+  "id": 816233
+ },
+ "req_find_goods_create_room": {
+  "id": 595525
+ },
+ "req_find_goods_daily_score_reward": {
+  "id": 537581
+ },
+ "req_find_goods_dissolve_room": {
+  "id": 521379
+ },
+ "req_find_goods_join_room": {
+  "id": 453632,
+  "room_id": "test"
+ },
+ "req_find_goods_match": {
+  "id": 61742
+ },
+ "req_find_goods_match_cancel": {
+  "id": 149020
+ },
+ "req_find_goods_out_room": {
+  "id": 506214
+ },
+ "req_find_goods_over_option": {
+  "id": 61367,
+  "option": 164209
+ },
+ "req_find_goods_progress_grade_reward": {
+  "id": 802367
+ },
+ "req_find_goods_progress_infinite_receive": {
+  "id": 442834
+ },
+ "req_find_goods_quick_chat": {
+  "id": 561976,
+  "chat_id": 423921
+ },
+ "req_find_goods_rank_info": {
+  "id": 639812,
+  "rank_type": 4,
+  "day": 142687
+ },
+ "req_find_goods_remove_room_member": {
+  "id": 354187,
+  "member_uid": 531347
+ },
+ "req_find_goods_room_enter": {
+  "id": 883834
+ },
+ "req_find_goods_room_ready": {
+  "id": 512328
+ },
+ "req_find_goods_room_scene_enter_confirm": {
+  "id": 801339
+ },
+ "req_find_goods_room_scene_mark": {
+  "id": 287559,
+  "room_id": "test",
+  "item_id": 982683,
+  "item_xy": [
+   786713
+  ],
+  "time": 1790001449,
+  "token": "test",
+  "round": 555797
+ },
+ "req_find_goods_room_scene_start": {
+  "id": 829348
+ },
+ "req_find_goods_room_unready": {
+  "id": 698301
+ },
+ "req_find_goods_scene_mark": {
+  "id": 790322,
+  "item_id": 145164,
+  "item_xy": [
+   611342
+  ],
+  "time": 1790030322,
+  "token": "test"
+ },
+ "req_find_goods_scene_start": {
+  "id": 130103
+ },
+ "req_find_goods_scene_time_begin": {
+  "id": 922472
+ },
+ "req_find_goods_scene_tip": {
+  "id": 928432,
+  "item_id": 882881
+ },
+ "req_find_goods_settle": {
+  "id": 455137,
+  "prompt_cnt": 84
+ },
+ "req_find_goods_share_room_invite": {
+  "id": 40057
+ },
+ "req_find_goods_start_chapter": {
+  "id": 888038
+ },
+ "req_find_goods_task_reward": {
+  "id": 918745,
+  "quest_id_list": [
+   872890,
+   662791
+  ]
+ },
+ "req_fishing_begin_level": {
+  "id": 462447,
+  "level_info": {
+   "type": 3,
+   "use_protection_device": true,
+   "use_thunder": false,
+   "use_lighting": false,
+   "specified_fish_id": 136434,
+   "level_id": 27,
+   "total_sarticle": [
+    {
+     "id": 935107,
+     "depth": 830130,
+     "index": 3
+    }
+   ],
+   "random_key": "test",
+   "multiple": 141582,
+   "max_depth": 294758
+  }
+ },
+ "req_fishing_bp_get_all_reward": {
+  "id": 352919
+ },
+ "req_fishing_bp_get_extra_reward": {
+  "id": 706303
+ },
+ "req_fishing_bp_get_reward": {
+  "id": 158847,
+  "stage": 270255
+ },
+ "req_fishing_end_level": {
+  "id": 910942,
+  "item": [
+   {
+    "id": 227831,
+    "depth": 421557,
+    "index": 8
+   },
+   {
+    "id": 903619,
+    "depth": 21825,
+    "index": 8
+   }
+  ],
+  "use_protection_device_count": 3,
+  "max_depth": 257218,
+  "total_time": 1790063091,
+  "token": "test",
+  "dun_data": "test"
+ },
+ "req_fishing_gear_upgrade": {
+  "id": 505475,
+  "type": 8
+ },
+ "req_fishing_get_all_task_reward": {
+  "id": 201778,
+  "type": 3
+ },
+ "req_fishing_get_daily_rewards": {
+  "id": 977444
+ },
+ "req_fishing_get_free_gift": {
+  "id": 159950
+ },
+ "req_fishing_get_task_reward": {
+  "id": 177856,
+  "task_id": 916569,
+  "type": 9
+ },
+ "req_fishing_rank": {
+  "id": 777453
+ },
+ "req_fishing_self_rank": {
+  "id": 427803
+ },
+ "req_fishing_take_handbook_reward": {
+  "type": 6,
+  "reward_id": 86963,
+  "is_all": false
+ },
+ "req_fishing_turntable_play": {
+  "id": 994739,
+  "count": 89
+ },
+ "req_fishing_use_double_card": {
+  "id": 298303,
+  "multiple": 126426
+ },
+ "req_fog_change_recon_point": {
+  "id": 307748,
+  "x": 1087,
+  "y": 412
+ },
+ "req_fog_march_recall": {
+  "id": 330276
+ },
+ "req_fog_start_recon": {
+  "id": 697104,
+  "x": 338,
+  "y": 316
+ },
+ "req_fortune_card_extra_reward": {
+  "id": 483205,
+  "cost_num": 5
+ },
+ "req_fortune_card_get_daily_free_gift": {
+  "id": 581238
+ },
+ "req_fortune_card_open": {
+  "id": 781635,
+  "card_idx": 2
+ },
+ "req_fortune_card_restart": {
+  "id": 696834,
+  "grand_award_idx": 7
+ },
+ "req_fortune_card_set_flag": {
+  "id": 875604,
+  "flag": false
+ },
+ "req_fortwar_alliance_reward_record": {},
+ "req_fortwar_alliance_reward_record_by_fort": {
+  "id": 17124
+ },
+ "req_fortwar_apply_data": {},
+ "req_fortwar_apply_fort": {
+  "id": 915061,
+  "times": [
+   1790001189,
+   1790070635
+  ]
+ },
+ "req_fortwar_cancel_apply_fort": {
+  "id": 642469
+ },
+ "req_fortwar_dispense_rewards": {
+  "id": 696617,
+  "data": [
+   {
+    "uid": 12330,
+    "rewards": [
+     {
+      "id": 645935,
+      "count": 33
+     }
+    ]
+   }
+  ]
+ },
+ "req_fortwar_goal_data": {
+  "id": 185505
+ },
+ "req_fortwar_occupy_history": {
+  "id": 179404,
+  "start_index": 22,
+  "num": 70,
+  "kid": 953559
+ },
+ "req_fortwar_season_goal_rank": {},
+ "req_fourteen_sign_get_all_reward": {},
+ "req_fourteen_sign_get_reward": {
+  "day": 41626
+ },
+ "req_friend_accept": {
+  "uids": [
+   331667
+  ]
+ },
+ "req_friend_add": {
+  "uid": 209065
+ },
+ "req_friend_check_alias": {
+  "alias": "test"
+ },
+ "req_friend_del": {
+  "uid": 81196
+ },
+ "req_friend_get_alias": {
+  "uid_arr": [
+   433880
+  ]
+ },
+ "req_friend_refuse": {
+  "uids": [
+   102876
+  ]
+ },
+ "req_friend_set_alias": {
+  "uid": 275744,
+  "alias": "test",
+  "del": false
+ },
+ "req_friend_set_apply_lv_limit": {
+  "lv": 348700
+ },
+ "req_frost_star_shop_get_free_reward": {},
+ "req_frost_star_shop_gift_info": {},
+ "req_frost_star_shop_gift_limit_info": {
+  "appid": 609473,
+  "gift_ids": [
+   128187
+  ]
+ },
+ "req_frostfire_war_apply": {
+  "index": 8
+ },
+ "req_frostfire_war_building_send_map_expression": {
+  "point": {
+   "x": 563,
+   "y": 1073
+  },
+  "expression_id": 354468
+ },
+ "req_frostfire_war_center_rank": {},
+ "req_frostfire_war_del_watch": {},
+ "req_frostfire_war_enter_warzone": {},
+ "req_frostfire_war_exit_warzone": {},
+ "req_frostfire_war_get_all_collect_reward": {},
+ "req_frostfire_war_get_collect_reward": {
+  "idx": 9
+ },
+ "req_frostfire_war_learn_skill": {
+  "skillid": 562434
+ },
+ "req_frostfire_war_map_info": {
+  "startpoint": {
+   "x": 871,
+   "y": 952
+  },
+  "endpoint": {
+   "x": 482,
+   "y": 811
+  },
+  "session": 574470,
+  "fulldata": true
+ },
+ "req_frostfire_war_march": {
+  "type": 3,
+  "endpoint": {
+   "x": 498,
+   "y": 322
+  },
+  "formation": {
+   "hero_id": [
+    {
+     "k": 439510,
+     "v": 704370
+    }
+   ],
+   "soldier": [
+    {
+     "k": 105090,
+     "v": 859087
+    }
+   ]
+  },
+  "extra": {
+   "monsterid": 670457
+  }
+ },
+ "req_frostfire_war_march_detail_4_player_situation": {
+  "owner": 871474,
+  "id": 47838
+ },
+ "req_frostfire_war_march_off_work": {
+  "id": 625911
+ },
+ "req_frostfire_war_march_recall": {
+  "id": 615987
+ },
+ "req_frostfire_war_march_send_map_expression": {
+  "id": 272639,
+  "expression_id": 528741
+ },
+ "req_frostfire_war_march_speedup": {
+  "id": 932712,
+  "itemid": 575555
+ },
+ "req_frostfire_war_move_city": {
+  "point": {
+   "x": 134,
+   "y": 1046
+  }
+ },
+ "req_frostfire_war_player_record": {
+  "index": 6
+ },
+ "req_frostfire_war_resource_info": {
+  "point": {
+   "x": 467,
+   "y": 686
+  }
+ },
+ "req_frostfire_war_score_rank": {},
+ "req_frostfire_war_search_monster": {},
+ "req_frostfire_war_self_score_rank": {},
+ "req_frostfire_war_set_prefab": {
+  "prefab": {
+   "id": 620899,
+   "prefab": {
+    "hero_id": [
+     {
+      "k": 398171,
+      "v": 742433
+     }
+    ],
+    "soldier": [
+     {
+      "k": 93802,
+      "v": 254875
+     }
+    ],
+    "formation_name": "test",
+    "formation_rate": [
+     {
+      "k": 146182,
+      "v": 276436
+     }
+    ]
+   }
+  }
+ },
+ "req_frostfire_war_use_skill": {
+  "slot": 7
+ },
+ "req_frozen_soil_get_all_reward": {
+  "id": 145383
+ },
+ "req_frozen_soil_get_bp_reward": {
+  "id": 413003,
+  "stage": 949838
+ },
+ "req_frozen_soil_get_extra_reward": {
+  "id": 679644
+ },
+ "req_frozen_soil_get_task_reward": {
+  "id": 223564,
+  "task_id": 286188
+ },
+ "req_frozen_treasure_get_quest_reward": {
+  "id": 945003,
+  "quest_id": 892896
+ },
+ "req_frozen_treasure_get_treasure_reward": {
+  "id": 441078,
+  "treasure_type": 8
+ },
+ "req_fund_get_award": {
+  "award_id": 414677
+ },
+ "req_gain_anniv_preview_reward": {
+  "id": 770967
+ },
+ "req_general_bp_get_all_reward": {
+  "id": 102304
+ },
+ "req_general_bp_get_extra_reward": {
+  "id": 528368
+ },
+ "req_general_bp_get_reward": {
+  "id": 768383,
+  "stage": 456181
+ },
+ "req_get_active_recharge_quest_reward": {
+  "id": 385651,
+  "questid": 541861
+ },
+ "req_get_active_recharge_score_reward": {
+  "id": 392484,
+  "idx": 2
+ },
+ "req_get_all_dailyquest_award": {
+  "quest_ids": [
+   156621,
+   258933
+  ]
+ },
+ "req_get_chapter_award": {
+  "chapterid": 751933
+ },
+ "req_get_chapterquest_award": {
+  "questid": 709285
+ },
+ "req_get_cheat_record_info": {},
+ "req_get_dailyquest_award": {
+  "questid": 198943
+ },
+ "req_get_expert_quest_award": {
+  "quest_id": 918436
+ },
+ "req_get_festival_sevendays_quest_reward": {
+  "id": 193239,
+  "questid": 53381
+ },
+ "req_get_festival_sevendays_score_reward": {
+  "id": 43839,
+  "idx": 1
+ },
+ "req_get_firecrystal_chest_award": {},
+ "req_get_firecrystal_quest_award": {
+  "quest_ids": [
+   267645
+  ]
+ },
+ "req_get_growthquest_award": {
+  "questid": 594953
+ },
+ "req_get_hang_up_reward": {},
+ "req_get_hd_image": {
+  "uid": 630961
+ },
+ "req_get_homestead_quest_award": {
+  "questid": 368925
+ },
+ "req_get_personal_7days_reward": {
+  "questid": 834556
+ },
+ "req_get_personal_7days_score_reward": {
+  "idx": 9
+ },
+ "req_get_sevenday_task_reward": {
+  "id": 492287,
+  "questid": 679349
+ },
+ "req_get_sevenday_task_score_reward": {
+  "id": 151487,
+  "idx": 2
+ },
+ "req_get_sevenrecruit_socre_award_buy_id": {
+  "id": 966232
+ },
+ "req_get_snow_guide_reward": {},
+ "req_get_visitor_knock_door_reward": {
+  "id": 276612
+ },
+ "req_getaward_byday": {
+  "day": 408178
+ },
+ "req_gift_buy_free_gift": {
+  "gift_id": 61987
+ },
+ "req_gift_message_get_bear_reward": {
+  "id": 274836,
+  "index": 1
+ },
+ "req_gift_message_get_reward": {
+  "id": 692282
+ },
+ "req_global_rank_info": {
+  "list_type": [
+   2,
+   1
+  ]
+ },
+ "req_global_rank_range": {
+  "type": 2,
+  "key": 77234
+ },
+ "req_google_achievement_quest_award": {
+  "questid": 453097
+ },
+ "req_guide_come_survivor": {
+  "option": 678748
+ },
+ "req_guide_come_survivor_1": {},
+ "req_guide_dead_survivor": {
+  "sid": 422712
+ },
+ "req_guide_set_step": {
+  "id": 550754,
+  "step": 648047
+ },
+ "req_heartbeat": {},
+ "req_hero_debris_exchange": {
+  "id": 313517,
+  "count": 50
+ },
+ "req_hero_growth_bp_get_all_reward": {
+  "id": 728210
+ },
+ "req_hero_growth_bp_get_free_gift_reward": {
+  "id": 186409
+ },
+ "req_hero_promote_star": {
+  "id": 229860
+ },
+ "req_hero_search_times": {
+  "search_type": 5,
+  "cost_type": 5,
+  "times": 1790025668
+ },
+ "req_hero_set_hint_status": {
+  "id": 925682,
+  "hint": true
+ },
+ "req_hero_story_claim_reward": {
+  "id": 924585
+ },
+ "req_hero_training_reset_hero_lev": {
+  "hero_id": 357479
+ },
+ "req_hero_training_reset_lev_clear_cd": {
+  "hero_id": 472186
+ },
+ "req_hero_training_set_slot_hero": {
+  "slot_id": 7,
+  "hero_id": 660500
+ },
+ "req_hero_training_train_clear_cd": {
+  "slot_id": 6
+ },
+ "req_hero_trial_get_reward": {
+  "id": 930896,
+  "index": 2
+ },
+ "req_hero_turntable_extra_reward": {
+  "id": 62206,
+  "times": 1790023679
+ },
+ "req_hero_turntable_get_free_gift": {
+  "id": 368781
+ },
+ "req_hero_turntable_play": {
+  "id": 483465,
+  "count": 72,
+  "use_diamond": false
+ },
+ "req_hero_turntable_switch_version": {
+  "id": 136290,
+  "version": 772701
+ },
+ "req_hero_upgrade": {
+  "id": 473880,
+  "lev": 15
+ },
+ "req_hero_upgrade_skill": {
+  "id": 519716,
+  "skillid": 333586
+ },
+ "req_home_guide_collect_reward": {
+  "stage": 398160
+ },
+ "req_home_sign_get_all_reward": {},
+ "req_home_sign_get_reward": {
+  "day": 998901
+ },
+ "req_homeland_assist": {
+  "uid": 96267
+ },
+ "req_homeland_buy_store_item": {
+  "item": {
+   "id": 848752,
+   "count": 78
+  }
+ },
+ "req_homeland_commit_npc_wood": {
+  "npc_id": 270394
+ },
+ "req_homeland_disassemble_building": {
+  "bid": 386588,
+  "level": 7,
+  "count": 4,
+  "type": 4,
+  "point": {
+   "x": 885,
+   "y": 230
+  }
+ },
+ "req_homeland_enter_homeland": {},
+ "req_homeland_exchange_universal_piece": {
+  "count": 96,
+  "bid": 629176
+ },
+ "req_homeland_exit_homeland": {},
+ "req_homeland_get_assist_record": {},
+ "req_homeland_get_belike_record": {},
+ "req_homeland_like_homeland": {
+  "uid": 799405,
+  "kid": 369925,
+  "like": false
+ },
+ "req_homeland_logging_site_npc_opt": {
+  "point": {
+   "x": 132,
+   "y": 264
+  },
+  "npc_id": 897018,
+  "opt_type": 3
+ },
+ "req_homeland_move_building": {
+  "point_infos": [
+   {
+    "src_point": {
+     "x": 477,
+     "y": 157
+    },
+    "dst_point": {
+     "x": 1169,
+     "y": 502
+    },
+    "dst_toward": 864627
+   },
+   {
+    "src_point": {
+     "x": 103,
+     "y": 537
+    },
+    "dst_point": {
+     "x": 471,
+     "y": 1078
+    },
+    "dst_toward": 280737
+   }
+  ]
+ },
+ "req_homeland_open_box": {
+  "point": {
+   "x": 405,
+   "y": 31
+  }
+ },
+ "req_homeland_place_building": {
+  "point": {
+   "x": 108,
+   "y": 971
+  },
+  "toward": 247943,
+  "bid": 970474,
+  "level": 27
+ },
+ "req_homeland_player_homeland_info": {
+  "uids": [
+   857966,
+   850840
+  ],
+  "type": 2
+ },
+ "req_homeland_prosperity_task_all_reward": {},
+ "req_homeland_prosperity_task_reward": {
+  "task_id": 692331
+ },
+ "req_homeland_recovery_building": {
+  "points": [
+   {
+    "x": 942,
+    "y": 68
+   }
+  ]
+ },
+ "req_homeland_repair_building": {
+  "point": {
+   "x": 664,
+   "y": 1199
+  }
+ },
+ "req_homeland_save_npc_wood": {
+  "value": 528492,
+  "point": {
+   "x": 484,
+   "y": 185
+  },
+  "npc_id": 61293
+ },
+ "req_homeland_save_offline_npc_wood": {
+  "npc_fell_wood_infos": [
+   {
+    "value": 166071,
+    "point": {
+     "x": 1028,
+     "y": 501
+    },
+    "npc_id": 678926
+   }
+  ]
+ },
+ "req_homeland_sell_store_item": {
+  "building_info": {
+   "bid": 812867,
+   "level": 24,
+   "count": 8
+  }
+ },
+ "req_homeland_set_skin": {
+  "scene_id": 590200,
+  "skin_id": 349736
+ },
+ "req_homeland_skin_item_exchange": {
+  "item_id": 388156,
+  "count": 17
+ },
+ "req_homeland_skin_upgrade": {
+  "skin_id": 169405,
+  "immediate": false
+ },
+ "req_homeland_skin_upgrade_speed_up": {
+  "skin_id": 954815,
+  "use_diamond": false,
+  "items": [
+   {
+    "id": 388511,
+    "count": 63
+   }
+  ]
+ },
+ "req_homeland_take_life_tree_coin": {},
+ "req_homeland_take_logging_cabin_tree": {
+  "point": {
+   "x": 267,
+   "y": 398
+  }
+ },
+ "req_homeland_take_logging_site": {},
+ "req_homeland_take_logging_site_coin": {
+  "point": {
+   "x": 1117,
+   "y": 920
+  }
+ },
+ "req_homeland_upgrade_building": {
+  "type": 5,
+  "point": {
+   "x": 823,
+   "y": 1043
+  },
+  "bid": 137957,
+  "level": 7
+ },
+ "req_homeland_visit_other_homeland": {
+  "uid": 403172,
+  "kid": 749680
+ },
+ "req_hospital_cancel_heal": {},
+ "req_hospital_heal_soldier": {
+  "soldiers": [
+   {
+    "k": 216627,
+    "v": 631324
+   }
+  ],
+  "immediate": false
+ },
+ "req_hospital_speed_up": {
+  "use_diamond": false,
+  "items": [
+   {
+    "id": 361500,
+    "count": 12
+   }
+  ]
+ },
+ "req_hospital_wound_dismiss": {
+  "id": 685761,
+  "count": 22
+ },
+ "req_hotfix_protocol": {
+  "sub": "test",
+  "pack_data": "test"
+ },
+ "req_hunting_tool_obtain": {
+  "sid": 413885
+ },
+ "req_icebound_amazing_open_chest": {
+  "ids": [
+   281584,
+   793354
+  ],
+  "activity_id": 738767
+ },
+ "req_icebound_amazing_progress_reward": {
+  "progress": 884975,
+  "activity_id": 893321
+ },
+ "req_icebound_amazing_refresh": {
+  "activity_id": 652889
+ },
+ "req_icebound_amazing_winners_watch": {
+  "id": 932670,
+  "activity_id": 60651
+ },
+ "req_icebound_amazing_winners_watch_rsp": {},
+ "req_icefield_hunter2_collect_master_reward": {
+  "id": 477027,
+  "reward_id": 921500
+ },
+ "req_icefield_hunter2_exchange": {
+  "id": 183195,
+  "goods_id": 49511,
+  "goods_num": 92
+ },
+ "req_icefield_hunter_collect_master_reward": {
+  "id": 863146
+ },
+ "req_icefield_hunter_exchange": {
+  "id": 708172,
+  "goods_id": 116408,
+  "goods_num": 92
+ },
+ "req_icefield_hunter_spawn_monster": {
+  "item_id": 427416
+ },
+ "req_infinite_box_change_group": {
+  "id": 906654,
+  "group": 465422
+ },
+ "req_infinite_box_get_reward": {
+  "id": 710973
+ },
+ "req_inner_permission_remove_watermark": {},
+ "req_intelligence_end_battle": {
+  "id": 16010,
+  "operatedata": [
+   {
+    "key": 540887,
+    "value": [
+     {
+      "key": 905618,
+      "value": true
+     }
+    ]
+   }
+  ],
+  "enddata": [
+   {
+    "index": 1,
+    "hp": 319966
+   }
+  ],
+  "version": 988614,
+  "cancel": true
+ },
+ "req_intelligence_play_animation": {
+  "id": 440708
+ },
+ "req_intelligence_receive": {
+  "id": 873143
+ },
+ "req_intelligence_receive_onekey": {},
+ "req_intelligence_start_battle": {
+  "id": 248741,
+  "fight_heros_data": {
+   "source": 67393,
+   "fight_heros": [
+    726307
+   ]
+  }
+ },
+ "req_interactive_act_get_free_gift": {
+  "id": 984813
+ },
+ "req_kitchen_cook_finish": {
+  "food_array": [
+   812242,
+   241495
+  ]
+ },
+ "req_kitchen_eat_finish": {
+  "count": 55
+ },
+ "req_kitchen_set_production": {
+  "id": 947611
+ },
+ "req_knock_door_get_visit_list": {
+  "id": 868370,
+  "start": 1790072299,
+  "count": 15
+ },
+ "req_knock_door_special_event_settlement": {
+  "id": 465211,
+  "settlement": {
+   "random_key": "test",
+   "event": [
+    {
+     "stage": 94899,
+     "param": [
+      {
+       "type": 9,
+       "param": 757064
+      }
+     ]
+    }
+   ]
+  },
+  "token": "test",
+  "dun_data": "test"
+ },
+ "req_knock_other_door": {
+  "id": 118284,
+  "owner": 783954,
+  "door_id": 619758,
+  "door_uid": 561223,
+  "quality": 651676
+ },
+ "req_knock_self_door": {
+  "id": 576118,
+  "door_id": 600561
+ },
+ "req_limit_time_shop_buy": {
+  "id": 898484,
+  "item_id": 746838,
+  "count": 69
+ },
+ "req_limit_time_shop_get_box_reward": {
+  "id": 478986,
+  "integral": 848440
+ },
+ "req_limit_time_shop_get_free_gift": {
+  "id": 375762
+ },
+ "req_limit_time_task_get_reward": {
+  "id": 503882,
+  "questid": 927060
+ },
+ "req_linkage_monopoly_accept_apply": {
+  "id": 288140,
+  "target_uid": 68429
+ },
+ "req_linkage_monopoly_accept_invite": {
+  "id": 428020,
+  "team_id": 397876
+ },
+ "req_linkage_monopoly_apply_team": {
+  "id": 234761,
+  "team_id": 68768
+ },
+ "req_linkage_monopoly_cancel_apply": {
+  "id": 815516,
+  "team_id": 206490
+ },
+ "req_linkage_monopoly_claim_teammate_gift": {
+  "id": 905314
+ },
+ "req_linkage_monopoly_get_apply_list": {
+  "id": 787354
+ },
+ "req_linkage_monopoly_get_boss_reward": {
+  "id": 499835
+ },
+ "req_linkage_monopoly_get_free_gift": {
+  "id": 470674
+ },
+ "req_linkage_monopoly_get_invite_list": {
+  "id": 294810
+ },
+ "req_linkage_monopoly_get_my_applies": {
+  "id": 489976
+ },
+ "req_linkage_monopoly_get_other_team_info": {
+  "id": 768399,
+  "team_id": 515179
+ },
+ "req_linkage_monopoly_get_quest_reward": {
+  "id": 888663,
+  "quest_id": 803260
+ },
+ "req_linkage_monopoly_get_recommend_teams": {
+  "id": 959448
+ },
+ "req_linkage_monopoly_get_reward": {
+  "id": 507990,
+  "stage": 265217
+ },
+ "req_linkage_monopoly_get_team_detail": {
+  "id": 976128
+ },
+ "req_linkage_monopoly_kick_member": {
+  "id": 589621,
+  "target_uid": 705728
+ },
+ "req_linkage_monopoly_mark_cutscene": {
+  "id": 154937
+ },
+ "req_linkage_monopoly_open_activity": {
+  "id": 7230
+ },
+ "req_linkage_monopoly_play_free": {
+  "id": 339023
+ },
+ "req_linkage_monopoly_play_gold_dice": {
+  "id": 128541,
+  "points": 1790000493
+ },
+ "req_linkage_monopoly_play_normal_dice": {
+  "id": 615432,
+  "count": 48
+ },
+ "req_linkage_monopoly_quit_team": {
+  "id": 981374
+ },
+ "req_linkage_monopoly_record_reward_id": {
+  "id": 65148,
+  "unique_id": 925539
+ },
+ "req_linkage_monopoly_reject_all_apply": {
+  "id": 231960
+ },
+ "req_linkage_monopoly_reject_apply": {
+  "id": 999121,
+  "target_uid": 785550
+ },
+ "req_linkage_monopoly_rewards_summary": {
+  "id": 666979
+ },
+ "req_linkage_monopoly_watch_winning_info": {
+  "id": 493191,
+  "record_id": 911213
+ },
+ "req_linkage_monopoly_watch_winning_info_rsp": {
+  "id": 90171
+ },
+ "req_loaddata": {},
+ "req_loaddata_4_survivor": {},
+ "req_look_for_npc_get_reward": {
+  "id": 921049
+ },
+ "req_lords_equipment_gem_infusion": {
+  "e_pid": 132002
+ },
+ "req_lords_equipment_infusion": {
+  "e_pid": 691000
+ },
+ "req_lost_treasure_get_daily_reward": {
+  "id": 653971
+ },
+ "req_lost_treasure_get_grand_reward": {
+  "id": 187483,
+  "item_id": 808379
+ },
+ "req_lost_treasure_set_grand_idx": {
+  "id": 830672,
+  "item_id": 987568
+ },
+ "req_magic_potion_give_up": {
+  "id": 624753
+ },
+ "req_magic_potion_process_reward": {
+  "id": 962641,
+  "process": 73
+ },
+ "req_magic_potion_start": {
+  "id": 292469,
+  "mul": 386912
+ },
+ "req_magic_potion_submit": {
+  "id": 497851,
+  "seq": [
+   366098
+  ]
+ },
+ "req_magic_potion_task_reward": {
+  "id": 301918,
+  "task_id": 192870
+ },
+ "req_mail_cache_detail_info": {
+  "mailid": 410318,
+  "mailid_new": "test"
+ },
+ "req_mail_cancel_collect": {
+  "first_type": 8,
+  "cancel_mid": 130671,
+  "cancel_mid_new": "test"
+ },
+ "req_mail_collect": {
+  "first_type": 6,
+  "collect_mid": 664121,
+  "collect_mid_new": "test"
+ },
+ "req_mail_cover_list": {
+  "first_type": 8,
+  "beginidx": 2,
+  "endidx": 5
+ },
+ "req_mail_delete": {
+  "mailid": 671368,
+  "mailid_new": "test"
+ },
+ "req_mail_delete_by_firt_type": {
+  "first_type": 6
+ },
+ "req_mail_detail_info": {
+  "mailid": 304060,
+  "mailid_new": "test"
+ },
+ "req_mail_detail_info_forward": {
+  "mailid": 276506,
+  "mailid_new": "test"
+ },
+ "req_mail_detail_info_share": {
+  "mailid": 884315,
+  "mailid_new": "test"
+ },
+ "req_mail_like": {
+  "mailid": 28152,
+  "mailid_new": "test"
+ },
+ "req_mail_like_info": {
+  "mailid": 125981,
+  "mailid_new": "test"
+ },
+ "req_mail_onekey_read": {
+  "first_type": 7
+ },
+ "req_mail_read": {
+  "mailid": 467965,
+  "mailid_new": "test"
+ },
+ "req_mail_receive": {
+  "mailid": 444511,
+  "mailid_new": "test"
+ },
+ "req_mail_type_info": {},
+ "req_mail_unlike": {
+  "mailid": 562642,
+  "mailid_new": "test"
+ },
+ "req_map_expression_opt": {
+  "type": 5,
+  "slot_id": 6,
+  "expression_id": 913772
+ },
+ "req_mercenary_call_help": {
+  "id": 163040
+ },
+ "req_mercenary_choose_difficulty": {
+  "id": 198657,
+  "difficulty": 11
+ },
+ "req_mercenary_schedule_spawn_alliance_monster": {
+  "id": 738966,
+  "ts": 1790052482
+ },
+ "req_mercenary_spawn_alliance_monster": {
+  "id": 748761
+ },
+ "req_mercenary_spawn_player_monster": {
+  "id": 149597
+ },
+ "req_merge_item": {
+  "id": 861410,
+  "count": 57
+ },
+ "req_merge_milestone_cheat_add_count": {
+  "id": 181397,
+  "quest_id": 743034,
+  "count": 54
+ },
+ "req_merge_milestone_get_reward": {
+  "id": 278061,
+  "quest_id": 758451
+ },
+ "req_merge_milestone_quest_info": {
+  "id": 874485
+ },
+ "req_migrant_cancel_transfer": {},
+ "req_migrant_first_login": {},
+ "req_migrant_get_act_history": {},
+ "req_migrant_get_kingdom_info": {
+  "kid": 916749
+ },
+ "req_migrant_get_kingdom_list": {},
+ "req_migrant_get_super_count": {
+  "kid": 511945
+ },
+ "req_migrant_handle_transfer": {
+  "agree": false
+ },
+ "req_migrant_invite": {
+  "uid": 628989,
+  "special": true,
+  "agree": false
+ },
+ "req_migrant_migrate": {
+  "kid": 598892
+ },
+ "req_migrant_reject_application": {
+  "uid": 989838
+ },
+ "req_migrant_reject_invitation": {
+  "kid": 368478
+ },
+ "req_migrant_set_power_limit": {
+  "idx": 5
+ },
+ "req_migrant_submit_application": {
+  "kid": 868760
+ },
+ "req_migrant_transfer_president": {
+  "uid": 866129
+ },
+ "req_mobilization_alliance_rank_list": {},
+ "req_mobilization_batch_get_milestone": {},
+ "req_mobilization_buy_count": {
+  "count": 92
+ },
+ "req_mobilization_get_milestone_reward": {
+  "index": 8
+ },
+ "req_mobilization_get_personal_quest": {
+  "pos": 54
+ },
+ "req_mobilization_get_quest": {
+  "pos": 347
+ },
+ "req_mobilization_get_quest_reward": {},
+ "req_mobilization_get_score_reward": {
+  "id": 372197
+ },
+ "req_mobilization_get_unlimited_reward": {},
+ "req_mobilization_give_up_quest": {},
+ "req_mobilization_open_info": {},
+ "req_mobilization_pick_personal_quest": {
+  "pos": 1074,
+  "id": 545076
+ },
+ "req_mobilization_player_rank_list": {},
+ "req_mobilization_refresh_personal_quest": {
+  "pos": 248
+ },
+ "req_mobilization_refresh_personal_quest_immediately": {
+  "pos": 1153
+ },
+ "req_mobilization_refresh_quest": {
+  "pos": 748
+ },
+ "req_monopoly_get_reward": {
+  "id": 746251,
+  "stage": 10791
+ },
+ "req_monopoly_play_dice_cheat": {
+  "id": 539285,
+  "cheque_id": 911424
+ },
+ "req_monopoly_play_dice_points_cheat": {
+  "id": 819752,
+  "cheat_points": [
+   1790043142,
+   1790030360
+  ]
+ },
+ "req_monopoly_play_free": {
+  "id": 166375
+ },
+ "req_monopoly_play_gold_dice": {
+  "id": 95880,
+  "points": 1790027915
+ },
+ "req_monopoly_play_normal_dice": {
+  "id": 792035,
+  "count": 49
+ },
+ "req_monopoly_watch_winning_info": {
+  "id": 307780,
+  "record_id": 626572
+ },
+ "req_monopoly_watch_winning_info_rsp": {
+  "id": 934671
+ },
+ "req_monster_siege_alliance_history": {
+  "start": 1790080035,
+  "count": 36
+ },
+ "req_monster_siege_cheat_add_score": {
+  "score": 867524
+ },
+ "req_monster_siege_get_all_score_reward": {},
+ "req_monster_siege_get_def_player": {},
+ "req_monster_siege_get_expert_reward": {},
+ "req_monster_siege_get_score_reward": {
+  "id": 406580
+ },
+ "req_monster_siege_personal_history": {
+  "start": 1790047646,
+  "count": 26
+ },
+ "req_monster_siege_set_timer": {
+  "id": 133098,
+  "time": 1790031290
+ },
+ "req_monster_siege_summon": {
+  "id": 258724
+ },
+ "req_month_card_get_daily_reaward": {
+  "id": 949142
+ },
+ "req_mood_cancel": {},
+ "req_mood_set": {
+  "icon_id": 377193,
+  "des_id": 948602,
+  "time_id": 1790021113
+ },
+ "req_most_lords_get_reward": {
+  "id": 989874,
+  "stage": 260206
+ },
+ "req_most_lords_rank": {
+  "id": 837364,
+  "stage": 27875,
+  "overall": false
+ },
+ "req_most_lords_self_rank": {
+  "id": 858635,
+  "stage": 770322,
+  "overall": true
+ },
+ "req_multiple_choice_pack_get_free_box": {
+  "id": 409038
+ },
+ "req_new_server_sprint_get_reward": {
+  "id": 891496,
+  "stage": 54856
+ },
+ "req_new_soldier_bp_buy_score": {
+  "score": 498862
+ },
+ "req_new_soldier_bp_collect_all_reward": {},
+ "req_new_soldier_bp_collect_reward": {
+  "reward_id": 482079
+ },
+ "req_normal_travel": {},
+ "req_normal_travel_afk": {
+  "cnt": 74
+ },
+ "req_occupy_obj_repatriation": {
+  "march_id": 516878,
+  "x": 662,
+  "y": 289,
+  "owner": 608717,
+  "kid": 900183
+ },
+ "req_open_hang_up_reward_view": {},
+ "req_optional_gift_pack_get_free_box": {
+  "id": 543505
+ },
+ "req_pachinko_progress_reward": {
+  "id": 137531,
+  "index": 4
+ },
+ "req_pachinko_start": {
+  "id": 793746,
+  "enter": 298614,
+  "times": 1790018039
+ },
+ "req_paid_sprint_daily_claim": {
+  "index": 8
+ },
+ "req_paid_sprint_placeholder": {
+  "param1": 826753,
+  "param2": "test",
+  "param3": [
+   71981,
+   918848
+  ]
+ },
+ "req_paid_sprint_single_claim": {
+  "index": 7
+ },
+ "req_pet_adventure_batch_take_alliance_reward": {},
+ "req_pet_adventure_dispatch": {
+  "id": 65767,
+  "pet_id": 528340
+ },
+ "req_pet_adventure_get_alliance_reward_info": {
+  "share_id": 192436,
+  "is_self": false
+ },
+ "req_pet_adventure_get_alliance_reward_list": {
+  "start": 1790089933,
+  "count": 49
+ },
+ "req_pet_adventure_get_reward": {
+  "id": 639647
+ },
+ "req_pet_adventure_onekey_dispatch": {
+  "dispatch_infos": [
+   {
+    "id": 969727,
+    "pet_id": 181287
+   }
+  ]
+ },
+ "req_pet_adventure_onekey_get_reward": {
+  "area_ids": [
+   211963
+  ]
+ },
+ "req_pet_adventure_self_share_lst": {},
+ "req_pet_adventure_share_alliance_reward": {
+  "id": 67889
+ },
+ "req_pet_adventure_take_alliance_reward": {
+  "share_id": 253962
+ },
+ "req_pet_attr_wash": {
+  "id": 180142,
+  "wash_type": 1
+ },
+ "req_pet_break": {
+  "id": 924552
+ },
+ "req_pet_cancel_wash_attr": {
+  "id": 624062
+ },
+ "req_pet_domestication": {
+  "type": 9,
+  "id": 968361,
+  "value": 976101
+ },
+ "req_pet_get_upgrade_initial_item": {},
+ "req_pet_monster_search": {
+  "id": 612980,
+  "is_first": true
+ },
+ "req_pet_play": {
+  "id": 404242
+ },
+ "req_pet_recharge_collect_reward": {
+  "stage": 93647
+ },
+ "req_pet_replace_attr": {
+  "id": 313840
+ },
+ "req_pet_set_show": {
+  "id": 630407
+ },
+ "req_pet_upgrade": {
+  "id": 289140,
+  "upgrade_lv": 18
+ },
+ "req_pet_use_skill": {
+  "skill_id_lst": [
+   605600,
+   282808
+  ]
+ },
+ "req_pick_one_gift_check_buy": {
+  "id": 53927,
+  "gift_id": 863595
+ },
+ "req_pin_game_exit": {
+  "id": 786590
+ },
+ "req_pin_game_over": {
+  "id": 340726,
+  "mission": 40948,
+  "kunai_seq": [
+   990152,
+   884808
+  ],
+  "is_pass": true,
+  "time": 1790092270,
+  "dun_data": "test"
+ },
+ "req_pin_game_pause": {
+  "id": 875349,
+  "is_pause": false
+ },
+ "req_pin_game_start": {
+  "id": 715380,
+  "mission": 433348
+ },
+ "req_pin_game_task": {
+  "id": 208824,
+  "task_id": 857498
+ },
+ "req_pitch_pot_settle": {
+  "id": 558588,
+  "score": 386915,
+  "achieve": [
+   {
+    "k": 176946,
+    "v": 929352
+   }
+  ],
+  "n_normal": 103395,
+  "n_advance": 416819
+ },
+ "req_pitch_pot_start": {
+  "id": 671382
+ },
+ "req_pitch_pot_task_reward": {
+  "id": 457203,
+  "task_id": 848689
+ },
+ "req_player_check_name": {
+  "name": "test"
+ },
+ "req_player_climbtower_info": {
+  "uid": 888677
+ },
+ "req_player_detail_info": {
+  "uid": 433632
+ },
+ "req_player_info_by_fid": {
+  "fid": 437501
+ },
+ "req_player_info_by_name": {
+  "name": "test",
+  "kid": 266396
+ },
+ "req_player_modify_image": {
+  "id": 983389
+ },
+ "req_player_modify_name": {
+  "name": "test",
+  "use_diamond": false
+ },
+ "req_player_other_record": {
+  "uids": [
+   475929,
+   2321
+  ]
+ },
+ "req_player_self_record": {},
+ "req_player_set_init_kid_show": {
+  "init_kid_show": true
+ },
+ "req_players_base_info": {
+  "uids": [
+   68185,
+   936905
+  ]
+ },
+ "req_players_base_info_with_permission": {
+  "uids": [
+   888847
+  ],
+  "permission": 432604
+ },
+ "req_players_info_by_key": {
+  "key": "test"
+ },
+ "req_players_info_from_kingdoms": {
+  "name": "test",
+  "kids": [
+   686639
+  ]
+ },
+ "req_polar_expedition_get_all_chest": {
+  "id": 925458
+ },
+ "req_polar_expedition_get_chest": {
+  "id": 229342,
+  "team_id": 603803
+ },
+ "req_polar_expedition_get_daily_reward": {
+  "id": 951138
+ },
+ "req_polar_expedition_get_times_reward": {
+  "id": 933568,
+  "times": 1790004377
+ },
+ "req_polar_expedition_merge_chest": {
+  "id": 685643,
+  "item_id": 560546,
+  "num": 86
+ },
+ "req_polar_expedition_speed_up": {
+  "id": 713755,
+  "team_id": 884509,
+  "num": 55
+ },
+ "req_polar_expedition_speed_up_all": {
+  "id": 518389
+ },
+ "req_polar_expedition_start": {
+  "id": 362435,
+  "team_id": 417049
+ },
+ "req_polar_expedition_start_all": {
+  "id": 345648
+ },
+ "req_polar_expedition_unlock": {
+  "id": 393629,
+  "team_id": 28432
+ },
+ "req_pound_the_pumpkin": {
+  "activity_id": 374712
+ },
+ "req_pound_the_pumpkin_daily": {
+  "activity_id": 344532,
+  "score": 214337
+ },
+ "req_pound_the_pumpkin_get_scores": {
+  "activity_id": 680198
+ },
+ "req_pound_the_pumpkin_rewards_summary": {
+  "id": 94348
+ },
+ "req_pound_the_pumpkin_watch_req": {
+  "activity_id": 345274,
+  "id": 621872
+ },
+ "req_pound_the_pumpkin_watch_rsp": {
+  "activity_id": 289223
+ },
+ "req_privacy_policy_agree": {
+  "type": 2
+ },
+ "req_privacy_policy_confirm_parental_consent_tips": {},
+ "req_privacy_policy_send_mail_verify": {
+  "mail_address": "test"
+ },
+ "req_privacy_policy_set_age": {
+  "type": 1,
+  "age_flag": 260714,
+  "is_underage": true,
+  "version": 733043,
+  "age_source_type": 4
+ },
+ "req_process_opinion": {
+  "ids": [
+   583461,
+   854111
+  ],
+  "select_id": 392157
+ },
+ "req_produced_resource_need_update": {},
+ "req_purchase_queue_time": {
+  "qid": 165678,
+  "use_diamond": false,
+  "count": 22
+ },
+ "req_push_customize_item_free_buy": {
+  "id": 42818,
+  "group_id": 92507,
+  "select_rewards": [
+   {
+    "id": 820896,
+    "count": 83
+   },
+   {
+    "id": 185420,
+    "count": 63
+   }
+  ]
+ },
+ "req_push_customize_item_select_reward": {
+  "id": 436314,
+  "group_id": 132611,
+  "select_rewards": [
+   {
+    "id": 204195,
+    "count": 94
+   },
+   {
+    "id": 617165,
+    "count": 14
+   }
+  ]
+ },
+ "req_push_multiple_choice_free_buy": {
+  "id": 922459,
+  "group_id": 163896
+ },
+ "req_questionnaire_get_reward": {
+  "id": 654657
+ },
+ "req_questionnaire_give_up": {
+  "id": 534418
+ },
+ "req_questionnaire_writed": {
+  "id": 442200
+ },
+ "req_queue_ask_for_help": {
+  "qid": 240840
+ },
+ "req_quick_takeoff_equipment": {
+  "hid": 81657
+ },
+ "req_quick_wear_equipment": {
+  "equip_infos": [
+   {
+    "eid": 892862,
+    "sid": 365238,
+    "hid": 724933,
+    "uid": 804386
+   }
+  ]
+ },
+ "req_ramadan_get_all_share_hope_reward": {
+  "id": 751809
+ },
+ "req_ramadan_get_hope_progress_reward": {
+  "id": 11601
+ },
+ "req_ramadan_get_quest_reward": {
+  "id": 591106,
+  "quest_id": 792074
+ },
+ "req_ramadan_get_share_hope_reward": {
+  "id": 954234,
+  "share_id": 121425
+ },
+ "req_ramadan_hope": {
+  "id": 97147,
+  "nums": 41
+ },
+ "req_ramadan_hope_free": {
+  "id": 629336
+ },
+ "req_rank_info": {
+  "list_type": [
+   {
+    "type": 1,
+    "ext": {
+     "aid": 588714,
+     "rank_id": 386033
+    }
+   }
+  ],
+  "kid": 437242
+ },
+ "req_rank_range": {
+  "type": 1,
+  "key": 145262,
+  "ext": {
+   "aid": 556644,
+   "rank_id": 984295
+  },
+  "kid": 925074
+ },
+ "req_receive_online_reward": {},
+ "req_receive_satisfaction_reward": {},
+ "req_receive_spec_reward": {},
+ "req_recharge_by_token": {
+  "id": 487106
+ },
+ "req_recharge_by_voucher": {
+  "id": 466802
+ },
+ "req_recharge_collect_accumulative_reward": {
+  "reward_id": 625270
+ },
+ "req_recharge_get_first_reward": {},
+ "req_recruit_hero": {
+  "id": 223304
+ },
+ "req_recruitment_collect_soldier": {},
+ "req_recruitment_dismiss": {
+  "id": 831994,
+  "count": 22
+ },
+ "req_recruitment_get_supply_reward": {},
+ "req_recruitment_recruit_soldier": {
+  "soldiers": [
+   {
+    "k": 706353,
+    "v": 402249
+   }
+  ],
+  "use_token": false
+ },
+ "req_red_packet_check_content": {
+  "content": "test"
+ },
+ "req_red_packet_exist": {
+  "channel_type": 9,
+  "id_lst": [
+   319912
+  ]
+ },
+ "req_red_packet_get": {
+  "channel_type": 1,
+  "id": 52287,
+  "index": "test"
+ },
+ "req_red_packet_get_brief": {
+  "channel_type": 7,
+  "id": 11521,
+  "index": "test"
+ },
+ "req_red_packet_get_detail": {
+  "channel_type": 1,
+  "id": 872512,
+  "index": "test"
+ },
+ "req_red_packet_refresh": {
+  "channel_type": 4,
+  "id_lst": [
+   485613
+  ]
+ },
+ "req_red_packet_send": {
+  "info": {
+   "id": 946779,
+   "is_send_world": true,
+   "content": "test",
+   "channel_type": 2,
+   "reward_count": 1,
+   "get_count": 55
+  }
+ },
+ "req_refined_equipment": {
+  "uid": 354124,
+  "cost_item": {
+   "item": [
+    {
+     "id": 130241,
+     "count": 55
+    }
+   ],
+   "equip_common": [
+    {
+     "eid": 265242,
+     "count": 42
+    }
+   ],
+   "uid_equip": [
+    829895
+   ]
+  }
+ },
+ "req_relic_adventure_acc_box": {
+  "id": 245655,
+  "reward_id": 760013
+ },
+ "req_relic_adventure_auto_draw": {
+  "id": 213239
+ },
+ "req_relic_adventure_draw": {
+  "id": 315668,
+  "grid_id": 668424
+ },
+ "req_relic_adventure_free_gift": {
+  "id": 251962
+ },
+ "req_relic_adventure_select": {
+  "id": 346123,
+  "reward_id": 78951
+ },
+ "req_relic_adventure_set_auto": {
+  "id": 539377,
+  "is_auto": true
+ },
+ "req_relic_adventure_start_floor": {
+  "id": 842341,
+  "is_open": false
+ },
+ "req_relic_adventure_task": {
+  "id": 98166,
+  "task_id": 567725
+ },
+ "req_relic_adventure_watch_winning_info": {
+  "id": 220062,
+  "record_id": 283018
+ },
+ "req_relic_adventure_watch_winning_info_rsp": {
+  "id": 268259
+ },
+ "req_remind_place_alliance_resource": {},
+ "req_report_userkey": {},
+ "req_research_complete_immediately": {
+  "tid_lev": 24
+ },
+ "req_research_speed_up": {
+  "tid_lev": 28,
+  "use_diamond": false,
+  "items": [
+   {
+    "id": 175060,
+    "count": 42
+   },
+   {
+    "id": 531671,
+    "count": 26
+   }
+  ]
+ },
+ "req_research_stop": {
+  "tid_lev": 7
+ },
+ "req_role_list": {},
+ "req_rsp_fortwar_fort_info": {},
+ "req_save_client_data": {
+  "data": {
+   "law_point": 464326,
+   "survivor": [
+    {
+     "sid": 30580,
+     "res601": 1.5,
+     "res602": 1.5,
+     "res603": 1.5,
+     "res604": 1.5,
+     "res607": 1.5
+    }
+   ]
+  }
+ },
+ "req_schedule_info": {},
+ "req_search_rank": {
+  "type": 1,
+  "key": 978805,
+  "ext": {
+   "aid": 185656,
+   "rank_id": 649644
+  },
+  "kid": 849882
+ },
+ "req_send_clientquest_info": {
+  "triggertype": 8,
+  "extra_param": "deadbeef"
+ },
+ "req_server_list": {},
+ "req_set_building_pattern": {
+  "bid": 175961,
+  "pattern_id": 898144
+ },
+ "req_set_cheat_record_info": {
+  "key": "test",
+  "value": "test"
+ },
+ "req_set_check_image_visible": {
+  "visible": true
+ },
+ "req_set_lords_equipment_show": {
+  "show": false
+ },
+ "req_set_notify_state": {
+  "notify": [
+   {
+    "type": 5,
+    "value": 599953
+   }
+  ]
+ },
+ "req_settings_bind_test_account": {},
+ "req_settings_get_rebate_reward": {
+  "day": 192722
+ },
+ "req_settings_set_device": {
+  "params": [
+   "test",
+   "test"
+  ]
+ },
+ "req_settings_set_star_kid": {
+  "kid": 679934
+ },
+ "req_seven_recruit_quest_get_award": {
+  "questid": 806656
+ },
+ "req_seven_sign_one_click_award": {},
+ "req_share_knock_door_info": {
+  "id": 550109,
+  "door_id": 616411,
+  "type": 8,
+  "param": 492401
+ },
+ "req_shop_buy": {
+  "shop_id": 438061,
+  "goods_id": 44302,
+  "count": 13
+ },
+ "req_shop_info": {
+  "shop_id": 14793
+ },
+ "req_shop_info_array": {
+  "arr_id": [
+   886779,
+   849806
+  ]
+ },
+ "req_shop_quick_buy": {
+  "id": 659019,
+  "count": 1,
+  "use": true,
+  "extra": {
+   "option": 726346,
+   "immediate_use": true,
+   "target": 233053
+  }
+ },
+ "req_shop_refresh": {
+  "shop_id": 812374
+ },
+ "req_sign_21day_get_all_reward": {},
+ "req_sign_21day_get_reward": {
+  "day": 62405
+ },
+ "req_sign_draw_get_sign_progress_reward": {
+  "id": 721191,
+  "progress": 86979
+ },
+ "req_sign_draw_lottery": {
+  "id": 844562,
+  "nums": 24
+ },
+ "req_sign_draw_lottery_free": {
+  "id": 537933
+ },
+ "req_skin_auto_use_and_equip": {
+  "skin_item_id": 778563,
+  "equip_skin_ids": [
+   636228,
+   751368
+  ]
+ },
+ "req_skin_equip": {
+  "id": 77079
+ },
+ "req_skin_get_condition_activity_skin": {},
+ "req_skin_set_march_skin": {
+  "ids": [
+   393765
+  ],
+  "select_type": 9
+ },
+ "req_slg_3_arena_battle_record_overview": {
+  "match_id": 275582
+ },
+ "req_slg_3_arena_battle_records": {
+  "day_no": 440009,
+  "target_uid": 103309
+ },
+ "req_slg_3_arena_battle_report": {
+  "match_id": 690539,
+  "slot": 5,
+  "round": 88347
+ },
+ "req_slg_3_arena_challenge": {},
+ "req_slg_3_arena_claim_reward": {
+  "day_no": 614739
+ },
+ "req_slg_3_arena_info": {},
+ "req_slg_3_arena_match": {},
+ "req_slg_3_arena_rank": {
+  "day_no": 232190
+ },
+ "req_slg_3_arena_reward_info": {
+  "day_no": 460010
+ },
+ "req_slg_3_arena_save_formation": {
+  "formation_prefab": [
+   {
+    "id": 830424,
+    "prefab": {
+     "hero_id": [
+      {
+       "k": 41714,
+       "v": 144463
+      }
+     ],
+     "soldier": [
+      {
+       "k": 719490,
+       "v": 207181
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "req_slg_3_arena_share_report_detail": {
+  "share_key": "test"
+ },
+ "req_slg_3_arena_swap_formation": {
+  "formation_a": 701270,
+  "formation_b": 935641
+ },
+ "req_slg_3_arena_view_formation": {},
+ "req_slg_3_league_apply": {},
+ "req_slg_3_league_check_champion_manifesto": {
+  "manifesto": "test"
+ },
+ "req_slg_3_league_check_manifesto": {
+  "manifesto": "test"
+ },
+ "req_slg_3_league_get_all_qua_win_reward": {},
+ "req_slg_3_league_get_battle_report": {
+  "match_id": 924845,
+  "game_idx": 7,
+  "round_idx": 9
+ },
+ "req_slg_3_league_get_battle_result_overview": {
+  "gid": 693957,
+  "match_id": 289682,
+  "game_idx": 2
+ },
+ "req_slg_3_league_get_champion_info": {
+  "gid": 981855
+ },
+ "req_slg_3_league_get_kids": {
+  "gid": 655081
+ },
+ "req_slg_3_league_get_match_info": {
+  "match_id": 562836,
+  "gid": 661118
+ },
+ "req_slg_3_league_get_match_result": {
+  "uid": 995532,
+  "last_match_id": 213558,
+  "gid": 837095
+ },
+ "req_slg_3_league_get_player_info": {
+  "uid": 545773
+ },
+ "req_slg_3_league_get_rank": {
+  "gid": 488906,
+  "rank_type": 8
+ },
+ "req_slg_3_league_get_task_reward": {
+  "task_id": 712392
+ },
+ "req_slg_3_league_guess_add": {
+  "match_id": 531472,
+  "side": 281009,
+  "num": 98
+ },
+ "req_slg_3_league_guess_get_history": {},
+ "req_slg_3_league_guess_get_info": {
+  "matches": [
+   76948
+  ]
+ },
+ "req_slg_3_league_like": {
+  "rank": 356689
+ },
+ "req_slg_3_league_save_formation": {
+  "formation_prefab": [
+   {
+    "id": 507680,
+    "prefab": {
+     "hero_id": [
+      {
+       "k": 634372,
+       "v": 28639
+      }
+     ],
+     "soldier": [
+      {
+       "k": 343180,
+       "v": 802018
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "req_slg_3_league_schedule": {
+  "gid": 805816,
+  "stage": 772622
+ },
+ "req_slg_3_league_set_champion_manifesto": {
+  "manifesto": "test"
+ },
+ "req_slg_3_league_set_manifesto": {
+  "manifesto": "test"
+ },
+ "req_slg_3_league_share_report_detail": {
+  "share_key": "test"
+ },
+ "req_slg_3_league_swap_formation": {
+  "formation_id_1": 574840,
+  "formation_id_2": 209438
+ },
+ "req_slot_matrix_draw": {
+  "id": 51234,
+  "times": 1790035682
+ },
+ "req_slot_matrix_gain_jackpot": {
+  "id": 503223
+ },
+ "req_slot_matrix_gain_times_reward": {
+  "id": 803248,
+  "idx": 6
+ },
+ "req_slot_matrix_reset": {
+  "id": 946838
+ },
+ "req_slot_matrix_watch_record_info": {
+  "id": 212379,
+  "record_id": 201002
+ },
+ "req_snow_fund_get_all_reward": {},
+ "req_snow_fund_get_reward": {
+  "stage": 61920
+ },
+ "req_social_media_act_community": {
+  "id": 761712
+ },
+ "req_social_media_act_community_receive": {
+  "id": 498534
+ },
+ "req_social_media_open": {
+  "id": 641930
+ },
+ "req_social_media_receive": {
+  "id": 729167
+ },
+ "req_soldier_check_name": {
+  "name": "test"
+ },
+ "req_soldier_dismiss": {
+  "id": 480801,
+  "count": 72
+ },
+ "req_soldier_set_auto_join_prefab": {
+  "prefab": {
+   "hero_id": [
+    {
+     "k": 336599,
+     "v": 943347
+    }
+   ],
+   "soldier": [
+    {
+     "k": 265608,
+     "v": 685985
+    }
+   ]
+  }
+ },
+ "req_soldier_set_prefab": {
+  "prefab": {
+   "id": 855034,
+   "prefab": {
+    "hero_id": [
+     {
+      "k": 656236,
+      "v": 943105
+     }
+    ],
+    "soldier": [
+     {
+      "k": 524453,
+      "v": 750862
+     }
+    ],
+    "formation_name": "test",
+    "formation_rate": [
+     {
+      "k": 37927,
+      "v": 622650
+     }
+    ]
+   }
+  }
+ },
+ "req_souvenir_get_reward": {
+  "item_id": 908926,
+  "index": 5
+ },
+ "req_spar_laboratory_buy_gift_by_diamond": {
+  "gift_id": 901666,
+  "count": 61
+ },
+ "req_spar_laboratory_exchange": {
+  "id": 80463,
+  "count": 60
+ },
+ "req_spar_laboratory_get_quest_reward": {
+  "quest_id": 744121
+ },
+ "req_spar_leak_buy": {
+  "activity_id": 188405,
+  "index": 2,
+  "count": 62
+ },
+ "req_spar_purify": {},
+ "req_spar_science_begin_research": {
+  "tid_lev": 13,
+  "qid": 817451
+ },
+ "req_spar_science_research_complete_immediately": {
+  "tid_lev": 3
+ },
+ "req_spar_science_research_speed_up": {
+  "tid_lev": 21,
+  "use_diamond": false,
+  "items": [
+   {
+    "id": 522419,
+    "count": 20
+   },
+   {
+    "id": 756085,
+    "count": 72
+   }
+  ]
+ },
+ "req_spar_science_research_stop": {
+  "tid_lev": 20
+ },
+ "req_spar_super_purify": {
+  "count": 42
+ },
+ "req_spectator_agent_auth": {
+  "uid": 927289,
+  "serverid": 943629,
+  "token": "test"
+ },
+ "req_spectator_agent_heartbeat": {},
+ "req_spectator_arsenal_league_battlefield_stat_info": {},
+ "req_spectator_arsenal_league_enter": {
+  "battlefield_id": "test"
+ },
+ "req_spectator_arsenal_league_exit": {},
+ "req_spectator_arsenal_league_map_info": {},
+ "req_spectator_arsenal_league_watch_count": {
+  "battlefield_ids": [
+   "test"
+  ]
+ },
+ "req_spectator_get_auth_token": {},
+ "req_spectator_supremacy_war_control_list": {
+  "x": 1155,
+  "y": 1061,
+  "begin": 829983,
+  "less": false
+ },
+ "req_spectator_supremacy_war_enter": {
+  "group_id": 442661
+ },
+ "req_spectator_supremacy_war_exit": {},
+ "req_spectator_supremacy_war_fort_alliance_rank_rsp": {},
+ "req_spectator_supremacy_war_fort_alliance_rank_watch": {
+  "point": {
+   "x": 265,
+   "y": 782
+  },
+  "group_id": 527270,
+  "aid": 391573
+ },
+ "req_spectator_supremacy_war_fort_rank_rsp": {},
+ "req_spectator_supremacy_war_fort_rank_watch": {
+  "point": {
+   "x": 341,
+   "y": 157
+  },
+  "group_id": 902846
+ },
+ "req_spectator_supremacy_war_get_guard_info": {},
+ "req_spectator_supremacy_war_map_info": {
+  "startpoint": {
+   "x": 992,
+   "y": 410
+  },
+  "endpoint": {
+   "x": 199,
+   "y": 334
+  },
+  "session": 390233,
+  "fulldata": true,
+  "lod": 2,
+  "group_id": 580080
+ },
+ "req_stove_combustion_switch": {
+  "switch": 72199,
+  "overdrive": 261108
+ },
+ "req_strengthen_equipment": {
+  "uid": 589099,
+  "cost_item": {
+   "item": [
+    {
+     "id": 304265,
+     "count": 60
+    }
+   ],
+   "equip_common": [
+    {
+     "eid": 853145,
+     "count": 43
+    }
+   ],
+   "uid_equip": [
+    27881
+   ]
+  }
+ },
+ "req_strengthen_exclusive_equipment": {
+  "id": 652850
+ },
+ "req_super_vip_customize_item": {
+  "year": 682336,
+  "item_ids": [
+   {
+    "k": 407806,
+    "v": 400281
+   }
+  ]
+ },
+ "req_super_vip_get_free_reward": {
+  "year": 484085
+ },
+ "req_super_vip_get_join_reward": {},
+ "req_super_vip_set_info": {
+  "info": {
+   "is_set": false,
+   "set_time": 1790055855,
+   "today_set_count": 67,
+   "birthday": {
+    "month": 727699,
+    "day": 916368
+   },
+   "mail": "test",
+   "discord": "test",
+   "gender": 392419
+  }
+ },
+ "req_supremacy_war_alliance_mass_invite": {
+  "id": 184476,
+  "uids": [
+   371119,
+   719934
+  ]
+ },
+ "req_supremacy_war_alliance_mass_prepare_cancel": {
+  "owner": 117741,
+  "id": 513807
+ },
+ "req_supremacy_war_appoint": {
+  "uid": 744119,
+  "office": 222104
+ },
+ "req_supremacy_war_building_send_map_expression": {
+  "point": {
+   "x": 653,
+   "y": 1024
+  },
+  "expression_id": 106860
+ },
+ "req_supremacy_war_captain_repatriation": {
+  "point": {
+   "x": 240,
+   "y": 348
+  },
+  "owner": 699367,
+  "march_id": 175626
+ },
+ "req_supremacy_war_cheat_close": {},
+ "req_supremacy_war_cheat_enter": {},
+ "req_supremacy_war_cheat_open": {},
+ "req_supremacy_war_cheat_open_new": {},
+ "req_supremacy_war_cheat_reset_alliance_skill": {
+  "skill_type": 5
+ },
+ "req_supremacy_war_cheat_set_crystal": {
+  "cnt": 37
+ },
+ "req_supremacy_war_control_list": {
+  "x": 965,
+  "y": 696,
+  "begin": 339121,
+  "less": true
+ },
+ "req_supremacy_war_defense_march_detail_4_alliance_situation": {
+  "point": {
+   "x": 288,
+   "y": 34
+  },
+  "owner": 897738,
+  "id": 972447
+ },
+ "req_supremacy_war_del_watch": {},
+ "req_supremacy_war_dismiss": {
+  "office": 124327
+ },
+ "req_supremacy_war_embassy_help_march_detail_list": {
+  "uid": 250241
+ },
+ "req_supremacy_war_embassy_help_simple_info": {
+  "uid": 697304
+ },
+ "req_supremacy_war_embassy_repatriation": {
+  "target_uid": 21433
+ },
+ "req_supremacy_war_enter": {},
+ "req_supremacy_war_exit": {},
+ "req_supremacy_war_extra_alliance_situation_info": {
+  "num": 93
+ },
+ "req_supremacy_war_extra_situation_info": {
+  "num": 85
+ },
+ "req_supremacy_war_feast_list": {
+  "id": 361366
+ },
+ "req_supremacy_war_feast_open": {
+  "id": 524432
+ },
+ "req_supremacy_war_feast_player_records": {
+  "id": 719007
+ },
+ "req_supremacy_war_feast_reserve": {
+  "id": 931577,
+  "time": 1790047541
+ },
+ "req_supremacy_war_feast_table_satiated_info": {
+  "id": 436891,
+  "kid": 585452,
+  "table_id": 938393
+ },
+ "req_supremacy_war_feast_tables": {
+  "id": 21128,
+  "kid": 891653
+ },
+ "req_supremacy_war_fort_defense_rsp": {},
+ "req_supremacy_war_fort_defense_watch": {
+  "point": {
+   "x": 188,
+   "y": 30
+  }
+ },
+ "req_supremacy_war_fort_rank_rsp": {},
+ "req_supremacy_war_fort_rank_watch": {
+  "point": {
+   "x": 1091,
+   "y": 175
+  }
+ },
+ "req_supremacy_war_get_alliance_skill_op_record": {},
+ "req_supremacy_war_get_president_reward": {},
+ "req_supremacy_war_gift_record": {
+  "idx": 5,
+  "size": 959365
+ },
+ "req_supremacy_war_gov_get_100_player_uid": {},
+ "req_supremacy_war_gov_get_all_president": {},
+ "req_supremacy_war_gov_get_alliance_points": {},
+ "req_supremacy_war_gov_get_alliance_points_rank": {},
+ "req_supremacy_war_gov_get_dominion": {},
+ "req_supremacy_war_gov_get_history": {
+  "id": 463084,
+  "season": 410994
+ },
+ "req_supremacy_war_gov_get_members_points_rank": {},
+ "req_supremacy_war_gov_get_palace_alliance_rank": {},
+ "req_supremacy_war_gov_get_palace_alliance_self_rank": {},
+ "req_supremacy_war_gov_get_palace_rank": {},
+ "req_supremacy_war_gov_get_palace_self_rank": {},
+ "req_supremacy_war_gov_get_player_points": {
+  "uids": [
+   535200,
+   699228
+  ]
+ },
+ "req_supremacy_war_gov_get_points": {},
+ "req_supremacy_war_gov_get_points_rank": {
+  "start": 1790049895,
+  "count": 90
+ },
+ "req_supremacy_war_gov_get_top_100_uids": {},
+ "req_supremacy_war_gov_group_dominance": {},
+ "req_supremacy_war_gov_group_overview": {
+  "id": 910311
+ },
+ "req_supremacy_war_gov_search_alliance_by_key": {
+  "key": "test"
+ },
+ "req_supremacy_war_guess_alliance": {
+  "id": 578014,
+  "aid": 578075,
+  "type": 7
+ },
+ "req_supremacy_war_guess_info": {
+  "id": 547199
+ },
+ "req_supremacy_war_guess_question": {
+  "id": 634382,
+  "qid": 958672,
+  "choose": 498108,
+  "type": 4
+ },
+ "req_supremacy_war_map_info": {
+  "startpoint": {
+   "x": 740,
+   "y": 233
+  },
+  "endpoint": {
+   "x": 864,
+   "y": 102
+  },
+  "session": 630746,
+  "fulldata": false,
+  "lod": 30
+ },
+ "req_supremacy_war_map_search": {
+  "mapobj_type": 9,
+  "level_min": 22,
+  "level_max": 15,
+  "res_id": 934678
+ },
+ "req_supremacy_war_march": {
+  "type": 7,
+  "endpoint": {
+   "x": 878,
+   "y": 343
+  },
+  "formation": {
+   "hero_id": [
+    {
+     "k": 155695,
+     "v": 18855
+    }
+   ],
+   "soldier": [
+    {
+     "k": 738737,
+     "v": 545022
+    }
+   ]
+  },
+  "extra": {
+   "master_marchid": 755812,
+   "prepare_time_index": 1790019486,
+   "monsterid": 585079
+  }
+ },
+ "req_supremacy_war_march_detail": {
+  "owner": 540759,
+  "id": 170945
+ },
+ "req_supremacy_war_march_detail_4_player_situation": {
+  "owner": 662436,
+  "id": 529919
+ },
+ "req_supremacy_war_march_detail_4_recon_situation": {
+  "owner": 985680,
+  "id": 795439
+ },
+ "req_supremacy_war_march_off_work": {
+  "id": 837154
+ },
+ "req_supremacy_war_march_recall": {
+  "id": 178847,
+  "itemid": 334794
+ },
+ "req_supremacy_war_march_speedup": {
+  "id": 377639,
+  "itemid": 122715,
+  "owner": 159889
+ },
+ "req_supremacy_war_mass_march_detail_4_alliance_situation": {
+  "owner": 91331,
+  "id": 367860
+ },
+ "req_supremacy_war_mass_march_detail_4_player_situation": {
+  "owner": 804583,
+  "id": 432078
+ },
+ "req_supremacy_war_mass_master_detail": {
+  "id": 874166,
+  "owner": 785587
+ },
+ "req_supremacy_war_mass_prepare_cancel": {
+  "id": 601256
+ },
+ "req_supremacy_war_mass_slave_alliance_repatriate": {
+  "owner": 814170,
+  "id": 573011
+ },
+ "req_supremacy_war_mass_slave_repatriate": {
+  "owner": 456556,
+  "id": 819152
+ },
+ "req_supremacy_war_mass_slave_top": {
+  "owner": 99827,
+  "id": 766002
+ },
+ "req_supremacy_war_move_city": {
+  "point": {
+   "x": 694,
+   "y": 1155
+  }
+ },
+ "req_supremacy_war_occupy_obj_change_captain": {
+  "point": {
+   "x": 403,
+   "y": 1121
+  },
+  "owner": 139798
+ },
+ "req_supremacy_war_occupy_obj_repatriate": {
+  "point": {
+   "x": 276,
+   "y": 159
+  },
+  "owner": 404071
+ },
+ "req_supremacy_war_prepare_get_box_reward": {
+  "id": 863010,
+  "stage": 744843
+ },
+ "req_supremacy_war_prepare_show_info": {
+  "id": 580563
+ },
+ "req_supremacy_war_resource_info": {
+  "point": {
+   "x": 1107,
+   "y": 611
+  }
+ },
+ "req_supremacy_war_rsp_watch_alliance_skill": {},
+ "req_supremacy_war_send_gift": {
+  "id": 674092,
+  "uids": [
+   941516
+  ]
+ },
+ "req_supremacy_war_server_get_rank_reward": {
+  "id": 404196,
+  "rank": 570846
+ },
+ "req_supremacy_war_server_get_ranklist": {
+  "id": 111621
+ },
+ "req_supremacy_war_set_manifesto": {
+  "manifesto": "test"
+ },
+ "req_supremacy_war_shop_get_free_gift": {
+  "id": 351438
+ },
+ "req_supremacy_war_task_reward": {
+  "id": 562163,
+  "task_id": 772710
+ },
+ "req_supremacy_war_use_alliance_skill": {
+  "skill_id": 965480
+ },
+ "req_supremacy_war_wall_fix_defense": {},
+ "req_supremacy_war_wall_outfire": {},
+ "req_supremacy_war_watch_alliance_skill": {},
+ "req_survivor_alloc_td": {},
+ "req_survivor_alloc_td_save": {
+  "num_map": [
+   {
+    "k": 280443,
+    "v": 640664
+   }
+  ]
+ },
+ "req_survivor_auto_send_switch": {
+  "switch": 833868
+ },
+ "req_survivor_cure_finish": {
+  "sid": 524077
+ },
+ "req_survivor_multi_send": {
+  "send_list": [
+   {
+    "k": 951922,
+    "v": 183349
+   }
+  ]
+ },
+ "req_survivor_riot": {},
+ "req_survivor_send_or_fired": {
+  "sid": 988026,
+  "fid_work": 942475,
+  "type": 1
+ },
+ "req_survivor_sick": {
+  "sid": 772543
+ },
+ "req_survivor_update_cure_end_time": {
+  "sid": 633059,
+  "cure_end_time": 1790045447
+ },
+ "req_survivor_update_riot_detect_time": {
+  "time": 1790098457
+ },
+ "req_survivor_work_pause": {
+  "sid_list": [
+   762957
+  ],
+  "time": 1790060113
+ },
+ "req_survivor_work_start": {
+  "sid": 152617
+ },
+ "req_svip_recharge_reward": {
+  "receive_level": 24
+ },
+ "req_svip_reset_password": {
+  "new_password": "test",
+  "old_password": "test"
+ },
+ "req_svip_score_display": {
+  "password": "test"
+ },
+ "req_svip_score_hide": {
+  "password": "test"
+ },
+ "req_takeoff_equipment": {
+  "uid": 206078
+ },
+ "req_target_integral_get_all_reward": {
+  "id": 711207
+ },
+ "req_target_integral_get_reward": {
+  "id": 911045,
+  "stage": 402632
+ },
+ "req_target_integral_rank": {
+  "id": 900175,
+  "all": true
+ },
+ "req_td_box_get": {
+  "box_id": 432256
+ },
+ "req_td_box_set_pos": {
+  "box_id": 257326,
+  "pos": {
+   "x": 980,
+   "y": 963
+  }
+ },
+ "req_td_bp_get_all_reward": {
+  "id": 209098
+ },
+ "req_td_bp_get_extra_reward": {
+  "id": 131865
+ },
+ "req_td_bp_get_reward": {
+  "id": 79082,
+  "stage": 190886
+ },
+ "req_td_event_fast_challenge": {
+  "event_id": 477102
+ },
+ "req_td_event_get_survivor": {},
+ "req_td_event_settle_stage": {
+  "is_win": false,
+  "td_survivor": [
+   435630,
+   62879
+  ]
+ },
+ "req_td_event_start_stage": {},
+ "req_td_troops_set_hero": {
+  "bid": 819748,
+  "hero_map": [
+   {
+    "k": 247093,
+    "v": 950618
+   }
+  ]
+ },
+ "req_temp_survivor_confirm": {
+  "sid_list": [
+   891879,
+   105003
+  ]
+ },
+ "req_thanksgiving_bp_alliance_member_rank": {
+  "id": 272886
+ },
+ "req_thanksgiving_bp_get_all_reward": {
+  "id": 114929
+ },
+ "req_thanksgiving_bp_get_reward": {
+  "id": 253048,
+  "stage": 502517
+ },
+ "req_thanksgiving_cooking_adept": {
+  "id": 953616,
+  "food_id": 958243,
+  "nums": 29
+ },
+ "req_thanksgiving_cooking_apply_food": {
+  "id": 687859,
+  "food_id": 107348,
+  "nums": 34
+ },
+ "req_thanksgiving_cooking_apply_food_lst": {
+  "id": 777611
+ },
+ "req_thanksgiving_cooking_cancel_apply": {
+  "id": 418760,
+  "apply_id": 584273
+ },
+ "req_thanksgiving_cooking_cancel_exchange": {
+  "id": 75690,
+  "exchange_id": 988590
+ },
+ "req_thanksgiving_cooking_exchange": {
+  "id": 824882,
+  "owner": 934997,
+  "exchange_id": 256352
+ },
+ "req_thanksgiving_cooking_exchange_lst": {
+  "id": 943174
+ },
+ "req_thanksgiving_cooking_get_apply_food": {
+  "id": 626448,
+  "apply_id": 914755
+ },
+ "req_thanksgiving_cooking_get_exchange": {
+  "id": 125099,
+  "exchange_id": 534845
+ },
+ "req_thanksgiving_cooking_give_food": {
+  "id": 283710,
+  "owner": 739342,
+  "apply_id": 387844
+ },
+ "req_thanksgiving_cooking_submit_exchange": {
+  "id": 704973,
+  "sub_id": 442095,
+  "sub_num": 21,
+  "add_id": 343652,
+  "add_num": 65
+ },
+ "req_thanksgiving_cooking_tiro": {
+  "id": 547962,
+  "food_id": 732659,
+  "type": 7
+ },
+ "req_thanksgiving_cooking_watch_apply_lst_nums": {
+  "id": 135206
+ },
+ "req_thanksgiving_cooking_watch_apply_lst_nums_rsp": {
+  "id": 395977
+ },
+ "req_thanksgiving_cooking_watch_exchange_lst_nums": {
+  "id": 408396
+ },
+ "req_thanksgiving_cooking_watch_exchange_lst_nums_rsp": {
+  "id": 143635
+ },
+ "req_thanksgiving_feast_list": {
+  "id": 256701
+ },
+ "req_thanksgiving_feast_open": {
+  "id": 113428
+ },
+ "req_thanksgiving_feast_player_records": {
+  "id": 656055
+ },
+ "req_thanksgiving_feast_reserve": {
+  "id": 485318,
+  "time": 1790051511
+ },
+ "req_thanksgiving_feast_self_rank": {
+  "id": 489757
+ },
+ "req_thanksgiving_feast_table_satiated_info": {
+  "id": 416413,
+  "aid": 847849,
+  "table_id": 691794
+ },
+ "req_thanksgiving_feast_tables": {
+  "id": 901626,
+  "aid": 979430
+ },
+ "req_thanksgiving_menu_big_reward_watch": {
+  "id": 445763,
+  "activity_id": 109389
+ },
+ "req_thanksgiving_menu_big_reward_watch_rsp": {},
+ "req_thanksgiving_menu_get_bind_alliance_info": {
+  "id": 227514
+ },
+ "req_thanksgiving_menu_get_chest_reward_record": {
+  "id": 652298
+ },
+ "req_thanksgiving_menu_main_watch": {
+  "big_reward_id": 405294,
+  "menu_activity_id": 350218,
+  "cooking_activity_id": 771205
+ },
+ "req_thanksgiving_menu_main_watch_rsp": {},
+ "req_thanksgiving_menu_rank": {
+  "id": 829820,
+  "type": 4
+ },
+ "req_thanksgiving_menu_self_rank": {
+  "id": 226904
+ },
+ "req_thanksgiving_menu_submit_dishes": {
+  "id": 885055,
+  "dishes_id": 516835,
+  "count": 73
+ },
+ "req_thanksgiving_menu_take_chest": {
+  "id": 930861
+ },
+ "req_thanksgiving_menu_take_daily_chest": {
+  "id": 497391
+ },
+ "req_thanksgiving_menu_take_preview_reward": {
+  "id": 746823
+ },
+ "req_thanksgiving_sign_get_all_reward": {
+  "id": 846456
+ },
+ "req_thanksgiving_sign_get_reward": {
+  "id": 701794,
+  "day": 736729
+ },
+ "req_three_tiles_get_level_info": {
+  "id": 333653
+ },
+ "req_three_tiles_get_progress_reward": {
+  "id": 182625,
+  "progress": 212002
+ },
+ "req_three_tiles_get_quest_reward": {
+  "id": 123027,
+  "quest_id": 110338
+ },
+ "req_three_tiles_get_rank_info": {
+  "id": 810096
+ },
+ "req_three_tiles_level_click_gray": {
+  "id": 209240,
+  "layer": 653529,
+  "key": 245994
+ },
+ "req_three_tiles_level_use_item": {
+  "id": 489030,
+  "item_id": 578434
+ },
+ "req_three_tiles_over_level": {
+  "id": 670974
+ },
+ "req_three_tiles_start_level": {
+  "id": 471499,
+  "level": 5
+ },
+ "req_todo_list_add": {
+  "item_type": 1,
+  "start_ts": 1790051957
+ },
+ "req_todo_list_remove": {
+  "item_type": 9
+ },
+ "req_tower_defense_active_illust": {
+  "id": 68141,
+  "illust_id": 751099
+ },
+ "req_tower_defense_buy_energy": {
+  "id": 43308,
+  "times": 1790006331
+ },
+ "req_tower_defense_claim_level_box": {
+  "id": 783192,
+  "level": 17
+ },
+ "req_tower_defense_equipment_upgrade": {
+  "id": 557582,
+  "equipment_ids": [
+   565753
+  ]
+ },
+ "req_tower_defense_exit": {
+  "id": 240769
+ },
+ "req_tower_defense_get_handbook_reward": {
+  "id": 744812,
+  "type": 3,
+  "reward_id": 129772
+ },
+ "req_tower_defense_get_task_reward": {
+  "id": 316281,
+  "task_id": 452749
+ },
+ "req_tower_defense_over": {
+  "id": 514684,
+  "hp": 497738,
+  "gold": 794151,
+  "lv": 479280,
+  "duration": 707129,
+  "dun_data": "test",
+  "extra": "test"
+ },
+ "req_tower_defense_rank": {
+  "id": 200848
+ },
+ "req_tower_defense_start": {
+  "id": 379163,
+  "level": 15
+ },
+ "req_tower_defense_sweep": {
+  "id": 282893,
+  "level": 27,
+  "times": 1790087504
+ },
+ "req_travel_atk_info_noted": {},
+ "req_travel_buy_energy": {},
+ "req_travel_choice_expert": {
+  "expert_id": 162086
+ },
+ "req_travel_expert_memory": {
+  "expert_id": 421089
+ },
+ "req_travel_finish_segment": {
+  "travel_type": 4,
+  "segment_id": 274455,
+  "option": 715580
+ },
+ "req_travel_info": {},
+ "req_travel_record": {
+  "travel_type": 4,
+  "start_idx": 14
+ },
+ "req_travel_recv_energy": {},
+ "req_travel_submit_checkpoint": {
+  "travel_type": 9,
+  "segment_id": 301166,
+  "param": {
+   "cooking_info": {
+    "angle": 93493,
+    "option": 730296
+   },
+   "pin_game_info": {
+    "type": 6,
+    "is_pause": true,
+    "kunai_seq": [
+     {
+      "type": 5,
+      "time": 1790098763,
+      "angle": 723245
+     }
+    ],
+    "is_pass": true,
+    "time": 1790061224
+   },
+   "fishing_info": {
+    "level_id": 22,
+    "items": [
+     {
+      "id": 562674
+     }
+    ],
+    "max_depth": 784047,
+    "rewards": [
+     {
+      "k": 585745,
+      "v": 921089
+     }
+    ]
+   },
+   "adventure_pve": {
+    "is_win": true
+   },
+   "dig_treasure_info": {
+    "key": 492244
+   },
+   "fortune_card": {
+    "slot": 1,
+    "flag": true
+   },
+   "relic_adventure_info": {
+    "grid_id": 388376
+   },
+   "select_box_info": {
+    "select_id": 191220,
+    "param": "test"
+   },
+   "punch_guess_info": {
+    "result": 305922,
+    "param": "test"
+   },
+   "normal_turntable_info": {
+    "param": "test"
+   }
+  }
+ },
+ "req_triangle_war_alliance_appoint_commander": {
+  "legion": 966265,
+  "commanders": [
+   {
+    "k": 271620,
+    "v": 618731
+   }
+  ]
+ },
+ "req_triangle_war_apply_for_lord": {
+  "bid": 997585
+ },
+ "req_triangle_war_appoint_lord": {
+  "bid": 836173,
+  "uid": 796213
+ },
+ "req_triangle_war_battle_speedup": {
+  "bid": 254463
+ },
+ "req_triangle_war_building_detail": {},
+ "req_triangle_war_del_watch": {},
+ "req_triangle_war_enter_warzone": {},
+ "req_triangle_war_get_building_battle_report": {
+  "bid": 459613
+ },
+ "req_triangle_war_get_building_battle_report_detail": {
+  "bid": 870247,
+  "report_id": 921108
+ },
+ "req_triangle_war_get_player_info_by_appoint": {
+  "uids": [
+   689852,
+   683220
+  ]
+ },
+ "req_triangle_war_heartbeat": {},
+ "req_triangle_war_map_info": {
+  "session": 229268
+ },
+ "req_triangle_war_march_conscription": {
+  "id": 9035,
+  "bid": 578572
+ },
+ "req_triangle_war_march_dismiss": {
+  "id": 646411
+ },
+ "req_triangle_war_march_move": {
+  "id": 239969,
+  "path": [
+   40398
+  ]
+ },
+ "req_triangle_war_march_retreat": {
+  "id": 54283,
+  "targetid": 300127
+ },
+ "req_triangle_war_march_revive": {
+  "id": 574398
+ },
+ "req_triangle_war_march_rush": {
+  "id": 105409,
+  "targetid": 80046
+ },
+ "req_triangle_war_march_speedup": {
+  "id": 873126,
+  "itemid": 445431
+ },
+ "req_triangle_war_onekey_dispatch": {
+  "legion": 63371,
+  "except": [
+   {
+    "uid": 244073,
+    "v": true
+   }
+  ]
+ },
+ "req_triangle_war_player_score": {},
+ "req_triangle_war_quit_warzone": {},
+ "req_triangle_war_score_rank": {},
+ "req_trigger_opinion": {
+  "type": 8,
+  "sid": 933343,
+  "content_id": 380568,
+  "choice_id": 697975,
+  "is_anonymity": false
+ },
+ "req_truck_escort_fliter_kingdom_self": {
+  "fliter": true,
+  "enemy_fliter": true
+ },
+ "req_truck_escort_get_assist_info": {
+  "id": 490420
+ },
+ "req_truck_escort_get_assist_unit": {
+  "id": 113349
+ },
+ "req_truck_escort_get_other_truck_info": {
+  "id": 921625,
+  "uid": 243000,
+  "truck_id": 258507,
+  "kid": 398493
+ },
+ "req_truck_escort_get_truck_assist_formation": {
+  "id": 937044,
+  "truck_id": 779792
+ },
+ "req_truck_escort_get_truck_record": {
+  "id": 829783
+ },
+ "req_truck_escort_issue_assisting_unit": {
+  "id": 273669,
+  "hero_id": [
+   {
+    "k": 118254,
+    "v": 230544
+   }
+  ]
+ },
+ "req_truck_escort_modify_assisting_unit": {
+  "id": 728879,
+  "hero_id": [
+   {
+    "k": 127874,
+    "v": 464465
+   }
+  ]
+ },
+ "req_truck_escort_new_enemy_list": {
+  "id": 23623
+ },
+ "req_truck_escort_new_plunder_list": {
+  "id": 960931
+ },
+ "req_truck_escort_plunder_battle_report": {
+  "id": 533637,
+  "record_id": 540826,
+  "uid": 155982,
+  "kid": 75708
+ },
+ "req_truck_escort_plunder_fight": {
+  "id": 230496,
+  "map_heros": [
+   {
+    "k": 345214,
+    "v": 839387
+   }
+  ],
+  "target_uid": 854262,
+  "target_march_id": 932341,
+  "target_kid": 346999
+ },
+ "req_truck_escort_plunder_records": {
+  "id": 852165
+ },
+ "req_truck_escort_refresh_enemy_list": {
+  "id": 93746
+ },
+ "req_truck_escort_refresh_plunder_list": {
+  "id": 237625
+ },
+ "req_truck_escort_refresh_truck_reward": {
+  "id": 135311,
+  "truck_id": 894895,
+  "use_diamond": false
+ },
+ "req_truck_escort_take_truck_reward": {
+  "id": 748540,
+  "truck_id": 203055
+ },
+ "req_truck_escort_withdraw_assisting_unit": {
+  "id": 113370
+ },
+ "req_unlock_exclusive_equipment": {
+  "id": 455987
+ },
+ "req_unlock_mail_attach": {
+  "mailid": 675505,
+  "mailid_new": "test"
+ },
+ "req_unlock_module": {
+  "module": 531636
+ },
+ "req_unwatch_alliance_situation_activity": {},
+ "req_update_4_new_day": {},
+ "req_update_find_goods_server_time": {
+  "sign": 441377
+ },
+ "req_update_read_time": {
+  "first_type": 1
+ },
+ "req_update_setting_info": {
+  "data": [
+   {
+    "id": 808795,
+    "dataInt": 577149,
+    "dataString": "test"
+   }
+  ]
+ },
+ "req_upgrade_building": {
+  "bid": 144596,
+  "use_diamond": true,
+  "qid": 645768
+ },
+ "req_upgrade_building_cancel": {
+  "bid": 973187
+ },
+ "req_upgrade_furniture": {
+  "bid": 240222,
+  "conf_fid": 85679,
+  "add_lv": 14
+ },
+ "req_upload_image_erase": {},
+ "req_uplv_lords_equipment": {
+  "e_pid": 270953,
+  "is_upgrade_stage": false
+ },
+ "req_uplv_lords_equipment_gem": {
+  "e_pid": 174266,
+  "g_pid": 856674,
+  "is_upgrade_stage": false
+ },
+ "req_use_expert_skill": {
+  "expert_id": 714741,
+  "skill_id": 994795,
+  "effect_type": 9,
+  "param1": 906370
+ },
+ "req_use_item": {
+  "id": 657817,
+  "count": 10,
+  "extra": {
+   "option": 220038,
+   "immediate_use": true,
+   "target": 801972
+  }
+ },
+ "req_value_exchange_exchange": {
+  "id": 252498,
+  "idx": 5,
+  "count": 30
+ },
+ "req_value_exchange_free_exchange": {
+  "id": 942323,
+  "idx": 4
+ },
+ "req_version_up_get_reward": {
+  "id": 564986
+ },
+ "req_vip_get_daily_exp": {},
+ "req_vip_get_daily_free_gift": {
+  "lv": 512612
+ },
+ "req_vip_privilege_get_red_packet_reward": {},
+ "req_vip_privilege_puzzle": {
+  "type": 3,
+  "nums": 7
+ },
+ "req_vip_privilege_turntable_play": {
+  "nums": 98
+ },
+ "req_vip_privilege_turntable_play_free": {},
+ "req_vip_social_close": {
+  "id": 731385,
+  "is_close": false
+ },
+ "req_vip_social_code": {
+  "id": 136341
+ },
+ "req_vip_social_link": {
+  "id": 153297,
+  "type": 7
+ },
+ "req_wall_fix_defense": {},
+ "req_wall_outfire": {},
+ "req_wall_set_defence_hero": {
+  "hero_list": [
+   {
+    "k": 963108,
+    "v": 82921
+   }
+  ]
+ },
+ "req_watch_fortwar_fort_info": {},
+ "req_wear_equipment": {
+  "equip_info": {
+   "eid": 87639,
+   "sid": 259495,
+   "hid": 822460,
+   "uid": 878913
+  }
+ },
+ "req_webshop_login_license": {},
+ "req_weekly_special_progress_reward": {
+  "id": 948558,
+  "progress": 113431
+ },
+ "req_world_alliance_building_detail": {
+  "point": {
+   "x": 882,
+   "y": 364
+  }
+ },
+ "req_world_alliance_building_watch": {
+  "point": {
+   "x": 1076,
+   "y": 59
+  },
+  "full_data": true
+ },
+ "req_world_alliance_mass_invite": {
+  "id": 273282,
+  "uids": [
+   963996,
+   998959
+  ]
+ },
+ "req_world_alliance_mass_prepare_cancel": {
+  "owner": 185532,
+  "id": 219777
+ },
+ "req_world_alliance_move_city": {
+  "point": {
+   "x": 135,
+   "y": 563
+  }
+ },
+ "req_world_alliance_move_city_point": {},
+ "req_world_alliance_resource_info": {
+  "point": {
+   "x": 334,
+   "y": 118
+  }
+ },
+ "req_world_alliance_territory_move_city": {
+  "point": {
+   "x": 962,
+   "y": 1145
+  }
+ },
+ "req_world_alliance_territory_move_city_point": {},
+ "req_world_boss_get_boss_info": {
+  "id": 824557
+ },
+ "req_world_boss_get_last_attack_records": {
+  "id": 246485,
+  "record_id": 870451,
+  "num": 15
+ },
+ "req_world_boss_get_quest_reward": {
+  "id": 812454,
+  "quest_id": 307395
+ },
+ "req_world_boss_get_rank": {
+  "id": 876685
+ },
+ "req_world_building_send_map_expression": {
+  "point": {
+   "x": 76,
+   "y": 994
+  },
+  "expression_id": 551831
+ },
+ "req_world_control_list": {
+  "x": 156,
+  "y": 738,
+  "kid": 321586,
+  "begin": 546998,
+  "less": true
+ },
+ "req_world_defense_march_detail_4_alliance_situation": {
+  "point": {
+   "x": 277,
+   "y": 626
+  },
+  "kid": 323537
+ },
+ "req_world_del_watch": {},
+ "req_world_fort_info": {
+  "point": {
+   "x": 61,
+   "y": 665
+  },
+  "kid": 498040
+ },
+ "req_world_fort_info_client_watch": {},
+ "req_world_fort_move_city": {
+  "point": {
+   "x": 103,
+   "y": 1100
+  }
+ },
+ "req_world_fort_pro_progress": {
+  "x": 161,
+  "y": 1198,
+  "kid": 425007
+ },
+ "req_world_general_data": {
+  "kid": 926819
+ },
+ "req_world_get_minor_fort_can_fight": {},
+ "req_world_gohome": {},
+ "req_world_gohome_to_point": {
+  "point": {
+   "x": 834,
+   "y": 550
+  }
+ },
+ "req_world_kingdom_info": {},
+ "req_world_map_fog": {
+  "kid": 724222
+ },
+ "req_world_map_info": {
+  "args": [
+   {
+    "startpoint": {
+     "x": 146,
+     "y": 559
+    },
+    "endpoint": {
+     "x": 687,
+     "y": 854
+    },
+    "kid": 421885
+   }
+  ],
+  "session": 366737,
+  "fulldata": true,
+  "lod": 30
+ },
+ "req_world_map_search": {
+  "mapobj_type": 2,
+  "level_min": 1,
+  "level_max": 23,
+  "res_id": 617754,
+  "is_full": false
+ },
+ "req_world_mapobj": {
+  "kid": 527414,
+  "point": {
+   "x": 443,
+   "y": 544
+  }
+ },
+ "req_world_march": {
+  "type": 7,
+  "endpoint": {
+   "x": 667,
+   "y": 719
+  },
+  "formation": {
+   "hero_id": [
+    {
+     "k": 419662,
+     "v": 385626
+    }
+   ],
+   "soldier": [
+    {
+     "k": 491072,
+     "v": 497772
+    }
+   ]
+  },
+  "extra": {
+   "monsterid": 905062,
+   "prepare_time_index": 1790022887,
+   "master_marchid": 214521,
+   "event_id": 394196,
+   "param1": 739741,
+   "param2": 669486,
+   "dinner_table_id": 920192,
+   "dinner_act_id": 235017,
+   "act_id": 447812
+  }
+ },
+ "req_world_march_detail": {
+  "owner": 787979,
+  "id": 119426,
+  "kid": 693324
+ },
+ "req_world_march_detail_4_player_situation": {
+  "owner": 214735,
+  "id": 15109,
+  "kid": 963335
+ },
+ "req_world_march_off_work": {
+  "id": 431668
+ },
+ "req_world_march_recall": {
+  "id": 864182,
+  "itemid": 770779
+ },
+ "req_world_march_send_map_expression": {
+  "id": 487057,
+  "expression_id": 112323
+ },
+ "req_world_march_speedup": {
+  "id": 934861,
+  "itemid": 30055,
+  "owner": 389524
+ },
+ "req_world_mass_march_detail_4_alliance_situation": {
+  "owner": 455030,
+  "id": 327942,
+  "kid": 714228
+ },
+ "req_world_mass_march_detail_4_player_situation": {
+  "owner": 249822,
+  "id": 724393,
+  "kid": 44991
+ },
+ "req_world_mass_master_detail": {
+  "id": 640249,
+  "owner": 395881,
+  "kid": 662820
+ },
+ "req_world_mass_prepare_cancel": {
+  "id": 497753
+ },
+ "req_world_mass_slave_alliance_repatriate": {
+  "owner": 89333,
+  "id": 747033
+ },
+ "req_world_mass_slave_repatriate": {
+  "owner": 656824,
+  "id": 169921
+ },
+ "req_world_mass_slave_top": {
+  "owner": 603195,
+  "id": 21415
+ },
+ "req_world_move_city": {
+  "point": {
+   "x": 55,
+   "y": 1017
+  }
+ },
+ "req_world_occupy_obj_change_captain": {
+  "point": {
+   "x": 145,
+   "y": 455
+  },
+  "owner": 281994,
+  "kid": 813416
+ },
+ "req_world_occupy_obj_repatriate": {
+  "point": {
+   "x": 517,
+   "y": 797
+  },
+  "owner": 701218,
+  "kid": 184450
+ },
+ "req_world_random_move_city": {},
+ "req_world_resource_info": {
+  "point": {
+   "x": 1140,
+   "y": 277
+  },
+  "kid": 788853
+ },
+ "req_world_resource_speed_up": {
+  "item_id": 536138
+ },
+ "req_world_search_supremacy_table": {
+  "act_id": 558160
+ },
+ "req_world_search_table": {},
+ "req_world_shield_situation_notification": {
+  "switch": false,
+  "settings": [
+   {
+    "type": 2,
+    "lv": 26,
+    "power": 287011
+   }
+  ]
+ },
+ "req_world_territory_buff": {
+  "x": 144,
+  "y": 500
+ },
+ "req_world_wormhole_jumping_random": {
+  "kid": 252002
+ },
+ "req_world_wormhole_jumping_to_point": {
+  "kid": 265154,
+  "point": {
+   "x": 792,
+   "y": 157
+  }
+ },
+ "rsp_slot_matrix_watch_records": {
+  "id": 93447
+ },
+ "rsp_supremacy_war_gov_data": {},
+ "rsp_truck_escort_assisting_unit_list": {
+  "id": 97568
+ },
+ "rsp_watch_capital_war_info": {},
+ "rsp_watch_capital_war_order_list": {},
+ "rsp_watch_capital_war_president_data": {},
+ "rsp_watch_fortune_card_winning_info": {
+  "id": 808430
+ },
+ "rsp_watch_supremacy_war_feast_tables": {
+  "id": 136080
+ },
+ "rsp_watch_world_fort_defenses": {},
+ "watch_alliance_situation_activity": {},
+ "watch_capital_war_info": {},
+ "watch_capital_war_order_list": {
+  "office": 578917
+ },
+ "watch_capital_war_president_data": {},
+ "watch_fortune_card_winning_info": {
+  "id": 765146,
+  "record_id": 60547
+ },
+ "watch_supremacy_war_feast_tables": {
+  "id": 957283
+ },
+ "watch_supremacy_war_gov_data": {},
+ "watch_truck_escort_assisting_unit_list": {
+  "id": 285278
+ },
+ "watch_world_fort_defenses": {
+  "point": {
+   "x": 440,
+   "y": 818
+  }
+ }
+}
