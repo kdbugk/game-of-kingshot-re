@@ -79,6 +79,17 @@ def halloc(n):
     p = heap_ptr; heap_ptr += n
     return p
 
+_dlphdr_ret = []
+_dlsym_bad = [0]
+_strstr_log = []
+_FNAME = halloc(0x1000)
+uc.mem_write(_FNAME, b"/data/app/com.run.tower.defense/libnesec.so\x00")
+_LIBC_NAME = _FNAME + 0x100
+uc.mem_write(_LIBC_NAME, b"/apex/com.android.runtime/lib64/bionic/libc.so\x00")
+_PHDRS = _FNAME + 0x200
+uc.mem_write(_PHDRS, d[e_phoff:e_phoff + e_phnum * e_phentsize])
+_DLINFO = _FNAME + 0x180   # struct dl_phdr_info {addr, name*, phdr*, phnum(u16)}
+uc.mem_write(_DLINFO, struct.pack("<QQQHHxxxx", 0, _FNAME, _PHDRS, e_phnum, 0))
 FAKE_MAPS = (
     "000000000000-00000110000 r-xp 00000000 00:00 0                              /data/app/com.run.tower.defense/libnesec.so\n"
     "700000000000-70020000000 rw-p 00000000 00:00 0                              [heap]\n"
@@ -170,6 +181,11 @@ def do_sscanf(uc, inp, fmt, args):
             return assigned
     return assigned
 
+def cstr(a, mx=0x2000):
+    b = bytes(uc.mem_read(a, mx)); i = b.find(b"\x00")
+    return b if i < 0 else b[:i]
+
+_catch_cnt = {}
 def impl(name, uc, virt):
     x0 = uc.reg_read(UC_ARM64_REG_X0); x1 = uc.reg_read(UC_ARM64_REG_X1)
     x2 = uc.reg_read(UC_ARM64_REG_X2); x3 = uc.reg_read(UC_ARM64_REG_X3)
@@ -208,9 +224,62 @@ def impl(name, uc, virt):
             if n == nm.decode("ascii", "replace"):
                 log.append("[dlsym] %s -> tramp 0x%x" % (nm, t))
                 return t
-        log.append("[dlsym] %s -> CATCHALL" % nm)
+        import re as _re
+        if not _re.fullmatch(rb"[A-Za-z_][A-Za-z0-9_.]*", nm):
+            _dlsym_bad[0] += 1
+            if _dlsym_bad[0] <= 5: log.append("[dlsym] non-identifier name %r -> NULL (real linker would fail)" % nm[:24])
+            return 0
+        log.append("[dlsym] %s -> CATCHALL" % nm.decode())
         return TRAMP + 0xfff0
     if name == "dlclose": return 0
+    if name == "strstr":
+        h = cstr(x0); n = cstr(x1); i = h.find(n)
+        _strstr_log.append((uc.reg_read(UC_ARM64_REG_LR), h[:40], n[:40], i))
+        return 0 if i < 0 else x0 + i
+    if name == "strcpy":
+        uc.mem_write(x0, cstr(x1) + b"\x00"); return x0
+    if name == "strcspn":
+        s_ = cstr(x0); rj = cstr(x1)
+        for k, ch in enumerate(s_):
+            if ch in rj: return k
+        return len(s_)
+    if name == "basename":
+        s_ = cstr(x0); k = s_.rfind(b"/"); return x0 + k + 1
+    if name == "atoi":
+        try: return int(cstr(x0).strip() or b"0")
+        except ValueError: return 0
+    if name == "readlink":
+        pth = b"/data/app/com.run.tower.defense/libnesec.so"
+        uc.mem_write(x1, pth[:x2]); return min(len(pth), x2)
+    if name in ("sprintf", "snprintf"):
+        fmt_a = x1 if name == "sprintf" else x2
+        fm = cstr(fmt_a); out = fm  # no arg formatting; log it
+        log.append("[%s] fmt=%r lr=0x%x" % (name, fm[:60], uc.reg_read(UC_ARM64_REG_LR)))
+        if name == "snprintf":
+            uc.mem_write(x0, out[:max(x1 - 1, 0)] + b"\x00"); return len(out)
+        uc.mem_write(x0, out + b"\x00"); return len(out)
+    if name in ("stat", "fstat"): return -1
+    if name == "strtok": return 0
+    if name == "dladdr":
+        inimg = 0 <= x0 < 0x110000
+        intr = TRAMP <= x0 < TRAMP + 0x10000
+        if not (inimg or intr):
+            log.append("[dladdr] 0x%x outside -> 0" % x0); return 0
+        fn = _FNAME if inimg else _LIBC_NAME
+        uc.mem_write(x1, struct.pack("<QQQQ", fn, 0, 0, 0))
+        log.append("[dladdr] 0x%x lr=0x%x -> %s" % (x0, uc.reg_read(UC_ARM64_REG_LR), "libnesec" if inimg else "libc"))
+        return 1
+    if name == "dl_iterate_phdr":
+        cb = x0
+        log.append("[dl_iterate_phdr] cb=0x%x data=0x%x lr=0x%x" % (cb, x1, uc.reg_read(UC_ARM64_REG_LR)))
+        if cb == 0: return 0
+        _dlphdr_ret.append(uc.reg_read(UC_ARM64_REG_LR))
+        uc.reg_write(UC_ARM64_REG_X0, _DLINFO)
+        uc.reg_write(UC_ARM64_REG_X2, x1)
+        uc.reg_write(UC_ARM64_REG_X1, 32)
+        uc.reg_write(UC_ARM64_REG_LR, TRAMP + 0xffe0)
+        uc.reg_write(UC_ARM64_REG_PC, cb)
+        return "REDIRECT"
     if name in ("open", "openat"):
         log.append("[open] " + repr(bytes(uc.mem_read(x0 if name=="open" else x1, 32))))
         return 7
@@ -241,7 +310,7 @@ def impl(name, uc, virt):
         return 0
     if name in ("abort", "__stack_chk_fail"):
         raise RuntimeError("stub abort/__stack_chk_fail called: " + name)
-    log.append("[stub] unhandled %s(x0=%x)" % (name, x0))
+    log.append("[stub] unhandled %s(x0=%x) lr=0x%x" % (name, x0, uc.reg_read(UC_ARM64_REG_LR)))
     return 0
 
 interesting = {0xed534: "ctor1-maps-check", 0xed5e4: "ctor2-ctx", 0xedd38: "ctor3-gate",
@@ -303,14 +372,25 @@ def hook_intr(uc, intno, user_data):
 
 uc.hook_add(UC_HOOK_INTR, hook_intr)
 
+import collections
+_ring = collections.deque(maxlen=20)
 def hook_code(uc, address, size, user_data):
+    _ring.append(address)
     if address in import_got:
         name = import_got[address]
         rv = impl(name, uc, address)
+        if rv == "REDIRECT": return
         uc.reg_write(UC_ARM64_REG_X0, rv & 0xFFFFFFFFFFFFFFFF)
         uc.reg_write(UC_ARM64_REG_PC, uc.reg_read(UC_ARM64_REG_LR))
+    elif address == TRAMP + 0xffe0:
+        rv = uc.reg_read(UC_ARM64_REG_X0)
+        log.append("[dl_iterate_phdr] cb returned %d" % (rv & 0xFFFFFFFF))
+        uc.reg_write(UC_ARM64_REG_PC, _dlphdr_ret.pop())
     elif address == TRAMP + 0xfff0:
-        log.append("[CATCHALL] x0=%x x1=%x lr_ret" % (uc.reg_read(UC_ARM64_REG_X0), uc.reg_read(UC_ARM64_REG_X1)))
+        lr_ = uc.reg_read(UC_ARM64_REG_LR)
+        _catch_cnt[lr_] = _catch_cnt.get(lr_, 0) + 1
+        if _catch_cnt[lr_] <= 3:
+            log.append("[CATCHALL] x0=%x x1=%x x2=%x lr=0x%x (#%d)" % (uc.reg_read(UC_ARM64_REG_X0), uc.reg_read(UC_ARM64_REG_X1), uc.reg_read(UC_ARM64_REG_X2), lr_, _catch_cnt[lr_]))
         uc.reg_write(UC_ARM64_REG_X0, 0)
         uc.reg_write(UC_ARM64_REG_PC, uc.reg_read(UC_ARM64_REG_LR))
     elif address in interesting:
@@ -320,16 +400,37 @@ def hook_code(uc, address, size, user_data):
 
 uc.hook_add(UC_HOOK_CODE, hook_code)
 
+TIMEOUT_S = int(__import__("os").environ.get("EMU_TIMEOUT", "60"))
+def _dump_ring():
+    try:
+        from capstone import Cs, CS_ARCH_ARM64, CS_MODE_ARM
+        md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
+    except Exception:
+        md = None
+    for a in list(_ring):
+        try:
+            raw = bytes(uc.mem_read(a, 4))
+            t = next(md.disasm(raw, a)) if md else None
+            log.append("   [ring] %x: %s" % (a, ("%s %s" % (t.mnemonic, t.op_str)) if t else raw.hex()))
+        except Exception as ex:
+            log.append("   [ring] %x: ?" % a)
+    log.append("   regs: " + " ".join("x%d=%x" % (k, uc.reg_read(UC_ARM64_REG_X0 + k)) for k in range(0, 9)) + " lr=%x sp=%x" % (uc.reg_read(UC_ARM64_REG_LR), uc.reg_read(UC_ARM64_REG_SP)))
+
 def run(addr, *args):
     for i, a in enumerate(args):
         uc.reg_write(UC_ARM64_REG_X0 + i, a)
     uc.reg_write(UC_ARM64_REG_LR, STOP)
     try:
-        uc.emu_start(addr, STOP, timeout=180 * 1000000)
+        uc.emu_start(addr, STOP, timeout=TIMEOUT_S * 1000000)
+        if uc.reg_read(UC_ARM64_REG_PC) != STOP:
+            log.append("[!] TIMEOUT/stop at pc=0x%x (orig=0x%x)" % (uc.reg_read(UC_ARM64_REG_PC), addr))
+            _dump_ring()
+            return False
         return True
     except UcError as e:
         pc = uc.reg_read(UC_ARM64_REG_PC)
         log.append("[!] UcError %s at pc=0x%x (orig=0x%x)" % (e, pc, addr))
+        _dump_ring()
         return False
 
 ok = True
@@ -362,4 +463,10 @@ log.append("[META] ptr=0x%x +0x8c=%x +0x90=%x +0x94=%x +0x98=%x +0x9c=%x" % (
 det = struct.unpack("<I", bytes(uc.mem_read(0x2020e0, 4)))[0] if 0x2020e0 < 0x110000 else -1
 log.append("[DETECT-LEVEL] 0x2020e0 = %s" % hex(det))
 
+_seen = set()
+for lr_, h_, n_, i_ in _strstr_log:
+    if (lr_, n_) in _seen: continue
+    _seen.add((lr_, n_))
+    if len(_seen) < 40: log.append("[strstr] lr=0x%x hay=%r needle=%r -> %d" % (lr_, h_[:30], n_[:30], i_))
+log.append("[CATCHALL totals] " + ", ".join("lr=0x%x:%d" % kv for kv in sorted(_catch_cnt.items(), key=lambda kv: -kv[1])[:10]))
 print("\n".join(log))
