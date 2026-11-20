@@ -57,7 +57,7 @@ class Session:
         self.prod_extra = {} # L3: recurso produzido -> acumulado (sandbox)
         self.mail_seq = 0
 
-    def now(self): return SERVER_T0 + int(time.time() - self.t0)
+    def now(self): return int(time.time())   # relógio REAL (o T0 sintético mandava work_endtime no passado!)
 
     def recv_exact(self, n):
         b = b""
