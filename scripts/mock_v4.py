@@ -83,6 +83,10 @@ class Session:
         self.reply(m, {"code": 0, "overload": 0, "result": res})
 
     # ---- GM (lab): comandos admin contra ESTE servidor (sandbox nosso)
+    def h_chat_token(self, m):
+        # rtmcode!=0 = chat RTM indisponivel (esperamos que o cliente desista e siga)
+        self.reply(m, {"code": 0, "rtmcode": 1, "token": ""})
+
     def h_cheat_add(self, m):
         items = m["obj"].get("data") or []
         for it in items:
@@ -110,7 +114,8 @@ class Session:
     H = {"loginauth": h_loginauth, "req_loaddata": h_loaddata, "req_heartbeat": h_heartbeat,
          "req_trigger_opinion": h_opinion, "req_save_client_data": h_save,
          "req_players_base_info_with_permission": h_players,
-         "req_cheat_add": h_cheat_add, "req_cheat_set_hero_lev": h_cheat_hero}
+         "req_cheat_add": h_cheat_add, "req_cheat_set_hero_lev": h_cheat_hero,
+         "req_chat_get_token": h_chat_token}
 
     def run(self):
         try:
