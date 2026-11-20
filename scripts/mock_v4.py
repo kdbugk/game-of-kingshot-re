@@ -651,6 +651,19 @@ def serve(port=30101, key=None, fixture=None, log=print, ready=None, stop=None, 
     if ready is not None: ready.append(srv.getsockname()[1]); srv.settimeout(0.2)
     log(f"[mock v4] porta {srv.getsockname()[1]} fixture={'sim' if fx else 'NAO'}")
 
+    # extensoes: ext_*.py da mesma pasta; builtins têm precedência (setdefault)
+    import glob as _glob
+    _ext = {}
+    for _p in sorted(_glob.glob(os.path.join(HERE, "ext_*.py"))):
+        try:
+            _mod = __import__(os.path.splitext(os.path.basename(_p))[0])
+            _ext.update(getattr(_mod, "HANDLERS", {}))
+        except Exception as _e:
+            log(f"[ext] falhou {_p}: {_e!r}")
+    for _k, _v in _ext.items():
+        Session.H.setdefault(_k, _v)
+    log(f"[mock v4] extensões: {len(_ext)} handlers (total H={len(Session.H)})")
+
     ctx = Ctx(state, sequencer) if (integrate and INTEGRATED and fx) else None
     log(f"[mock v4] integracao={'ON state=' + state if ctx else 'OFF'} sequencer={'ON' if ctx and sequencer else 'OFF'}")
     live = {"sess": None}  # sessao mais recente (para o showcase)
