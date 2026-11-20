@@ -1,85 +1,68 @@
-# game-of-kingshot-re — Reverse Engineering: Kingshot (Android)
+# game-of-kingshot-re — Laboratório de arquitetura de jogos (Kingshot)
 
-> **Educational project.** The goal is to understand how a modern Unity/IL2CPP Android game communicates, how its native protection SDKs work, and how to apply static + dynamic analysis techniques to a real-world APK.
-
----
-
-## What This Is
-
-This repository documents an ongoing reverse engineering study of **com.run.tower.defense** (Kingshot, by Century Games), a Unity game with IL2CPP runtime, multiple native protection SDKs, and a custom binary gateway protocol.
-
-No cheating, no exploitation, no modification of live game data. The focus is purely on understanding internal architecture.
+> **Projeto educacional** sobre o próprio jogo e dispositivo do autor: entender como um
+> jogo mobile moderno (Unity/IL2CPP + SDKs nativos de proteção) se comunica, protege-se
+> e monetiza — e usar esse conhecimento como blueprint de engenharia.
+> **Escopo:** análise passiva do próprio cliente, laboratório próprio (servidor mock),
+> sem trapaça, sem exploração, sem sondeção ativa da produção além de comandos legítimos
+> pontuais com a própria conta.
 
 ---
 
-## What We Found
+## O que este repo é (estado: pós-maratona de 2 dias)
 
-| Area | Status | Key Finding |
-|---|---|---|
-| Gateway protocol (port 30101) | **Decoded** | Custom binary, `uint16_BE` framing, varint body, no TLS |
-| Opcodes | **Mapped** | `0x55` handshake, `0x5d` game actions, `0x1d` state sync, `0x15` heartbeat, `0x59` client ACK |
-| Coordinate encoding | **Decoded** | ASCII85-like 4-char → uint32 (x=kingdom, y=position) |
-| Analytics API | **Captured** | `logagent-wf.centurygame.com` — JSON events, not pinned |
-| SSL pinning | **Partially bypassed** | Java layer bypassed (OkHttp + TrustManager); native BestHTTP layer identified |
-| Anti-tampering (libnesec) | **Identified** | Kills process ~58s after Frida attach; kill function and detection level mapped |
-| libxt_a64.so | **Identified** | PLT hooking SDK loaded in isolated linker namespace — invisible to Frida/maps |
-| libNetHTProtect.so | **Analyzed** | Network integrity SDK; MD5 fingerprinting; protobuf-style serialization |
-| IL2CPP dump | **Partial** | Assembly list recovered; BestHTTP certval RVA mapped |
+De um APK fechado a um laboratório completo. As **10 conquistas-chave**:
 
----
+1. **Packer HTProtect quebrado offline** (2 variantes) — emulador Unicorn reproduzível
+   → `reports/nesec_unpack.md`, `scripts/analysis/emu_unpack_nesec.py`
+2. **Assets decifrados**: bloco 0 dos bundles 119/119 (CRC variante → RC4-mod → classes XOR)
+   → `reports/block0k_decoded.md`, `scripts/dec_block0.py`
+3. **O luapackage aberto**: 8.333 módulos LuaJIT + **schemas sproto completos**
+   (1.888 req + 1.005 notify com nomes e comentários) → `protocols/*.sproto`
+4. **O wire decifrado**: sproto/skynet com 0-pack (não "opcode+kind") — 1771/1771 frames
+   → `reports/spec_server.md`, `protocols/sproto_py.py`
+5. **Motor anti-abuso mapeado por dentro**: detecção por thread, níveis 1-4, cadeia de saída
+   → `reports/detect_logic.md`, `nes_static.md`, `nes_follow.md`
+6. **Servidor-lab que roda o cliente real**: mock v4 sproto + túnel USB
+   (`go_mock.sh`/`go_prod.sh` alternam com 1 comando) → `reports/MOCK_V4.md`
+7. **Console de comandos**: qualquer um dos 1.888 comandos com payload real e resposta
+   decodificada → `scripts/cmd_console.py` + `protocols/catalog.json` (58 com payload real)
+8. **Dossiê de monetização objetivo**: 1.389 tabelas de balanceamento, alegações testadas
+   → `reports/monetizacao_dossie.md` + `econ_*.md`
+9. **Lógica de negócio extraída**: loja/pass/guerra do bytecode Lua + mapa msgId→handler
+   → `reports/lua_logic.md`, `protocols/HANDLERS.tsv`
+10. **Validação server-side ao vivo**: `16807 already_passed` / `2 param_illegal` —
+    a diferença mock×prod é a camada de validação → lição nº1 do blueprint
 
-## Repository Structure
+## Mapa do repo
 
-```
-game-of-kingshot-re/
-├── README.md                   ← this file
-├── FLOW.md                     ← complete discovered data flow
-├── SETUP.md                    ← environment setup guide
-├── TOOLS_AND_COMMANDS.md       ← all commands and tools reference
-├── CLAUDE.md                   ← context for AI-assisted sessions
-├── captures/
-│   ├── battle.pcap             ← gateway traffic sample (session 1)
-│   └── battle2.pcap            ← gateway traffic sample (session 2, richer)
-└── scripts/
-    ├── frida/
-    │   ├── certval_hook.js     ← observe BestHTTP certificate validation
-    │   ├── button_hook.js      ← hook Unity UI button events
-    │   ├── ssl_unpin.js        ← SSL unpinning (Java + IL2CPP layers)
-    │   └── nesec_bypass.js     ← neutralize libnesec anti-tampering
-    ├── analysis/
-    │   ├── analyze_gateway.py  ← parse and decode port 30101 pcap captures
-    │   ├── analyze_mitm.py     ← read and filter mitmproxy .mitm files
-    │   ├── decode_1d_v2.py     ← deep decode of 0x1d state-sync frames
-    │   └── deep_analysis.py    ← coordinates, JSON fragments, opcode 0x59
-    └── proxy/
-        ├── mitm_setup.py       ← install mitmproxy CA on device
-        ├── run_ssl_unpin.py    ← mitmdump + Frida SSL unpin combined runner
-        └── run_button_hook.py  ← mitmdump + Frida button hook combined runner
-```
+| Pasta | O que é |
+|---|---|
+| `protocols/` | **A joia**: schemas sproto (c2s/s2c), catálogo de comandos, HANDLERS.tsv, errcodes.json, sproto_py/sproto_lib |
+| `reports/` | Relatórios por assunto — comece pelo `INDICE.md` |
+| `reports/archive/` | Era 1.9.5/frida (abril) — linha do tempo |
+| `scripts/` | Ferramentas: console, mock v4, decodificadores, switches go_prod/go_mock |
+| `captures/` | pcaps próprios (cap115, cap_combat2) |
+| `dump/`, `il2cpp_dump/`, `ghidra_decompile/` | Artefatos de análise (imagens, dumps, decompiles) |
+| `SETUP.md` | Ambiente (WSL, Ghidra, libs) |
+| `HANDOVER.md` | **Guia pra quem assume** |
 
----
-
-## Quick Start
+## Comece por aqui
 
 ```bash
-# 1. Start frida-server on device
-adb shell "su -c '/data/local/tmp/fs17 -l 0.0.0.0:37555 &'"
-adb forward tcp:37555 tcp:37555
+# listar os 58 comandos com payload real
+python3 scripts/cmd_console.py mock list
 
-# 2. Capture gateway traffic
-adb shell "su -c 'tcpdump -i any -w /sdcard/session.pcap port 30101'"
-# ... play the game ...
-adb pull /sdcard/session.pcap captures/
-
-# 3. Analyze it
-python scripts/analysis/analyze_gateway.py captures/session.pcap
+# mandar um comando legítimo pro SEU servidor mock (ver HANDOVER pra subir)
+python3 scripts/cmd_console.py mock req_get_hang_up_reward
 ```
 
----
+## Nota de escopo e ética
 
-## Interested in Contributing?
-
-See [FLOW.md](FLOW.md) for the full protocol map and open questions.  
-See [SETUP.md](SETUP.md) to get your environment running.
-
-If you have Ghidra analysis, il2cppdumper output, or additional pcap captures — PRs and issues are welcome.
+Este projeto analisa apenas o próprio jogo/aparelho/conta do autor, com duas regras
+invioláveis: (1) nada contra outros jogadores ou o serviço de terceiros (sem trapaça,
+sondagem ativa ou exploração de falhas — comandos de teste contra a produção limitam-se
+a mensagens legítimas pontuais da própria conta, e o servidor de produção recusa o que
+não bate com o estado: ver lição 10); (2) o campo de provas é o **mock próprio**, que
+replica fielmente o protocolo. O objetivo final é construtivo: o blueprint de um jogo
+próprio.
