@@ -7,7 +7,7 @@ decoder próprio (corrige boolean[]/double[]), 0-pack de referência, XOR 4B per
 import os, sys, struct, json
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
-_PROTO_DIRS = [os.environ.get("KS_PROTOCOLS", ""),
+_PROTO_DIRS = [os.environ.get("KS_PROTOCOLS", ""), os.path.join(_HERE, "..", "protocols"),
                r"C:/Users/prs/projects/game-of-kingshot-re/protocols", _HERE]
 for _d in _PROTO_DIRS:
     if _d and os.path.exists(os.path.join(_d, "sproto_py.py")):
