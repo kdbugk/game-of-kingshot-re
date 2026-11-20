@@ -101,17 +101,18 @@ def main():
         print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
         return req(name, obj, 6.0)
 
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        futuros = {pool.submit(enviar, name, obj): name for name, obj in itens}
+    N = 10
+    with ThreadPoolExecutor(max_workers=N) as pool:
+        futuros = {pool.submit(enviar, name, obj): i for i in range(N)}
         for fut in as_completed(futuros):
-            name = futuros[fut]
+            i = futuros[fut]
             try:
                 resp = fut.result()
             except Exception as e:
-                print(f"[erro] {name} {e!r}")
+                print(f"[erro #{i}] {name} {e!r}")
                 continue
-            print(f"[resposta] {name} {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
-
+            print(f"[resposta #{i}] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
+    resp is not None else '(nenhuma)'}")
 
     sock.close()
     print("[fim]")
