@@ -39,6 +39,43 @@ def export_fixture(path, transcript=os.path.join(HERE, "gw_transcript115.pkl")):
     json.dump(fx, open(path, "w", encoding="utf8"), ensure_ascii=False)
     return fx
 
+# ---- RECEITAS REAIS (recipes/recipes.json: resp+pushes extraidos das capturas de producao)
+RECIPES_FILE = os.environ.get("RECIPES_FILE", os.path.join(HERE, "..", "recipes", "recipes.json"))
+def load_recipes(path=RECIPES_FILE):
+    try: return json.load(open(path, encoding="utf8"))
+    except (OSError, ValueError): return {}
+RECIPES = load_recipes()
+
+def _rebase_path(o, parts, delta):
+    """aplica +delta nos inteiros-epoch do caminho dinamico ('a.b[].c'); [] = todos os elementos."""
+    if not parts: return o
+    k, rest = parts[0], parts[1:]
+    lst = k.endswith("[]"); k = k[:-2] if lst else k
+    if not isinstance(o, dict) or k not in o: return o
+    v = o[k]
+    if lst:
+        if isinstance(v, list):
+            for i, e in enumerate(v):
+                v[i] = _rebase_path(e, rest, delta) if rest else _shift(e, delta)
+    elif rest: o[k] = _rebase_path(v, rest, delta)
+    else: o[k] = _shift(v, delta)
+    return o
+
+def _shift(v, delta):
+    if isinstance(v, int) and 1.7e9 < v < 1.9e9: return v + delta           # epoch s
+    if isinstance(v, int) and 1.7e12 < v < 1.9e12: return v + delta * 1000   # epoch ms
+    return v
+
+def recipe_fill(rec, obj, dyn, now):
+    """copia o objeto real e transplanta os campos de tempo: valor = now + (valor_capturado - relogio_da_captura)."""
+    ref = rec.get("_ref_time")
+    obj = json.loads(json.dumps(obj))
+    if not ref or not dyn: return obj
+    delta = int(now - ref)
+    for p in dyn:
+        obj = _rebase_path(obj, p.split("."), delta)
+    return obj
+
 AUTO = {"on": True, "window": 5.0, "max": 8}   # --auto-notify on/off; dedup por notify (s); teto por req
 AUTO_SKIP = {"req_heartbeat", "req_save_client_data", "req_chat_get_token", "req_cheat_add", "req_cheat_set_hero_lev",
              "req_trigger_opinion", "req_loaddata", "req_players_base_info_with_permission",
@@ -507,6 +544,14 @@ class Session:
         return self._bidx
 
     def h_default(self, m):
+        rec = RECIPES.get(m["name"])
+        if rec and rec.get("response") is not None and self.S.c2s_by_name[m["name"]]["response"] is not None:
+            now = self.now()
+            self.reply(m, recipe_fill(rec, rec["response"], rec.get("_dynamic"), now))
+            self.stats["recipe"] = self.stats.get("recipe", 0) + 1
+            for n, o in rec.get("pushes") or []:
+                self.push(n, recipe_fill(rec, o, (rec.get("_dynamic_pushes") or {}).get(n), now))
+            return
         tpl = ((self.fx or {}).get("templates") or {}).get(m["name"])
         if tpl is not None: self.reply(m, tpl); self.stats["tpl"] = self.stats.get("tpl", 0) + 1; return
         spec = self.S.c2s_by_name[m["name"]]["response"]
