@@ -15,15 +15,27 @@ Uso:
 import sys, os, socket, json, pickle, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sproto_lib as L
-import json
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 TARGETS = {"mock": ("127.0.0.1", 30101), "prod": ("3.33.245.139", 30101)}
 TRANSCRIPT = "/home/re/work/apk/gw_transcript115.pkl"
 
+def load_catalog():
+    for p in (os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalog.json"),
+              "/home/re/work/apk/catalog.json",
+              os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "protocols", "catalog.json")):
+        if os.path.exists(p):
+            return json.load(open(p, encoding="utf8"))
+    return {}
+
 def main():
     alvo = sys.argv[1] if len(sys.argv) > 1 else "mock"
     cmd = sys.argv[2] if len(sys.argv) > 2 else "heartbeat"
+    CATALOG = load_catalog()
+    if cmd == "list":
+        print(f"{len(CATALOG)} comandos com payload real:")
+        for n, e in sorted(CATALOG.items(), key=lambda kv: -kv[1]["n"]):
+            print(f"  {n:<45} n={e['n']:<3} [{e['fonte']}]")
+        return
     args = json.loads(sys.argv[3]) if len(sys.argv) > 3 else {}
     name = cmd if cmd.startswith("req_") or cmd == "loginauth" else "req_" + cmd
 
@@ -88,31 +100,13 @@ def main():
         "req_mail_type_info": {},
         "req_shop_info": {"arr_id": [101, 601]},
         "req_rank_info": {"list_type": [{"type": 1, "ext": {"aid": 0}}]},
-        "req_climbtower_challenge": {"id": 40023, "formation_prefab": [{"id": 1, "prefab": {"soldier": [{"k": 21000, "v": 51400}]}}]},
+        "req_climbtower_challenge": {"id": 40021, "formation_prefab": [{"id": 1, "prefab": {"soldier": [{"k": 21000, "v": 51400}]}}]},
     }
-    obj = args if args else DEFAULTS.get(name, {})
+    obj = args if args else (CATALOG.get(name, {}).get("args") or DEFAULTS.get(name) or {})
 
     print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
     resp = req(name, obj, 6.0)
     print(f"[resposta] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
-
-
-    def enviar(name, obj):
-        print(f"[enviado] {name} {json.dumps(obj, ensure_ascii=False)[:100]}")
-        return req(name, obj, 6.0)
-
-    N = 10
-    with ThreadPoolExecutor(max_workers=N) as pool:
-        futuros = {pool.submit(enviar, name, obj): i for i in range(N)}
-        for fut in as_completed(futuros):
-            i = futuros[fut]
-            try:
-                resp = fut.result()
-            except Exception as e:
-                print(f"[erro #{i}] {name} {e!r}")
-                continue
-            print(f"[resposta #{i}] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
-
     sock.close()
     print("[fim]")
 

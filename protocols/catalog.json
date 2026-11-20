@@ -1,0 +1,928 @@
+{
+ "loginauth": {
+  "args": {
+   "is_create": false,
+   "group": 1,
+   "is_simulator": false,
+   "device_sub_type": 0,
+   "sdkToken": "_05gn0p4Mi8j7SaPJwmx6XialBuAckhO0s1NO1YbdAQVr1rsQCF",
+   "account": "384601255",
+   "version": "1.14.27",
+   "device": "motorola moto g(8)",
+   "device_os": "android",
+   "country_code": "BR",
+   "distinct_id": "175aa427bbe891a766c851caedecd019",
+   "lan": "pt",
+   "device_id": "12bddab7db7d820bd05763117a87ad98",
+   "inner_permission_account": "",
+   "inner_permission_token": "",
+   "ad_source": "BR"
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_loaddata": {
+  "args": {},
+  "n": 3,
+  "fonte": "cap115"
+ },
+ "req_rank_info": {
+  "args": {
+   "list_type": [
+    {
+     "type": 1,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 2,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 3,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 4,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 5,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 6,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 7,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 8,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 16,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 18,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 20,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 21,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 22,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 23,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 24,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 25,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 26,
+     "ext": {
+      "aid": 0
+     }
+    },
+    {
+     "type": 29,
+     "ext": {
+      "aid": 0
+     }
+    }
+   ]
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_arena_report": {
+  "args": {},
+  "n": 3,
+  "fonte": "cap115"
+ },
+ "req_report_userkey": {
+  "args": {},
+  "n": 3,
+  "fonte": "cap115"
+ },
+ "req_settings_set_device": {
+  "args": {
+   "params": [
+    "2",
+    "motorola moto g(8)",
+    "11",
+    "2"
+   ]
+  },
+  "n": 3,
+  "fonte": "cap115"
+ },
+ "req_mail_type_info": {
+  "args": {},
+  "n": 3,
+  "fonte": "cap115"
+ },
+ "req_shop_info_array": {
+  "args": {
+   "arr_id": [
+    2601,
+    1401,
+    1101,
+    1801,
+    101,
+    2101,
+    1201,
+    1601,
+    301,
+    1001,
+    601,
+    1701,
+    501,
+    2201,
+    401,
+    1301,
+    901,
+    801,
+    2401,
+    1901,
+    1501,
+    2001,
+    701
+   ]
+  },
+  "n": 2,
+  "fonte": "cap115"
+ },
+ "req_update_setting_info": {
+  "args": {
+   "data": [
+    {
+     "id": 1,
+     "dataString": "pt"
+    }
+   ]
+  },
+  "n": 3,
+  "fonte": "cap115"
+ },
+ "req_friend_get_alias": {
+  "args": {
+   "uid_arr": []
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_alliance_arsenal_league_login_weekly": {
+  "args": {
+   "id": 2961001
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_alliance_arsenal_league_get_participant_uids": {
+  "args": {
+   "id": 2961001
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_shop_info": {
+  "args": {
+   "shop_id": 2201
+  },
+  "n": 8,
+  "fonte": "cap115"
+ },
+ "req_alliance_showdown_activity_info": {
+  "args": {},
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_alliance_showdown_alliance_info": {
+  "args": {},
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_alliance_arsenal_war_login_weekly": {
+  "args": {},
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_players_base_info_with_permission": {
+  "args": {
+   "permission": 1,
+   "uids": [
+    34174824
+   ]
+  },
+  "n": 4,
+  "fonte": "cap115"
+ },
+ "req_mail_cover_list": {
+  "args": {
+   "first_type": 30,
+   "beginidx": 1,
+   "endidx": 40
+  },
+  "n": 8,
+  "fonte": "cap115"
+ },
+ "req_skin_get_condition_activity_skin": {
+  "args": {},
+  "n": 5,
+  "fonte": "cap115"
+ },
+ "req_save_client_data": {
+  "args": {
+   "data": {
+    "law_point": 18580767,
+    "survivor": [
+     {
+      "sid": 1,
+      "res601": 83.26361813212672,
+      "res602": 97.49099999999899,
+      "res603": 96.37799999999145,
+      "res604": 0.0,
+      "res607": 0.0
+     },
+     {
+      "sid": 2,
+      "res601": 75.37055357232366,
+      "res602": 96.15142775514117,
+      "res603": 93.48333966096206,
+      "res604": 0.0,
+      "res607": 0.0
+     },
+     {
+      "sid": 3,
+      "res601": 76.31772584540246,
+      "res602": 95.58604869946407,
+      "res603": 48.05036670968138,
+      "res604": 0.0,
+      "res607": 0.0
+     },
+     {
+      "sid": 4,
+      "res601": 91.1628849914421,
+      "res602": 97.49099999999899,
+      "res603": 77.97799999999114,
+      "res604": 0.0,
+      "res607": 0.0
+     },
+     {
+      "sid": 6,
+      "res601": 2.8827662463006027,
+      "res602": 0.0,
+      "res603": 0.0,
+      "res604": 0.0,
+      "res607": 88.22761611349343
+     },
+     {
+      "sid": 203,
+      "res601": 66.30505144265459,
+      "res602": 87.1779999999913,
+      "res603": 100.0,
+      "res604": 0.0,
+      "res607": 9.919019755933595
+     },
+     {
+      "sid": 235,
+      "res601": 99.98500000000001,
+      "res602": 100.0,
+      "res603": 100.0,
+      "res604": 0.0,
+      "res607": 100.0
+     },
+     {
+      "sid": 219,
+      "res601": 64.37629933696135,
+      "res602": 87.1779999999913,
+      "res603": 87.1779999999913,
+      "res604": 0.0,
+      "res607": 74.07089475230407
+     },
+     {
+      "sid": 218,
+      "res601": 67.12358311461264,
+      "res602": 96.37799999999146,
+      "res603": 38.939133131300046,
+      "res604": 0.0,
+      "res607": 76.57291053849531
+     },
+     {
+      "sid": 213,
+      "res601": 50.21703207931015,
+      "res602": 97.49099999999899,
+      "res603": 21.587273235047423,
+      "res604": 0.0,
+      "res607": 59.560695756815036
+     },
+     {
+      "sid": 231,
+      "res601": 96.80000000000017,
+      "res602": 87.96276370666614,
+      "res603": 31.500605477064138,
+      "res604": 53.904999999999625,
+      "res607": 100.0
+     },
+     {
+      "sid": 230,
+      "res601": 59.90186352214849,
+      "res602": 97.49099999999899,
+      "res603": 95.18699999998387,
+      "res604": 0.0,
+      "res607": 8.449541333186826
+     },
+     {
+      "sid": 234,
+      "res601": 56.682069093752446,
+      "res602": 93.68112032640747,
+      "res603": 96.37799999999146,
+      "res604": 0.0,
+      "res607": 48.529907021680955
+     },
+     {
+      "sid": 164,
+      "res601": 80.03866564821301,
+      "res602": 97.49099999999899,
+      "res603": 86.67616130811217,
+      "res604": 0.0,
+      "res607": 10.130661348552637
+     },
+     {
+      "sid": 236,
+      "res601": 99.99000000000001,
+      "res602": 100.0,
+      "res603": 100.0,
+      "res604": 0.0,
+      "res607": 100.0
+     },
+     {
+      "sid": 222,
+      "res601": 74.02690564287302,
+      "res602": 100.0,
+      "res603": 80.55450195316891,
+      "res604": 0.0,
+      "res607": 90.92272234949456
+     },
+     {
+      "sid": 224,
+      "res601": 58.80980929927881,
+      "res602": 100.0,
+      "res603": 59.45541135882989,
+      "res604": 0.0,
+      "res607": 78.82969944919454
+     },
+     {
+      "sid": 208,
+      "res601": 75.4087556317448,
+      "res602": 96.37799999999143,
+      "res603": 87.1779999999913,
+      "res604": 0.0,
+      "res607": 69.92629887643639
+     },
+     {
+      "sid": 212,
+      "res601": 59.678631677459364,
+      "res602": 100.0,
+      "res603": 85.98699999998374,
+      "res604": 0.0,
+      "res607": 41.298207264966344
+     },
+     {
+      "sid": 226,
+      "res601": 81.30890913224968,
+      "res602": 92.27243945016366,
+      "res603": 73.12599999997809,
+      "res604": 0.0,
+      "res607": 37.80116048109957
+     },
+     {
+      "sid": 238,
+      "res601": 97.6700000000002,
+      "res602": 100.0,
+      "res603": 100.0,
+      "res604": 0.0,
+      "res607": 100.0
+     },
+     {
+      "sid": 237,
+      "res601": 96.67000000000029,
+      "res602": 100.0,
+      "res603": 100.0,
+      "res604": 0.0,
+      "res607": 100.0
+     },
+     {
+      "sid": 206,
+      "res601": 67.74389779429593,
+      "res602": 87.1779999999913,
+      "res603": 100.0,
+      "res604": 0.0,
+      "res607": 18.376246931745897
+     },
+     {
+      "sid": 221,
+      "res601": 99.98500000000001,
+      "res602": 97.49099999999899,
+      "res603": 87.27457565747437,
+      "res604": 51.444999999998366,
+      "res607": 100.0
+     },
+     {
+      "sid": 217,
+      "res601": 75.4985202652761,
+      "res602": 95.62093099346453,
+      "res603": 60.29898508088447,
+      "res604": 0.0,
+      "res607": 81.70177746072387
+     },
+     {
+      "sid": 220,
+      "res601": 64.039155213499,
+      "res602": 96.84048794446448,
+      "res603": 83.98794763632384,
+      "res604": 0.0,
+      "res607": 66.62457103557497
+     },
+     {
+      "sid": 225,
+      "res601": 74.67840854115958,
+      "res602": 93.29433589227907,
+      "res603": 96.37799999999145,
+      "res604": 0.0,
+      "res607": 80.84044764337582
+     },
+     {
+      "sid": 223,
+      "res601": 90.67122414899437,
+      "res602": 95.68169182889368,
+      "res603": 91.12277803171692,
+      "res604": 0.0,
+      "res607": 52.005569297968584
+     },
+     {
+      "sid": 205,
+      "res601": 44.08911275473752,
+      "res602": 100.0,
+      "res603": 85.98699999998372,
+      "res604": 0.0,
+      "res607": 10.571950943937281
+     },
+     {
+      "sid": 233,
+      "res601": 69.45621787821045,
+      "res602": 91.64506742019377,
+      "res603": 58.47096930887502,
+      "res604": 0.0,
+      "res607": 51.05727820272754
+     },
+     {
+      "sid": 229,
+      "res601": 73.5150543801753,
+      "res602": 97.49099999999899,
+      "res603": 47.80021226524021,
+      "res604": 0.0,
+      "res607": 28.45480755872912
+     },
+     {
+      "sid": 232,
+      "res601": 56.35188733396889,
+      "res602": 96.37799999999145,
+      "res603": 87.44251157160092,
+      "res604": 0.0,
+      "res607": 61.112073668353254
+     }
+    ]
+   }
+  },
+  "n": 2,
+  "fonte": "cap115"
+ },
+ "req_red_packet_exist": {
+  "args": {
+   "channel_type": 1,
+   "id_lst": [
+    2,
+    5,
+    3,
+    1,
+    4
+   ]
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_chat_set_recent_contact": {
+  "args": {
+   "uid_set": [
+    {
+     "v": true,
+     "k": 34184047
+    },
+    {
+     "v": true,
+     "k": 34180594
+    },
+    {
+     "v": true,
+     "k": 34190900
+    },
+    {
+     "v": true,
+     "k": 40444746
+    }
+   ]
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_heartbeat": {
+  "args": {},
+  "n": 166,
+  "fonte": "cap115"
+ },
+ "req_dun163_risk_check": {
+  "args": {
+   "token": "dWXU-HUgqAjPEGW32wGooCQRhbr0CVEnigY09w=="
+  },
+  "n": 3,
+  "fonte": "cap115"
+ },
+ "req_trigger_opinion": {
+  "args": {
+   "type": 1,
+   "sid": 221,
+   "is_anonymity": false,
+   "content_id": 1001016
+  },
+  "n": 87,
+  "fonte": "cap115"
+ },
+ "req_players_base_info": {
+  "args": {
+   "uids": [
+    34185123
+   ]
+  },
+  "n": 1,
+  "fonte": "cap115"
+ },
+ "req_survivor_work_pause": {
+  "args": {
+   "sid_list": [
+    2,
+    3,
+    203,
+    219,
+    218,
+    213,
+    231,
+    230,
+    225,
+    234,
+    212,
+    206,
+    221,
+    222,
+    217,
+    205,
+    229,
+    232
+   ],
+   "time": 1795135065
+  },
+  "n": 2,
+  "fonte": "combat"
+ },
+ "req_kitchen_cook_finish": {
+  "args": {
+   "food_array": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "n": 2,
+  "fonte": "combat"
+ },
+ "req_kitchen_eat_finish": {
+  "args": {
+   "count": 31
+  },
+  "n": 4,
+  "fonte": "combat"
+ },
+ "req_survivor_sick": {
+  "args": {
+   "sid": 212
+  },
+  "n": 30,
+  "fonte": "combat"
+ },
+ "req_get_all_dailyquest_award": {
+  "args": {
+   "quest_ids": [
+    1320081,
+    1320210
+   ]
+  },
+  "n": 5,
+  "fonte": "combat"
+ },
+ "req_climbtower_info": {
+  "args": {},
+  "n": 2,
+  "fonte": "combat"
+ },
+ "req_climbtower_tower_info": {
+  "args": {
+   "id": 4,
+   "chapter": 1
+  },
+  "n": 5,
+  "fonte": "combat"
+ },
+ "req_climbtower_challenge": {
+  "args": {
+   "id": 40001,
+   "formation_prefab": [
+    {
+     "id": 1,
+     "prefab": {
+      "soldier": [
+       {
+        "k": 11000,
+        "v": 51400
+       },
+       {
+        "k": 21000,
+        "v": 51400
+       },
+       {
+        "k": 31000,
+        "v": 51400
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "n": 23,
+  "fonte": "combat"
+ },
+ "req_survivor_update_cure_end_time": {
+  "args": {
+   "sid": 212,
+   "cure_end_time": 1795135795
+  },
+  "n": 41,
+  "fonte": "combat"
+ },
+ "req_hunting_tool_obtain": {
+  "args": {
+   "sid": 4
+  },
+  "n": 25,
+  "fonte": "combat"
+ },
+ "req_survivor_cure_finish": {
+  "args": {
+   "sid": 212
+  },
+  "n": 1,
+  "fonte": "combat"
+ },
+ "req_chat_get_token": {
+  "args": {},
+  "n": 137,
+  "fonte": "mock_live"
+ },
+ "req_survivor_work_start": {
+  "args": {
+   "sid": 212
+  },
+  "n": 44,
+  "fonte": "mock_live"
+ },
+ "req_mail_detail_info": {
+  "args": {
+   "mailid_new": "10238564363977123"
+  },
+  "n": 1,
+  "fonte": "mock_live"
+ },
+ "req_mail_onekey_read": {
+  "args": {
+   "first_type": 10
+  },
+  "n": 60,
+  "fonte": "mock_live"
+ },
+ "req_world_map_fog": {
+  "args": {
+   "kid": 931
+  },
+  "n": 3,
+  "fonte": "mock_live"
+ },
+ "req_survivor_riot": {
+  "args": {},
+  "n": 1,
+  "fonte": "mock_live"
+ },
+ "req_shop_refresh": {
+  "args": {
+   "shop_id": 601
+  },
+  "n": 19,
+  "fonte": "mock_live"
+ },
+ "req_climbtower_sweep": {
+  "args": {
+   "tower_id": 5
+  },
+  "n": 4,
+  "fonte": "mock_live"
+ },
+ "req_climbtower_chest_reward": {
+  "args": {
+   "chest_id_list": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006
+   ]
+  },
+  "n": 7,
+  "fonte": "mock_live"
+ },
+ "req_vip_get_daily_exp": {
+  "args": {},
+  "n": 2,
+  "fonte": "mock_live"
+ },
+ "req_world_del_watch": {
+  "args": {},
+  "n": 1,
+  "fonte": "mock_live"
+ },
+ "req_begin_research": {
+  "args": {
+   "tid_lev": 10332,
+   "qid": 20001
+  },
+  "n": 1,
+  "fonte": "mock_live"
+ },
+ "req_barrack_recruit_soldier": {
+  "args": {
+   "arr_bid": [
+    321
+   ]
+  },
+  "n": 3,
+  "fonte": "mock_live"
+ },
+ "req_pet_adventure_onekey_get_reward": {
+  "args": {
+   "area_ids": [
+    1,
+    2
+   ]
+  },
+  "n": 5,
+  "fonte": "mock_live"
+ },
+ "req_player_self_record": {
+  "args": {},
+  "n": 6,
+  "fonte": "mock_live"
+ },
+ "req_migrant_get_super_count": {
+  "args": {
+   "kid": 931
+  },
+  "n": 2,
+  "fonte": "mock_live"
+ },
+ "req_mail_receive": {
+  "args": {
+   "mailid_new": "mock-1"
+  },
+  "n": 2,
+  "fonte": "mock_live"
+ },
+ "req_shop_buy": {
+  "args": {
+   "shop_id": 1001,
+   "goods_id": 8,
+   "count": 50
+  },
+  "n": 54,
+  "fonte": "mock_live"
+ },
+ "req_use_item": {
+  "args": {
+   "count": 11,
+   "id": 100004,
+   "extra": {}
+  },
+  "n": 41,
+  "fonte": "mock_live"
+ },
+ "req_alliances_brief_info": {
+  "args": {
+   "aids": [
+    40444746
+   ]
+  },
+  "n": 1,
+  "fonte": "mock_live"
+ },
+ "req_rank_range": {
+  "args": {
+   "type": 1,
+   "key": 94000209
+  },
+  "n": 2,
+  "fonte": "mock_live"
+ }
+}
