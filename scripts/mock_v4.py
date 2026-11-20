@@ -36,6 +36,8 @@ class Session:
         self.conn, self.addr, self.S, self.fx, self.key, self.log = conn, addr, S, fx, key, log
         self.peer = L.Peer(S, key); self.t0 = time.time(); self.n = 0
         self.stats = {}
+        self.gm_items = {}   # GM (lab): inventário do sandbox
+        self.gm_hero = {}    # GM (lab): níveis de herói do sandbox
 
     def now(self): return SERVER_T0 + int(time.time() - self.t0)
 
@@ -80,6 +82,22 @@ class Session:
             p = dict(tpl); p["uid"] = u; p["nickName"] = "Mock%d" % u; res.append(p)
         self.reply(m, {"code": 0, "overload": 0, "result": res})
 
+    # ---- GM (lab): comandos admin contra ESTE servidor (sandbox nosso)
+    def h_cheat_add(self, m):
+        items = m["obj"].get("data") or []
+        for it in items:
+            if isinstance(it, dict):
+                iid = it.get("id", it.get("type", it.get("item", "?")))
+                num = it.get("num", it.get("count", it.get("n", 1)))
+                self.gm_items[str(iid)] = self.gm_items.get(str(iid), 0) + (num if isinstance(num, int) else 1)
+        self.log(f"[GM] req_cheat_add: {json.dumps(items, ensure_ascii=False)[:200]} -> inventario={self.gm_items}")
+        self.reply(m, {"code": 0})
+
+    def h_cheat_hero(self, m):
+        o = m["obj"]; self.gm_hero[str(o.get("id"))] = o.get("lev")
+        self.log(f"[GM] req_cheat_set_hero_lev: {o} -> herois={self.gm_hero}")
+        self.reply(m, {"code": 0})
+
     def h_default(self, m):
         tpl = ((self.fx or {}).get("templates") or {}).get(m["name"])
         if tpl is not None: self.reply(m, tpl); self.stats["tpl"] = self.stats.get("tpl", 0) + 1; return
@@ -91,7 +109,8 @@ class Session:
 
     H = {"loginauth": h_loginauth, "req_loaddata": h_loaddata, "req_heartbeat": h_heartbeat,
          "req_trigger_opinion": h_opinion, "req_save_client_data": h_save,
-         "req_players_base_info_with_permission": h_players}
+         "req_players_base_info_with_permission": h_players,
+         "req_cheat_add": h_cheat_add, "req_cheat_set_hero_lev": h_cheat_hero}
 
     def run(self):
         try:
