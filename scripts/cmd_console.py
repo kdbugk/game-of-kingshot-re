@@ -112,7 +112,6 @@ def main():
                 print(f"[erro #{i}] {name} {e!r}")
                 continue
             print(f"[resposta #{i}] {json.dumps(resp, ensure_ascii=False, indent=1)[:800] if resp is not None else '(nenhuma)'}")
-    resp is not None else '(nenhuma)'}")
 
     sock.close()
     print("[fim]")
