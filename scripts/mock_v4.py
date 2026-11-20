@@ -633,6 +633,10 @@ class Session:
                     except (ConnectionError, OSError): raise
                     except Exception as e:
                         import traceback; self.log(f"[handler-err] {m['name']}: {e!r}\n{traceback.format_exc()}")
+                        try:
+                            self.reply(m, {"code": 2})  # param_illegal: mantem a sessao em sync (comportamento prod)
+                        except Exception:
+                            pass
         except (ConnectionError, OSError) as e:
             self.log(f"[conn-err] {e}")
         finally:
